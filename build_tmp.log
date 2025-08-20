@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  20 AUG 2025 12:38
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.7.9)  20 AUG 2025 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1478,26 +1478,24 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 )))
 \glswrite=\write4
 \glo@main@file=\write5
-\openout5 = `dissertation.glo'.
+\openout5 = `build_tmp.glo'.
 
-Package glossaries Info: Writing glossary file dissertation.glo on input line 3
-.
+Package glossaries Info: Writing glossary file build_tmp.glo on input line 3.
 \glo@acronym@file=\write6
-\openout6 = `dissertation.acn'.
+\openout6 = `build_tmp.acn'.
 
-Package glossaries Info: Writing glossary file dissertation.acn on input line 3
-.
-\dissertation@idxfile=\write7
-\openout7 = `dissertation.idx'.
+Package glossaries Info: Writing glossary file build_tmp.acn on input line 3.
+\build_tmp@idxfile=\write7
+\openout7 = `build_tmp.idx'.
 
 
-Writing index file dissertation.idx
+Writing index file build_tmp.idx
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-(dissertation.aux)
-\openout1 = `dissertation.aux'.
+(build_tmp.aux)
+\openout1 = `build_tmp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
@@ -1631,12 +1629,12 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 54.
 
-(dissertation.out) (dissertation.out)
+(build_tmp.out) (build_tmp.out)
 \@outlinefile=\write8
-\openout8 = `dissertation.out'.
+\openout8 = `build_tmp.out'.
 
 \c@lstlisting=\count459
- (dissertation.glsdefs) (covers/Covers.tex
+ (build_tmp.glsdefs) (covers/Covers.tex
 File: images/logos/UM.jpg Graphic file (type bmp)
 <images/logos/UM.jpg>
 File: images/logos/EE.jpg Graphic file (type bmp)
@@ -1655,7 +1653,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--16
 
 [1
 
-\openout4 = `dissertation.ist'.
+\openout4 = `build_tmp.ist'.
 
 ]
 
@@ -1772,13 +1770,13 @@ cture (Node.js) and a reactive frontend (TypeScript/React)—
 
 ) (preamble/Glossary.tex
 \@gls@deffile=\write9
-\openout9 = `dissertation.glsdefs'.
+\openout9 = `build_tmp.glsdefs'.
 
 )
 
 [5
 
-] (dissertation.toc
+] (build_tmp.toc
 
 [6
 
@@ -1786,32 +1784,33 @@ cture (Node.js) and a reactive frontend (TypeScript/React)—
 
 [7])
 \tf@toc=\write10
-\openout10 = `dissertation.toc'.
+\openout10 = `build_tmp.toc'.
 
 
 
-[8] (dissertation.lof)
+[8] (build_tmp.lof)
 \tf@lof=\write11
-\openout11 = `dissertation.lof'.
+\openout11 = `build_tmp.lof'.
 
 
 
 [9
 
 
-] (dissertation.lot)
+] (build_tmp.lot)
 \tf@lot=\write12
-\openout12 = `dissertation.lot'.
+\openout12 = `build_tmp.lot'.
 
 
 
 [10
 
-] (dissertation.acr) (dissertation.gls)
+]
+No file build_tmp.acr.
+No file build_tmp.gls.
+
 
 [11
-
-
 
 ]
 
@@ -1931,7 +1930,7 @@ File: images/generated/gantt_chart_detailed.png Graphic file (type bmp)
 
 ])
 
-[29] (dissertation.bbl
+[29] (build_tmp.bbl
 
 [30]
 
@@ -1950,9 +1949,9 @@ File: images/generated/gantt_chart_detailed.png Graphic file (type bmp)
 [36])
 
 [37]
-runsystem(makeindex dissertation.idx)...executed safely (allowed).
+runsystem(makeindex build_tmp.idx)...executed safely (allowed).
 
- (dissertation.ind)
+ (build_tmp.ind)
 
 [38
 
@@ -1995,21 +1994,25 @@ Appendix D.
 
 ]
 
-[1]) (dissertation.aux)
+[1]) (build_tmp.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
-Package rerunfilecheck Info: File `dissertation.out' has not changed.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package rerunfilecheck Info: File `build_tmp.out' has not changed.
 (rerunfilecheck)             Checksum: ED66D9C330AEC68553102874D2DA0B4E;11024.
  ) 
 Here is how much of TeX's memory you used:
- 45595 strings out of 403337
- 954701 string characters out of 5463040
- 1489571 words of memory out of 5000000
- 73239 multiletter control sequences out of 15000+600000
+ 45583 strings out of 403337
+ 954280 string characters out of 5463040
+ 1489523 words of memory out of 5000000
+ 73233 multiletter control sequences out of 15000+600000
  632642 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  113i,10n,119p,2537b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on dissertation.pdf (59 pages).
+Output written on build_tmp.pdf (59 pages).

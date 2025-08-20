@@ -1,0 +1,756 @@
+\glsdefs@newdocentry{scmvv}%
+{%
+name={\acronymfont {\glsentryshort {scmvv}}},%
+sort={SCMVV},%
+type={acronym},%
+first={SCMVV},%
+firstplural={SCMVVs},%
+text={SCMVV},%
+plural={SCMVVs},%
+description={Santa Casa da Misericórdia de Vila Verde},%
+descriptionplural={Santa Casa da Misericórdia de Vila Verde},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Santa Casa da Misericórdia de Vila Verde},%
+longplural={Santa Casa da Misericórdia de Vila Verdes},%
+short={SCMVV},%
+shortplural={SCMVVs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cdss}%
+{%
+name={\acronymfont {\glsentryshort {cdss}}},%
+sort={CDSS},%
+type={acronym},%
+first={CDSS},%
+firstplural={CDSSs},%
+text={CDSS},%
+plural={CDSSs},%
+description={Clinical Decision Support System},%
+descriptionplural={Clinical Decision Support System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Clinical Decision Support System},%
+longplural={Clinical Decision Support Systems},%
+short={CDSS},%
+shortplural={CDSSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{his}%
+{%
+name={\acronymfont {\glsentryshort {his}}},%
+sort={HIS},%
+type={acronym},%
+first={HIS},%
+firstplural={HISs},%
+text={HIS},%
+plural={HISs},%
+description={Hospital Information System},%
+descriptionplural={Hospital Information System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hospital Information System},%
+longplural={Hospital Information Systems},%
+short={HIS},%
+shortplural={HISs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hit}%
+{%
+name={\acronymfont {\glsentryshort {hit}}},%
+sort={HIT},%
+type={acronym},%
+first={HIT},%
+firstplural={HITs},%
+text={HIT},%
+plural={HITs},%
+description={Health Information Technology},%
+descriptionplural={Health Information Technology},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Health Information Technology},%
+longplural={Health Information Technologys},%
+short={HIT},%
+shortplural={HITs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dsr}%
+{%
+name={\acronymfont {\glsentryshort {dsr}}},%
+sort={DSR},%
+type={acronym},%
+first={DSR},%
+firstplural={DSRs},%
+text={DSR},%
+plural={DSRs},%
+description={Design Science Research},%
+descriptionplural={Design Science Research},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Design Science Research},%
+longplural={Design Science Researchs},%
+short={DSR},%
+shortplural={DSRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hl7}%
+{%
+name={\acronymfont {\glsentryshort {hl7}}},%
+sort={HL7},%
+type={acronym},%
+first={HL7},%
+firstplural={HL7s},%
+text={HL7},%
+plural={HL7s},%
+description={Health Level Seven},%
+descriptionplural={Health Level Seven},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Health Level Seven},%
+longplural={Health Level Sevens},%
+short={HL7},%
+shortplural={HL7s},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{fhir}%
+{%
+name={\acronymfont {\glsentryshort {fhir}}},%
+sort={FHIR},%
+type={acronym},%
+first={FHIR},%
+firstplural={FHIRs},%
+text={FHIR},%
+plural={FHIRs},%
+description={Fast Healthcare Interoperability Resources},%
+descriptionplural={Fast Healthcare Interoperability Resources},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fast Healthcare Interoperability Resources},%
+longplural={Fast Healthcare Interoperability Resourcess},%
+short={FHIR},%
+shortplural={FHIRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{api}%
+{%
+name={\acronymfont {\glsentryshort {api}}},%
+sort={API},%
+type={acronym},%
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{jwt}%
+{%
+name={\acronymfont {\glsentryshort {jwt}}},%
+sort={JWT},%
+type={acronym},%
+first={JWT},%
+firstplural={JWTs},%
+text={JWT},%
+plural={JWTs},%
+description={JSON Web Token},%
+descriptionplural={JSON Web Token},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={JSON Web Token},%
+longplural={JSON Web Tokens},%
+short={JWT},%
+shortplural={JWTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{uat}%
+{%
+name={\acronymfont {\glsentryshort {uat}}},%
+sort={UAT},%
+type={acronym},%
+first={UAT},%
+firstplural={UATs},%
+text={UAT},%
+plural={UATs},%
+description={User Acceptance Testing},%
+descriptionplural={User Acceptance Testing},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={User Acceptance Testing},%
+longplural={User Acceptance Testings},%
+short={UAT},%
+shortplural={UATs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gdpr}%
+{%
+name={\acronymfont {\glsentryshort {gdpr}}},%
+sort={GDPR},%
+type={acronym},%
+first={GDPR},%
+firstplural={GDPRs},%
+text={GDPR},%
+plural={GDPRs},%
+description={General Data Protection Regulation},%
+descriptionplural={General Data Protection Regulation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={General Data Protection Regulation},%
+longplural={General Data Protection Regulations},%
+short={GDPR},%
+shortplural={GDPRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ddi}%
+{%
+name={\acronymfont {\glsentryshort {ddi}}},%
+sort={DDI},%
+type={acronym},%
+first={DDI},%
+firstplural={DDIs},%
+text={DDI},%
+plural={DDIs},%
+description={Drug-Drug Interaction},%
+descriptionplural={Drug-Drug Interaction},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Drug-Drug Interaction},%
+longplural={Drug-Drug Interactions},%
+short={DDI},%
+shortplural={DDIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ui}%
+{%
+name={\acronymfont {\glsentryshort {ui}}},%
+sort={UI},%
+type={acronym},%
+first={UI},%
+firstplural={UIs},%
+text={UI},%
+plural={UIs},%
+description={User Interface},%
+descriptionplural={User Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={User Interface},%
+longplural={User Interfaces},%
+short={UI},%
+shortplural={UIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{roi}%
+{%
+name={\acronymfont {\glsentryshort {roi}}},%
+sort={ROI},%
+type={acronym},%
+first={ROI},%
+firstplural={ROIs},%
+text={ROI},%
+plural={ROIs},%
+description={Return on Investment},%
+descriptionplural={Return on Investment},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Return on Investment},%
+longplural={Return on Investments},%
+short={ROI},%
+shortplural={ROIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ehr}%
+{%
+name={\acronymfont {\glsentryshort {ehr}}},%
+sort={EHR},%
+type={acronym},%
+first={EHR},%
+firstplural={EHRs},%
+text={EHR},%
+plural={EHRs},%
+description={Electronic Health Record},%
+descriptionplural={Electronic Health Record},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Electronic Health Record},%
+longplural={Electronic Health Records},%
+short={EHR},%
+shortplural={EHRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sso}%
+{%
+name={\acronymfont {\glsentryshort {sso}}},%
+sort={SSO},%
+type={acronym},%
+first={SSO},%
+firstplural={SSOs},%
+text={SSO},%
+plural={SSOs},%
+description={Single Sign-On},%
+descriptionplural={Single Sign-On},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Single Sign-On},%
+longplural={Single Sign-Ons},%
+short={SSO},%
+shortplural={SSOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{srs}%
+{%
+name={\acronymfont {\glsentryshort {srs}}},%
+sort={SRS},%
+type={acronym},%
+first={SRS},%
+firstplural={SRSs},%
+text={SRS},%
+plural={SRSs},%
+description={Software Requirements Specification},%
+descriptionplural={Software Requirements Specification},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Software Requirements Specification},%
+longplural={Software Requirements Specifications},%
+short={SRS},%
+shortplural={SRSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sus}%
+{%
+name={\acronymfont {\glsentryshort {sus}}},%
+sort={SUS},%
+type={acronym},%
+first={SUS},%
+firstplural={SUSs},%
+text={SUS},%
+plural={SUSs},%
+description={System Usability Scale},%
+descriptionplural={System Usability Scale},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={System Usability Scale},%
+longplural={System Usability Scales},%
+short={SUS},%
+shortplural={SUSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{wcag}%
+{%
+name={\acronymfont {\glsentryshort {wcag}}},%
+sort={WCAG},%
+type={acronym},%
+first={WCAG},%
+firstplural={WCAGs},%
+text={WCAG},%
+plural={WCAGs},%
+description={Web Content Accessibility Guidelines},%
+descriptionplural={Web Content Accessibility Guidelines},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Web Content Accessibility Guidelines},%
+longplural={Web Content Accessibility Guideliness},%
+short={WCAG},%
+shortplural={WCAGs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{eda}%
+{%
+name={\acronymfont {\glsentryshort {eda}}},%
+sort={EDA},%
+type={acronym},%
+first={EDA},%
+firstplural={EDAs},%
+text={EDA},%
+plural={EDAs},%
+description={Event-Driven Architecture},%
+descriptionplural={Event-Driven Architecture},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Event-Driven Architecture},%
+longplural={Event-Driven Architectures},%
+short={EDA},%
+shortplural={EDAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{aida}%
+{%
+name={\acronymfont {\glsentryshort {aida}}},%
+sort={AIDA-PCE},%
+type={acronym},%
+first={AIDA-PCE},%
+firstplural={AIDA-PCEs},%
+text={AIDA-PCE},%
+plural={AIDA-PCEs},%
+description={Aplicação Integrada para a Área da Saúde - Prescrição, Codificação e Executável},%
+descriptionplural={Aplicação Integrada para a Área da Saúde - Prescrição, Codificação e Executável},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Aplicação Integrada para a Área da Saúde - Prescrição, Codificação e Executável},%
+longplural={Aplicação Integrada para a Área da Saúde - Prescrição, Codificação e Executávels},%
+short={AIDA-PCE},%
+shortplural={AIDA-PCEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pem}%
+{%
+name={\acronymfont {\glsentryshort {pem}}},%
+sort={PEM},%
+type={acronym},%
+first={PEM},%
+firstplural={PEMs},%
+text={PEM},%
+plural={PEMs},%
+description={Prescrição Eletrónica Médica},%
+descriptionplural={Prescrição Eletrónica Médica},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Prescrição Eletrónica Médica},%
+longplural={Prescrição Eletrónica Médicas},%
+short={PEM},%
+shortplural={PEMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{adse}%
+{%
+name={\acronymfont {\glsentryshort {adse}}},%
+sort={ADSE},%
+type={acronym},%
+first={ADSE},%
+firstplural={ADSEs},%
+text={ADSE},%
+plural={ADSEs},%
+description={Assistência na Doença aos Servidores do Estado},%
+descriptionplural={Assistência na Doença aos Servidores do Estado},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Assistência na Doença aos Servidores do Estado},%
+longplural={Assistência na Doença aos Servidores do Estados},%
+short={ADSE},%
+shortplural={ADSEs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sonho}%
+{%
+name={\acronymfont {\glsentryshort {sonho}}},%
+sort={SONHO},%
+type={acronym},%
+first={SONHO},%
+firstplural={SONHOs},%
+text={SONHO},%
+plural={SONHOs},%
+description={Sistema de Informação Hospitalar (Portugal)},%
+descriptionplural={Sistema de Informação Hospitalar (Portugal)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sistema de Informação Hospitalar (Portugal)},%
+longplural={Sistema de Informação Hospitalar (Portugal)s},%
+short={SONHO},%
+shortplural={SONHOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{apigateway}%
+{%
+name={API Gateway},%
+sort={API Gateway},%
+type={main},%
+first={API Gateway},%
+firstplural={API Gateways},%
+text={API Gateway},%
+plural={API Gateways},%
+description={A server that acts as a single entry point for API requests, responsible for request routing, composition, and protocol translation},%
+descriptionplural={A server that acts as a single entry point for API requests, responsible for request routing, composition, and protocol translation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{servicemesh}%
+{%
+name={Service Mesh},%
+sort={Service Mesh},%
+type={main},%
+first={Service Mesh},%
+firstplural={Service Meshs},%
+text={Service Mesh},%
+plural={Service Meshs},%
+description={An infrastructure layer for managing service-to-service communication in a microservices architecture, providing features like traffic management, security, and observability},%
+descriptionplural={An infrastructure layer for managing service-to-service communication in a microservices architecture, providing features like traffic management, security, and observability},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cqrs}%
+{%
+name={CQRS},%
+sort={CQRS},%
+type={main},%
+first={CQRS},%
+firstplural={CQRSs},%
+text={CQRS},%
+plural={CQRSs},%
+description={Command Query Responsibility Segregation; a pattern that separates read and write operations for better scalability and maintainability},%
+descriptionplural={Command Query Responsibility Segregation; a pattern that separates read and write operations for better scalability and maintainability},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
