@@ -2,7 +2,7 @@
 
 \section{Hospital Medication Management Systems}
 
-Medication management is a cornerstone of patient safety in hospital environments. The increasing complexity of prescriptions, coupled with the risk of drug interactions, compels healthcare systems to operate with maximum efficiency and safety. In recent years, various solutions have been developed to automate parts of this process, from prescription to administration. However, the lack of integration between these systems—particularly among physicians, pharmacies, and nurses—continues to pose risks and inefficiencies \cite{bowles2020integrating, kallio2020}. This work proposes a solution that addresses these gaps by focusing on backend integration and the automation of hospital processes, using technologies like Java and Node.js to standardize and optimize medication management \cite{Ghobadi2022}.
+Medication management is a cornerstone of patient safety in hospital environments. The increasing complexity of prescriptions, coupled with the risk of drug interactions, compels healthcare systems to operate with maximum efficiency and safety. In recent years, various solutions have been developed to automate parts of this process, from prescription to administration. However, the lack of integration between these systems—particularly among physicians, pharmacies, and nurses—continues to pose risks and inefficiencies \cite{bowles2020, kallio2020}. This work proposes a solution that addresses these gaps by focusing on backend integration and the automation of hospital processes, using technologies like Java and Node.js to standardize and optimize medication management \cite{Ghobadi2022}.
 
 \subsection{Historical Evolution}
 
@@ -12,7 +12,7 @@ Hospital Information Systems (HIS) have evolved significantly from the early mai
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/healthcare_it_timeline.png}
     \caption{Evolution of healthcare information systems from mainframe to integrated platforms \citep{shermock2023, vaghasiya2023}.}
-    \label{fig:timeline}
+    \label{fig:healthcare_it_timeline}
 \end{figure}
 
 \subsection{Current Commercial Systems}
@@ -31,7 +31,7 @@ Medication errors are a leading cause of preventable adverse events in healthcar
     \centering
     \includegraphics[width=0.85\textwidth]{images/generated/swiss_cheese_model.png}
     \caption{Swiss Cheese Model applied to medication errors, showing how system failures align to cause accidents. Based on Reason's model \citep{ciapponi2021, mulac2020}.}
-    \label{fig:swiss_cheese}
+    \label{fig:swiss_cheese_model}
 \end{figure}
 
 \subsection{Clinical Decision Support Systems (CDSS)}
@@ -48,7 +48,7 @@ Other technologies like Blockchain also show promise for enhancing medication tr
 
 \section{Implementation Architectures and Technologies}
 
-Despite significant advances in hospital process automation, several technical challenges must be overcome. Integrating legacy systems with new technologies requires the standardization of programming languages and communication protocols \cite{stanojevic2023conceptualizing}. Technologies such as Java and Node.js are widely used in backend solutions to ensure scalability, resilience, and data security in critical environments \cite{nkenyereye2016performance}. Furthermore, the complexity of hospital workflows demands automation that transcends mere data exchange. Real-time synchronization between physician prescriptions, pharmacy stock, and nursing administration is crucial to avoid medication errors, particularly in cases of polypharmacy \citep{Tukukino2022, falconer2021pharmacist}.
+Despite significant advances in hospital process automation, several technical challenges must be overcome. Integrating legacy systems with new technologies requires the standardization of programming languages and communication protocols \cite{stanojevic2023conceptualizing}. Technologies such as Java and Node.js are widely used in backend solutions to ensure scalability, resilience, and data security in critical environments \cite{nkenyereye2016}. Furthermore, the complexity of hospital workflows demands automation that transcends mere data exchange. Real-time synchronization between physician prescriptions, pharmacy stock, and nursing administration is crucial to avoid medication errors, particularly in cases of polypharmacy \citep{Tukukino2022, falconer2021pharmacist}.
 
 \subsection{Architectural Patterns}
 
@@ -68,7 +68,7 @@ The literature review reveals several gaps in existing solutions. The most signi
     \label{tab:comparison}
     \begin{tabularx}{\textwidth}{@{}l|X|X|X|X@{}}
         \toprule
-        \textbf{Feature} & \textbf{AIDA-PCE (Legacy)} & \textbf{Epic} & \textbf{Cerner} & \textbf{Our System} \\
+        \textbf{Feature} & \textbf{AIDA-PCE} & \textbf{Epic} & \textbf{Cerner} & \textbf{Our System} \\
         \midrule
         Architecture & Monolithic & Integrated Suite & Modular & Microservices \\
         User Interface & Desktop Only & Web/Mobile & Web/Mobile & Responsive Web \\

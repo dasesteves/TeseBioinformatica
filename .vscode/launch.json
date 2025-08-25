@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "LaTeX Workshop: Build LaTeX project",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/dissertation.tex",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "console": "integratedTerminal"
+        }
+    ]
+}
