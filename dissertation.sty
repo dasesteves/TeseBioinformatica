@@ -32,6 +32,10 @@
 \usepackage{float}
 \usepackage{wrapfig}
 
+% Suppress noisy tracklang dialect warnings from datatool
+\usepackage{silence}
+\WarningFilter{tracklang}{No `datatool' support for dialect}
+
 %-- Space between lines
 \renewcommand{\baselinestretch}{1.5} 
 
@@ -94,10 +98,10 @@ BoldItalicFont=NewsGotTBold.ttf
 \newcommand{\titleC}[1]{\renewcommand{\thetitleC}{#1}}
 
 \newcommand{\themasters}{}
-\newcommand{\masters}[1]{\renewcommand{\themasters}{#1 \\}}
+\newcommand{\masters}[1]{\renewcommand{\themasters}{#1}}
 
 \newcommand{\thearea}{}
-\newcommand{\area}[1]{\renewcommand{\thearea}{#1 \\}}
+\newcommand{\area}[1]{\renewcommand{\thearea}{#1}}
 
 \newcommand{\thesupervisor}{}
 \newcommand{\supervisor}[1]{\renewcommand{\thesupervisor}{#1}}

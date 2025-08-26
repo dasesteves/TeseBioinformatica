@@ -1,16 +1,13 @@
 \begin{titlepage}
+\raggedright
 \color{PANTONECoolGray7C}
 \thelogo
 \leading{20.4pt}
 {\Large
-\theauthor
-\\
+\theauthor\par
 \vspace{3mm}
-\\
-\textbf{\thetitleA}
-\\
-\textbf{\thetitleB}
-\\
+\textbf{\thetitleA}\par
+\textbf{\thetitleB}\par
 \textbf{\thetitleC}
 }
 
@@ -25,33 +22,32 @@
 \newpage
 
 \begin{titlepage}
+\raggedright
 \color{PANTONECoolGray7C}
 \thelogoB
 \leading{20.4pt}
 {\Large
-\theauthor
-\\
+\theauthor\par
 \vspace{3mm}
-\\
-\textbf{\thetitleA}
-\\
-\textbf{\thetitleB}
-\\
+\textbf{\thetitleA}\par
+\textbf{\thetitleB}\par
 \textbf{\thetitleC}
 }
 
 \vspace{55.2mm}
 \leading{16.8pt}
 {\large
-\themasters
-\\
+\themasters\par
 \vspace{2mm}
-\thearea
-Dissertation supervised by
-\\
+\if\relax\detokenize{\thearea}\relax\else
+  \thearea\par
+\fi
+Dissertation supervised by\par
 \textbf{\thesupervisor}
-\\
-\thecosupervisor}
+\if\relax\detokenize{\thecosupervisor}\relax\else
+  \par \thecosupervisor
+\fi
+}
 
 \vspace*{\fill}
 {\footnotesize \myear}
