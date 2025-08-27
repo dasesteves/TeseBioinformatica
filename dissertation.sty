@@ -8,6 +8,7 @@
 \usepackage{titling}
 \usepackage[hidelinks]{hyperref}
 \usepackage[numbers,sort&compress]{natbib}
+\usepackage{array}
 \usepackage{afterpage}
 \usepackage{datetime}
 \usepackage{csquotes}
@@ -22,15 +23,25 @@
 \usepackage{epigraph}
 % \usepackage{datetime} % duplicado removido (mantida a primeira importação)
 \usepackage{caption}
+\captionsetup{justification=raggedright,singlelinecheck=false}
 \usepackage[many]{tcolorbox} 
 \usepackage{tabularx}
 \usepackage{booktabs}
+% Helper column types for better line breaking in tables
+% Y: ragged-right X column; P{<w>}: ragged-right p column
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage{leading}
 \usepackage[capitalise]{cleveref} % Create better looking section cross-reference links
 \usepackage[acronym]{glossaries}
 \renewcommand*{\glstextformat}{\textbf}
 \usepackage{float}
 \usepackage{wrapfig}
+
+% Micro-typography and better line breaking
+\usepackage[final]{microtype}
+\microtypesetup{protrusion=true,expansion=true}
+\usepackage{seqsplit}
 
 % Suppress noisy tracklang dialect warnings from datatool
 \usepackage{silence}

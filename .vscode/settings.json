@@ -303,6 +303,7 @@
         "arquiteturas",
         "Arquivo",
         "Arquivos",
+        "arraybackslash",
         "artefacto",
         "artefactos",
         "Articulaç",
@@ -500,6 +501,7 @@
         "capítulo",
         "capítulos",
         "captionmargin",
+        "captionsetup",
         "capturas",
         "características",
         "caracteriza",
@@ -2296,6 +2298,8 @@
         "microserviços",
         "microsservi",
         "microsserviços",
+        "microtype",
+        "microtypesetup",
         "midrule",
         "migra",
         "migração",
@@ -2426,6 +2430,7 @@
         "neste",
         "Neumuth",
         "newblock",
+        "newcolumntype",
         "newcommand",
         "newdestlabel",
         "newdocentry",
@@ -2969,6 +2974,7 @@
         "Rabiei",
         "radley",
         "Radley",
+        "raggedright",
         "Raisa",
         "raiz",
         "rapidez",
@@ -3249,6 +3255,7 @@
         "sentido",
         "separado",
         "separados",
+        "seqsplit",
         "sequ",
         "Sequência",
         "será",
@@ -3309,6 +3316,7 @@
         "simultâneo",
         "sinalizados",
         "sinalizam",
+        "singlelinecheck",
         "sintaxe",
         "síntese",
         "sintetizar",
@@ -3808,11 +3816,40 @@
     "latex-workshop.latex.recipe.default": "first",
     "latex-workshop.latex.recipes": [
         {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "tools": [
+                "bibtex",
+            ]
+        },
+        {
+            "name": "makeglossaries",
+            "tools": [
+                "makeglossaries",
+            ]
+        },
+        {
             "name": "xelatex → bibtex → makeglossaries → xelatex × 2",
             "tools": [
                 "xelatex",
                 "bibtex",
                 "makeglossaries",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex → bibtex → makeglossaries → xelatex × 3",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "makeglossaries",
+                "xelatex",
                 "xelatex",
                 "xelatex"
             ]

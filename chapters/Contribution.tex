@@ -1,6 +1,8 @@
 \chapter{Expected Results and Evaluation Plan}
 \label{chap:ExpectedResults}
 
+\begingroup\emergencystretch=1em
+
 This chapter outlines the anticipated outcomes of the research and the plan to evaluate the developed system. The expected results are presented across several dimensions: the system's technical architecture, performance and quality benchmarks, clinical impact, user acceptance, and financial viability. The evaluation plan details the methodology, metrics, and instruments that are used to assess success in the intended hospital context.
 
 \section{Proposed System Architecture}
@@ -14,7 +16,7 @@ The system's design is guided by the principles of modularity, scalability, and 
     \label{fig:architecture}
 \end{figure}
 
-The proposed architecture is organized into five distinct layers. The \textit{Presentation Layer}, built with React and Next.js, provides a responsive and intuitive \gls{ui}. It communicates with the \textit{Application Layer} (Node.js/Express), which orchestrates \glspl{api} requests. Core clinical intelligence resides in the \textit{Business Logic Layer}. Data persistence is handled by the \textit{Data Layer}, using an Oracle database, while the \textit{Integration Layer} provides secure RESTful interfaces for communication with other hospital systems.
+The proposed architecture is organized into five distinct layers. The \textit{Presentation Layer}, built with React and Next.\-js, provides a responsive and intuitive \gls{ui}. It communicates with the \textit{Application Layer} (Node.\-js/\-Express), which orchestrates \glspl{api} requests. Core clinical intelligence resides in the \textit{Business Logic Layer}. Data persistence is handled by the \textit{Data Layer}, using an Oracle database, while the \textit{Integration Layer} provides secure RESTful interfaces for communication with other hospital systems.
 
 \paragraph{Licensing and Reuse Note (to be confirmed)}
 Where applicable, the artefact and related modules are intended for reuse within institutional constraints. This paragraph will document licensing choices (e.g., open source vs. institutional license), third-party dependencies, and any constraints from legacy vendors.
@@ -27,7 +29,7 @@ Key components include robust authentication (e.g., LDAP-backed \gls{sso}) with 
 \section{Implementation and Artefacts Overview}
 This section summarizes implementation artefacts and integration strategies, to be detailed with concrete evidence as available (see Appendix~\ref{app:details_results}).
 \begin{itemize}
-    \item Artefacto principal (HiSi) (unified frontend/backend): overview of modules for prescription, pharmaceutical validation, administration, and pharmacy stock; technology stack (React/Next.js, Node.js/Express), \gls{jwt}-based authentication, and Oracle connectivity.
+    \item Artefacto principal (HiSi) (unified frontend/backend): overview of modules for prescription, pharmaceutical validation, administration, and pharmacy stock; technology stack (React/Next.js, Node.js/\-Express), \gls{jwt}-based authentication, and Oracle connectivity.
     \item Legacy modernization module (e.g., pharmacy PRF): integration with the legacy Oracle schema; description of APIs/routes and UI screens. Evidence to be linked via screenshots/mockups.
     \item Integration strategies considered: (i) submodule embedding vs. (ii) micro-frontend with shared authentication and coordinated routing. Rationale and trade-offs to be documented with references to implementation notes.
     \item Data model overview (legacy integration): placeholder for key tables and relationships involved in stock movements and prescription/validation flows; to be completed from institutional documentation.
@@ -49,7 +51,7 @@ Rigorous performance and quality assurance are central to the development method
 A primary technical objective is to achieve seamless integration with existing hospital systems, with robust validation and transformation pipelines to minimize synchronization errors. Furthermore, a disciplined testing and refactoring effort increases automated test coverage for critical paths, and the frontend aligns with \gls{wcag} 2.1 Level AA.
 
 \paragraph{Process Standardization and Bedside Administration Alignment}
-Expected results include progress toward standardized digital pathways across the medication cycle (protocolized steps, mandatory data elements, and embedded decision checks) and alignment with bedside administration practices (eMAR/BCMA; Section~\ref{sec:emar_bcma}). These outcomes are evidenced through updated flows, UI affordances, and traceability/audit capabilities rather than fixed numerical targets.
+Expected results include progress toward standardized digital pathways across the medication cycle (protocolized steps, mandatory data elements, and embedded decision checks) and alignment with bedside administration practices (eMAR/\-BCMA; Section~\ref{sec:emar_bcma}). These outcomes are evidenced through updated flows, UI affordances, and traceability/audit capabilities rather than fixed numerical targets.
 
 \section{Evaluation Plan and Expected Clinical Impact}
 
@@ -122,3 +124,5 @@ To measure gains in efficiency, the study analyzes time-in-motion for clinical s
 
 \subsubsection{System Integration and Data Integrity}
 The success of integration is quantified by measuring reduction in data redundancy and discrepancies. This is achieved through comparative analysis of patient records across relevant systems before and after implementation, identifying inconsistencies in key data fields (e.g., patient identifiers, active medication lists) to demonstrate improvement in data coherence, a known challenge in fragmented health information environments \cite{pinto2016identification}. 
+
+\endgroup
