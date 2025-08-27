@@ -27,6 +27,15 @@ This section summarizes implementation artefacts and integration strategies, to 
     \item Data model overview (legacy integration): placeholder for key tables and relationships involved in stock movements and prescription/validation flows; to be completed from institutional documentation.
 \end{itemize}
 
+\subsection*{External Interfaces (to be completed)}
+This subsection enumerates external interfaces to be described when specifications are available. Each item includes the intended purpose and a placeholder for protocol/fields.
+\begin{itemize}
+    \item Billing/administrative reporting: export of events needed for billing and institutional reports. Placeholder: message schema, transport (file/API), validation and reconciliation steps.
+    \item Hospital reporting/analytics: periodic extracts for BI dashboards and audit. Placeholder: dataset definitions, aggregation logic, data privacy notes.
+    \item National platforms (e.g., \gls{pem}, \gls{sns}/\gls{spms} contexts): scope of possible exchanges (identifiers, prescriptions, confirmations). Placeholder: identifiers used, authentication/authorization model, rate limits.
+    \item Security/compliance alignment: logging of access/actions, retention policies, and incident reporting hooks. Placeholder: endpoints/events and audit trail format.
+\end{itemize}
+
 \section{Performance and Quality Benchmarks}
 
 Rigorous performance and quality assurance are central to the development methodology. Targeted optimizations aim for low-latency interactions and responsive user experience in clinical settings (e.g., sub-second feedback for critical interactions), using techniques such as efficient querying, caching and judicious precomputation \cite{nielsen2012}.

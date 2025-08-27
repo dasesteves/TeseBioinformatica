@@ -250,6 +250,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{ldap}%
+{%
+name={\acronymfont {\glsentryshort {ldap}}},%
+sort={LDAP},%
+type={acronym},%
+first={LDAP},%
+firstplural={LDAPs},%
+text={LDAP},%
+plural={LDAPs},%
+description={Lightweight Directory Access Protocol},%
+descriptionplural={Lightweight Directory Access Protocol},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Lightweight Directory Access Protocol},%
+longplural={Lightweight Directory Access Protocols},%
+short={LDAP},%
+shortplural={LDAPs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{uat}%
 {%
 name={\acronymfont {\glsentryshort {uat}}},%
@@ -665,6 +693,146 @@ long={Sistema de Informação Hospitalar (Portugal)},%
 longplural={Sistema de Informação Hospitalar (Portugal)s},%
 short={SONHO},%
 shortplural={SONHOs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{emar}%
+{%
+name={\acronymfont {\glsentryshort {emar}}},%
+sort={eMAR},%
+type={acronym},%
+first={eMAR},%
+firstplural={eMARs},%
+text={eMAR},%
+plural={eMARs},%
+description={Electronic Medication Administration Record},%
+descriptionplural={Electronic Medication Administration Record},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Electronic Medication Administration Record},%
+longplural={Electronic Medication Administration Records},%
+short={eMAR},%
+shortplural={eMARs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{bcma}%
+{%
+name={\acronymfont {\glsentryshort {bcma}}},%
+sort={BCMA},%
+type={acronym},%
+first={BCMA},%
+firstplural={BCMAs},%
+text={BCMA},%
+plural={BCMAs},%
+description={Barcode Medication Administration},%
+descriptionplural={Barcode Medication Administration},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Barcode Medication Administration},%
+longplural={Barcode Medication Administrations},%
+short={BCMA},%
+shortplural={BCMAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sns}%
+{%
+name={\acronymfont {\glsentryshort {sns}}},%
+sort={SNS},%
+type={acronym},%
+first={SNS},%
+firstplural={SNSs},%
+text={SNS},%
+plural={SNSs},%
+description={Serviço Nacional de Saúde},%
+descriptionplural={Serviço Nacional de Saúde},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Serviço Nacional de Saúde},%
+longplural={Serviço Nacional de Saúdes},%
+short={SNS},%
+shortplural={SNSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{spms}%
+{%
+name={\acronymfont {\glsentryshort {spms}}},%
+sort={SPMS},%
+type={acronym},%
+first={SPMS},%
+firstplural={SPMSs},%
+text={SPMS},%
+plural={SPMSs},%
+description={Serviços Partilhados do Ministério da Saúde},%
+descriptionplural={Serviços Partilhados do Ministério da Saúde},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Serviços Partilhados do Ministério da Saúde},%
+longplural={Serviços Partilhados do Ministério da Saúdes},%
+short={SPMS},%
+shortplural={SPMSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sclinico}%
+{%
+name={\acronymfont {\glsentryshort {sclinico}}},%
+sort={SClínico},%
+type={acronym},%
+first={SClínico},%
+firstplural={SClínicos},%
+text={SClínico},%
+plural={SClínicos},%
+description={SClínico},%
+descriptionplural={SClínico},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={SClínico},%
+longplural={SClínicos},%
+short={SClínico},%
+shortplural={SClínicos},%
 counter={page},%
 parent={},%
 %
