@@ -18,6 +18,15 @@ The proposed architecture is organized into five distinct layers. The \textit{Pr
 
 Key components include robust authentication (e.g., LDAP-backed \gls{sso}) with granular role-based access control. The e-prescription module includes real-time clinical decision support (\gls{cdss}), aiming to reduce prescribing errors by validating prescriptions against a knowledge base for potential \gls{ddi} and allergies, a strategy supported in the literature \cite{bates2014}. The pharmaceutical validation system is designed to provide a complete and immutable audit trail, enhancing accountability.
 
+\section{Implementation and Artefacts Overview}
+This section summarizes implementation artefacts and integration strategies, to be detailed with concrete evidence as available (see Appendix~\ref{app:details_results}).
+\begin{itemize}
+    \item Artefacto principal (HiSi) (unified frontend/backend): overview of modules for prescription, pharmaceutical validation, administration, and pharmacy stock; technology stack (React/Next.js, Node.js/Express), \gls{jwt}-based authentication, and Oracle connectivity.
+    \item Legacy modernization module (e.g., pharmacy PRF): integration with the legacy Oracle schema; description of APIs/routes and UI screens. Evidence to be linked via screenshots/mockups.
+    \item Integration strategies considered: (i) submodule embedding vs. (ii) micro-frontend with shared authentication and coordinated routing. Rationale and trade-offs to be documented with references to implementation notes.
+    \item Data model overview (legacy integration): placeholder for key tables and relationships involved in stock movements and prescription/validation flows; to be completed from institutional documentation.
+\end{itemize}
+
 \section{Performance and Quality Benchmarks}
 
 Rigorous performance and quality assurance are central to the development methodology. Targeted optimizations aim for low-latency interactions and responsive user experience in clinical settings (e.g., sub-second feedback for critical interactions), using techniques such as efficient querying, caching and judicious precomputation \cite{nielsen2012}.
@@ -59,6 +68,16 @@ Qualitative feedback is collected through semi-structured interviews and focus g
 
 A cost-benefit analysis is conducted as part of the evaluation to determine financial impact. Based on efficiency gains and reduced costs associated with medication errors, Figure~\ref{fig:roi-analysis} summarizes an indicative ROI model; the specific payback period is estimated and validated with study data \cite{adler2021}. Coupled with planned scalability and the strategic roadmap (Figure~\ref{fig:future-roadmap}), this supports long-term viability and potential expansion.
 
+\subsection*{ROI Modelling Note (to be completed)}
+This subsection captures the modelling structure to be filled when inputs are available (see Appendix~\ref{app:details_results}).
+\begin{itemize}
+    \item Inputs (costs): development effort, infrastructure/maintenance, training/change management, opportunity costs vs. licenses avoided.
+    \item Inputs (benefits): avoided adverse drug events (unit cost assumptions), efficiency time-savings (per role), reduction of duplicate work, incident investigation time saved.
+    \item Assumptions: time horizon, discount rate (if applicable), adoption ramp, conservative vs. optimistic scenarios.
+    \item Method: baseline vs. post comparison; sensitivity analysis varying top-3 drivers.
+    \item Data sources: institutional documentation (docs/), legacy extracts and analyses (tmp\_ai\_reports/), literature references for unit costs.
+\end{itemize}
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/roi_analysis.png}
@@ -80,6 +99,8 @@ To anchor the evaluation in the operational realities of \gls{scmvv}, the pilot 
 
 \subsubsection{Patient Safety and Clinical Quality}
 The evaluation primarily focuses on reduction in medication errors. This is measured by comparing pre- and post-intervention error rates (e.g., incorrect dosage, wrong medication, missed administrations), using appropriate sample sizes and definitions agreed with stakeholders. Adherence to protocols is assessed by auditing system logs to quantify compliance with integrated clinical decision support rules.
+
+\paragraph{Operational Definitions (to be confirmed)} The following definitions guide measurement without imposing numeric targets: (i) medication error categories (e.g., incorrect dose, wrong drug, missed administration) as defined with stakeholders; (ii) cycle-time start/end anchors (timestamps for order entry, validation decision, dispensing, administration); (iii) adoption proxy measures (active users per role, task completion within system); (iv) reliability indicators (availability windows, error rates of integration pipelines); (v) protocol adherence derived from system logs. Final definitions are documented in the appendix and validated during evaluation.
 
 \subsubsection{Operational Efficiency}
 To measure gains in efficiency, the study analyzes time-in-motion for clinical staff, observing the end-to-end process of medication administration before and after system introduction. Additionally, pharmaceutical validation time is measured from prescription entry to final validation, comparing performance against the current multi-system workflow.
