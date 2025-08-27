@@ -42,9 +42,24 @@ Clinical Decision Support Systems (CDSS) \cite{moss2015, belle2013} and ePrescri
 
 The application of Natural Language Processing (NLP) \cite{rozenblum2020} is particularly relevant for extracting drug-drug interaction (DDI) information from unstructured biomedical texts \cite{javaid2022medical}. Systems like the one proposed by Machado \textit{et al.} (2023) use NLP to automatically extract DDI information from scientific literature \cite{machado2023drug}. Tools such as BioBERT have shown promise in this area \cite{Russell2023}. However, low interoperability rates and the absence of universal standards still hinder the widespread adoption of these technologies \citep{Chaya2023}. The development of APIs that can seamlessly integrate data from various hospital systems with NLP and AI platforms is a promising area for further exploration \cite{López2021}.
 
+\subsection{Point-of-care Administration: eMAR and Barcode Medication Administration}
+\label{sec:emar_bcma}
+
+Electronic Medication Administration Records (eMAR) and Barcode Medication Administration (BCMA) are key enablers of closed-loop medication management. Literature indicates that linking prescription/validation to bedside administration, with barcode verification of patient, drug and dose, reduces transcription errors and strengthens end-to-end traceability \cite{kallio2020, ciapponi2021}. Integrating eMAR/BCMA into hospital workflows typically requires standardized identifiers, reliable device workflows at the point of care, and near real-time synchronization with pharmacy stock and prescription statuses.
+
+\subsection{Process Standardization and Continuous Improvement}
+\label{sec:process_standardization}
+
+Beyond pure technology adoption, standardization of processes (protocols, checklists and harmonized workflows) is a central pillar of safer medication systems. Approaches inspired by Lean and Six Sigma in healthcare focus on reducing waste and variability, clarifying handoffs between roles, and instituting structured control points across the medication cycle. In the context of hospital informatics, standardized digital pathways operationalize these practices by embedding decision logic, validations, and mandatory data elements at each step.
+
 \subsection{Other Emerging Technologies}
 
 Other technologies like Blockchain also show promise for enhancing medication traceability, decentralized consent management, and immutable auditing of prescriptions \cite{franzoso2014}.
+
+\subsection{National and Organizational Context (Portugal)}
+\label{sec:national_context_portugal}
+
+In Portugal, the National Health System (SNS) and the Shared Services of the Ministry of Health (SPMS) frame interoperability, security and reporting requirements for hospital information systems. Positioning solutions within this national context—aligning with applicable standards, identifiers and governance practices—facilitates sustainable integration and potential reuse across institutions. Briefly documenting these alignments helps clarify external constraints and opportunities for adoption.
 
 \section{Implementation Architectures and Technologies}
 

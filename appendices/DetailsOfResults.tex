@@ -1,2 +1,61 @@
-\chapter{Details of results}
-         Details of results whose length would compromise readability of main text.
+\chapter{Details of Results}
+\label{app:details_results}
+
+This appendix consolidates evidence and materials referenced throughout the dissertation that would otherwise disrupt the flow if included inline. It also provides a practical roadmap for inserting new evidence as it becomes available, aligned with the improvement analysis (docs/ and tmp\_ai\_reports/).
+
+\section{Roadmap for Evidence Insertion}
+The following items specify where to place each type of evidence when ready. Each item cites the target chapter/section and recommended figure/table label.
+\begin{itemize}
+    \item As-is architecture diagram (SCMVV): Introduction (Section~\ref{sec:as_is_architecture}); Figure label \texttt{fig:as\_is\_architecture\_scmvv}.
+    \item Current medication process swimlane: Introduction (Section~\ref{sec:current_process_org}); Figure label \texttt{fig:as\_is\_swimlane\_scmvv}.
+    \item Baseline artefacts (legacy screens, anonymized extracts): Results (Baseline sections), with table/figure labels \texttt{fig:baseline\_*} or \texttt{tab:baseline\_*}.
+    \item Qualitative before/after comparison table: Results (Table~\ref{tab:before_after_qualitative}); update cells with evidence.
+    \item Performance snapshots (API latencies, reliability): Results (Indicative Performance), figures \texttt{fig:perf\_*}.
+    \item User acceptance artifacts (SUS summary, interview quotes): Results (Stakeholder Feedback), tables/figures \texttt{tab:sus\_*}, \texttt{fig:feedback\_*}.
+    \item ROI/Cost elements (if applicable): Expected Results (Financial Impact), Figure~\ref{fig:roi-analysis} notes.
+\end{itemize}
+
+\section{Evidence Checklist (docs/ and tmp\_ai\_reports/)}
+To ensure coverage without overclaiming, collect the following (no counts here):
+\begin{itemize}
+    \item Representative legacy process artifacts: prescription, validation, administration records; stock movement entries (fields only).
+    \item Screenshots/mockups: legacy AIDA-PCE views relevant to the cycle; new unified screens for the same steps.
+    \item Workflow timing anchors: available timestamps at order entry, validation, dispensing, administration.
+    \item Handoff indicators: examples of pharmacist-prescriber clarifications; typical turnaround points.
+    \item Data coherence samples across systems: patient IDs, active medication lists, stock positions, highlighting discrepancies.
+    \item Usability notes linked to specific screens: navigation friction, duplicate entry, missing alerts.
+\end{itemize}
+
+\section{Notes on Anonymization and Compliance}
+All artifacts inserted must be anonymized and comply with GDPR and institutional policies. Where real screenshots cannot be shown, use faithful mockups and describe the original fields/flows.
+
+\section{Outstanding Improvements (from docs/ and tmp\_ai\_reports/)}
+This section centralizes planned improvements identified in the analysis. Each item notes the target chapter/section and what will be inserted (no content invented here; placeholders remain until evidence is available).
+\begin{itemize}
+    \item ROI model details (Contribution, Financial Impact): specify inputs/assumptions (development/maintenance costs, avoided ADE costs, time savings, licensing deltas), method notes, and sensitivity analysis plan. Link to Figure~\ref{fig:roi-analysis}.
+    \item eMAR/BCMA alignment (State of the Art, Section~\ref{sec:emar_bcma}; Methodology/Contribution): add bedside administration flow alignment notes; produce mockups if actual screens unavailable.
+    \item National context references (State of the Art, Section~\ref{sec:national_context_portugal}): add 1--2 references to SNS/SPMS guidance or reports, once confirmed.
+    \item Related implementations (State of the Art): add short paragraph citing case studies of unified front-ends over legacy systems, if identified.
+    \item KPI operational definitions (Contribution, Section~\ref{sec:KPIs}): define error categories, cycle-time measurement points, adoption and reliability indicators (definitions only).
+    \item Security/compliance evidence (Results, Security and Compliance Posture): add configuration snippets and process notes (authN/authZ, encryption, audit), and ethics approval metadata (identifier/date) when available.
+    \item Screenshots/mockups per step (Results): legacy vs. new for prescription, validation, administration; ensure captions include source and anonymization notes.
+    \item Baseline anonymized extracts (Results): controlled-substance movement fields, sample record structures; no counts included.
+\end{itemize}
+
+\section{Cross-reference and Labels Validation Checklist}
+Before final compilation, confirm the following labels and references resolve correctly and point to the intended figures/tables/sections.
+\begin{itemize}
+    \item Introduction: \texttt{fig:as\_is\_architecture\_scmvv}, \texttt{fig:as\_is\_swimlane\_scmvv}; Sections~\ref{sec:context_scmvv}, \ref{sec:as_is_architecture}, \ref{sec:current_process_org}.
+    \item State of the Art: Sections~\ref{sec:emar_bcma}, \ref{sec:process_standardization}, \ref{sec:national_context_portugal}.
+    \item Contribution (Expected Results): Figure~\ref{fig:architecture}, Figure~\ref{fig:roi-analysis}, Figure~\ref{fig:future-roadmap}; Section~\ref{sec:KPIs}.
+    \item Results: Table~\ref{tab:before_after_qualitative}; baseline sections and appendix reference~\ref{app:details_results}.
+    \item Discussion: references to as-is baseline (Sections~\ref{sec:as_is_architecture}, \ref{sec:current_process_org}).
+\end{itemize}
+
+\section{Mock Artifact Production Guidance}
+When real evidence is not available, produce mockups with the following constraints:
+\begin{itemize}
+    \item Faithfully reflect fields and flows described in docs/ and tmp\_ai\_reports/; avoid introducing features not mentioned.
+    \item Include caption notes with source (“consolidated from docs/tmp\_ai\_reports”) and a disclosure that the image is a mockup.
+    \item Store images under \texttt{images/generated/} and replace placeholders when real artifacts become available.
+\end{itemize}

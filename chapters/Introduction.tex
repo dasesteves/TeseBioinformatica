@@ -19,9 +19,10 @@ The Santa Casa da Misericórdia de Vila Verde (\gls{scmvv}) serves as a represen
 
 The primary goal of this research is to develop and evaluate an integrated medication management system that optimizes the prescription, validation, dispensing, and administration processes at the SCMVV, thereby enhancing patient safety and operational efficiency. To achieve this, a set of specific scientific and technological objectives was defined. Scientifically, the aim was to analyze the system's impact on medication error rates, evaluate its effect on clinical workflow efficiency, and assess its usability and acceptance among clinical staff. Technologically, the objectives were to design a scalable microservices architecture, develop a robust clinical decision support engine, create an intuitive user interface using modern web technologies, ensure seamless integration with legacy systems, and establish a comprehensive audit trail for all medication-related activities \cite{belle2013, misra2023, mandl2020, european2016}.
 
-This dissertation is organized to logically present the research journey. Following this introduction, Chapter 2 provides a comprehensive review of the State of the Art. Chapter 3 outlines the Work Plan, detailing the project's timeline and phases. Chapter 4 describes the in-depth research Methodology, including the architectural choices and evaluation strategies. Chapter 5 details the Expected Results and Evaluation Plan. Chapter 6 presents Results obtained to date. Chapter 7 offers a Discussion of these results, contextualizing them within the broader literature. Finally, Chapter 8 provides the Conclusion and Future Work, summarizing the contributions and proposing directions ahead. 
+This dissertation is organized to logically present the research journey. Following this introduction, Chapter 2 provides a comprehensive review of the State of the Art, including point-of-care administration (eMAR/BCMA) and process standardization in healthcare (Sections~\ref{sec:emar_bcma} and~\ref{sec:process_standardization}), as well as the national context (Section~\ref{sec:national_context_portugal}). Chapter 3 outlines the Work Plan, detailing the project's timeline and phases. Chapter 4 describes the in-depth research Methodology, including the architectural choices and evaluation strategies. Chapter 5 details the Expected Results and Evaluation Plan. Chapter 6 presents Results obtained to date. Chapter 7 offers a Discussion of these results, contextualizing them within the broader literature. Finally, Chapter 8 provides the Conclusion and Future Work, summarizing the contributions and proposing directions ahead. 
 
 \section{Current Context at SCMVV}
+\label{sec:context_scmvv}
 
 To address identified gaps in the contextualization of the case study, this section documents the current medication-management processes and supporting information systems at the Santa Casa da Misericórdia de Vila Verde (\gls{scmvv}). The intent is to provide a concrete baseline that motivates the proposed solution and frames subsequent evaluation.
 
@@ -33,5 +34,33 @@ To address identified gaps in the contextualization of the case study, this sect
 \end{itemize}
 
 \section{As-is System Architecture (SCMVV)}
+\label{sec:as_is_architecture}
 
 This section outlines a high-level description of the current (as-is) technical architecture supporting medication management at \gls{scmvv}, to contrast later with the target architecture. The description will enumerate principal modules, databases, interfaces, and data flows relevant to prescription, validation, dispensing, and administration, and will explicitly indicate where interfaces or interoperability are absent or manual.
+
+\section{Current Medication Process Organization at SCMVV}
+\label{sec:current_process_org}
+
+This section documents the organizational perspective of the medication process at \gls{scmvv}, complementing the technical as-is view. It focuses on roles, handoffs, and standard operating procedures as practiced today, highlighting opportunities for standardization.
+
+\begin{itemize}
+    \item Roles and responsibilities across disciplines: prescribing physicians, hospital pharmacists (validation and stock management), and nursing staff (administration and recording).
+    \item Artefacts (main actual artefact is a legacy artefact in a vb.net project (AIDA-PCE)) and records in use (systems and/or paper forms) at each stage, and where transcriptions or verbal confirmations occur.
+    \item Typical handoffs between departments, including triggers (e.g., a prescription becomes available for validation) and feedback loops.
+    \item Known variability across wards/services and its impact on consistency and safety.
+    \item Pointers to figures/diagrams: process flow diagram of the current cycle; swimlane diagram of cross-role interactions; inventory of current forms/screens.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/generated/system_architecture.png}
+    \caption{Placeholder: As-is architecture overview at SCMVV (to be replaced with a specific as-is diagram). Source: consolidated from institutional documents (docs/) and AI-generated analyses (tmp\_ai\_reports/). Elements to include: core legacy systems (e.g., AIDA-PCE), supporting HIS modules, databases, interfaces/APIs (if any), manual/CSV exchanges, authentication/identity context, and known failure points.}
+    \label{fig:as_is_architecture_scmvv}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/generated/medication_flow_process.png}
+    \caption{Placeholder: Current medication process swimlane (to be replaced with a specific SCMVV swimlane). Source: consolidated from institutional documents (docs/) and AI-generated analyses (tmp\_ai\_reports/). Lanes to include: Physician (prescription), Pharmacy (validation and stock), Nursing (administration/recording), and Systems/Records (AIDA-PCE, other records or paper). Mark handoffs, feedback loops, and points of transcription.}
+    \label{fig:as_is_swimlane_scmvv}
+\end{figure}
