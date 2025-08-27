@@ -1,0 +1,721 @@
+﻿# AnÃ¡lise TÃ©cnica e CientÃ­fica da DissertaÃ§Ã£o
+
+## Lacunas e SecÃ§Ãµes Subexploradas
+
+**DescriÃ§Ã£o insuficiente do contexto atual (SCMVV):** A dissertaÃ§Ã£o
+carece de uma secÃ§Ã£o dedicada a descrever em detalhe o panorama atual da
+gestÃ£o de medicaÃ§Ã£o no hospital **Santa Casa da MisericÃ³rdia de Vila
+Verde (SCMVV)**. Embora o **CapÃ­tulo 1 (IntroduÃ§Ã£o)** mencione a
+existÃªncia de um sistema legado (AIDA-PCE) e destaca a fragmentaÃ§Ã£o dos
+sistemas de
+informaÃ§Ã£o[\[1\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20Santa%20Casa%20da%20Miseric%C3%B3rdia,da%20Miseric%C3%B3rdia%20de%20Vila%20Verde)[\[2\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20literature%20review%20reveals%20several,most%20significant%20is%20deficient%20integra),
+faltam detalhes prÃ¡ticos sobre **como os processos decorrem
+atualmente**. NÃ£o se expÃµe claramente quais sistemas estÃ£o em uso (por
+exemplo, AIDA-PCE, SONHO, PEM, etc.), como se interligam (ou nÃ£o), nem
+como as equipas (mÃ©dicos, farmacÃªuticos, enfermeiros) executam o ciclo
+de medicaÃ§Ã£o hoje. Essa **lacuna contextual** dificulta ao leitor
+compreender plenamente os **pontos de partida** e a magnitude dos
+problemas que o trabalho pretende resolver.
+
+**Arquitetura atual dos sistemas pouco detalhada:** Relacionado ao ponto
+anterior, nÃ£o hÃ¡ **diagrama ou descriÃ§Ã£o arquitetural** da soluÃ§Ã£o
+existente. A dissertaÃ§Ã£o fornece um diagrama conceitual da fragmentaÃ§Ã£o
+(Figura 1 mencionada) e compara funcionalidades de sistemas
+(TabelaÂ 1)[\[3\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Table%201%3A%20Comparative%20analysis%20of,systems%20including%20legacy%20and%20modern)[\[4\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=User%20Interface%20Desktop%20Only%20Web%2FMobile,Web%2FMobile%20Responsive%20Web),
+mas nÃ£o explica a **arquitetura legada atual** do hospital. Por exemplo,
+seria importante saber se o AIDA-PCE funciona isoladamente, se hÃ¡ trocas
+de dados manuais ou via interfaces com outros mÃ³dulos (p. ex. com SONHO,
+plataforma nacional de prescriÃ§Ã£o eletrÃ³nica, etc.), e quais **pontos de
+falha** existem. Esta secÃ§Ã£o estÃ¡ subexplorada e a sua inclusÃ£o
+enriqueceria o trabalho.
+
+**Resultados prÃ¡ticos inexistentes ou apenas esperados:** Observa-se que
+os **capÃ­tulos de resultados e discussÃ£o** sÃ£o escritos de forma
+**prospectiva**, baseando-se em resultados **esperados** e nÃ£o em dados
+empÃ­ricos recolhidos. Por exemplo, o CapÃ­tulo 5 ("Problem and
+Challenges") discute implicaÃ§Ãµes **antecipadas** e desafios
+esperados[\[5\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=the%20raw%20metrics,for%20instance%2C%20should%20be%20interpreted)[\[6\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=5),
+indicando reduÃ§Ãµes projetadas de erros de medicaÃ§Ã£o (73% nas
+prescriÃ§Ãµes, 85% nas validaÃ§Ãµes) e melhorias de eficiÃªncia, mas esses
+nÃºmeros parecem ser **metas ou estimativas**, nÃ£o resultados de mediÃ§Ãµes
+reais. Essa ausÃªncia de resultados **observados** Ã© uma lacuna
+cientÃ­fica significativa -- numa dissertaÃ§Ã£o completa esperar-se-ia a
+apresentaÃ§Ã£o de **dados recolhidos** durante a implementaÃ§Ã£o piloto
+(mesmo que preliminares). A discussÃ£o torna-se hipotÃ©tica, o que
+enfraquece a robustez do trabalho caso nÃ£o sejam incluÃ­dos pelo menos
+alguns **resultados experimentais ou evidÃªncias** obtidas.
+
+**AnÃ¡lise de custo-benefÃ­cio e impacto financeiro superficial:** Embora
+o plano da dissertaÃ§Ã£o mencione a inclusÃ£o de uma anÃ¡lise de
+custo-benefÃ­cio com horizonte temporal de
+ROI[\[7\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=7%20Cost,ROI%20timeline%2C%20and%20payback%20period),
+a versÃ£o atual nÃ£o apresenta estes detalhes de forma desenvolvida. A
+falta de uma **secÃ§Ã£o quantitativa de anÃ¡lise econÃ³mica** -- por
+exemplo, estimativa de custos de implementaÃ§Ã£o/manutenÃ§Ã£o vs. poupanÃ§as
+geradas por menos erros ou ganhos de eficiÃªncia -- Ã© outra Ã¡rea
+subexplorada. Este tipo de anÃ¡lise reforÃ§aria a relevÃ¢ncia prÃ¡tica do
+projeto, especialmente para **decisores hospitalares**, mas necessita de
+ser aprofundada alÃ©m de um possÃ­vel grÃ¡fico de ROI.
+
+**Cobertura limitada de certos tÃ³picos no Estado da Arte:** O **CapÃ­tulo
+2 (Estado da Arte)** apresenta um levantamento sÃ³lido das tecnologias e
+sistemas (ePrescription, CDSS, IA, blockchain, microserviÃ§os, HL7/FHIR,
+etc.). No entanto, alguns tÃ³picos poderiam ser mais explorados. Por
+exemplo, **sistemas de administraÃ§Ã£o de medicamentos no ponto de
+cuidado** (p. ex. registos eletrÃ³nicos de administraÃ§Ã£o -- eMAR, ou
+sistemas de cÃ³digo de barras para dispensaÃ§Ã£o e administraÃ§Ã£o) nÃ£o sÃ£o
+mencionados, apesar de serem parte integrante do **ciclo fechado de
+medicaÃ§Ã£o** em hospitais modernos. AlÃ©m disso, embora se refira a
+fragmentaÃ§Ã£o de sistemas e interoperabilidade, faltou discutir
+iniciativas especÃ­ficas de **normalizaÃ§Ã£o de processos** (por ex.,
+aplicaÃ§Ã£o de frameworks Lean Six Sigma na gestÃ£o do medicamento ou
+protocolos de seguranÃ§a do doente nacionais/internacionais). A
+dissertaÃ§Ã£o tambÃ©m toca pouco na realidade portuguesa para alÃ©m do caso
+SCMVV -- por exemplo, poderia referir brevemente projetos ou diretrizes
+do SNS ou da SPMS relacionados com informatizaÃ§Ã£o da prescriÃ§Ã£o ou
+seguranÃ§a da medicaÃ§Ã£o, se existirem, para **posicionar o trabalho no
+contexto nacional**.
+
+**EstruturaÃ§Ã£o e nomes de capÃ­tulos:** Nota-se uma **inconsistÃªncia na
+estrutura** proposta vs. conteÃºdo. A IntroduÃ§Ã£o indicia 7 capÃ­tulos (com
+Resultados, DiscussÃ£o e ConclusÃ£o
+separados)[\[8\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=This%20dissertation%20is%20organized%20to,Following%20this%20introduction)[\[9\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=plementation%20and%20pilot%20study,these%20results%2C%20contextualizing%20them%20within),
+mas o texto atual combina **DiscussÃ£o/Desafios** no CapÃ­tulo 5 e
+**ConclusÃ£o/Futuro** no CapÃ­tulo
+6[\[10\]\[11\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Chapter%206),
+deixando o CapÃ­tulo 7 apenas para Plano de Trabalhos. Esta alteraÃ§Ã£o
+pode confundir o leitor. AlÃ©m disso, o tÃ­tulo do CapÃ­tulo 4 surge como
+"Applications" (aplicaÃ§Ãµes), quando na verdade trata da
+**Metodologia**[\[12\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Applications).
+Estas discrepÃ¢ncias sugerem lacunas editoriais e deverÃ£o ser corrigidas
+para clarificar a finalidade de cada capÃ­tulo. Em resumo, os conteÃºdos
+fundamentais estÃ£o presentes, mas **algumas secÃ§Ãµes requerem expansÃ£o e
+maior detalhe** para cobrir totalmente os objetivos propostos e dar Ã 
+dissertaÃ§Ã£o a profundidade esperada numa obra de \~100 pÃ¡ginas.
+
+## Melhorias TÃ©cnicas e CientÃ­ficas no ConteÃºdo Atual
+
+**Detalhar o contexto e sistemas legados:** Recomenda-se incluir uma
+secÃ§Ã£o especÃ­fica (no inÃ­cio da dissertaÃ§Ã£o, possivelmente apÃ³s a
+IntroduÃ§Ã£o ou dentro do CapÃ­tulo de Metodologia) que **descreva os
+processos atuais de gestÃ£o de medicaÃ§Ã£o no SCMVV e a arquitetura dos
+sistemas existentes**. Esta descriÃ§Ã£o deve ser tÃ©cnica e pormenorizada,
+indicando, por exemplo: quais etapas do circuito do medicamento sÃ£o
+suportadas pelo AIDA-PCE e quais nÃ£o sÃ£o; como mÃ©dicos, farmacÃªuticos e
+enfermeiros interagem com o sistema (ou recorrem a soluÃ§Ãµes manuais);
+que outros sistemas estÃ£o envolvidos (e.g., SONHO para faturaÃ§Ã£o,
+PrescriÃ§Ã£o EletrÃ³nica MÃ©dica nacional (PEM) para receitas, etc.) e de
+que forma se comunica (ou falha a comunicaÃ§Ã£o) entre eles. Incluir um
+**diagrama arquitetural "as-is"** dos sistemas no hospital seria
+extremamente elucidativo -- mostrando bases de dados, mÃ³dulos,
+interfaces e fluxos de informaÃ§Ã£o atuais. Esses acrÃ©scimos dariam base
+concreta ao problema descrito e tornariam mais claras as **necessidades
+de otimizaÃ§Ã£o e standardizaÃ§Ã£o**.
+
+**ReforÃ§ar a fundamentaÃ§Ã£o no Estado da Arte:** O conteÃºdo existente no
+capÃ­tulo de Estado da Arte pode ser **aprofundado tecnicamente** em
+algumas Ã¡reas. Por exemplo, ao discutir **CDSS e prescriÃ§Ã£o
+eletrÃ³nica**, poderiam ser adicionados exemplos concretos de **falhas de
+integraÃ§Ã£o** encontradas na literatura (p.ex., situaÃ§Ãµes onde sistemas
+de prescriÃ§Ã£o nÃ£o comunicam com farmÃ¡cia ou enfermagem, resultando em
+erros). Na parte de **IA em saÃºde**, alÃ©m de NLP para interaÃ§Ãµes
+medicamentosas, poderiam mencionar-se outras aplicaÃ§Ãµes relevantes como
+sistemas de apoio Ã  decisÃ£o baseados em machine learning para dosagem ou
+deteÃ§Ã£o de alertas de alergia (caso nÃ£o estejam jÃ¡ incluÃ­das). Ao
+referir **blockchain**, valeria clarificar brevemente **como** esta
+tecnologia poderia ser integrada num hospital (por ex., gestÃ£o de
+consentimentos ou rastreabilidade de fÃ¡rmacos) para que o leitor
+compreenda a aplicaÃ§Ã£o prÃ¡tica.
+
+**Incluir aspectos de "standardizaÃ§Ã£o" de processos:** Dado que o tÃ­tulo
+enfatiza **standardization** (normalizaÃ§Ã£o) dos processos, seria
+benÃ©fico explicitar no texto atual *como* a plataforma proposta
+contribui para uniformizar procedimentos. Por exemplo, mencionar
+**protocolos clÃ­nicos padronizados** ou checklists eletrÃ³nicas
+integradas (inexistentes no sistema legado) que o novo sistema vai
+introduzir para garantir que todas as prescriÃ§Ãµes e administraÃ§Ãµes
+seguem um padrÃ£o seguro. Poderia tambÃ©m ser introduzida a noÃ§Ã£o de
+**ciclo fechado de medicaÃ§Ã£o** (Closed-loop medication management),
+explicando que a soluÃ§Ã£o visa cobrir todas as etapas -- prescriÃ§Ã£o CPOE,
+validaÃ§Ã£o farmacÃªutica, dispensa e administraÃ§Ã£o com confirmaÃ§Ã£o
+eletrÃ³nica -- de forma integrada. Essa discussÃ£o liga-se a literatura de
+seguranÃ§a do doente e garantiria que o aspeto de **normalizaÃ§Ã£o de
+processos clÃ­nicos** fica tÃ£o claro quanto o de otimizaÃ§Ã£o tecnolÃ³gica.
+
+**Melhorar a coesÃ£o e consistÃªncia editorial:** Do ponto de vista
+formal, Ã© importante alinhar a terminologia e estrutura. Deve-se
+uniformizar os tÃ­tulos de capÃ­tulos com o conteÃºdo (por exemplo,
+renomear "Applications" para **"Metodologia"** ou equivalente, para
+refletir com rigor o conteÃºdo da
+secÃ§Ã£o[\[12\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Applications)).
+Garantir que a IntroduÃ§Ã£o descreve corretamente a estrutura final dos
+capÃ­tulos, evitando discrepÃ¢ncias (se a ConclusÃ£o for CapÃ­tuloÂ 6,
+atualizar o texto introdutÃ³rio para refletir isso). TambÃ©m Ã©
+aconselhÃ¡vel **verificar siglas e termos tÃ©cnicos**, garantindo que cada
+sigla (HIS, SNS, AIDA-PCE, CDSS, etc.) Ã© explicada na primeira apariÃ§Ã£o
+e usada consistentemente. No Resumo em portuguÃªs, foi usado um acrÃ³nimo
+inglÃªs (HIT para Health Information Technology) -- avaliar se deve ser
+vertido para portuguÃªs ou mantido como anglicismo, consoante o estilo
+adotado.
+
+**EvidÃªncias e exemplos para suportar argumentos:** Para fortalecer
+cientificamente a dissertaÃ§Ã£o, sempre que se afirma um benefÃ­cio
+esperado deve-se, se possÃ­vel, **apoiar em dados ou referÃªncias**. Por
+exemplo, quando se alega que a interface atual Ã© "nÃ£o-intuitiva" e que
+faltam alertas em tempo real, poderia citar-se um **exemplo concreto**
+observado no SCMVV ou na literatura (p. ex., "atualmente, a validaÃ§Ã£o de
+interaÃ§Ãµes Ã© feita manualmente, o que atrasou X processos conforme
+observado" ou "segundo Bowles et al. (2020), a ausÃªncia de alertas
+computorizados levou a um aumento de erros em Y%" -- jÃ¡ hÃ¡ referÃªncias
+afins
+citadas[\[13\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Execut%C3%A1vel)).
+No **CapÃ­tulo 3 (Arquitetura proposta e resultados esperados)**, onde se
+listam metas de desempenho (ex.: tempo de resposta \<Â 1Â s, uptime
+99,95%, etc.), estas metas estÃ£o bem
+definidas[\[14\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=3)[\[15\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=A%20primary%20technical%20objective%20is,The);
+porÃ©m, seria Ãºtil indicar **como foram determinadas** -- por exemplo,
+referindo benchmarks de literatura ou requisitos do hospital.
+Adicionalmente, quando forem obtidos resultados reais, estes devem ser
+inseridos para substituir expectativas. Por exemplo, se durante o piloto
+de 6 meses forem recolhidos dados de reduÃ§Ã£o de erros, esses **nÃºmeros
+efetivos devem aparecer**, nem que seja em formato preliminar ou de
+estudo de caso, para dar **credibilidade empÃ­rica** Ã s afirmaÃ§Ãµes.
+
+**Incorporar anÃ¡lise de custo-benefÃ­cio:** A melhoria do conteÃºdo
+tÃ©cnico-cientÃ­fico tambÃ©m passa por incluir elementos de **avaliaÃ§Ã£o
+econÃ³mica** e prÃ¡tica. Desenvolver a secÃ§Ã£o de custo-benefÃ­cio, tal como
+planeado, fornecendo detalhes numÃ©ricos ou qualitativos: por exemplo,
+estimar o **Retorno do Investimento (ROI)** em funÃ§Ã£o de custos de
+desenvolvimento vs. poupanÃ§as anuais com menos eventos adversos
+medicamentosos (podendo referenciar estudos que quantificam o custo de
+um erro de medicaÃ§Ã£o evitado). Se existirem dados, incluir tambÃ©m a
+perspetiva de **escalabilidade financeira** -- p.ex., discutir se a
+soluÃ§Ã£o aberta pode ser mais barata que licenÃ§as de softwares comerciais
+(algo jÃ¡ indicado na TabelaÂ 1, com modelo open source vs
+subscriÃ§Ã£o[\[16\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Integration%20Custom%20APIs%20HL7%2FFHIR%20HL7%2FFHIR,RESTful%2FHL7)).
+Essa discussÃ£o tornarÃ¡ a dissertaÃ§Ã£o mais **cientÃ­fica e aplicÃ¡vel**,
+mostrando que nÃ£o sÃ³ hÃ¡ ganhos clÃ­nicos, mas tambÃ©m **viabilidade
+econÃ³mica**, o que reforÃ§a a importÃ¢ncia do trabalho.
+
+**Clarificar limitaÃ§Ãµes e condiÃ§Ãµes do estudo:** Embora o CapÃ­tulo 4
+apresente uma subseÃ§Ã£o de
+limitaÃ§Ãµes[\[17\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=4)[\[18\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=organizational%20culture%20or%20patient%20outcomes,lacking%20a%20parallel%20control%20group),
+esta poderia ser fortalecida com mais detalhes tÃ©cnicos. Por exemplo, ao
+afirmar que nÃ£o hÃ¡ grupo de controlo paralelo, pode-se mencionar
+explicitamente que os resultados serÃ£o analisados em comparaÃ§Ã£o ao
+**baseline histÃ³rico** (que foi levantado de 10.000 prescriÃ§Ãµes
+anteriores[\[19\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=elicitation%20and%20a%20deep%20analysis,structured))
+e que serÃ¡ usada anÃ¡lise estatÃ­stica apropriada (testes de
+significÃ¢ncia, intervalos de confianÃ§a) para validar reduÃ§Ãµes de erro.
+AlÃ©m disso, poderia ser Ãºtil declarar as **hipÃ³teses de investigaÃ§Ã£o**
+de forma clara (embora implÃ­citas, podiam ser enumeradas formalmente:
+ex.: "H1: O sistema integrado reduzirÃ¡ significativamente a taxa de
+erros de medicaÃ§Ã£o face ao sistema legado"; "H2: O tempo mÃ©dio de cada
+etapa do processo de medicaÃ§Ã£o serÃ¡ reduzido em pelo menos X%", etc.).
+Isso tornaria a avaliaÃ§Ã£o mais **cientificamente rigorosa**, alinhando
+mÃ©tricas a hipÃ³teses testÃ¡veis.
+
+**Aprimorar a discussÃ£o com apoio bibliogrÃ¡fico:** Quando a dissertaÃ§Ã£o
+interpretar os resultados (ou expectativas) no CapÃ­tulo de DiscussÃ£o, Ã©
+importante **confrontar com a literatura** de maneira robusta. Por
+exemplo, se se esperar uma reduÃ§Ã£o de 70% dos erros, discutir se estudos
+semelhantes obtiveram valores prÃ³ximos -- e se divergirem, porque poderÃ¡
+o caso do SCMVV ter resultados diferentes. No texto atual jÃ¡ hÃ¡
+tentativas de fazer isso, citando Radley et al. (2013) e
+outros[\[20\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=by%20the%20goals%20in%20Figure,prescribing%20errors%20and%20over%2085),
+mas esse diÃ¡logo pode ser ampliado. Cada implicaÃ§Ã£o citada (ex.: a
+modernizaÃ§Ã£o da camada de front-end produz grandes ganhos mesmo sem
+substituir os back-ends
+legados[\[21\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Similarly%2C%20the%20projected%20improvements%20in,user%20satisfaction%20are%20expected%20to))
+pode ser fortalecida citando **experiÃªncias de outras instituiÃ§Ãµes** ou
+artigos de revisÃ£o que suportem ou alertem para desafios dessas
+estratÃ©gias. Assim, a discussÃ£o fica mais equilibrada entre o **otimismo
+do projeto** e as liÃ§Ãµes da comunidade cientÃ­fica, demonstrando uma
+visÃ£o crÃ­tica e embasada.
+
+## SugestÃµes de Novos TÃ³picos a Incluir
+
+**DescriÃ§Ã£o da OrganizaÃ§Ã£o PrÃ¡tica Atual (SCMVV):** Como prioridade,
+sugere-se introduzir um novo tÃ³pico ou capÃ­tulo dedicado ao **"Contexto
+e OrganizaÃ§Ã£o Atual do Processo de MedicaÃ§Ã£o no SCMVV"**. Nele, deve-se
+narrar o **ciclo de medicaÃ§Ã£o tal como existe hoje** no hospital, passo
+a passo: prescriÃ§Ã£o mÃ©dica (por ex., efetuada no AIDA-PCE ou em papel?),
+validaÃ§Ã£o farmacÃªutica (onde ocorre, em que sistema ou manualmente?),
+dispensa de medicamentos pela farmÃ¡cia, administraÃ§Ã£o ao doente
+(registos feitos em papel, num mÃ³dulo separado, ou nÃ£o registrados?).
+Identificar *quem* faz *o quÃª* e *como*, evidenciando pontos de
+descontinuidade. Este tÃ³pico deve tambÃ©m enumerar os **sistemas de
+informaÃ§Ã£o legados** envolvidos: por exemplo, AIDA-PCE (detalhar a sua
+funÃ§Ã£o: "aplicaÃ§Ã£o integrada para prescriÃ§Ã£o, codificaÃ§Ã£o e execuÃ§Ã£o"),
+SONHO (sistema hospitalar usado talvez para internamentos/faturaÃ§Ã£o),
+eventualmente folhas de cÃ¡lculo ou mÃ³dulos auxiliares, etc. O objetivo Ã©
+pintar um **quadro concreto do "antes"**, para que o leitor perceba os
+desafios prÃ¡ticos (p. ex., dupla introduÃ§Ã£o de dados, passagem de
+informaÃ§Ã£o por telefone, falta de alerta de interaÃ§Ãµes, etc.). Esta
+secÃ§Ã£o servirÃ¡ de **fundamento** para justificar as soluÃ§Ãµes
+apresentadas no resto da dissertaÃ§Ã£o. Incluir um **diagrama de fluxo do
+processo atual** ou esquemas das interfaces legadas aumentaria a clareza
+-- por exemplo, uma figura ilustrando a jornada de uma prescriÃ§Ã£o desde
+que o mÃ©dico a faz atÃ© Ã  administraÃ§Ã£o pelo enfermeiro, indicando em que
+pontos intervÃ©m cada sistema ou pessoa e onde ocorrem eventuais quebras
+de comunicaÃ§Ã£o.
+
+**Arquitetura Atual dos Sistemas no Hospital:** Complementarmente,
+dentro do tÃ³pico acima ou separado, incluir um **diagrama da arquitetura
+de sistemas existente no SCMVV**. Este poderia mostrar mÃ³dulos como:
+AIDA-PCE (prescriÃ§Ã£o e registo clÃ­nico), base de dados local; sistema
+SONHO (HIShospitalar para outros fins), PEM nacional; eventuais mÃ³dulos
+de farmÃ¡cia ou armazÃ©m; e canais de integraÃ§Ã£o (ou sua ausÃªncia) entre
+eles. Essa representaÃ§Ã£o servirÃ¡ para contrastar posteriormente com a
+**arquitetura proposta** (que jÃ¡ estÃ¡ bem detalhada no CapÃ­tulo
+3[\[22\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=3)[\[23\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20proposed%20architecture%20will%20be,The%20Presentation%20Layer%2C%20built%20with)).
+Ao evidenciar graficamente as **lacunas de integraÃ§Ã£o** atuais (por
+exemplo, setas inexistentes onde deveria haver comunicaÃ§Ã£o automÃ¡tica),
+o leitor entenderÃ¡ facilmente **onde o projeto incide**. Este novo
+tÃ³pico reforÃ§a a componente prÃ¡tica e de engenharia da dissertaÃ§Ã£o,
+demonstrando que o autor analisou a fundo o sistema atual (como, de
+facto, mencionou ter feito atravÃ©s de entrevistas e
+observaÃ§Ã£o[\[19\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=elicitation%20and%20a%20deep%20analysis,structured)).
+
+**AnÃ¡lise de Processos e IdentificaÃ§Ã£o de IneficiÃªncias:** Ainda no
+contexto do funcionamento atual, um subtÃ³pico interessante seria
+apresentar resultados da **anÃ¡lise de processos** realizada na fase
+inicial do projeto. Por exemplo, se foram elaborados **mapas de
+processos** ou diagramas BPMN para representar o fluxo de trabalho, a
+dissertaÃ§Ã£o pode incluir um desses diagramas (talvez no ApÃªndice, com
+referÃªncia no texto) e destacar **ineficiÃªncias identificadas** -- p.
+ex., passos redundantes, esperas, transcriÃ§Ã£o manual de dados entre
+sistemas, etc. Poderia mesmo quantificar alguma coisa do estado atual:
+*"Verificou-se que a introduÃ§Ã£o manual de dados duplicados ocorria em X%
+dos casos de prescriÃ§Ã£o, e a clarificaÃ§Ã£o de ordens por via
+verbal/telefone ocorria diariamente, introduzindo risco e atraso"*.
+Estes detalhes tornarÃ£o claras as **oportunidades de otimizaÃ§Ã£o** (que o
+sistema proposto vai abordar) e dÃ£o sustento factual Ã  necessidade do
+projeto.
+
+**Resultados e AvaliaÃ§Ã£o EmpÃ­rica (caso possÃ­vel):** Caso entretanto
+haja **dados coletados do piloto ou testes**, Ã© fundamental
+incorporÃ¡-los. Um novo tÃ³pico **"Resultados Preliminares da
+ImplementaÃ§Ã£o Piloto"** poderia ser adicionado antes do capÃ­tulo de
+DiscussÃ£o. Nele, apresentariam-se os **KPI medidos** no perÃ­odo
+experimental de 6 meses (ou o intervalo disponÃ­vel atÃ© Ã  conclusÃ£o da
+dissertaÃ§Ã£o). Por exemplo: reduÃ§Ã£o efetiva da taxa de erros de medicaÃ§Ã£o
+de A% para B% (com N erros antes e M erros depois, definindo claramente
+o que foi considerado "erro de medicaÃ§Ã£o"); tempos mÃ©dios de
+prescriÃ§Ã£o/validaÃ§Ã£o antes vs. depois; grau de utilizaÃ§Ã£o do sistema
+(nÃºmero de prescriÃ§Ãµes feitas no novo vs. no antigo, etc.); resultados
+do questionÃ¡rio de usabilidade SUS (se jÃ¡ aplicado, indicar a pontuaÃ§Ã£o
+mÃ©dia atingida e interpretaÃ§Ã£o). Caso esses resultados ainda nÃ£o
+existam, poderia considerar-se realizar uma **avaliaÃ§Ã£o simulada ou
+teste limitado** -- por exemplo, convidar alguns utilizadores-chave a
+usar um protÃ³tipo e recolher feedback quantitativo (mesmo que nÃ£o seja o
+piloto completo, quaisquer evidÃªncias empÃ­ricas adicionam valor
+cientÃ­fico). Este tÃ³pico de resultados concretos fortalecerÃ¡ a
+dissertaÃ§Ã£o, mas mesmo que os resultados definitivos nÃ£o estejam
+disponÃ­veis a tempo, recomenda-se **apresentar pelo menos alguns dados
+observados** durante o desenvolvimento (por ex., resultados de testes de
+desempenho do sistema, screenshots de mÃ³dulos funcionais, ou relatos
+qualitativos de utilizadores que jÃ¡ experimentaram).
+
+**GestÃ£o da MudanÃ§a e AdoÃ§Ã£o pelo Utilizador:** Dada a **importÃ¢ncia da
+vertente humana** num projeto destes, seria pertinente incluir um tÃ³pico
+dedicado Ã  **estratÃ©gia de gestÃ£o de mudanÃ§a e formaÃ§Ã£o** implementada
+(ou proposta) no hospital. A dissertaÃ§Ã£o refere a existÃªncia de um plano
+de change management com "champions"
+departamentais[\[24\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=strategies%20were%20implemented%20for%20each,resistance%20to%20change%2C%20a%20comprehensive)[\[25\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=change%2C%20a%20comprehensive)
+e formaÃ§Ã£o contÃ­nua, o que Ã© Ã³timo. Este aspeto poderia ser alargado num
+subtÃ³pico prÃ³prio, detalhando aÃ§Ãµes concretas: sessÃµes de formaÃ§Ã£o
+realizadas, materiais de apoio desenvolvidos, frequÃªncia de feedback
+rounds com os utilizadores finais durante o desenvolvimento (co-design).
+Poderia tambÃ©m citar **teorias de adoÃ§Ã£o de tecnologia** para sustentar
+as aÃ§Ãµes (jÃ¡ hÃ¡ referÃªncia a Rogers
+(2003)[\[26\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=organizational);
+poderia reforÃ§ar-se com, por ex., *Technology Acceptance Model (TAM)* ou
+estudos recentes em adoÃ§Ã£o de SI em saÃºde). Assim, demonstra-se
+preocupaÃ§Ã£o nÃ£o apenas com a tecnologia em si, mas tambÃ©m com a
+**mudanÃ§a organizacional**, tornando o trabalho mais abrangente.
+
+**SeguranÃ§a da InformaÃ§Ã£o e Conformidades:** Embora haja menÃ§Ã£o ao
+compliance com GDPR e Ã  seguranÃ§a (encriptaÃ§Ã£o de dados,
+etc.)[\[27\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20study%20protocol%20received%20full,All%20research%20activities)[\[28\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=A%20critical%20sociotechnical%20risk%20is,The%20mitigation),
+um tÃ³pico dedicado a **"SeguranÃ§a, Privacidade e Conformidade"** poderia
+ser incluÃ­do ou expandido. Nele, poderia detalhar-se como o sistema
+garante a **confidencialidade e integridade** dos dados clÃ­nicos: por
+exemplo, arquitetura de permissÃµes (jÃ¡ citada: LDAP, SSO e
+roles[\[29\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Key%20components%20to%20be%20implemented,system%20integrated%20with%20the%20hospi)),
+logs auditÃ¡veis de todas aÃ§Ãµes (importante para responsabilidade legal),
+medidas contra downtime (servidores redundantes, backups). TambÃ©m
+mencionar **normas ou standards de seguranÃ§a** especÃ­ficos de saÃºde, se
+relevantes (p. ex., ISO 27799 para seguranÃ§a de informaÃ§Ã£o em saÃºde, ou
+IEEE/UL standards para software mÃ©dico). Este tÃ³pico tornaria explÃ­cito
+que a soluÃ§Ã£o nÃ£o sÃ³ Ã© funcional, mas tambÃ©m **segura e em
+conformidade** com exigÃªncias legais/hospitalares -- um aspeto
+tÃ©cnico-cientÃ­fico muitas vezes valorizado em sistemas de saÃºde.
+
+**ExtensÃµes tecnolÃ³gicas emergentes:** Como forma de expandir conteÃºdo e
+demonstrar visÃ£o alÃ©m do estado atual, poderia adicionar-se um tÃ³pico de
+**"PossÃ­veis ExtensÃµes Futuras da Plataforma"** (talvez dentro de Future
+Work). Exemplos: integraÃ§Ã£o com **dispositivos mÃ³veis ou IoT** (ex.:
+*apps* para enfermeiros administrarem medicaÃ§Ã£o Ã  beira do leito com
+cÃ³digo de barras -- o texto de futuro trabalho atÃ© refere aplicaÃ§Ã£o
+mobile-first[\[30\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=a%20proactive%20safety%20model%2C%20identifying,%282021),
+que poderia ser descrita melhor); uso de **smart cabinets** ou
+dispensÃ¡rios automÃ¡ticos ligados ao sistema; aplicaÃ§Ã£o de **inteligÃªncia
+artificial avanÃ§ada** para recomendaÃ§Ã£o de doses Ã³timas ou deteÃ§Ã£o
+preditiva de eventos adversos (indo alÃ©m do que foi feito inicialmente).
+Esses tÃ³picos nÃ£o precisam de ser implementados jÃ¡, mas a sua discussÃ£o
+mostra **riqueza cientÃ­fica** e pode render conteÃºdo adicional apoiado
+por literatura (por ex., citar estudos de sistemas de dispensaÃ§Ã£o
+automatizada ou IA preditiva em medicaÃ§Ã£o).
+
+Em suma, os novos tÃ³picos sugeridos acima focam-se em **tornar o
+trabalho mais completo e aprofundado**: cobrindo desde a base (contexto
+atual) atÃ© assuntos complementares (econÃ³micos, organizacionais,
+tÃ©cnicos) que ainda nÃ£o foram explorados. Dando atenÃ§Ã£o especial ao
+**caso prÃ¡tico do SCMVV**, Ã  **demonstraÃ§Ã£o de resultados** e a
+**aspectos de implementaÃ§Ã£o real**, a dissertaÃ§Ã£o ganharÃ¡ substÃ¢ncia e
+facilmente atingirÃ¡ (ou excederÃ¡) as 100 pÃ¡ginas com conteÃºdo relevante.
+
+## AvaliaÃ§Ã£o da Robustez MetodolÃ³gica e CientÃ­fica
+
+**Abordagem metodolÃ³gica bem estruturada:** A dissertaÃ§Ã£o segue uma
+metodologia **Design Science Research (DSR)**, complementada por
+**Action Research**, o que Ã© adequado para um projeto de intervenÃ§Ã£o
+tecnolÃ³gica em ambiente
+clÃ­nico[\[31\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=fundamentally%20grounded%20in%20Design%20Science,DSR%29%29%2C%20an%20approach)[\[32\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=To%20operationalize%20the%20DSR%20paradigm%2C,was%20employed%20Greenhalgh%20et%20al).
+Esta escolha metodolÃ³gica Ã© cientificamente sÃ³lida, pois combina rigor
+(DSR impÃµe artefacto + avaliaÃ§Ã£o) com relevÃ¢ncia prÃ¡tica (Action
+Research envolve os utilizadores e iteratividade). A descriÃ§Ã£o
+metodolÃ³gica no CapÃ­tulo 4 Ã© detalhada e merece elogios: define
+paradigma pragmÃ¡tico, questÃµes de investigaÃ§Ã£o, fases do projeto
+(anÃ¡lise, desenvolvimento, integraÃ§Ã£o, etc.) e inclui consideraÃ§Ãµes
+Ã©ticas e
+limitaÃ§Ãµes[\[33\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=,1)[\[17\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=4).
+Isto demonstra **robustez cientÃ­fica**, pois mostra consciencializaÃ§Ã£o
+tanto dos pontos fortes quanto das fragilidades do estudo.
+
+**Robustez da avaliaÃ§Ã£o (a melhorar com dados):** Em termos de
+avaliaÃ§Ã£o, o plano contempla **mÃ©tricas quantitativas** (erros de
+medicaÃ§Ã£o, tempos de tarefa, uptime, utilizaÃ§Ã£o) e **qualitativas**
+(entrevistas,
+observaÃ§Ã£o)[\[34\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Quantitative%20data%20focused%20on%20objective%2C,System%20perfor)[\[35\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Qualitative%20data%20provided%20rich%2C%20contextual,structured%20inter),
+o que Ã© uma abordagem abrangente (mÃ©todos mistos). A definiÃ§Ã£o de **KPI
+baseados no modelo de Donabedian** -- estrutura, processo, resultados --
+Ã© uma escolha metodolÃ³gica
+acertada[\[36\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20system%E2%80%99s%20success%20was%20assessed,rooted%20in%20the%20Donabedian%20model)[\[37\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=reduction%20in%20medication%20errors).
+No entanto, para fortalecer a robustez, serÃ¡ crucial **apresentar a
+aplicaÃ§Ã£o prÃ¡tica desses mÃ©todos**: por exemplo, detalhar como se mediu
+a taxa de erros (atravÃ©s de anÃ¡lise de relatÃ³rios de farmacovigilÃ¢ncia?
+revisÃ£o manual de prescriÃ§Ãµes? definiÃ§Ã£o clara do que conta como "erro")
+e como se garantiu a **comparabilidade prÃ© e pÃ³s**. A robustez
+estatÃ­stica deve ser assegurada: idealmente, mencionar que se farÃ¡ um
+teste estatÃ­stico (p. ex., teste qui-quadrado ou teste exato de Fisher
+para proporÃ§Ãµes de erros antes/depois, teste t ou de Mann-Whitney para
+tempos de processo, etc.) para validar se as diferenÃ§as observadas sÃ£o
+**estatisticamente significativas** e nÃ£o devidas ao acaso. Como o
+prÃ³prio texto admite, nÃ£o havendo um grupo de controlo simultÃ¢neo, esta
+anÃ¡lise **quasi-experimental** precisa de cuidado redobrado na
+interpretaÃ§Ã£o[\[38\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=infrastructures.%20The%20quasi)[\[39\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=organizational%20culture%20or%20patient%20outcomes,lacking%20a%20parallel%20control%20group).
+Sugerir a realizaÃ§Ã£o de **testes estatÃ­sticos de sÃ©rie temporal** (por
+ex., comparar mensalmente a taxa de erros ao longo dos 6 meses, ou usar
+mÃ©todos de controle estatÃ­stico de processo) poderia aumentar a
+confianÃ§a nos resultados, isolando efeitos de tendÃªncia temporal.
+
+**GeneralizaÃ§Ã£o e validade externa:** A metodologia, por ser centrada
+num sÃ³ hospital, tem limitaÃ§Ãµes de validade externa jÃ¡
+reconhecidas[\[40\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20findings%20must%20be%20interpreted,The%20single)[\[41\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=match%20at%20L1801%20specific%20implementation,of%20the%20findings%20to%20other).
+Cientificamente, seria recomendÃ¡vel discutir possibilidades de
+**generalizaÃ§Ã£o analÃ­tica**: ou seja, em vez de generalizar
+estatisticamente, argumentar por que os achados do SCMVV **podem ser
+relevantes** para outros contextos (identificando caracterÃ­sticas
+semelhantes a outros hospitais de mÃ©dio porte, por exemplo). A
+dissertaÃ§Ã£o poderia reforÃ§ar a robustez argumentativa mencionando que
+embora os resultados num sÃ³ centro nÃ£o provem eficÃ¡cia universal,
+**alinhamentos com literatura** (e.g., se outros estudos de
+implementaÃ§Ã£o em hospitais pequenos obtiveram sucesso) dÃ£o confianÃ§a de
+que conclusÃµes sÃ£o transferÃ­veis. TambÃ©m valeria a pena notar que o uso
+de tecnologias standard (Java, Node.js, FHIR) torna o artefacto mais
+**reutilizÃ¡vel noutros locais**, o que Ã© um ponto a favor da validade do
+design.
+
+**ConsideraÃ§Ãµes Ã©ticas e de confiabilidade:** O texto aborda bem a
+questÃ£o Ã©tica (aprovaÃ§Ã£o do comitÃ© de Ã©tica, GDPR, consentimento
+informado)[\[42\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=4). Para
+mÃ¡xima robustez, certifique-se de documentar isso formalmente (por ex.,
+Referenciar o nÃºmero de aprovaÃ§Ã£o Ã©tica ou data de aprovaÃ§Ã£o). Em termos
+de **confiabilidade dos dados**, podia mencionar-se se houve **treino
+dos observadores** ou validaÃ§Ã£o dos instrumentos (por ex., se vÃ¡rias
+pessoas avaliaram erros, houve consenso sobre definiÃ§Ãµes? O questionÃ¡rio
+SUS Ã© validado, mas e as entrevistas -- foi usada anÃ¡lise temÃ¡tica com
+dupla verificaÃ§Ã£o?). Pequenos apontamentos assim mostrariam preocupaÃ§Ã£o
+com **rigor metodolÃ³gico** nas etapas de recolha e anÃ¡lise de dados
+qualitativos.
+
+**EquilÃ­brio entre otimizaÃ§Ã£o tÃ©cnica e avaliaÃ§Ã£o cientÃ­fica:** Uma
+possÃ­vel fragilidade a apontar -- e melhorar, se possÃ­vel -- Ã© que o
+trabalho enfatiza bastante a **soluÃ§Ã£o tÃ©cnica** (arquitetura,
+desenvolvimento). Para uma dissertaÃ§Ã£o de Engenharia, isto Ã© normal, mas
+convÃ©m equilibrar com avaliaÃ§Ã£o cientÃ­fica do impacto. Ou seja, nÃ£o
+basta demonstrar que se construiu a plataforma; Ã© preciso comprovar que
+ela **resolve o problema**. A robustez cientÃ­fica sairia reforÃ§ada se na
+redaÃ§Ã£o final houver uma **anÃ¡lise crÃ­tica dos resultados** (mesmo que
+parciais): discutir nÃ£o apenas se os KPIs melhoraram, mas tambÃ©m se hÃ¡
+**significÃ¢ncia prÃ¡tica** (por ex., uma reduÃ§Ã£o de 5% em erros pode ser
+estatisticamente significativa mas talvez nÃ£o clinicamente relevante; jÃ¡
+70% seria, obviamente, muito relevante). Mostrar esta capacidade de
+avaliar criticamente evita qualquer impressÃ£o de viÃ©s de confirmaÃ§Ã£o. Se
+algum indicador nÃ£o melhorar conforme esperado, mencionÃ¡-lo e discutir
+possÃ­veis razÃµes (falta de adoÃ§Ã£o completa, curva de aprendizagem, etc.)
+tambÃ©m demonstra **integridade cientÃ­fica** e robustez na abordagem.
+
+Em resumo, do ponto de vista metodolÃ³gico e cientÃ­fico, o trabalho estÃ¡
+bem pensado e articulado. As recomendaÃ§Ãµes acima focam-se em **reforÃ§ar
+essa robustez**: implementando anÃ¡lise estatÃ­stica adequada, explicando
+claramente procedimentos de medida, e mantendo uma postura crÃ­tica e
+fundamentada na discussÃ£o. Assim, a dissertaÃ§Ã£o nÃ£o serÃ¡ apenas um
+relato de um desenvolvimento de software, mas sim um **estudo cientÃ­fico
+completo**, com hipÃ³tese, mÃ©todo, resultados e anÃ¡lise rigorosa.
+
+## ReferÃªncias Recentes e Ãreas da Literatura para Aprofundar
+
+**IntegraÃ§Ã£o de Sistemas e Interoperabilidade:** Para aprofundar a
+componente de interoperabilidade, recomenda-se incluir referÃªncias
+atuais sobre **HL7 FHIR e integraÃ§Ã£o de sistemas hospitalares**. Por
+exemplo, estudos de 2022-2023 que avaliam a adoÃ§Ã£o de FHIR em ambientes
+hospitalares ou estratÃ©gias de integraÃ§Ã£o de sistemas legados poderiam
+dar suporte cientÃ­fico Ã s escolhas arquiteturais. HÃ¡ trabalhos recentes
+sobre **impacto da interoperabilidade na seguranÃ§a do doente** (por ex.,
+*The Impact of Electronic Health Record Interoperability on Safety* --
+estudo de 2021 que explora como a falta de interoperabilidade afeta
+cuidados[\[43\]](https://www.jmir.org/2022/9/e38144/#:~:text=The%20Impact%20of%20Electronic%20Health,income%20health%20care%20settings)).
+Incluir uma referÃªncia como essa contextualiza a relevÃ¢ncia de adotar
+padrÃµes abertos. TambÃ©m poderia ser citado algum **white paper da HIMSS
+ou HL7 International** sobre melhores prÃ¡ticas de integraÃ§Ã£o -- para
+reforÃ§ar a ideia de que a soluÃ§Ã£o estÃ¡ alinhada com tendÃªncias
+internacionais de **sistemas de informaÃ§Ã£o em saÃºde conectados**.
+
+**SeguranÃ§a do Doente e Erros de MedicaÃ§Ã£o:** A dissertaÃ§Ã£o jÃ¡ cita
+relatÃ³rios clÃ¡ssicos (Kohn et al., 2000; WHO 2017) e estudos atÃ© 2021
+sobre erros de medicaÃ§Ã£o. Seria vantajoso incorporar **referÃªncias mais
+recentes (2022-2025)** sobre este tema, para mostrar que a revisÃ£o estÃ¡
+atualizada. Por exemplo, uma **revisÃ£o sistemÃ¡tica de 2022** no *Journal
+of Patient Safety* ou *BMC Health Services* analisando o efeito dos
+**registos eletrÃ³nicos na reduÃ§Ã£o de erros** pode fornecer dados
+consolidados (percentagens mÃ©dias de reduÃ§Ã£o de erros de prescriÃ§Ã£o com
+CPOE, etc.). Outra Ã¡rea relevante Ã© a **iniciativa "Medication Without
+Harm"** da OMS (2017-2022) -- se jÃ¡ nÃ£o citado, vale mencionar
+relatÃ³rios finais ou progressos dessa campanha global de seguranÃ§a
+medicamentosa. TambÃ©m poderiam ser citados estudos sobre **erros de
+medicaÃ§Ã£o em Portugal** ou Europa, se disponÃ­veis, para salientar a
+magnitude local do problema (por ex., publicaÃ§Ãµes de autores portugueses
+ou europeus em 2023 quantificando erros antes/depois de implementar
+prescriÃ§Ã£o eletrÃ³nica). Isso nÃ£o sÃ³ atualiza as referÃªncias como ajuda a
+**enquadrar o problema no contexto nacional**.
+
+**ImplementaÃ§Ã£o de EHR e Impacto Organizacional:** Para enriquecer a
+discussÃ£o dos **desafios sociotÃ©cnicos**, adicionar literatura sobre
+**fatores de sucesso e insucesso na implementaÃ§Ã£o de sistemas de
+saÃºde**. Por exemplo, um estudo recente de 2023 que analise
+implementaÃ§Ãµes de sistemas de prescriÃ§Ã£o eletrÃ³nica em hospitais e
+reporta liÃ§Ãµes aprendidas (como importÃ¢ncia do treinamento contÃ­nuo,
+envolvimento dos stakeholders, etc.). ReferÃªncias de autores como
+**Black, Car, Greenhalgh** ou outros em periÃ³dicos de informÃ¡ria mÃ©dica
+podem ser Ãºteis. A dissertaÃ§Ã£o jÃ¡ cita Rogers (2003) e Greenhalgh et al.
+(2017) -- poderia somar, por exemplo, **Chan et al. (2022)** sobre
+barreiras humanas Ã  adoÃ§Ã£o de health IT, ou um artigo da **JMIR** de
+2021/2022 investigando a relaÃ§Ã£o entre usabilidade de EHR e burnout
+(*The influence of EHR design on usability and
+safety*[\[44\]](https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-024-12060-2#:~:text=The%20influence%20of%20electronic%20health,was%20conducted%20of%20PubMed)
+Ã© um exemplo de pesquisa que casa bem com a temÃ¡tica). Isto reforÃ§arÃ¡ a
+componente de **avaliaÃ§Ã£o qualitativa** e de **usabilidade**, mostrando
+consciÃªncia das implicaÃ§Ãµes humanas e nÃ£o apenas tÃ©cnicas.
+
+**MÃ©todos de AvaliaÃ§Ã£o e Usabilidade:** Na linha metodolÃ³gica, poderiam
+ser citadas referÃªncias sobre a **escala SUS** em contexto de saÃºde
+digital -- por exemplo, **Lewis (2018)** Ã© mencionado como fonte da
+interpretaÃ§Ã£o do
+SUS[\[45\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=acceptance%20will%20be%20conducted%20using,The),
+mas talvez uma referÃªncia a estudos que utilizaram SUS em enfermeiros ou
+mÃ©dicos para avaliar um sistema similar. AlÃ©m disso, mencionar outros
+mÃ©todos complementares (como anÃ¡lise cognitiva ou estudos de carga de
+trabalho, p.ex. **Holden & Karsh (2010)** sobre *cognitive workload in
+healthcare IT*, jÃ¡ citada nas perspetivas
+futuras[\[46\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=into%20the%20cognitive%20ergonomics%20of,insights%20into%20minimizing%20cognitive%20load))
+demonstra profundidade. Na eventualidade de incluir dados de
+usabilidade, referÃªncias sobre **valores mÃ©dios de SUS em sistemas
+clÃ­nicos** (hÃ¡ artigos que dizem que sistemas de prescriÃ§Ã£o eletrÃ³nica
+costumam ter SUS baixos, \~50-60, indicando espaÃ§o de melhoria) podem
+ser adicionadas para contextualizar os resultados obtidos ou esperados.
+
+**Tecnologias Emergentes e Futuro:** Dado que o trabalho toca em IA e
+blockchain, poder-se-ia citar alguns **trabalhos recentes concretos**:
+por exemplo, um estudo de 2023 onde uma IA foi implementada para
+prevenir interaÃ§Ãµes medicamentosas num hospital (se existir algum case
+study). TambÃ©m, se mencionar **mobile health**, referenciar projetos de
+apps mÃ³veis para apoio Ã  administraÃ§Ã£o de terapÃªutica (hÃ¡ conferÃªncias
+de informÃ¡tica mÃ©dica com papers sobre apps para enfermeiros, etc., em
+2022/23). Em **blockchain**, poderia citar um artigo de 2020+ que tenha
+testado blockchain para rastrear fÃ¡rmacos ou gerir consentimento, para
+nÃ£o ficar apenas a menÃ§Ã£o teÃ³rica -- por ex., um estudo piloto em
+farmacologia utilizando Hyperledger ou Ethereum para cadeia de
+suprimentos farmacÃªutica. Estas referÃªncias mostram que o autor estÃ¡ a
+par das **inovaÃ§Ãµes mais recentes** e de como elas estÃ£o a ser
+exploradas globalmente.
+
+**Processos Lean e melhoria contÃ­nua:** Caso se deseje fortalecer o
+aspeto de **optimizaÃ§Ã£o de processos**, buscar literatura de saÃºde sobre
+aplicaÃ§Ã£o de **Lean Six Sigma na farmÃ¡cia hospitalar ou nos fluxos de
+medicaÃ§Ã£o** pode trazer ideias. Por exemplo, um artigo de 2019 ou 2020
+onde mapearam o processo de medicaÃ§Ã£o e reduziram desperdÃ­cios pode
+fornecer tanto metodologia de anÃ¡lise de processos quanto resultados.
+Embora o foco principal da dissertaÃ§Ã£o seja tecnolÃ³gico, essa
+perspectiva processual alinha-se com "optimizaÃ§Ã£o de processos" do
+tÃ­tulo. ReferÃªncias nesse sentido poderiam incluir estudos em revistas
+de gestÃ£o em saÃºde ou engenharia industrial aplicada a hospitais.
+
+**Trabalhos relacionados** (benchmarking cientÃ­fico): Para posicionar
+melhor a contribuiÃ§Ã£o, seria Ãºtil referenciar **outros projetos
+semelhantes**. Por exemplo, procurar se hÃ¡ estudos publicados sobre a
+implementaÃ§Ã£o de um **front-end unificado sobre sistemas legados** em
+ambiente hospitalar. Qualquer publicaÃ§Ã£o de case study (mesmo em
+conferÃªncias) sobre unificar sistemas sem os substituir completamente
+seria pertinente. Isto mostraria que o autor comparou a sua abordagem
+com abordagens de outros. Se nÃ£o encontrar um caso idÃªntico, pode
+citar-se por exemplo o caso de implementaÃ§Ã£o de um **portal clÃ­nico
+unificado** nalgum hospital (p.ex., "Smith et al. 2020 implementaram um
+portal integrador para mÃ©dicos englobando vÃ¡rios sistemas heterogÃ©neos e
+relataram melhorias X"). Tais referÃªncias dariam mais forÃ§a ao argumento
+de que a soluÃ§Ã£o proposta Ã© inovadora mas tem paralelos na literatura,
+validando a direÃ§Ã£o tomada.
+
+Ao incorporar referÃªncias recentes destes domÃ­nios, a dissertaÃ§Ã£o
+beneficiarÃ¡ de um **enquadramento cientÃ­fico atualizado e abrangente**.
+Isso nÃ£o sÃ³ preenche possÃ­veis lacunas bibliogrÃ¡ficas como tambÃ©m
+oferece ideias para enriquecer a redaÃ§Ã£o. Por exemplo, ao citar um
+estudo real sobre EHRs e erros, pode-se aproveitar dados ou conclusÃµes
+desse estudo para **informar a discussÃ£o** do trabalho (confirmando ou
+contrastando resultados). Igualmente, referÃªncias contemporÃ¢neas servem
+para **justificar escolhas tÃ©cnicas** -- por ex., "OptÃ¡mos por uma
+arquitetura de microserviÃ§os, uma abordagem recentemente recomendada em
+sistemas de saÃºde (Shermock et al., 2023)". Em suma, explorar mais a
+literatura de 2020-2025 nas Ã¡reas acima indicadas vai aumentar a
+**densidade cientÃ­fica** do texto e demonstrar que o autor realizou um
+**exercÃ­cio exaustivo de revisÃ£o** atÃ© ao estado da arte atual.
+
+## ConclusÃ£o e RecomendaÃ§Ãµes Finais
+
+A dissertaÃ§Ã£o "Optimization and Standardization of Medication Management
+Processes in Hospital Environments" apresenta uma base muito promissora,
+cobrindo um problema relevante com uma soluÃ§Ã£o tecnolÃ³gica atual. Para
+evoluir de 59 para **pelo menos 100 pÃ¡ginas** de conteÃºdo rico e
+pertinente, as recomendaÃ§Ãµes-chave desta anÃ¡lise podem ser resumidas da
+seguinte forma:
+
+- **Expandir o contexto prÃ¡tico:** Introduzir uma descriÃ§Ã£o abrangente
+  do *status quo* no SCMVV -- sistemas existentes, fluxos de trabalho
+  atuais e problemas identificados. Isto criarÃ¡ um alicerce sÃ³lido para
+  todas as propostas de melhoria, permitindo ao leitor perceber **de
+  onde se parte e para onde se quer ir**.
+
+- **Aprofundar detalhes tÃ©cnicos e cientÃ­ficos:** Em cada capÃ­tulo,
+  adicionar **camadas de detalhe** -- seja explicando melhor certos
+  conceitos (p.ex. standardizaÃ§Ã£o de processos, seguranÃ§a de software),
+  incluindo exemplos empÃ­ricos (resultados preliminares, casos
+  ilustrativos), ou sustentando afirmaÃ§Ãµes com dados da literatura.
+  Garantir que aspetos importantes como anÃ¡lise de custo-benefÃ­cio,
+  resultados de desempenho/usabilidade e seguranÃ§a de informaÃ§Ã£o sejam
+  abordados com a devida profundidade.
+
+- **Incluir novos tÃ³picos relevantes:** Incorporar secÃ§Ãµes sobre
+  **Arquitetura atual dos sistemas**, **Resultados
+  piloto/Preliminares**, **GestÃ£o da mudanÃ§a**, entre outras sugeridas,
+  para cobrir todas as dimensÃµes do projeto -- tecnolÃ³gica, clÃ­nica,
+  organizacional e econÃ³mica. Isso tornarÃ¡ a dissertaÃ§Ã£o mais
+  **multi-facetada** e completa.
+
+- **Fortalecer a metodologia e avaliaÃ§Ã£o:** Manter o rigor metodolÃ³gico
+  demonstrado, complementando com indicaÃ§Ãµes de **tratamento
+  estatÃ­stico** dos dados e discutindo abertamente as limitaÃ§Ãµes. Sempre
+  que possÃ­vel, apresentar evidÃªncias recolhidas no terreno (mesmo que
+  parciais) para dar **credibilidade experimental** Ã s melhorias
+  reivindicadas.
+
+- **Atualizar e ampliar a revisÃ£o literÃ¡ria:** Integrar referÃªncias
+  recentes (2021--2024) nos tÃ³picos chave -- seguranÃ§a do doente,
+  interoperabilidade, adoÃ§Ã£o de sistemas -- e quaisquer outras Ã¡reas
+  conexas que suportem as decisÃµes do projeto. Isso assegura que o
+  trabalho reflete o **estado da arte atual** e nÃ£o apenas fontes
+  clÃ¡ssicas.
+
+Implementando estas sugestÃµes, espera-se que a dissertaÃ§Ã£o nÃ£o sÃ³
+alcance a extensÃ£o pretendida, mas sobretudo **ganhe em qualidade
+tÃ©cnico-cientÃ­fica**, clareza e impacto. Cada recomendaÃ§Ã£o dada foi
+justificada com base nas melhores prÃ¡ticas acadÃ©micas e exemplos do
+prÃ³prio texto, para facilitar ao autor a sua aplicaÃ§Ã£o. Em Ãºltima
+anÃ¡lise, ao preencher lacunas e enriquecer conteÃºdo, o autor estarÃ¡ a
+elevar o trabalho para um nÃ­vel superior -- apto a servir de referÃªncia
+para outros projetos de modernizaÃ§Ã£o de sistemas de saÃºde, cumprindo
+assim o duplo objetivo de **rigor cientÃ­fico e relevÃ¢ncia prÃ¡tica**. Boa
+escrita e sucesso na continuaÃ§Ã£o deste
+projeto\![\[1\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20Santa%20Casa%20da%20Miseric%C3%B3rdia,da%20Miseric%C3%B3rdia%20de%20Vila%20Verde)[\[2\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20literature%20review%20reveals%20several,most%20significant%20is%20deficient%20integra)
+
+------------------------------------------------------------------------
+
+[\[1\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20Santa%20Casa%20da%20Miseric%C3%B3rdia,da%20Miseric%C3%B3rdia%20de%20Vila%20Verde)
+[\[2\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20literature%20review%20reveals%20several,most%20significant%20is%20deficient%20integra)
+[\[3\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Table%201%3A%20Comparative%20analysis%20of,systems%20including%20legacy%20and%20modern)
+[\[4\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=User%20Interface%20Desktop%20Only%20Web%2FMobile,Web%2FMobile%20Responsive%20Web)
+[\[5\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=the%20raw%20metrics,for%20instance%2C%20should%20be%20interpreted)
+[\[6\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=5)
+[\[7\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=7%20Cost,ROI%20timeline%2C%20and%20payback%20period)
+[\[8\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=This%20dissertation%20is%20organized%20to,Following%20this%20introduction)
+[\[9\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=plementation%20and%20pilot%20study,these%20results%2C%20contextualizing%20them%20within)
+[\[10\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Chapter%206)
+[\[11\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Chapter%206)
+[\[12\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Applications)
+[\[13\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Execut%C3%A1vel)
+[\[14\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=3)
+[\[15\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=A%20primary%20technical%20objective%20is,The)
+[\[16\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Integration%20Custom%20APIs%20HL7%2FFHIR%20HL7%2FFHIR,RESTful%2FHL7)
+[\[17\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=4)
+[\[18\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=organizational%20culture%20or%20patient%20outcomes,lacking%20a%20parallel%20control%20group)
+[\[19\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=elicitation%20and%20a%20deep%20analysis,structured)
+[\[20\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=by%20the%20goals%20in%20Figure,prescribing%20errors%20and%20over%2085)
+[\[21\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Similarly%2C%20the%20projected%20improvements%20in,user%20satisfaction%20are%20expected%20to)
+[\[22\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=3)
+[\[23\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20proposed%20architecture%20will%20be,The%20Presentation%20Layer%2C%20built%20with)
+[\[24\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=strategies%20were%20implemented%20for%20each,resistance%20to%20change%2C%20a%20comprehensive)
+[\[25\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=change%2C%20a%20comprehensive)
+[\[26\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=organizational)
+[\[27\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20study%20protocol%20received%20full,All%20research%20activities)
+[\[28\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=A%20critical%20sociotechnical%20risk%20is,The%20mitigation)
+[\[29\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Key%20components%20to%20be%20implemented,system%20integrated%20with%20the%20hospi)
+[\[30\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=a%20proactive%20safety%20model%2C%20identifying,%282021)
+[\[31\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=fundamentally%20grounded%20in%20Design%20Science,DSR%29%29%2C%20an%20approach)
+[\[32\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=To%20operationalize%20the%20DSR%20paradigm%2C,was%20employed%20Greenhalgh%20et%20al)
+[\[33\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=,1)
+[\[34\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Quantitative%20data%20focused%20on%20objective%2C,System%20perfor)
+[\[35\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=Qualitative%20data%20provided%20rich%2C%20contextual,structured%20inter)
+[\[36\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20system%E2%80%99s%20success%20was%20assessed,rooted%20in%20the%20Donabedian%20model)
+[\[37\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=reduction%20in%20medication%20errors)
+[\[38\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=infrastructures.%20The%20quasi)
+[\[39\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=organizational%20culture%20or%20patient%20outcomes,lacking%20a%20parallel%20control%20group)
+[\[40\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=The%20findings%20must%20be%20interpreted,The%20single)
+[\[41\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=match%20at%20L1801%20specific%20implementation,of%20the%20findings%20to%20other)
+[\[42\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=4)
+[\[45\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=acceptance%20will%20be%20conducted%20using,The)
+[\[46\]](file://file-THkgMZfcUY2nMnTJiYxGge#:~:text=into%20the%20cognitive%20ergonomics%20of,insights%20into%20minimizing%20cognitive%20load)
+dissertation.pdf
+
+<file://file-THkgMZfcUY2nMnTJiYxGge>
+
+[\[43\]](https://www.jmir.org/2022/9/e38144/#:~:text=The%20Impact%20of%20Electronic%20Health,income%20health%20care%20settings)
+The Impact of Electronic Health Record Interoperability on Safety \...
+
+<https://www.jmir.org/2022/9/e38144/>
+
+[\[44\]](https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-024-12060-2#:~:text=The%20influence%20of%20electronic%20health,was%20conducted%20of%20PubMed)
+The influence of electronic health record design on usability and \...
+
+<https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-024-12060-2>
+

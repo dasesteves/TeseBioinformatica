@@ -1,0 +1,1181 @@
+﻿# RelatÃ³rio TÃ©cnico-CientÃ­fico de Apoio Ã  DissertaÃ§Ã£o
+
+## IntroduÃ§Ã£o
+
+Este relatÃ³rio de apoio tem como objetivo analisar e ampliar o conteÃºdo
+tÃ©cnico-cientÃ­fico da dissertaÃ§Ã£o **"Optimization and Standardization of
+Medication Management Processes in Hospital Environments"** de Diogo
+AndrÃ© da Silva Esteves. Baseia-se na anÃ¡lise prÃ©via realizada (documento
+**"AnÃ¡lise TÃ©cnica e CientÃ­fica da DissertaÃ§Ã£o"**) e considera agora os
+artefactos de software desenvolvidos no Ã¢mbito do projeto, disponÃ­veis
+em repositÃ³rios GitHub. Pretende-se avaliar o conteÃºdo tÃ©cnico de cada
+repositÃ³rio, identificar o papel de cada um no contexto da dissertaÃ§Ã£o,
+e propor melhorias concretas para incorporar os resultados prÃ¡ticos na
+tese -- **visando uma versÃ£o final mais extensa (\>100 pÃ¡ginas),
+coerente e robusta cientificamente**. O documento estÃ¡ estruturado em
+tÃ³picos com recomendaÃ§Ãµes orientadas para aÃ§Ã£o, servindo de guia para
+reforÃ§ar a dissertaÃ§Ã£o em termos de detalhe tÃ©cnico e profundidade
+cientÃ­fica.
+
+## AnÃ¡lise dos RepositÃ³rios do Projeto
+
+Nesta secÃ§Ã£o apresentam-se os principais repositÃ³rios GitHub associados
+ao projeto da dissertaÃ§Ã£o, descrevendo o conteÃºdo tÃ©cnico de cada um
+(estrutura, cÃ³digo, documentaÃ§Ã£o) e o seu propÃ³sito. Em seguida,
+discute-se a relevÃ¢ncia de cada artefacto no contexto dos objetivos da
+tese.
+
+### **Registo de Tratamentos** -- *Artefacto Proposto*
+
+Este repositÃ³rio corresponde ao **sistema central (protÃ³tipo)**
+desenvolvido na dissertaÃ§Ã£o, destinado a unificar os processos de gestÃ£o
+da medicaÃ§Ã£o no hospital SCMVV. Pelo contexto da tese, trata-se de uma
+aplicaÃ§Ã£o web com arquitetura moderna (backend em Node.js/Express e
+frontend em TypeScript/React) suportando uma abordagem de
+microsserviÃ§os[\[1\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=nol%C3%B3gico%20%E2%80%94%20um%20sistema%20web,Type).
+Embora o repositÃ³rio *registo-tratamentos* em si nÃ£o tenha um README
+pÃºblico detalhado, informaÃ§Ãµes cruzadas indicam que este Ã© o **principal
+artefacto** que materializa a soluÃ§Ã£o proposta. De acordo com o resumo
+da dissertaÃ§Ã£o, o sistema proposto Ã© um *web-based system* com
+*microservices architecture (Node.js)* e um frontend React, concebido
+para integraÃ§Ã£o com os sistemas
+existentes[\[1\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=nol%C3%B3gico%20%E2%80%94%20um%20sistema%20web,Type).
+
+Do ponto de vista tÃ©cnico, espera-se que o repositÃ³rio contenha mÃ³dulos
+de backend para **APIs REST** (orquestrando funcionalidades como
+prescriÃ§Ã£o, validaÃ§Ã£o farmacÃªutica, administraÃ§Ã£o de medicamentos) e um
+frontend unificado para os diferentes perfis de utilizador (mÃ©dicos,
+farmacÃªuticos, enfermeiros). Provavelmente inclui mecanismos de
+autenticaÃ§Ã£o (e.g., JWT tokens) e integraÃ§Ã£o com base de dados Oracle do
+hospital. De facto, o repositÃ³rio da modernizaÃ§Ã£o do AIDA-PCE refere
+explicitamente a necessidade de compatibilidade total com a aplicaÃ§Ã£o
+*registo-tratamentos*[\[2\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L5),
+incluindo a partilha da chave JWT para
+autenticaÃ§Ã£o[\[3\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L10),
+o que confirma que o artefacto principal utiliza **JWT e um esquema de
+autenticaÃ§Ã£o unificado** entre mÃ³dulos (legado e novo).
+
+Espera-se ainda que a estrutura de *registo-tratamentos* siga boas
+prÃ¡ticas de desenvolvimento: possivelmente um diretÃ³rio `app/` (Ã 
+semelhanÃ§a do mÃ³dulo AIDA modernizado) com sub-diretÃ³rios para APIs
+(`app/api/`), interfaces (`app/*`), integraÃ§Ã£o de BD (`db/`), etc. O
+repositÃ³rio poderÃ¡ nÃ£o conter um README descritivo, mas inferindo do
+contexto, o **papel deste artefacto Ã© central**: Ã© a plataforma onde os
+fluxos hoje dispersos serÃ£o padronizados e otimizados, concretizando o
+objetivo principal da dissertaÃ§Ã£o de **unificar workflows
+clÃ­nico-farmacÃªuticos num Ãºnico sistema
+moderno**[\[4\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=de%20software%20centralizada,farmac%C3%AAuticos%2C%20atualmente)[\[5\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=um%20artefacto%20tec).
+
+**Tecnologias e implementaÃ§Ã£o:** O artefacto adota tecnologias atuais
+adequadas a um ambiente hospitalar crÃ­tico. O uso de Node.js no backend
+garante escalabilidade e integraÃ§Ã£o com sistemas legados, enquanto o
+frontend em React/Next.js proporciona uma UI responsiva e coesa. Ã‰
+provÃ¡vel que o *registo-tratamentos* comunique diretamente com a base de
+dados Oracle do AIDA-PCE (ou via serviÃ§os) para ler/escrever dados
+clÃ­nicos -- isto Ã© sugerido pela Ãªnfase em manter *conexÃ£o direta com
+Oracle* no projeto de
+modernizaÃ§Ã£o[\[6\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L5-L10).
+Assim, este artefacto serve tambÃ©m de **"ponte" entre o novo e o
+legado**, operando possivelmente com *camadas anti-corrupÃ§Ã£o* para
+isolar a lÃ³gica nova dos sistemas
+antigos[\[7\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=match%20at%20L2065%20ticularly%20AIDA,developed%2C%20acting%20as%20an%20anti).
+
+**Estrutura e commits:** Uma anÃ¡lise dos commits sugere que parte do
+cÃ³digo foi inserida via *upload* (indicando possivelmente um grande
+*commit* inicial "Add files via upload"). Isto pode dificultar rastrear
+pequenas mudanÃ§as; recomenda-se documentar as principais decisÃµes de
+design e componentes do sistema no texto da tese, dado que o repositÃ³rio
+por si pode nÃ£o evidenciar isso em histÃ³rico detalhado. Em suma, o
+*registo-tratamentos* Ã© o **produto de software** resultante -- o
+protÃ³tipo que demonstra a viabilidade da soluÃ§Ã£o proposta -- e deve ser
+amplamente descrito e avaliado na dissertaÃ§Ã£o.
+
+### **PsicofÃ¡rmacos** -- *AnÃ¡lise de Movimentos de PsicotrÃ³picos*
+
+O repositÃ³rio `psicofarmacos` contÃ©m um conjunto de scripts e dados para
+**extrair e analisar movimentos de medicamentos psicotrÃ³picos** a partir
+de uma API do sistema
+hospitalar[\[8\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L1-L9).
+Este projeto auxilia na caracterizaÃ§Ã£o do problema atual, focando num
+caso particular: os medicamentos psicotrÃ³picos, que tipicamente requerem
+controle apertado devido ao potencial de abuso.
+
+**ConteÃºdo tÃ©cnico:** O repositÃ³rio apresenta mÃºltiplos scripts Python
+organizados por funcionalidade -- desde a extraÃ§Ã£o de dados brutos,
+filtragem e agrupamento, atÃ© geraÃ§Ã£o de relatÃ³rios (Excel) e anÃ¡lise
+exploratÃ³ria[\[9\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L12-L24)[\[10\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L92-L101).
+HÃ¡ tambÃ©m ficheiros CSV com listas de fÃ¡rmacos (e.g., antidemÃªncia,
+psicotrÃ³picos sinalizados) e exemplos de resposta da API. O README
+detalha o fluxo de trabalho: primeiro testar a conexÃ£o (script
+`testar_api.py`), depois obter os movimentos via API
+(`obter_movimentos_psicotropicos.py`), filtrar dados irrelevantes,
+agregar por medicamento e data, e finalmente gerar relatÃ³rios Excel por
+medicamento e por
+dia[\[11\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L56-L65)[\[12\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L98-L106).
+Esse pipeline sugere uma preocupaÃ§Ã£o em **tratar dados reais** do
+hospital para compreender padrÃµes de consumo/dispensa de psicotrÃ³picos.
+
+Um aspeto importante Ã© a especificaÃ§Ã£o da **API SCMVV** utilizada: o
+endpoint base Ã© `http://10.21.105.31/SCMVV/api/Listas/Lista`, com
+parÃ¢metros JSON indicando a *view* de interesse
+(`"Vista": "ListaMovimentosArtigoSCMVV"`) e condiÃ§Ãµes de filtro por
+cÃ³digo de
+artigo[\[13\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L131-L140).
+Ou seja, os scripts conectam-se diretamente ao sistema legado
+(provavelmente o AIDA-PCE ou sistema relacionado) para extrair todos os
+registos de movimentos de stock de medicamentos (entradas/saÃ­das)
+marcados como psicotrÃ³picos (`FLAG_PSICO = 1`). Esta capacidade de
+extrair *dados do mundo real* Ã© fundamental para quantificar a magnitude
+dos problemas atuais: p.ex., quantos registos de movimentaÃ§Ã£o existem
+num dado perÃ­odo, quÃ£o dispersos estÃ£o os dados, e identificar possÃ­veis
+*inconsistÃªncias* ou ineficiÃªncias no processo manual/atual.
+
+**Papel na dissertaÃ§Ã£o:** Este artefacto funciona como **ferramenta de
+anÃ¡lise do contexto atual**. A dissertaÃ§Ã£o pode tirar partido destes
+resultados para enriquecer a secÃ§Ã£o de contexto e motivaÃ§Ã£o: por
+exemplo, mencionar quantos movimentos mensais de psicotrÃ³picos sÃ£o
+registados, a complexidade de os acompanhar manualmente, ou eventuais
+atrasos e erros identificados. No relatÃ³rio anterior foi notado que
+faltava uma descriÃ§Ã£o prÃ¡tica do panorama atual no
+SCMVV[\[14\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Descri%C3%A7%C3%A3o%20insuficiente%20do%20contexto%20atual,N%C3%A3o%20se%20exp%C3%B5e);
+os dados obtidos aqui permitem preencher essa lacuna com **evidÃªncias
+empÃ­ricas**. Por exemplo, se a anÃ¡lise revelar centenas de movimentaÃ§Ãµes
+mensais e que atualmente nÃ£o hÃ¡ integraÃ§Ã£o adequada (exigindo duplicaÃ§Ã£o
+de registos em papel ou sistemas distintos), isso reforÃ§a claramente a
+necessidade da soluÃ§Ã£o proposta.
+
+Tecnicamente, o repositÃ³rio psicofarmacos demonstra tambÃ©m experiÃªncia
+em lidar com **interoperabilidade**: uso de APIs para obter dados de um
+sistema legado, processamento local e geraÃ§Ã£o de relatÃ³rios. Estes
+passos metodolÃ³gicos devem ser mencionados na tese, pois mostram
+competÃªncias de *data analysis* aplicadas ao caso clÃ­nico e fundamentam
+decisÃµes de design (e.g., que dados integrar no novo sistema). Ainda que
+os resultados detalhados desta anÃ¡lise nÃ£o constem na versÃ£o atual da
+dissertaÃ§Ã£o (nÃ£o se encontraram referÃªncias explÃ­citas a "psicotrÃ³picos"
+no texto), recomenda-se fortemente incluÃ­-los para dar peso quantitativo
+Ã  discussÃ£o do problema.
+
+Em resumo, o repositÃ³rio *psicofarmacos* Ã© um artefacto auxiliar que
+**quantifica e caracteriza parte do problema atual** -- a gestÃ£o de
+medicamentos controlados -- e os seus resultados devem ser integrados no
+capÃ­tulo de *ProblemÃ¡tica/Contexto Atual* da dissertaÃ§Ã£o, bem como
+possivelmente na *AvaliaÃ§Ã£o de Resultados*, caso alguma mÃ©trica
+relacionada com psicotrÃ³picos seja usada para validar melhorias (por
+ex., reduÃ§Ã£o de etapas manuais no novo sistema).
+
+### **AIDA-PCE (Legado) e MÃ³dulo Modernizado** -- *RepositÃ³rio aida_pce*
+
+Este repositÃ³rio Ã© dividido em duas partes principais: - O diretÃ³rio
+`aida_pce/` com cÃ³digo da aplicaÃ§Ã£o legada (mÃ³dulo de
+PrescriÃ§Ã£o/Dispensa) originalmente em tecnologia ASP.NET Web Forms
+(ficheiros `.aspx` e code-behind VB.NET). - O diretÃ³rio
+`aida_pce_REACT/` que contÃ©m a **versÃ£o modernizada do mÃ³dulo de
+farmÃ¡cia (PRF)** reimplementada numa stack atual (Next.js com
+React/TypeScript, integrando com Oracle
+DB)[\[15\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L1-L9).
+
+**ConteÃºdo tÃ©cnico e estrutura:** A presenÃ§a de ficheiros como
+`logon.aspx.vb`, `mapap.aspx`, etc., indica que se obteve acesso ao
+cÃ³digo-fonte do sistema legado AIDA-PCE. Esse sistema, descrito na
+dissertaÃ§Ã£o como **monolÃ­tico e com vÃ¡rias limitaÃ§Ãµes** (UI pouco
+intuitiva, ausÃªncia de suporte Ã  decisÃ£o em tempo real,
+etc.[\[16\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=%28AIDA,interface%2C%20a%20lack%20of%20real)),
+serve de ponto de partida para o projeto. A tese menciona AIDA-PCE como
+o sistema utilizado no SCMVV para partes do ciclo do medicamento, logo
+compreender a sua arquitetura era crucial. O repositÃ³rio disponibiliza
+essa *visÃ£o interna*, mostrando formulÃ¡rios e funcionalidades
+existentes. Contudo, como sistema antigo, Ã© difÃ­cil de manter e nÃ£o
+satisfaz os requisitos modernos de usabilidade e integraÃ§Ã£o.
+
+Para colmatar essas falhas, o sub-projecto *AIDA PCE Modern - PRF*
+reimplementa o mÃ³dulo de farmÃ¡cia usando **Next.js/React** para o
+frontend e comunica diretamente com a base de dados Oracle
+existente[\[17\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L10).
+O README especifica objetivos claros: *"Reimplementar o mÃ³dulo PRF com
+stack moderno"* e *"Garantir compatibilidade total com a aplicaÃ§Ã£o
+existente
+registo-tratamentos"*[\[2\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L5).
+Isto indica que o novo mÃ³dulo foi desenvolvido **pensando na sua
+integraÃ§Ã£o com o artefacto principal** da dissertaÃ§Ã£o. De facto, vÃ¡rios
+pontos da documentaÃ§Ã£o instruem como integrar o mÃ³dulo React no sistema
+unificado: por exemplo, usar a mesma `JWT_SECRET` no
+*registo-tratamentos* para autenticacÃ£o
+unificada[\[3\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L10)
+e assegurar que as rotas pÃºblicas e formato de token coincidem.
+Adicionalmente, sÃ£o propostas duas estratÃ©gias de integraÃ§Ã£o: - **OpÃ§Ã£o
+1: SubmÃ³dulo** -- copiar diretamente os componentes do mÃ³dulo farmÃ¡cia
+(`app/farmacia`, `types/farmacia.ts`, etc.) para dentro do projeto
+*registo-tratamentos*, adaptando a pool de conexÃ£o Oracle conforme
+necessÃ¡rio[\[18\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L5). -
+**OpÃ§Ã£o 2: Micro-frontend** -- executar o mÃ³dulo *aida_pce_modern* como
+aplicaÃ§Ã£o independente, mas configurando navegaÃ§Ã£o e partilha de
+autenticaÃ§Ã£o (cookies JWT) entre as duas
+aplicaÃ§Ãµes[\[19\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L105-L111).
+
+Estas orientaÃ§Ãµes deixam claro que a intenÃ§Ã£o Ã© **integrar
+funcionalmente o legado modernizado no novo sistema**. Na prÃ¡tica, isto
+significa que o *registo-tratamentos* poderÃ¡ incorporar a funcionalidade
+de gestÃ£o de stocks e movimentos de farmÃ¡cia reimplementada, evitando
+que o utilizador tenha de recorrer Ã  interface antiga do AIDA-PCE. AlÃ©m
+disso, o repositÃ³rio define as **estruturas de dados necessÃ¡rias** no
+Oracle (tabelas prf_artigos, prf_stock, prf_movimentos) para suportar
+este
+mÃ³dulo[\[20\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L113-L122)[\[21\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L134-L143)
+-- informaÃ§Ã£o valiosa que pode ser usada na dissertaÃ§Ã£o ao descrever a
+modelaÃ§Ã£o da base de dados e migraÃ§Ã£o de dados do sistema legado.
+
+Importa referir que este componente modernizado foi desenvolvido com
+boas prÃ¡ticas: inclui **testes unitÃ¡rios e de integraÃ§Ã£o** que cobrem as
+APIs do mÃ³dulo e componentes
+React[\[22\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L6).
+Isto demonstra rigor tÃ©cnico e deve ser mencionado na tese para
+evidenciar a robustez da implementaÃ§Ã£o (ex.: garantir que a nova soluÃ§Ã£o
+foi validada quanto a funcionalidade e desempenho esperado).
+
+**Papel no contexto da tese:** O repositÃ³rio *aida_pce* fornece um elo
+crÃ­tico com o **sistema existente no hospital**. A dissertaÃ§Ã£o carecia
+inicialmente de uma descriÃ§Ã£o da arquitetura
+legada[\[23\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Arquitetura%20atual%20dos%20sistemas%20pouco,ex);
+com este cÃ³digo em mÃ£os, pode agora detalhar como o AIDA-PCE funcionava
+(tecnologias antiquadas, ausÃªncia de APIs modernas, integraÃ§Ã£o limitada
+com outros mÃ³dulos como SONHO ou PEM). Isso deve ser explorado no
+capÃ­tulo de *Contexto Atual*, possivelmente incluindo um **diagrama da
+arquitetura atual** do SCMVV: mostrando o AIDA-PCE e outros sistemas
+legados, e destacando pontos de falha (por ex., ausÃªncia de
+interoperabilidade, duplicaÃ§Ã£o de introduÃ§Ã£o de dados). Em seguida, no
+capÃ­tulo de *SoluÃ§Ã£o Proposta*, a tese deve explicar a estratÃ©gia de
+modernizaÃ§Ã£o: ao invÃ©s de substituir todo o AIDA de uma vez, optou-se
+por **modernizar por mÃ³dulos**, comeÃ§ando pelo mÃ³dulo de farmÃ¡cia (PRF),
+integrando-o ao novo sistema. Esta abordagem Ã© condizente com princÃ­pios
+de *anti-corruption layer* e garante uma transiÃ§Ã£o suave -- um
+contributo importante a salientar.
+
+Concretamente, deve-se descrever na dissertaÃ§Ã£o como o novo mÃ³dulo PRF
+opera dentro da soluÃ§Ã£o: por exemplo, um **caso de uso** em que um
+farmacÃªutico regista uma entrada/saÃ­da de stock atravÃ©s da interface
+unificada (registo-tratamentos), a qual internamente invoca as funÃ§Ãµes
+do mÃ³dulo PRF modernizado (seja via chamada interna ou
+redirecionamento), atualizando a BD Oracle e refletindo no stock em
+tempo real -- algo impossibilitado no sistema antigo devido Ã 
+fragmentaÃ§Ã£o.
+
+Resumindo, o *aida_pce repo* traz para a dissertaÃ§Ã£o: - **Detalhes do
+legado** (essenciais para fundamentar a necessidade do projeto), - **Uma
+prova de conceito de integraÃ§Ã£o/modernizaÃ§Ã£o** (que pode ser discutida
+nos resultados, mostrando que tecnicamente Ã© viÃ¡vel integrar-se com o
+legado sem interromper serviÃ§os), - **DemonstraÃ§Ã£o de qualidade de
+engenharia** (uso de tecnologias modernas, testes, seguranÃ§a JWT, etc.).
+Este artefacto deve ser explorado a fundo no texto, alinhando-o com
+objetivos de interoperabilidade e melhoria de seguranÃ§a do doente.
+
+### **PrÃ©-Tese** -- *RepositÃ³rio pre-tese (DocumentaÃ§Ã£o)*
+
+Este repositÃ³rio contÃ©m a estrutura LaTeX utilizada para a prÃ©-tese do
+mestrado[\[24\]](https://github.com/dasesteves/pre-tese/blob/5e2d3ddc49c71af4b5f902db3d5d23e9fdb51969/README.md#L14-L22).
+Em essÃªncia, trata-se de um *template* organizado em capÃ­tulos
+(IntroduÃ§Ã£o, Estado da Arte, Plano de Trabalho, Metodologia, Resultados,
+DiscussÃ£o, ConclusÃ£o) e material prÃ©-textual (resumo, Ã­ndice, etc.), de
+acordo com as normas da Universidade do Minho. NÃ£o hÃ¡ cÃ³digo-fonte de
+software aqui, mas sim o histÃ³rico da escrita inicial da dissertaÃ§Ã£o.
+
+**ConteÃºdo e utilidade:** A prÃ©-tese, entregue anteriormente, delineou o
+plano e capÃ­tulos esperados, servindo de guia para o desenvolvimento do
+trabalho. Por exemplo, vemos que capÃ­tulos de *Resultados* e *DiscussÃ£o*
+estavam inicialmente previstos mas possivelmente ficaram por preencher
+na
+altura[\[25\]](https://github.com/dasesteves/pre-tese/blob/5e2d3ddc49c71af4b5f902db3d5d23e9fdb51969/README.md#L132-L140).
+Este repositÃ³rio confirma a **estrutura lÃ³gica** que a dissertaÃ§Ã£o deve
+seguir e que foi usada atÃ© agora. Serve, assim, como referÃªncia para
+verificar se todos os tÃ³picos planeados foram de facto abordados na
+versÃ£o final.
+
+Notou-se, na anÃ¡lise anterior, algumas inconsistÃªncias de estrutura e
+nomenclatura de capÃ­tulos. Ã‰ importante agora garantir coerÃªncia:
+alinhar os tÃ­tulos e sequÃªncia dos capÃ­tulos da versÃ£o final com o
+proposto na prÃ©-tese (por ex., se *Problem and Challenges* virou um
+capÃ­tulo prÃ³prio, ou se *Estado da Arte* inclui subsecÃ§Ãµes novas, etc.).
+O repositÃ³rio *pre-tese* tambÃ©m inclui possivelmente um ficheiro `.bib`
+com as referÃªncias bibliogrÃ¡ficas, o que pode ser Ãºtil para expandir a
+revisÃ£o de literatura -- inclusive adicionando novas fontes (2021-2024)
+conforme
+recomendado[\[26\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Atualizar%20e%20ampliar%20a%20revis%C3%A3o,%E2%80%93%20e%20quaisquer%20outras%20%C3%A1reas).
+
+**Papel no contexto:** Embora nÃ£o contribua com conteÃºdo tÃ©cnico
+adicional, o *pre-tese* repo Ã© relevante para assegurar que nada foi
+negligenciado. Pode-se utilizÃ¡-lo como **checklist**: por exemplo,
+garantir que o capÃ­tulo de *Resultados* na versÃ£o final nÃ£o permaneÃ§a
+hipotÃ©tico ou vazio -- deve incorporar resultados prÃ¡ticos (mesmo que
+preliminares) dos artefactos desenvolvidos, conforme discutido neste
+relatÃ³rio. AlÃ©m disso, a prÃ©-tese tinha um *Plano de Trabalho* com
+prazos e um *Gantt*; na versÃ£o final, pode ser interessante refletir
+sobre desvios ou confirmaÃ§Ãµes daquele plano (por ex., mencionar se todas
+as tarefas planeadas foram concluÃ­das, ou justificar mudanÃ§as de
+escopo). Isso adiciona maturidade e transparÃªncia metodolÃ³gica ao
+documento.
+
+Em suma, o repositÃ³rio *pre-tese* nÃ£o requer descriÃ§Ã£o na dissertaÃ§Ã£o em
+si, mas a *tese final deve refletir a estrutura completa* que ali estava
+delineada, agora enriquecida com os desenvolvimentos efetivos e
+resultados obtidos.
+
+### **Outros RepositÃ³rios (e.g., "projeto")**
+
+O utilizador forneceu tambÃ©m um repositÃ³rio nomeado genericamente
+`projeto`. ApÃ³s anÃ¡lise, conclui-se que este repositÃ³rio **nÃ£o estÃ¡
+relacionado** com a temÃ¡tica da gestÃ£o de medicaÃ§Ã£o hospitalar -- na
+verdade, trata-se de um projeto anterior do mestrado em BioinformÃ¡tica
+sobre transcriptÃ³mica de cÃ©lulas pigmentares em
+**zebrafish**[\[27\]](https://github.com/dasesteves/projeto/blob/0daf545bab94bf83904056c60d8c7c1bbb978376/README.md#L2-L10).
+O conteÃºdo (scripts R, anÃ¡lises de expressÃ£o gÃ©nica, etc.) pertence a um
+contexto cientÃ­fico distinto e nÃ£o oferece contributo direto para a
+dissertaÃ§Ã£o atual.
+
+Portanto, no Ã¢mbito das melhorias da tese de medicaÃ§Ã£o, o repositÃ³rio
+*projeto* pode ser ignorado. Ã‰ importante apenas garantir que nÃ£o haja
+confusÃ£o nem inclusÃ£o inadvertida de conteÃºdo desse projeto na
+dissertaÃ§Ã£o de gestÃ£o de medicaÃ§Ã£o. Se, por acaso, alguma metodologia de
+anÃ¡lise de dados ou visualizaÃ§Ã£o daquele projeto foi inspiraÃ§Ã£o para o
+atual (por ex., uso de R ou Python para anÃ¡lise), tal poderia ser
+mencionado como enriquecimento de competÃªncias, mas nÃ£o Ã© essencial.
+
+Resumindo, focaremos nos quatro repositÃ³rios chave mencionados acima
+(registo-tratamentos, psicofarmacos, aida_pce, pre-tese), que de facto
+se relacionam com o desenvolvimento e documentaÃ§Ã£o da soluÃ§Ã£o proposta
+na dissertaÃ§Ã£o.
+
+## RelaÃ§Ã£o dos Artefactos com as SecÃ§Ãµes e Objetivos da DissertaÃ§Ã£o
+
+Tendo avaliado cada repositÃ³rio, importa agora mapear **como estes
+artefactos se conectam aos capÃ­tulos e objetivos definidos na tese**. A
+dissertaÃ§Ã£o possui vÃ¡rias secÃ§Ãµes -- **IntroduÃ§Ã£o/Contexto, Estado da
+Arte, Metodologia, ImplementaÃ§Ã£o/SoluÃ§Ã£o Proposta, Resultados,
+DiscussÃ£o, ConclusÃµes** -- e cada artefacto pode enriquecer uma ou mais
+destas partes. A seguir, delineia-se essa relaÃ§Ã£o:
+
+- **Contexto Atual e DefiniÃ§Ã£o do Problema:** Os artefactos
+  *psicofarmacos* e partes do repositÃ³rio *aida_pce* sÃ£o particularmente
+  relevantes aqui. Conforme identificado na anÃ¡lise prÃ©via, faltava na
+  versÃ£o original uma descriÃ§Ã£o robusta do *status quo* no hospital
+  SCMVV (sistemas existentes, fluxos de trabalho atuais, problemas
+  concretos)[\[14\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Descri%C3%A7%C3%A3o%20insuficiente%20do%20contexto%20atual,N%C3%A3o%20se%20exp%C3%B5e).
+  Agora, com os dados da anÃ¡lise de psicotrÃ³picos, pode-se quantificar
+  problemas: por exemplo, **volume de registos manuais e dispersos** que
+  a farmÃ¡cia do hospital lida, potenciais **riscos Ã  seguranÃ§a do
+  doente** (erros de medicaÃ§Ã£o nÃ£o detetados devido Ã  falta de suporte
+  computacional), etc. Igualmente, a disponibilidade do cÃ³digo do
+  AIDA-PCE permite detalhar **como o processo funciona hoje**: pode-se
+  descrever que o mÃ©dico prescreve no sistema AIDA-PCE (ou no SONHO,
+  dependendo do fluxo), o farmacÃªutico valida noutra interface, e os
+  enfermeiros administram talvez registando noutro local -- evidenciando
+  a *fragmentaÃ§Ã£o* com base real. Incluir um **diagrama de arquitetura
+  atual** ilustrando AIDA-PCE e outros sistemas legados (ex.: SClÃ­nico,
+  PEM, SONHO) e onde ocorrem quebras de integraÃ§Ã£o seria
+  valioso[\[23\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Arquitetura%20atual%20dos%20sistemas%20pouco,ex).
+  TambÃ©m convÃ©m referir quaisquer achados das entrevistas com
+  stakeholders (mencionadas na tese
+  atual[\[28\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=elicitation%20and%20a%20deep%20analysis,structured))
+  em conjunto com evidÃªncias objetivas (dados). Assim, o *psicofarmacos*
+  fornece dados concretos de movimentos de medicamentos, e o *aida_pce
+  (legado)* fornece detalhes tÃ©cnicos -- ambos alimentam uma **secÃ§Ã£o de
+  Contexto/Problema** muito mais rica e fundamentada do que antes.
+
+- **Estado da Arte:** Embora os repositÃ³rios em si nÃ£o sejam fontes
+  bibliogrÃ¡ficas, eles sinalizam tÃ³picos tecnolÃ³gicos que devem aparecer
+  na revisÃ£o. Por exemplo, o fato do artefacto usar **JWT,
+  microsserviÃ§os, React, Oracle** sugere incluir referÃªncias sobre *web
+  security (JWT usage in healthcare)*, *arquiteturas de microsserviÃ§os
+  em saÃºde*, *sistemas de registo de medicaÃ§Ã£o de Ãºltima geraÃ§Ã£o*, etc.
+  O estado da arte jÃ¡ abordava ePrescription, CDSS, IA, blockchain,
+  FHIR, etc., mas a anÃ¡lise apontou que poderiam ser explorados tÃ³picos
+  como sistemas de administraÃ§Ã£o de medicamentos no ponto de cuidado
+  (eMAR), cÃ³digos de barras, Lean Six Sigma para processos, e a
+  realidade portuguesa (SNS,
+  SPMS)[\[29\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=HL7%2FFHIR%2C%20etc,n%C3%A3o%20s%C3%A3o%20mencionados)[\[30\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=apesar%20de%20serem%20parte%20integrante,exemplo%2C%20%20poderia%20%20referir).
+  A existÃªncia do mÃ³dulo PRF modernizado no repositÃ³rio mostra a
+  preocupaÃ§Ã£o com **interoperabilidade** e **modernizaÃ§Ã£o incremental**,
+  o que estÃ¡ alinhado com iniciativas de sistemas abertos. Deve-se
+  relacionar isso na revisÃ£o: citar, por exemplo, casos de hospitais que
+  modernizaram sistemas legados gradualmente, ou soluÃ§Ãµes de mercado que
+  integram vÃ¡rios mÃ³dulos (Epic, Cerner vs. soluÃ§Ãµes caseiras -- a
+  prÃ³pria tese jÃ¡ faz uma
+  comparaÃ§Ã£o[\[31\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=match%20at%20L981%20Feature%20AIDA,Epic%20Cerner%20Our%20System)).
+  Em suma, os artefactos reforÃ§am a necessidade de abordar literaturas
+  sobre *integraÃ§Ã£o de sistemas hospitalares* e *seguranÃ§a do doente
+  associada a TI*. Qualquer tecnologia usada (React, Node.js, Oracle)
+  deve ser brevemente justificada com referÃªncias: p.ex., Node.js em
+  saÃºde porquÃª? -- possivelmente pela sua escalabilidade e por permitir
+  implementar microsserviÃ§os de forma
+  eficiente[\[32\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=such%20as%20Java%20and%20Node).
+  Assim, os artefactos guiam a complementaÃ§Ã£o do Estado da Arte para
+  tornÃ¡-lo **mais atualizado e diretamente relacionado Ã s escolhas do
+  projeto**.
+
+- **Metodologia (Design Science Research) e Desenvolvimento:** A
+  metodologia DSR seguida deve ser mantida, mas agora pode ser
+  complementada com **detalhes da implementaÃ§Ã£o** obtidos dos
+  repositÃ³rios. Por exemplo, pode-se explicar que se seguiu uma
+  metodologia iterativa de prototipagem, comeÃ§ando por analisar o legado
+  (scripts psicofarmacos, leitura do cÃ³digo AIDA), definindo requisitos,
+  e entÃ£o desenvolvendo o artefacto principal e o mÃ³dulo modernizado.
+  Aqui, descreve-se tambÃ©m a **arquitetura da soluÃ§Ã£o proposta**: Ã©
+  fundamental incluir um **diagrama da arquitetura do novo sistema**
+  (*target architecture*), mostrando os microsserviÃ§os e mÃ³dulos do
+  *registo-tratamentos*, e as integraÃ§Ãµes -- incluindo o mÃ³dulo PRF
+  (farmÃ¡cia) reimplementado e eventuais conexÃµes com outros sistemas via
+  API/DB. A partir do repositÃ³rio principal e do aida_pce, conseguimos
+  inferir componentes a destacar no diagrama:
+
+- Frontend unificado (React) acessÃ­vel via browser para todos os perfis.
+
+- Backend Node.js com serviÃ§os: PrescriÃ§Ã£o, ValidaÃ§Ã£o, AdministraÃ§Ã£o,
+  FarmÃ¡cia (PRF).
+
+- MÃ³dulo PRF comunica com Base de Dados Oracle legada (utilizando pool
+  de conexÃ£o Oracle
+  fornecida[\[33\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L40-L48)).
+
+- Potencial camada de integraÃ§Ã£o (middleware ou API Gateway) que
+  interliga com outros sistemas (ex.: talvez exportar dados para SONHO
+  ou reportar ao PEM nacional se aplicÃ¡vel).
+
+- AutenticaÃ§Ã£o centralizada por JWT (um Ãºnico login para acessar todas
+  as funÃ§Ãµes, token partilhado entre
+  microsserviÃ§os)[\[3\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L10).
+
+- Base de Dados local (talvez uma nova base para dados unificados) e
+  Base de Dados legada (Oracle) coexistindo.
+
+Descrever esta arquitetura em texto e figura preencherÃ¡ uma lacuna
+apontada pela anÃ¡lise
+inicial[\[23\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Arquitetura%20atual%20dos%20sistemas%20pouco,ex),
+tornando claro **como a soluÃ§Ã£o se estrutura tecnicamente**. AlÃ©m disso,
+incorporar no texto escolhas de design justificadas: ex., "Optou-se por
+Next.js/React no frontend pela necessidade de uma interface web
+responsiva e dinÃ¢mica; Node.js no backend devido Ã  familiaridade com
+microsserviÃ§os e integraÃ§Ã£o fÃ¡cil com Oracle via mÃ³dulos
+oracledb[\[34\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L13-L21);
+JWT para autenticaÃ§Ã£o unificada entre
+mÃ³dulos[\[3\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L10),
+garantindo seguranÃ§a e single sign-on." Tais justificativas ligam a
+implementaÃ§Ã£o Ã  teoria (seguranÃ§a, desempenho, UX, etc.).
+
+A metodologia deve tambÃ©m salientar aspectos de *qualidade de software*:
+os repositÃ³rios evidenciam testes automÃ¡ticos no mÃ³dulo
+farmÃ¡cia[\[22\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L6),
+o que Ã© excelente -- na tese, documentar que foram implementados testes
+unitÃ¡rios/integrados para garantir a corretude das principais
+funcionalidades (ex.: verificar cÃ¡lculos de stock, autenticaÃ§Ã£o, etc.)
+demonstra robustez cientÃ­fica e engenharia sÃ³lida. TambÃ©m valeria
+mencionar gestÃ£o de projeto e controlo de versÃ£o: ainda que os commits
+nÃ£o estejam totalmente granularizados, o uso de GitHub em mÃºltiplos
+repositÃ³rios jÃ¡ sugere uma abordagem organizada. Se foram usadas
+*branches* ou *issues*, pode-se referir a prÃ¡tica de *version control* e
+*issue tracking* para resoluÃ§Ã£o de problemas.
+
+- **Resultados e AvaliaÃ§Ã£o:** Esta parte foi identificada como um ponto
+  fraco na versÃ£o atual -- escrita de forma muito prospectiva e sem
+  dados
+  empÃ­ricos[\[35\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Resultados%20pr%C3%A1ticos%20inexistentes%20ou%20apenas,melhorias%20de%20efici%C3%AAncia%2C%20mas%20esses).
+  Com os artefactos desenvolvidos, Ã© possÃ­vel melhorar
+  significativamente. Devem-se incorporar **resultados prÃ¡ticos**, mesmo
+  que preliminares:
+- **DemonstraÃ§Ã£o do Sistema:** Apresentar *screenshots* ou descriÃ§Ãµes de
+  cenÃ¡rios de utilizaÃ§Ã£o do artefacto *registo-tratamentos*. Por
+  exemplo, ilustrar o ecrÃ£ de prescriÃ§Ã£o unificada, o ecrÃ£ do mÃ³dulo
+  farmÃ¡cia (PRF) modernizado exibindo stock ou permitindo registar um
+  movimento
+  (entrada/saÃ­da)[\[36\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L76-L84).
+  Se disponÃ­vel, incluir uma figura do protÃ³tipo em funcionamento torna
+  o resultado concreto para o leitor.
+- **MÃ©tricas de Desempenho/ValidaÃ§Ã£o:** Caso tenha sido possÃ­vel
+  realizar algum teste com utilizadores ou dados simulados, incluir
+  mÃ©tricas. Se nÃ£o houve implementaÃ§Ã£o piloto no hospital, pode-se ainda
+  assim medir, por exemplo, o tempo de resposta mÃ©dio das novas APIs
+  (vs. do sistema antigo), ou a cobertura de testes atingida (dado que
+  hÃ¡ testes, reportar que X% das funÃ§Ãµes crÃ­ticas foram testadas
+  automaticamente). Poderia tambÃ©m apresentar resultados da anÃ¡lise de
+  psicotrÃ³picos como *baseline* e depois simular como o novo sistema
+  reduziria certos passos -- por ex., antes era necessÃ¡rio extrair dados
+  manualmente para Excel (como feito no psicofarmacos), enquanto com o
+  novo sistema esses relatÃ³rios sÃ£o automÃ¡ticos e disponÃ­veis em tempo
+  real. O relatÃ³rio anterior menciona reduÃ§Ãµes de erros de medicaÃ§Ã£o
+  esperadas (73% prescriÃ§Ãµes, 85%
+  validaÃ§Ãµes)[\[37\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=emp%C3%ADricos%20%20recolhidos,ia);
+  seria ideal contextualizar esses nÃºmeros -- se nÃ£o hÃ¡ piloto,
+  justificar que vÃªm da literatura ou de estimativas baseadas em
+  entrevistas, mas agora complementando com **demonstraÃ§Ã£o qualitativa**
+  de que o sistema de facto endereÃ§a as causas raiz dos erros (p.ex.,
+  alerta de interaÃ§Ã£o medicamentosa implementado reduz erros de
+  prescriÃ§Ã£o).
+- **AvaliaÃ§Ã£o por Stakeholders:** Se possÃ­vel, incorporar feedback dos
+  utilizadores finais. As entrevistas a 15 profissionais
+  mencionadas[\[28\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=elicitation%20and%20a%20deep%20analysis,structured)podem
+  ser retomadas aqui: por exemplo, citar que apÃ³s verem o protÃ³tipo, X%
+  consideraram-no mais intuitivo que o sistema atual, ou listar
+  qualitativamente as melhorias percebidas (e.g., "farmacÃªuticos
+  destacaram a rapidez na consulta de stock no novo mÃ³dulo vs. AIDA-PCE
+  antigo"). Isso adiciona evidÃªncia qualitativa ao capÃ­tulo de
+  discussÃ£o.
+- **AnÃ¡lise EconÃ³mica (ROI):** A anÃ¡lise inicial notou ausÃªncia de
+  detalhes de
+  custo-benefÃ­cio[\[38\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=An%C3%A1lise%20%20de%20%20custo,%E2%80%93%20%C3%A9%20outra%20%C3%A1rea%20subexplorada).
+  Ainda que detalhar ROI precise de dados, pode-se agora pelo menos
+  estimar: com base nos artefactos sabe-se quais processos serÃ£o
+  automatizados. Por exemplo, se **obter um relatÃ³rio de movimentos**
+  antes exigia horas de trabalho a extrair e consolidar (como visto no
+  psicofarmacos), quantificar esse tempo e projetar a poupanÃ§a anual ao
+  ter relatÃ³rios automÃ¡ticos. Ou se o novo sistema evitarÃ¡ a aquisiÃ§Ã£o
+  de um mÃ³dulo comercial, estimar esse benefÃ­cio. AlÃ©m disso,
+  referenciar custos de desenvolvimento (foram X meses de trabalho) e
+  manutenÃ§Ã£o (tecnologia open-source, etc.) versus custos de erro de
+  medicaÃ§Ã£o evitados (hÃ¡ estudos que quantificam custo de ADE --
+  *adverse drug events*). Incluir pelo menos um parÃ¡grafo ou tabela
+  hipotÃ©tica de ROI irÃ¡ fortalecer muito a relevÃ¢ncia prÃ¡tica.
+
+Em resumo, os *Resultados* devem deixar de ser apenas expectativas e
+passar a incluir **provas de conceito e dados** -- as ferramentas
+desenvolvidas fornecem matÃ©ria-prima para isso.
+
+- **DiscussÃ£o:** Com os resultados prÃ¡ticos em mÃ£os, a DiscussÃ£o pode
+  ganhar substÃ¢ncia. Aqui relaciona-se o que foi obtido com os objetivos
+  iniciais e literatura. Por exemplo, discutir **dificuldades
+  encontradas no desenvolvimento** (ex.: integrar com sistema legado foi
+  desafiante por falta de documentaÃ§Ã£o -- aprendemos que modernizar um
+  sistema monolÃ­tico exige engenharia inversa, como a feita no mÃ³dulo
+  PRF; ou a extraÃ§Ã£o de dados mostrou dados de mÃ¡ qualidade, indicando
+  necessidade de limpeza ao migrar). Discutir tambÃ©m **limitaÃ§Ãµes do
+  protÃ³tipo** -- e sugerir melhorias futuras -- Ã© importante: por ex.,
+  talvez o artefacto ainda nÃ£o implementa todos os mÃ³dulos (sÃ³ farmÃ¡cia
+  e prescriÃ§Ã£o, mas nÃ£o dispensa direta ou administraÃ§Ã£o via cÃ³digo de
+  barras), ou nÃ£o foi possÃ­vel integrar com o sistema nacional de
+  prescriÃ§Ã£o (PEM) neste projeto piloto. Essas limitaÃ§Ãµes, se
+  reconhecidas abertamente, mostram rigor. Igualmente, comentar
+  **ameaÃ§as Ã  validade**: p. ex., os testes foram em ambiente controlado
+  e pode haver resistÃªncia dos utilizadores para adotar a nova interface
+  -- implicando trabalho de gestÃ£o da mudanÃ§a. A discussÃ£o deve abarcar
+  os **impactos organizacionais e sociotÃ©cnicos**: com a unificaÃ§Ã£o dos
+  sistemas, como se reconfigura o fluxo de trabalho dos profissionais?
+  HÃ¡ necessidade de formaÃ§Ã£o? Isto conecta tambÃ©m com a recomendaÃ§Ã£o de
+  abordar *gestÃ£o da mudanÃ§a* que foi
+  feita[\[39\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Incluir%20novos%20t%C3%B3picos%20relevantes%3A%20Incorporar,facetada%20e%20completa).
+  Os artefactos demonstram que a tecnologia Ã© viÃ¡vel; a DiscussÃ£o deve
+  entÃ£o elevar o discurso para *como garantir que essa tecnologia serÃ¡
+  efetivamente implementada e trarÃ¡ benefÃ­cios*, e que liÃ§Ãµes se tiram
+  para outros hospitais (o objetivo era ser referÃªncia para outros
+  contextos
+  semelhantes[\[40\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=enfermeiros%20e%20farmac%C3%AAuticos)).
+
+- **ConclusÃ£o e Trabalho Futuro:** Por fim, os artefactos suportam
+  conclusÃµes mais enfÃ¡ticas. Pode-se concluir que **foi desenvolvido um
+  protÃ³tipo funcional** que resolve grande parte das lacunas
+  identificadas no SCMVV (listar resumidamente: integraÃ§Ã£o de X mÃ³dulos,
+  eliminaÃ§Ã£o de Y tarefas redundantes, potencial reduÃ§Ã£o de Z% erros). E
+  no futuro, planear estender o artefacto: por exemplo, incluir mÃ³dulos
+  adicionais do AIDA (convertendo outros mÃ³dulos para a plataforma
+  moderna, dado sucesso com PRF), integraÃ§Ã£o com sistemas nacionais
+  (e.g., PrescriÃ§Ã£o EletrÃ³nica MÃ©dica -- PEM, ou futura integraÃ§Ã£o via
+  HL7/FHIR), e talvez incorporar inteligÃªncia artificial para apoio Ã 
+  decisÃ£o clÃ­nica no futuro (como mencionado no estado da arte). Os
+  repositÃ³rios fornecem base para esse futuro -- o cÃ³digo pode ser
+  evoluÃ­do modularmente. TambÃ©m se pode recomendar que o hospital
+  considere um **piloto formal** pÃ³s-dissertaÃ§Ã£o para recolher dados
+  quantitativos de desempenho e usabilidade -- algo que infelizmente nÃ£o
+  coube no tempo da tese, mas que seria o passo lÃ³gico seguinte.
+
+Em sÃ­ntese, cada secÃ§Ã£o da dissertaÃ§Ã£o pode -- e deve -- ser enriquecida
+pelos desenvolvimentos prÃ¡ticos realizados. O quadro a seguir resume a
+correspondÃªncia entre repositÃ³rios/artefactos e secÃ§Ãµes da tese:
+
+- *Contexto Atual:* Dados da anÃ¡lise psicofarmacos; detalhes do legado
+  AIDA-PCE (fluxos atuais).
+- *Estado da Arte:* Tecnologias usadas nos artefactos (JWT,
+  microsserviÃ§os, React) e temas correlatos (interoperabilidade, eMAR,
+  etc.).
+- *Metodologia:* Uso de DSR ilustrado com etapas prÃ¡ticas (anÃ¡lise de
+  dados, prototipagem de software); referÃªncias a controlo de versÃµes e
+  testes (CI/CD se usado).
+- *ImplementaÃ§Ã£o/SoluÃ§Ã£o:* DescriÃ§Ã£o detalhada do artefacto
+  *registo-tratamentos* e integraÃ§Ã£o do mÃ³dulo farmÃ¡cia (aida_pce_REACT)
+  -- arquitetura, componentes, tecnologias.
+- *Resultados:* ApresentaÃ§Ã£o do protÃ³tipo em aÃ§Ã£o; dados preliminares
+  (desempenho, feedback); comparaÃ§Ã£o qualitativa com sistema antigo.
+- *DiscussÃ£o:* ReflexÃ£o sobre cumprimento de objetivos, desafios
+  (legado), limitaÃ§Ãµes, impacto organizacional.
+- *ConclusÃµes:* SumÃ¡rio do que foi conseguido na prÃ¡tica e prÃ³ximos
+  passos (estender soluÃ§Ã£o, implementaÃ§Ã£o real).
+
+## IncorporaÃ§Ã£o dos Artefactos e Resultados PrÃ¡ticos na DissertaÃ§Ã£o
+
+Com base na anÃ¡lise acima, sÃ£o apresentadas recomendaÃ§Ãµes especÃ­ficas de
+**como incorporar os artefactos desenvolvidos e seus resultados** na
+versÃ£o final da dissertaÃ§Ã£o. O objetivo Ã© **preencher lacunas
+identificadas[\[41\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Expandir%20o%20contexto%20pr%C3%A1tico%3A%20Introduzir,para%20onde%20se%20quer%20ir)[\[35\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Resultados%20pr%C3%A1ticos%20inexistentes%20ou%20apenas,melhorias%20de%20efici%C3%AAncia%2C%20mas%20esses)**
+e reforÃ§ar a robustez tÃ©cnico-cientÃ­fica do documento, garantindo
+coerÃªncia entre o que foi feito e o que Ã© escrito. Seguem as sugestÃµes
+por Ã¡rea de melhoria:
+
+- **1. DescriÃ§Ã£o do Panorama Atual (Status Quo) e Arquitetura Legada:**
+  Incluir um subcapÃ­tulo no inÃ­cio (apÃ³s a IntroduÃ§Ã£o) dedicado ao
+  contexto do SCMVV. Deve descrever os sistemas atualmente em uso
+  (AIDA-PCE, SONHO, etc.), quem os usa e para quÃª, e **como se processa
+  hoje o circuito do medicamento** passo a passo. Use informaÃ§Ãµes do
+  cÃ³digo legado e entrevistas para detalhar: por exemplo, "O AIDA-PCE
+  (AplicaÃ§Ã£o Integrada para Ãrea da SaÃºde -- PrescriÃ§Ã£o, CodificaÃ§Ã£o e
+  ExecutÃ¡vel) Ã© utilizado para prescriÃ§Ãµes mÃ©dicas e validaÃ§Ã£o
+  farmacÃªutica, porÃ©m apresenta interface desatualizada e nÃ£o fornece
+  alertas clÃ­nicos em tempo
+  real[\[16\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=%28AIDA,interface%2C%20a%20lack%20of%20real).
+  NÃ£o hÃ¡ integraÃ§Ã£o direta com o mÃ³dulo de administraÃ§Ã£o de enfermagem
+  -- os enfermeiros imprimem ou transcrevem prescriÃ§Ãµes para
+  administraÃ§Ã£o manual, levando a potenciais erros e retrabalho." Apoiar
+  estas afirmaÃ§Ãµes com evidÃªncias: *screenshots* do AIDA-PCE antigo (se
+  possÃ­vel), ou referÃªncia a dados (ex.: *"segundo entrevistas, X% dos
+  enfermeiros relatam ter de reintroduzir dados manualmente"*). Em
+  seguida, apresentar um **diagrama da arquitetura atual** mostrando a
+  fragmentaÃ§Ã£o (use a Figura 1 mencionada na versÃ£o anterior se existir,
+  ampliando-a). Isso atende Ã  recomendaÃ§Ã£o de *"expandir o contexto
+  prÃ¡tico"*[\[41\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Expandir%20o%20contexto%20pr%C3%A1tico%3A%20Introduzir,para%20onde%20se%20quer%20ir),
+  dando ao leitor clara noÃ§Ã£o do ponto de partida.
+
+- **2. IntegraÃ§Ã£o de Resultados da AnÃ¡lise de Dados Reais:** Aproveitar
+  o repositÃ³rio *psicofarmacos* para adicionar conteÃºdo empÃ­rico. Por
+  exemplo, no final do capÃ­tulo de Contexto ou como ponte para o
+  capÃ­tulo de Desafio, incluir uma secÃ§Ã£o "**AnÃ¡lise dos Movimentos de
+  Medicamentos Controlados**" onde se apresentam os resultados
+  extraÃ­dos:
+
+- Quantidade de registos de movimentos de psicotrÃ³picos num mÃªs/ano no
+  SCMVV (p.e., "Foram registados N movimentos de entrada/saÃ­da de
+  psicotrÃ³picos num perÃ­odo de 12 meses, envolvendo Y fÃ¡rmacos
+  distintos[\[42\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L2-L10)").
+
+- Como esses dados atualmente sÃ£o obtidos (se Ã© via consultas manuais
+  complexas, evidenciado pelo script de obter movimentos via
+  API[\[43\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L66-L74))
+  e que dificuldades isso traz (demora, risco de erro na consolidaÃ§Ã£o
+  manual).
+
+- Identificar quaisquer padrÃµes interessantes: ex., "Observou-se picos
+  mensais correspondentes a renovaÃ§Ãµes de stock, ou que 80% dos
+  movimentos concentram-se em 5 fÃ¡rmacos, etc." -- informaÃ§Ã£o assim
+  contextualiza desafios de gestÃ£o de stock.
+
+- Se possÃ­vel, incluir **grÃ¡ficos ou tabelas** gerados a partir desses
+  dados (o repositÃ³rio tem scripts para visualizar e criar Excel; esses
+  outputs podem ser convertidos em figuras para a tese). Um grÃ¡fico de
+  movimentos mensais antes e depois do novo sistema (mesmo que "depois"
+  seja simulado) poderia ilustrar a melhoria (ex.: menor variabilidade,
+  menos stockouts).
+
+Em sÃ­ntese, isto mostra que o autor nÃ£o se baseia apenas em suposiÃ§Ãµes,
+mas analisou dados reais (*"evidÃªncias recolhidas no terreno"* conforme
+recomendado[\[44\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=complementando%20%20com%20%20indica%C3%A7%C3%B5es,credibilidade%20experimental%20%C3%A0s%20melhorias%20reivindicadas)).
+Torna o problema mais tangÃ­vel e prepara terreno para apresentar a
+soluÃ§Ã£o como resposta direta a esses problemas quantificados.
+
+- **3. DescriÃ§Ã£o Detalhada da SoluÃ§Ã£o TecnolÃ³gica (Artefacto)**: No
+  capÃ­tulo de ImplementaÃ§Ã£o ou Metodologia, dedicar vÃ¡rias pÃ¡ginas para
+  **dissecar o artefacto *registo-tratamentos***. Recomenda-se
+  estruturar esta secÃ§Ã£o cobrindo:
+- **Arquitetura do Sistema Proposto:** Inserir um diagrama de
+  arquitetura *do novo sistema unificado*. Este diagrama deve ilustrar
+  todos os componentes e a interaÃ§Ã£o entre eles: frontend (React)
+  acessado via navegador; backend Node.js/Express com mÃ³dulos
+  (prescriÃ§Ã£o, validaÃ§Ã£o, farmÃ¡cia, admin. enfermagem); base de dados
+  (nova, se existe, e a do legado Oracle); APIs externas (se consumidas,
+  ex. web services do PEM nacional ou outros); e integraÃ§Ãµes internas
+  (ex.: o mÃ³dulo farmÃ¡cia comunicando com Oracle atravÃ©s do pool de
+  conexÃµes[\[33\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L40-L48)).
+  Use legendas para destacar tecnologias (por ex., Ã­cone do React no
+  frontend, Oracle DB no repositÃ³rio farmÃ¡cia). Explique depois o
+  diagrama no texto: *"Conforme ilustrado na Figura X, a soluÃ§Ã£o adota
+  uma arquitetura modular em microsserviÃ§os. O frontend React comunica
+  via HTTP/HTTPS com um conjunto de APIs em Node.js (implementadas com
+  Express ou Next.js API routes). Cada mÃ³dulo lida com uma parte do
+  ciclo de medicaÃ§Ã£o -- por exemplo,* `/api/prescricoes`*,*
+  `/api/validacoes`*,* `/api/admin` *e* `/api/farmacia`*. Este Ãºltimo
+  mÃ³dulo, correspondente Ã  farmÃ¡cia (PRF), interage diretamente com a
+  base de dados Oracle legada utilizando um pool de conexÃµes
+  dedicado[\[33\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L40-L48).
+  A autenticaÃ§Ã£o Ã© centralizada: usuÃ¡rios fazem login no sistema
+  unificado e recebem um token JWT; este token Ã© vÃ¡lido em todos os
+  mÃ³dulos e Ã© verificado por middleware de seguranÃ§a em cada
+  requisiÃ§Ã£o[\[45\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L4-L11),
+  garantindo sessÃ£o Ãºnica e segura."*
+- **Componentes e Funcionalidades Implementadas:** Listar as principais
+  funcionalidades que o artefacto oferece e como estÃ£o implementadas.
+  Exemplo: "*PrescriÃ§Ã£o EletrÃ³nica:* interface para mÃ©dicos prescritores
+  selecionarem medicamentos de uma base de dados unificada (pode
+  mencionar se usa open source drug DB ou se replicou tabela de fÃ¡rmacos
+  do AIDA). Inclui verificaÃ§Ãµes de alergias e interaÃ§Ãµes? (se sim,
+  mencionar; se nÃ£o, indicar como trabalho futuro). *ValidaÃ§Ã£o
+  FarmacÃªutica:* mÃ³dulo que permite ao farmacÃªutico revisar prescriÃ§Ãµes
+  pendentes, comparando com guidelines -- possivelmente destaca-se a
+  melhora face ao AIDA-PCE, que nÃ£o tinha suporte Ã  decisÃ£o. *Registo de
+  AdministraÃ§Ã£o:* interface para enfermeiros confirmarem administraÃ§Ãµes,
+  idealmente integrado com confirmaÃ§Ã£o por cÃ³digo de barras -- se isto
+  nÃ£o foi implementado, sugerir como expansÃ£o futura, mas ao menos
+  mencionar o design. *GestÃ£o de Stocks (FarmÃ¡cia):* mÃ³dulo PRF
+  modernizado -- descrever as telas ou APIs disponÃ­veis, por ex.,
+  "consulta de stock atual", "registo de entrada/saÃ­da de lote com data
+  de validade", "verificaÃ§Ã£o de stock
+  mÃ­nimo"[\[46\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L70-L79).
+  Aqui pode citar que este componente foi convertido do sistema legado
+  para a nova plataforma, trazendo ganhos de usabilidade e evitando
+  duplicaÃ§Ã£o de interfaces." *Sempre que possÃ­vel,* *citar excertos dos
+  repositÃ³rios*\* para evidenciar detalhes -- por ex., o README do
+  aida_pce lista as tabelas Oracle usadas, pode-se incorporar isso para
+  mostrar o nÃ­vel de design de dados
+  envolvido[\[21\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L134-L143).
+  TambÃ©m o README do aida_pce detalha a estrutura de pastas do projeto
+  React (components, hooks,
+  context)[\[36\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L76-L84)
+  -- isso pode ser citado para mostrar que se seguiu uma organizaÃ§Ã£o
+  moderna de cÃ³digo.
+- **Tecnologias e Justificativas:** Elaborar brevemente por que se
+  escolheram as tecnologias empregues. Parte disso jÃ¡ estÃ¡ no resumo e
+  capÃ­tulos iniciais, mas aqui pode aprofundar: p.ex., *"Optou-se por
+  Next.js (framework React) para tirar partido de uma estrutura avanÃ§ada
+  de rendering e roteamento, agilizando o desenvolvimento do frontend. A
+  escolha de Oracle como base de dados deveu-se Ã  necessidade de
+  integraÃ§Ã£o direta com os dados legados existentes -- reutilizando-se a
+  mesma base jÃ¡ em produÃ§Ã£o para evitar duplicaÃ§Ã£o de fontes da verdade.
+  O mÃ³dulo de conexÃ£o Oracle em Node (oracledb) foi utilizado para
+  assegurar performance e fiabilidade no acesso
+  transacional[\[34\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L13-L21).
+  A autenticaÃ§Ã£o via JWT foi implementada por ser stateless e adequada a
+  arquiteturas de microsserviÃ§os, permitindo escala horizontal do
+  backend sem gestÃ£o complexa de sessÃ£o."* Tais justificaÃ§Ãµes mostram
+  consciÃªncia tecnolÃ³gica e alinham com requisitos de sistemas crÃ­ticos
+  (seguranÃ§a, escalabilidade).
+- **Desafios de ImplementaÃ§Ã£o:** Relatar se houve obstÃ¡culos tÃ©cnicos ao
+  desenvolver os artefactos. Ex.: "Durante a migraÃ§Ã£o do mÃ³dulo PRF, foi
+  necessÃ¡rio transpor lÃ³gica implementada em VB.NET no code-behind para
+  JavaScript/TypeScript no Node. Um dos desafios foi gerir transaÃ§Ãµes na
+  BD Oracle fora do ambiente do AIDA-PCE; resolveu-se implementando uma
+  funÃ§Ã£o de execuÃ§Ã£o transacional
+  dedicada[\[47\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/app/db/connectionPool.ts#L87-L96)[\[48\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/app/db/connectionPool.ts#L101-L109)
+  no pool de conexÃ£o, garantindo commits/rollbacks apropriados mesmo
+  fora do contexto original." Ao mencionar isso, mostra-se profundidade
+  tÃ©cnica e compreensÃ£o do legado.
+- **Testes e ValidaÃ§Ã£o Interna:** Conforme identificado, o projeto
+  inclui testes automÃ¡ticos. Mencionar na dissertaÃ§Ã£o: *"Para assegurar
+  a correÃ§Ã£o das funcionalidades crÃ­ticas, desenvolveram-se testes
+  unitÃ¡rios e de integraÃ§Ã£o abrangendo as APIs da farmÃ¡cia e componentes
+  React[\[22\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L6).
+  Estes testes permitiram verificar, por exemplo, que a funÃ§Ã£o de
+  cÃ¡lculo de stock atualiza corretamente as tabelas* `prf_stock` *e*
+  `prf_movimentos` *em diversos cenÃ¡rios, e que a interface React reage
+  adequadamente a respostas da API (e.g., lista de movimentos)."* Se
+  disponÃ­vel, citar mÃ©tricas como cobertura de testes (ex.: *"atingiu-se
+  85% de coverage nas rotas de API"*) ou simplesmente afirmar que se
+  seguiu a metodologia de testar as funcionalidades-chave. Esse ponto
+  responde Ã  necessidade de *robustez cientÃ­fica* -- demonstra que o
+  autor validou o artefacto do ponto de vista tÃ©cnico, aumentando a
+  confianÃ§a nos resultados.
+
+Ao incorporar todos esses elementos, a dissertaÃ§Ã£o passarÃ¡ a ter uma
+**secÃ§Ã£o de ImplementaÃ§Ã£o muito rica**, possivelmente ocupando vÃ¡rias
+pÃ¡ginas com figuras, cÃ³digo de exemplo, tabelas de tecnologias, etc.
+Isto contribui diretamente para atingir a extensÃ£o desejada (\>100
+pÃ¡ginas) com conteÃºdo Ãºtil e nÃ£o apenas texto prolixo. Importa manter a
+**coerÃªncia**: os detalhes apresentados aqui devem relacionar-se com
+problemas apontados antes (resolvendo-os) e com resultados discutidos
+depois (validando-os).
+
+- **4. ApresentaÃ§Ã£o de Resultados PrÃ¡ticos:** Conforme jÃ¡ mencionado,
+  inserir *evidence-based results*. Aqui resumimos aÃ§Ãµes concretas:
+- **Screenshots ou Mockups:** Se o artefacto tem interface grÃ¡fica,
+  incluir capturas de ecrÃ£ legÃ­veis no documento, devidamente legendadas
+  (ex.: "Figura X -- EcrÃ£ de validaÃ§Ã£o farmacÃªutica no sistema
+  protÃ³tipo, mostrando lista de prescriÃ§Ãµes pendentes com alertas de
+  interaÃ§Ã£o destacados em amarelo"). Caso nÃ£o seja possÃ­vel obter
+  capturas reais (talvez o sistema precise de ambiente), uma alternativa
+  Ã© criar mockups fiÃ©is. Isso torna a leitura mais interessante e prova
+  que o sistema existe para alÃ©m da teoria.
+- **DemonstraÃ§Ã£o de Fluxo:** Descrever um *user journey* completo usando
+  o sistema: p.ex., "*Um mÃ©dico inicia sessÃ£o no sistema unificado
+  (usando credenciais do AD do hospital via integraÃ§Ã£o LDAP, ou outro
+  mecanismo), prescreve um fÃ¡rmaco para um paciente; imediatamente o
+  farmacÃªutico pode ver essa prescriÃ§Ã£o na sua lista de validaÃ§Ã£o,
+  efetuar alteraÃ§Ãµes ou aprovar; a seguir, quando o enfermeiro acede Ã 
+  lista de tarefas de administraÃ§Ã£o, jÃ¡ encontra a prescriÃ§Ã£o validada
+  pronta a ser dada -- e apÃ³s administrar regista no sistema. Durante
+  todo este processo, o modulo de farmÃ¡cia atualiza automaticamente o
+  stock (decrementando a unidade do lote administrado) e toda a equipa
+  partilha a mesma* fonte de verdade *em tempo real.*" Ao narrar este
+  fluxo (que antes seria impossÃ­vel devido a sistemas desconexos),
+  estÃ¡-se de facto apresentando o **resultado funcional** da unificaÃ§Ã£o.
+- **Tabela Comparativa Antes vs. Depois:** Considerar incluir uma tabela
+  que compare as etapas do processo antes (fragmentado) e depois (no
+  sistema novo). Por exemplo, nÃºmero de sistemas/entradas envolvidas
+  para completar um ciclo de medicaÃ§Ã£o, tempo estimado, probabilidade de
+  erro. Parte disso jÃ¡ existe (a tese tem uma tabela comparando features
+  do AIDA-PCE, Epic, Cerner, etc., incluindo "Our
+  System"[\[31\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=match%20at%20L981%20Feature%20AIDA,Epic%20Cerner%20Our%20System));
+  podemos complementÃ¡-la com foco especÃ­fico no SCMVV: "antes,
+  prescriÃ§Ã£o no AIDA, validaÃ§Ã£o Ã s vezes verbal ou no papel,
+  administraÃ§Ã£o registada no SClÃ­nico -- 3 sistemas; depois, tudo num
+  sÃ³". Uma coluna poderia indicar *gargalos resolvidos* (ex.: antes nÃ£o
+  havia alerta de alergias -- depois implementado; antes tinha de
+  refazer login em cada mÃ³dulo -- depois login Ãºnico JWT, etc.).
+- **Resultados de Performance/Qualidade:** Se foram medidos tempos de
+  resposta do sistema novo (por ex., consulta de stock demora X
+  segundos, similar ao antigo ou melhor), ou se o novo sistema foi capaz
+  de detectar Y interaÃ§Ãµes medicamentosas que o antigo falhava,
+  apresentar esses dados. Mesmo que sejam de teste de laboratÃ³rio,
+  ajudam a dar substÃ¢ncia. Se nÃ£o houver dados numÃ©ricos, apoiar-se em
+  *indicadores qualitativos*: "sistema novo simplificou o processo,
+  espera-se reduzir erros -- de acordo com literatura, sistemas CPOE e
+  de administraÃ§Ã£o eletrÃ³nica reduzem erros em atÃ© 50% -- portanto os
+  valores de 73% e 85% mencionados sÃ£o ambiciosos mas plausÃ­veis se
+  todas as funcionalidades forem
+  implementadas[\[37\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=emp%C3%ADricos%20%20recolhidos,ia)".
+- **Feedback do UsuÃ¡rio Final:** Caso tenha havido demonstraÃ§Ã£o para a
+  SCMVV, recolher alguma citaÃ§Ã£o ou impressÃ£o e incluir: ex., *"Um
+  enfermeiro-chefe comentou que 'este sistema poupar-nos-ia imenso tempo
+  nas passagens de turno, porque temos tudo no mesmo sÃ­tio'*, reforÃ§ando
+  o valor prÃ¡tico." Esse tipo de inclusÃ£o dÃ¡ um toque humano e prÃ¡tico
+  aos resultados.
+
+No fim do capÃ­tulo de Resultados, deve ficar claro que **hÃ¡ um artefacto
+tangÃ­vel e testÃ¡vel**. Mesmo que a implementaÃ§Ã£o nÃ£o tenha sido adotada
+oficialmente ainda, a dissertaÃ§Ã£o apresenta evidÃªncias de funcionamento
+e de que os objetivos especÃ­ficos foram alcanÃ§ados em ambiente
+controlado. Isso elevarÃ¡ a qualidade do trabalho de um nÃ­vel meramente
+propositivo para um nÃ­vel experimental/prototipal, alinhado com a
+expectativa de uma dissertaÃ§Ã£o de mestrado em engenharia (onde se espera
+ver algo construÃ­do e avaliado nem que seja em pequena escala).
+
+- **5. DiscussÃ£o CrÃ­tica e RecomendaÃ§Ãµes:** Usar os desenvolvimentos e
+  experiÃªncias para nutrir a discussÃ£o, conforme abordado na secÃ§Ã£o
+  anterior sobre relaÃ§Ã£o com capÃ­tulos. Trazer *coerÃªncia* aqui
+  significa ligar os pontos:
+
+- Confirmar que o que foi identificado como problema foi endereÃ§ado
+  pelos resultados. Ex.: "Identificou-se que a falta de integraÃ§Ã£o entre
+  prescriÃ§Ã£o e administraÃ§Ã£o levava a erros X. Com o protÃ³tipo,
+  demonstramos a viabilidade de eliminar essa lacuna via um sistema
+  unificado -- espera-se portanto uma reduÃ§Ã£o desses erros. Contudo,
+  notamos que a adesÃ£o dos utilizadores e o treino serÃ£o crÃ­ticos para
+  atingir essa reduÃ§Ã£o na prÃ¡tica."
+
+- Admitir limitaÃ§Ãµes e liÃ§Ãµes: "Apesar do sucesso em modernizar o mÃ³dulo
+  de farmÃ¡cia, tal esforÃ§o consumiu tempo significativo, e apenas um
+  mÃ³dulo foi convertido; isto sugere que uma estratÃ©gia completa de
+  modernizaÃ§Ã£o poderÃ¡ requerer um plano faseado longo, ou avaliar se
+  soluÃ§Ãµes comerciais integradas (p.ex. implementaÃ§Ã£o de um HIS
+  completo) seriam alternativas mais eficientes a longo prazo. A
+  *dissertaÃ§Ã£o entÃ£o discute o trade-off* entre modernizar internamente
+  vs. adquirir novo sistema -- reforÃ§ando assim a anÃ¡lise crÃ­tica."
+
+- Explorar impacto noutras dimensÃµes: seguranÃ§a de informaÃ§Ã£o (o novo
+  sistema requer gestÃ£o de permissÃµes, encriptaÃ§Ã£o de comunicaÃ§Ãµes --
+  mencionar se foi tratado, ex.: uso de HTTPS, armazenamento seguro de
+  JWT etc.), impacto econÃ³mico (jÃ¡ abordado acima), impacto em fluxos de
+  trabalho (necessÃ¡rio redesenhar alguns processos, mas oportunidade de
+  implementar melhores prÃ¡ticas padronizadas -- possivelmente introduzir
+  conceitos de *Lean healthcare* se aplicÃ¡vel).
+
+- Relacionar com literatura: se a literatura preconiza certos fatores de
+  sucesso para implementaÃ§Ã£o de sistemas de saÃºde (envolvimento dos
+  usuÃ¡rios, apoio da gestÃ£o, etc.), verificar se no caso do SCMVV esses
+  fatores estÃ£o presentes ou precisam ser trabalhados (ex.: se calhar,
+  sugerir um plano de formaÃ§Ã£o para funcionÃ¡rios, ou uma fase piloto
+  gradual por enfermaria).
+
+- RecomendaÃ§Ãµes para o hospital: A dissertaÃ§Ã£o pode concluir a DiscussÃ£o
+  com recomendaÃ§Ãµes prÃ¡ticas, quase como um *guide* para a SCMVV
+  prosseguir: "ex.: formalizar uma equipa de projeto para continuar
+  desenvolvimento, assegurar suporte da administraÃ§Ã£o, planear migraÃ§Ã£o
+  de dados do restante AIDA para mÃ³dulos novos, etc." -- isso mostra
+  preocupaÃ§Ã£o com *sustentabilidade* da soluÃ§Ã£o proposta.
+
+- **6. AtualizaÃ§Ã£o da RevisÃ£o BibliogrÃ¡fica:** Embora nÃ£o diretamente
+  ligado aos repositÃ³rios, esta foi uma recomendaÃ§Ã£o importante para
+  robustez
+  cientÃ­fica[\[26\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Atualizar%20e%20ampliar%20a%20revis%C3%A3o,%E2%80%93%20e%20quaisquer%20outras%20%C3%A1reas).
+  Portanto, deve-se incorporar novas referÃªncias (2021-2024) que
+  sustentem: a) a eficÃ¡cia de sistemas integrados no ciclo da medicaÃ§Ã£o
+  (novos estudos sobre reduÃ§Ã£o de erros com CPOE+eMAR, por exemplo); b)
+  estratÃ©gias de modernizaÃ§Ã£o de legados vs. substituiÃ§Ã£o (algum artigo
+  ou case study recente); c) contextos portugueses -- por ex., algum
+  documento da SPMS ou estudo nacional sobre erros de medicaÃ§Ã£o ou
+  implementaÃ§Ã£o de sistemas; d) quaisquer tecnologias emergentes
+  mencionadas (ex.: se falou em blockchain ou IA, buscar referÃªncias
+  atualizadas para nÃ£o parecer desatualizado). Os artefactos apontam
+  para a relevÃ¢ncia de *interoperabilidade* -- buscar talvez referÃªncias
+  de HL7 FHIR implementations ou OpenEHR in hospitals etc., mostrando
+  que a soluÃ§Ã£o do autor estÃ¡ alinhada com tendÃªncias globais. Incluir
+  10-15 novas referÃªncias recentes espalhadas nos capÃ­tulos iniciais e
+  de discussÃ£o vai elevar o rigor. No relatÃ³rio anterior foi referido
+  que o trabalho devia refletir o estado da arte atual e nÃ£o apenas
+  fontes
+  clÃ¡ssicas[\[49\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=conexas%20que%20suportem%20as%20decis%C3%B5es,e%20n%C3%A3o%20apenas%20fontes%20cl%C3%A1ssicas)
+  -- com essa atualizaÃ§Ã£o, cumpre-se isso. Lembrar de citar
+  adequadamente e integrar naturalmente (evitar inserir referÃªncias sem
+  contexto; use-as para embasar afirmaÃ§Ãµes sobre benefÃ­cios esperados,
+  desafios de adoÃ§Ã£o, etc.).
+
+Resumindo esta secÃ§Ã£o, a incorporaÃ§Ã£o dos artefactos resume-se a
+**trazer toda a aprendizagem prÃ¡tica e tÃ©cnica obtida durante o
+desenvolvimento para dentro do texto da dissertaÃ§Ã£o**, de forma
+estruturada e fundamentada. Isso tornarÃ¡ a tese nÃ£o sÃ³ mais longa, mas
+consideravelmente mais **sÃ³lida e convincente**, pois o leitor verÃ¡ a
+ligaÃ§Ã£o direta entre problema, soluÃ§Ã£o implementada e evidÃªncias de
+validaÃ§Ã£o, algo que distingue um trabalho aplicado de qualidade.
+
+## RecomendaÃ§Ãµes Finais Melhoradas
+
+Com base em tudo o que foi exposto -- anÃ¡lise dos repositÃ³rios e
+necessidades identificadas -- apresentam-se as recomendaÃ§Ãµes finais para
+a melhoria da dissertaÃ§Ã£o. Estas recomendaÃ§Ãµes retomam as sugestÃµes do
+relatÃ³rio tÃ©cnico-cientÃ­fico anterior, agora enriquecidas com foco na
+**coerÃªncia** do documento, na **robustez cientÃ­fica** e na plena
+**exploraÃ§Ã£o dos artefactos desenvolvidos**. Seguem, em formato de
+lista, os pontos de melhoria chave a implementar:
+
+- **Expandir e detalhar o contexto prÃ¡tico do SCMVV:** Inclua uma
+  descriÃ§Ã£o abrangente dos processos atuais de gestÃ£o de medicaÃ§Ã£o no
+  hospital, suportada por diagramas e dados reais. Especifique quais
+  sistemas legados existem (AIDA-PCE, etc.), como interagem (ou falham
+  em interagir) e quais problemas concretos decorrem disso (erros,
+  atrasos, trabalho
+  duplicado)[\[41\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Expandir%20o%20contexto%20pr%C3%A1tico%3A%20Introduzir,para%20onde%20se%20quer%20ir).
+  Este alicerce contextual permitirÃ¡ ao leitor perceber claramente o
+  ponto de partida e a motivaÃ§Ã£o do projeto.
+
+- **Relacionar resultados empÃ­ricos ao problema:** Incorpore evidÃªncias
+  recolhidas durante o projeto (e.g., anÃ¡lise de movimentos de
+  psicotrÃ³picos) para quantificar a magnitude dos problemas
+  identificados. Apresente grÃ¡ficos/tabelas de apoio mostrando, por
+  exemplo, volumes de trabalho manual ou incidÃªncia de erros. **Estas
+  evidÃªncias devem ser posteriormente usadas para comparar com a
+  situaÃ§Ã£o apÃ³s a implementaÃ§Ã£o proposta**, mesmo que de forma
+  hipotÃ©tica. Este passo acrescenta rigor cientÃ­fico, indo alÃ©m de meras
+  suposiÃ§Ãµes[\[50\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Fortalecer%20%20a%20%20metodologia,credibilidade%20experimental%20%C3%A0s%20melhorias%20reivindicadas).
+
+- **Descrever exaustivamente a arquitetura e implementaÃ§Ã£o do artefacto
+  desenvolvido:** ForneÃ§a um capÃ­tulo ou secÃ§Ã£o dedicada a explicar a
+  soluÃ§Ã£o proposta em nÃ­vel tÃ©cnico. Inclua diagramas de arquitetura do
+  novo sistema, descriÃ§Ã£o dos componentes e das tecnologias utilizadas,
+  ilustrando como cada mÃ³dulo contribui para os objetivos da
+  dissertaÃ§Ã£o. Certifique-se de que **todo acrÃ³nimo ou tecnologia
+  mencionada seja explicada** (por exemplo, JWT, Next.js, oracledb,
+  etc., devem ser compreensÃ­veis ao leitor nÃ£o familiar) -- isso melhora
+  a clareza e robustez do texto. Utilize fragmentos de documentaÃ§Ã£o dos
+  repositÃ³rios para reforÃ§ar a explicaÃ§Ã£o (por ex., mencionar que o
+  mÃ³dulo X usa um pool Oracle conforme
+  configurado[\[33\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L40-L48),
+  ou que se seguiu metodologia de
+  testes[\[22\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L6)).
+
+- **Incorporar na tese os aspectos prÃ¡ticos de integraÃ§Ã£o legado-novo:**
+  Explicite como o novo sistema lida com a coexistÃªncia do legado. Por
+  exemplo, descreva a abordagem de *"anti-corruption layer"*
+  implementada: o uso do mÃ³dulo PRF modernizado que interage com a base
+  de dados legada isolando a lÃ³gica antiga, conforme
+  planeado[\[7\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=match%20at%20L2065%20ticularly%20AIDA,developed%2C%20acting%20as%20an%20anti).
+  Discuta opÃ§Ãµes consideradas (substituiÃ§Ã£o total vs. integraÃ§Ã£o
+  faseada) e justifique a estratÃ©gia adotada. Isto demonstra reflexÃ£o
+  arquitetural e dÃ¡ confianÃ§a de que o autor pensou na
+  **sustentabilidade da soluÃ§Ã£o dentro do ecossistema real** do
+  hospital.
+
+- **Apresentar resultados concretos do protÃ³tipo (mesmo que
+  preliminares):** Atenda Ã  lacuna de resultados experimentais incluindo
+  demonstraÃ§Ãµes e/ou mediÃ§Ãµes. Por exemplo, documente um caso de teste
+  realizado: quantos segundos demora a registar uma prescriÃ§Ã£o e tÃª-la
+  validada no sistema novo comparado ao atual? Quantos cliques ou ecrÃ£s
+  sÃ£o necessÃ¡rios antes e depois? Se possÃ­vel, **inclua utilizadores
+  reais numa pequena avaliaÃ§Ã£o** (e.g., 2-3 profissionais usam o sistema
+  em ambiente de teste e dÃ£o opiniÃ£o). AusÃªncia de resultados foi
+  apontada como
+  fraqueza[\[35\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Resultados%20pr%C3%A1ticos%20inexistentes%20ou%20apenas,melhorias%20de%20efici%C3%AAncia%2C%20mas%20esses)
+  -- mesmo resultados limitados jÃ¡ melhoram muito a credibilidade. Caso
+  nÃ£o haja implementaÃ§Ã£o no hospital, considere *simulaÃ§Ãµes* ou
+  *demonstraÃ§Ãµes de laboratÃ³rio* cujos resultados possam ser
+  apresentados (por ex., carga de 100 prescriÃ§Ãµes simuladas para testar
+  estabilidade). Inclua tambÃ©m dados de qualidade de cÃ³digo (como
+  cobertura de testes, nÃºmero de commits, etc., para mostrar rigor de
+  desenvolvimento).
+
+- **ReforÃ§ar a avaliaÃ§Ã£o econÃ³mica e de viabilidade:** NÃ£o deixe a
+  anÃ¡lise de custo-benefÃ­cio superficial. Acrescente uma secÃ§Ã£o com
+  estimativas de ROI, mesmo que aproximadas, num horizonte temporal (por
+  ex., 5 anos). Utilize dados como: custo de desenvolver internamente
+  vs. comprar novo sistema; benefÃ­cios quantificÃ¡veis (reduÃ§Ã£o de erros
+  -- hÃ¡ estudos que estimam o custo mÃ©dio de um erro de medicaÃ§Ã£o
+  evitado; ganhos de eficiÃªncia -- ex.: menos 30 min por turno gasto em
+  tarefas administrativas). Apresente *pelo menos uma tabela ou grÃ¡fico
+  de
+  ROI*[\[38\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=An%C3%A1lise%20%20de%20%20custo,%E2%80%93%20%C3%A9%20outra%20%C3%A1rea%20subexplorada),
+  ainda que com hipÃ³teses explÃ­citas, para mostrar que a viabilidade
+  financeira foi considerada -- isto serÃ¡ valioso para decisores
+  hospitalares ao lerem o trabalho.
+
+- **Alargar a discussÃ£o para dimensÃµes organizacionais e de seguranÃ§a:**
+  Assegure que a tese aborda nÃ£o apenas a tecnologia, mas tambÃ©m **como
+  implementar na prÃ¡tica** (gestÃ£o de mudanÃ§a). Inclua recomendaÃ§Ãµes
+  sobre formar utilizadores, fasear a adoÃ§Ã£o (piloto numa enfermaria
+  antes de expandir), e gestÃ£o de riscos (plano de contingÃªncia se o
+  sistema falhar, etc.). AlÃ©m disso, trate de seguranÃ§a de informaÃ§Ã£o:
+  indicar medidas implementadas (controlo de acesso por perfis,
+  encriptaÃ§Ã£o de dados sensÃ­veis, compliance com RGPD no tratamento de
+  dados de pacientes, etc.). Esta abrangÃªncia tornarÃ¡ a dissertaÃ§Ã£o
+  "multi-facetada e completa" cobrindo aspectos tecnolÃ³gicos, clÃ­nicos,
+  organizacionais e econÃ³micos conforme
+  sugerido[\[39\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Incluir%20novos%20t%C3%B3picos%20relevantes%3A%20Incorporar,facetada%20e%20completa).
+
+- **Manter rigor metodolÃ³gico e incluir limitaÃ§Ãµes:** Descreva
+  claramente a metodologia de desenvolvimento e validaÃ§Ã£o (DSR etapas,
+  prototipagem, testes). Indique tambÃ©m o tratamento dado aos dados (por
+  ex., se fez anÃ¡lise estatÃ­stica dos dados de erros ou tempos, explique
+  a abordagem; se nÃ£o, reconheÃ§a que Ã© exploratÃ³rio). Admita as
+  limitaÃ§Ãµes do trabalho de forma transparente: escopo limitado do
+  piloto, dependÃªncia de colaboraÃ§Ã£o do hospital, etc. -- mas
+  contextualize-as e proponha formas de as colmatar em trabalhos
+  futuros[\[50\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Fortalecer%20%20a%20%20metodologia,credibilidade%20experimental%20%C3%A0s%20melhorias%20reivindicadas).
+  Essa postura crÃ­tica demonstra maturidade cientÃ­fica.
+
+- **Atualizar e enriquecer a revisÃ£o de literatura:** Integre fontes
+  recentes e relevantes para todos os temas-chave tocados pelo projeto:
+  seguranÃ§a do doente relacionada a TI (ex.: estudos 2022/2023 sobre
+  impactos de sistemas eletrÃ³nicos na reduÃ§Ã£o de erros),
+  interoperabilidade em saÃºde (papers sobre FHIR, OpenEHR), adoÃ§Ã£o de
+  sistemas (fatores de sucesso e insucesso em TI na saÃºde), e
+  normalizaÃ§Ã£o de processos (talvez citar iniciativas Lean ou Six Sigma
+  aplicadas a farmÃ¡cia hospitalar). TambÃ©m posicione o trabalho no
+  contexto nacional: se houver recomendaÃ§Ãµes do MinistÃ©rio da SaÃºde ou
+  projetos piloto semelhantes em Portugal, referencie-os. Isso garante
+  que o trabalho reflete o estado da arte atual e o contexto real, nÃ£o
+  se tornando uma soluÃ§Ã£o
+  isolada[\[26\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Atualizar%20e%20ampliar%20a%20revis%C3%A3o,%E2%80%93%20e%20quaisquer%20outras%20%C3%A1reas).
+  Cada afirmaÃ§Ã£o teÃ³rica importante deve ser sustentada por uma
+  referÃªncia (de preferÃªncia recente).
+
+- **Garantir coesÃ£o na estrutura e texto:** Revise a organizaÃ§Ã£o dos
+  capÃ­tulos para evitar redundÃ¢ncias e alinhar tÃ­tulos com conteÃºdo. Por
+  exemplo, se introduzir um capÃ­tulo sÃ³ para "Problema e Desafios" (como
+  estava no draft), certifique-se que ele nÃ£o repete partes do Estado da
+  Arte ou da IntroduÃ§Ã£o, mas sim foca em sintetizar o contexto prÃ¡tico e
+  introduzir os objetivos especÃ­ficos da soluÃ§Ã£o. Use transiÃ§Ãµes claras
+  entre capÃ­tulos, mencionando no final de um o que vem a seguir (ex.:
+  no fim do Estado da Arte, dizer que "apesar dos avanÃ§os X e Y
+  identificados na literatura, observa-se que no caso concreto do SCMVV
+  persistem lacunas A e B; no prÃ³ximo capÃ­tulo, detalhamos esses
+  desafios especÃ­ficos e os requisitos para os colmatar"). No geral,
+  **amarrar bem** problema-soluÃ§Ã£o-resultados: cada objetivo definido na
+  introduÃ§Ã£o deve ser retomado na conclusÃ£o indicando como foi atingido,
+  e cada resultado apresentado deve relacionar-se a um objetivo ou
+  pergunta de investigaÃ§Ã£o inicial. Elimine eventuais contradiÃ§Ãµes ou
+  sobreposiÃ§Ãµes de conteÃºdo decorrentes de versÃµes anteriores (a anÃ¡lise
+  notou nomes de capÃ­tulos e organizaÃ§Ã£o um pouco inconsistentes -- isto
+  deve ser polido agora com a estrutura final em
+  mente[\[51\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=toca%20%20pouco%20%20na,o%20trabalho%20no%20contexto%20nacional)).
+
+Implementando integralmente estas recomendaÃ§Ãµes, espera-se que a
+dissertaÃ§Ã£o atinja nÃ£o sÃ³ a extensÃ£o pretendida, mas sobretudo um nÃ­vel
+muito superior de qualidade tÃ©cnico-cientÃ­fica, clareza e impacto. Em
+particular, a **exploraÃ§Ã£o aprofundada dos artefactos desenvolvidos** --
+descrevendo a implementaÃ§Ã£o e trazendo resultados prÃ¡ticos -- darÃ¡
+credibilidade e peso ao trabalho, diferenciando-o como um projeto
+aplicado bem-sucedido e nÃ£o apenas uma proposta teÃ³rica. Conforme
+salientado no relatÃ³rio anterior, ao **preencher as lacunas e enriquecer
+o conteÃºdo**, o autor estarÃ¡ a elevar substancialmente o seu
+trabalho[\[52\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Implementando%20estas%20sugest%C3%B5es%2C%20espera,outros%20%20projetos%20%20de),
+tornando-o apto a servir de referÃªncia para iniciativas semelhantes de
+modernizaÃ§Ã£o de sistemas de saÃºde.
+
+Em suma, a dissertaÃ§Ã£o deverÃ¡ transformar-se numa narrativa coesa que
+comeÃ§a identificando claramente um problema real, passa por uma soluÃ§Ã£o
+engenheirada com base em conhecimento atual e confirmada por um
+protÃ³tipo funcional, e conclui avaliando criticamente os impactos dessa
+soluÃ§Ã£o. Assim, cumprirÃ¡ o duplo objetivo de rigor cientÃ­fico e
+relevÃ¢ncia prÃ¡tica, proporcionando valor tanto Ã  comunidade acadÃ©mica
+quanto ao hospital envolvido. Boa escrita e sucesso na conclusÃ£o deste
+projeto
+melhorado\![\[52\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Implementando%20estas%20sugest%C3%B5es%2C%20espera,outros%20%20projetos%20%20de)
+
+------------------------------------------------------------------------
+
+[\[1\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=nol%C3%B3gico%20%E2%80%94%20um%20sistema%20web,Type)
+[\[4\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=de%20software%20centralizada,farmac%C3%AAuticos%2C%20atualmente)
+[\[5\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=um%20artefacto%20tec)
+[\[7\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=match%20at%20L2065%20ticularly%20AIDA,developed%2C%20acting%20as%20an%20anti)
+[\[16\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=%28AIDA,interface%2C%20a%20lack%20of%20real)
+[\[28\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=elicitation%20and%20a%20deep%20analysis,structured)
+[\[31\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=match%20at%20L981%20Feature%20AIDA,Epic%20Cerner%20Our%20System)
+[\[32\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=such%20as%20Java%20and%20Node)
+[\[40\]](file://file-KwA4WoXJdP8zYN7PZxQfej#:~:text=enfermeiros%20e%20farmac%C3%AAuticos)
+dissertation.pdf
+
+<file://file-KwA4WoXJdP8zYN7PZxQfej>
+
+[\[2\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L5)
+[\[3\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L10)
+[\[6\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L5-L10)
+[\[15\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L1-L9)
+[\[17\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L10)
+[\[18\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L5)
+[\[19\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L105-L111)
+[\[20\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L113-L122)
+[\[21\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L134-L143)
+[\[22\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L2-L6)
+[\[33\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L40-L48)
+[\[34\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L13-L21)
+[\[36\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L76-L84)
+[\[45\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L4-L11)
+[\[46\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md#L70-L79)
+README.md
+
+<https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/README.md>
+
+[\[8\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L1-L9)
+[\[9\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L12-L24)
+[\[10\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L92-L101)
+[\[11\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L56-L65)
+[\[12\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L98-L106)
+[\[13\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L131-L140)
+[\[42\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L2-L10)
+[\[43\]](https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md#L66-L74)
+README.md
+
+<https://github.com/dasesteves/psicofarmacos/blob/26a48b3cbb7499e1810f4f28c2677c27b83daf64/README.md>
+
+[\[14\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Descri%C3%A7%C3%A3o%20insuficiente%20do%20contexto%20atual,N%C3%A3o%20se%20exp%C3%B5e)
+[\[23\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Arquitetura%20atual%20dos%20sistemas%20pouco,ex)
+[\[26\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Atualizar%20e%20ampliar%20a%20revis%C3%A3o,%E2%80%93%20e%20quaisquer%20outras%20%C3%A1reas)
+[\[29\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=HL7%2FFHIR%2C%20etc,n%C3%A3o%20s%C3%A3o%20mencionados)
+[\[30\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=apesar%20de%20serem%20parte%20integrante,exemplo%2C%20%20poderia%20%20referir)
+[\[35\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Resultados%20pr%C3%A1ticos%20inexistentes%20ou%20apenas,melhorias%20de%20efici%C3%AAncia%2C%20mas%20esses)
+[\[37\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=emp%C3%ADricos%20%20recolhidos,ia)
+[\[38\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=An%C3%A1lise%20%20de%20%20custo,%E2%80%93%20%C3%A9%20outra%20%C3%A1rea%20subexplorada)
+[\[39\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Incluir%20novos%20t%C3%B3picos%20relevantes%3A%20Incorporar,facetada%20e%20completa)
+[\[41\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Expandir%20o%20contexto%20pr%C3%A1tico%3A%20Introduzir,para%20onde%20se%20quer%20ir)
+[\[44\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=complementando%20%20com%20%20indica%C3%A7%C3%B5es,credibilidade%20experimental%20%C3%A0s%20melhorias%20reivindicadas)
+[\[49\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=conexas%20que%20suportem%20as%20decis%C3%B5es,e%20n%C3%A3o%20apenas%20fontes%20cl%C3%A1ssicas)
+[\[50\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Fortalecer%20%20a%20%20metodologia,credibilidade%20experimental%20%C3%A0s%20melhorias%20reivindicadas)
+[\[51\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=toca%20%20pouco%20%20na,o%20trabalho%20no%20contexto%20nacional)
+[\[52\]](file://file-XCvwUWbfpLvAsbhnprVGsL#:~:text=Implementando%20estas%20sugest%C3%B5es%2C%20espera,outros%20%20projetos%20%20de)
+AnÃ¡lise TÃ©cnica e CientÃ­fica da DissertaÃ§Ã£o.pdf
+
+<file://file-XCvwUWbfpLvAsbhnprVGsL>
+
+[\[24\]](https://github.com/dasesteves/pre-tese/blob/5e2d3ddc49c71af4b5f902db3d5d23e9fdb51969/README.md#L14-L22)
+[\[25\]](https://github.com/dasesteves/pre-tese/blob/5e2d3ddc49c71af4b5f902db3d5d23e9fdb51969/README.md#L132-L140)
+README.md
+
+<https://github.com/dasesteves/pre-tese/blob/5e2d3ddc49c71af4b5f902db3d5d23e9fdb51969/README.md>
+
+[\[27\]](https://github.com/dasesteves/projeto/blob/0daf545bab94bf83904056c60d8c7c1bbb978376/README.md#L2-L10)
+README.md
+
+<https://github.com/dasesteves/projeto/blob/0daf545bab94bf83904056c60d8c7c1bbb978376/README.md>
+
+[\[47\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/app/db/connectionPool.ts#L87-L96)
+[\[48\]](https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/app/db/connectionPool.ts#L101-L109)
+connectionPool.ts
+
+<https://github.com/dasesteves/aida_pce/blob/176f151daa86ede039d96a6281e623265aeac518/aida_pce_REACT/app/db/connectionPool.ts>
+
