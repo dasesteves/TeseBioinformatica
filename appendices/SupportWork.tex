@@ -23,3 +23,84 @@ This appendix consolidates auxiliary materials that support the main text but wo
     \item Sprint feedback form templates and issue triage workflows.
     \item Communication plan outline and champion responsibilities.
 \end{itemize}
+
+\section{Usability and Evaluation Instruments (Templates)}
+\subsection{SUS Questionnaire Summary Template}
+\begin{table}[H]
+    \centering
+    \caption{Template: SUS responses summary (to be filled post-evaluation).}
+    \label{tab:template_sus}
+    \begin{tabularx}{\textwidth}{@{}l l X@{}}
+        \toprule
+        \textbf{Participant ID} & \textbf{Role} & \textbf{SUS item responses (1--5) and total} \\
+        \midrule
+        P001 & Nurse & items 1--10; total score; notes \\
+        P002 & Pharmacist & items 1--10; total score; notes \\
+        P003 & Physician & items 1--10; total score; notes \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{Interview/Focus Group Guide Outline}
+\begin{itemize}
+    \item Perceived usability and clarity of workflows (by role).
+    \item Decision support usefulness and alert fatigue (if any).
+    \item Handoffs and communication improvements.
+    \item Data entry burden and duplication changes.
+    \item Suggestions and barriers to adoption (training needs, policies).
+\end{itemize}
+
+\subsection{Observation Checklist (Point-of-Care)}
+\begin{itemize}
+    \item Steps executed from prescription to administration (timestamps where visible).
+    \item System transitions (legacy/new) and manual transcriptions.
+    \item Interruptions and rework instances; error prevention prompts.
+    \item Any deviations from standard operating procedures.
+\end{itemize}
+
+\section{Data Dictionary Templates}
+The following templates standardize the capture of field definitions and mappings (structure only; no identifiable data).
+
+\subsection{Entity Fields Template}
+\begin{table}[H]
+    \centering
+    \caption{Template: Entity fields (to be filled when source information is available).}
+    \label{tab:template_entity_fields}
+    \begin{tabularx}{\textwidth}{@{}l l l l l X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Source System} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        name & AIDA-PCE & prf\_movimentos & VARCHAR2(…) & No & Movement descriptor (example placeholder) \\
+        code & AIDA-PCE & prf\_artigos & NUMBER(…) & No & Article identifier (example placeholder) \\
+        timestamp & AIDA-PCE & prf\_movimentos & DATE & No & Event time (example placeholder) \\
+        user\_role & AIDA-PCE & prf\_movimentos & VARCHAR2(…) & Yes & Actor role at action time (example placeholder) \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{Field Mapping Template}
+\begin{table}[H]
+    \centering
+    \caption{Template: Source-to-target field mapping (to be filled when integration is defined).}
+    \label{tab:template_field_mapping}
+    \begin{tabularx}{\textwidth}{@{}l l l l l X@{}}
+        \toprule
+        \textbf{Source System} & \textbf{Source Entity.Field} & \textbf{Target Entity.Field} & \textbf{Transform/Rule} & \textbf{Validation} & \textbf{Notes} \\
+        \midrule
+        AIDA-PCE & prf\_movimentos.codigo & stock\_movements.article\_code & Normalize code (upper) & Must exist in catalog & Placeholder \\
+        AIDA-PCE & prf\_movimentos.data & stock\_movements.event\_ts & TZ-aware convert & Not null & Placeholder \\
+        AIDA-PCE & prf\_movimentos.utilizador & audit.actor & Map to role/user id & Exists in users & Placeholder \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+All entries must be derived from institutional documentation and/or tmp\_ai\_reports summaries, with full anonymization and without inserting record-level data.
+
+\section{Reference Backlog (to be populated)}
+This backlog lists references to be added/confirmed (e.g., national guidance, related implementations). Each entry should capture citation key, short note, and target chapter/section.
+\begin{itemize}
+    \item SNS/SPMS guidance on interoperability/security: target State of the Art (Section~\ref{sec:national_context_portugal}).
+    \item Case studies of unified front-ends over legacy HIS: target State of the Art (Related Implementations).
+    \item eMAR/BCMA implementation reports in similar contexts: target State of the Art (Section~\ref{sec:emar_bcma}).
+    \item ROI unit cost sources for ADE and time-savings: target Contribution (Financial Impact).
+\end{itemize}

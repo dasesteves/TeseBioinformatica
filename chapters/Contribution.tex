@@ -16,6 +16,9 @@ The system's design is guided by the principles of modularity, scalability, and 
 
 The proposed architecture is organized into five distinct layers. The \textit{Presentation Layer}, built with React and Next.js, provides a responsive and intuitive \gls{ui}. It communicates with the \textit{Application Layer} (Node.js/Express), which orchestrates \glspl{api} requests. Core clinical intelligence resides in the \textit{Business Logic Layer}. Data persistence is handled by the \textit{Data Layer}, using an Oracle database, while the \textit{Integration Layer} provides secure RESTful interfaces for communication with other hospital systems.
 
+\paragraph{Licensing and Reuse Note (to be confirmed)}
+Where applicable, the artefact and related modules are intended for reuse within institutional constraints. This paragraph will document licensing choices (e.g., open source vs. institutional license), third-party dependencies, and any constraints from legacy vendors.
+
 Key components include robust authentication (e.g., LDAP-backed \gls{sso}) with granular role-based access control. The e-prescription module includes real-time clinical decision support (\gls{cdss}), aiming to reduce prescribing errors by validating prescriptions against a knowledge base for potential \gls{ddi} and allergies, a strategy supported in the literature \cite{bates2014}. The pharmaceutical validation system is designed to provide a complete and immutable audit trail, enhancing accountability.
 
 \section{Implementation and Artefacts Overview}
