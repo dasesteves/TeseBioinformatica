@@ -20,3 +20,18 @@ The Santa Casa da Misericórdia de Vila Verde (\gls{scmvv}) serves as a represen
 The primary goal of this research is to develop and evaluate an integrated medication management system that optimizes the prescription, validation, dispensing, and administration processes at the SCMVV, thereby enhancing patient safety and operational efficiency. To achieve this, a set of specific scientific and technological objectives was defined. Scientifically, the aim was to analyze the system's impact on medication error rates, evaluate its effect on clinical workflow efficiency, and assess its usability and acceptance among clinical staff. Technologically, the objectives were to design a scalable microservices architecture, develop a robust clinical decision support engine, create an intuitive user interface using modern web technologies, ensure seamless integration with legacy systems, and establish a comprehensive audit trail for all medication-related activities \cite{belle2013, misra2023, mandl2020, european2016}.
 
 This dissertation is organized to logically present the research journey. Following this introduction, Chapter 2 provides a comprehensive review of the State of the Art. Chapter 3 outlines the Work Plan, detailing the project's timeline and phases. Chapter 4 describes the in-depth research Methodology, including the architectural choices and evaluation strategies. Chapter 5 details the Expected Results and Evaluation Plan. Chapter 6 presents Results obtained to date. Chapter 7 offers a Discussion of these results, contextualizing them within the broader literature. Finally, Chapter 8 provides the Conclusion and Future Work, summarizing the contributions and proposing directions ahead. 
+
+\section{Current Context at SCMVV}
+
+To address identified gaps in the contextualization of the case study, this section documents the current medication-management processes and supporting information systems at the Santa Casa da Misericórdia de Vila Verde (\gls{scmvv}). The intent is to provide a concrete baseline that motivates the proposed solution and frames subsequent evaluation.
+
+\begin{itemize}
+    \item Systems in use and their roles (e.g., \gls{aida}\,/AIDA-PCE; possible interactions with hospital HIS such as SONHO; national platforms such as \gls{pem}), within the scope of medication management.
+    \item End-to-end workflow as practiced today: physician prescription, pharmaceutical validation, stock/dispensing, and nursing administration, highlighting where manual steps or data re-entry occur.
+    \item Known integration gaps and failure points affecting continuity of care (e.g., absence of real-time decision support or cross-module synchronization).
+    \item Baseline indicators to be captured where available (e.g., error types, volumes of movements for controlled substances, turnaround times), to support before/after reasoning.
+\end{itemize}
+
+\section{As-is System Architecture (SCMVV)}
+
+This section outlines a high-level description of the current (as-is) technical architecture supporting medication management at \gls{scmvv}, to contrast later with the target architecture. The description will enumerate principal modules, databases, interfaces, and data flows relevant to prescription, validation, dispensing, and administration, and will explicitly indicate where interfaces or interoperability are absent or manual.
