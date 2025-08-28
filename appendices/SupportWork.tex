@@ -68,14 +68,14 @@ The following templates standardize the capture of field definitions and mapping
     \caption{Template: Entity fields (to be filled when source information is available).}
     \label{tab:template_entity_fields}
     {\setlength{\tabcolsep}{4pt}\small
-    \begin{tabularx}{\textwidth}{@{}P{2.7cm} P{2.3cm} P{2.7cm} P{2.2cm} P{1.6cm} Y@{}}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.3cm} >{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.6cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Source System} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
-        name & AIDA-PCE & \path{prf_movimentos} & VARCHAR2(\ldots) & No & Movement descriptor (example placeholder) \\
-        code & AIDA-PCE & \path{prf_artigos} & NUMBER(\ldots) & No & Article identifier (example placeholder) \\
-        timestamp & AIDA-PCE & \path{prf_movimentos} & DATE & No & Event time (example placeholder) \\
-        user\_role & AIDA-PCE & \path{prf_movimentos} & VARCHAR2(\ldots) & Yes & Actor role at action time (example placeholder) \\
+        name & AIDA-PCE & prf\_movimentos & VARCHAR2(\ldots) & No & Movement descriptor (example placeholder) \\
+        code & AIDA-PCE & prf\_artigos & NUMBER(\ldots) & No & Article identifier (example placeholder) \\
+        timestamp & AIDA-PCE & prf\_movimentos & DATE & No & Event time (example placeholder) \\
+        user\_role & AIDA-PCE & prf\_movimentos & VARCHAR2(\ldots) & Yes & Actor role at action time (example placeholder) \\
         \bottomrule
     \end{tabularx}}
 \end{table}
@@ -85,14 +85,14 @@ The following templates standardize the capture of field definitions and mapping
     \centering
     \caption{Template: Source-to-target field mapping (to be filled when integration is defined).}
     \label{tab:template_field_mapping}
-    {\setlength{\tabcolsep}{2.5pt}\small
-    \begin{tabularx}{\textwidth}{@{}P{2.2cm} P{2.7cm} P{2.7cm} P{2.2cm} P{2.1cm} Y@{}}
+    {\setlength{\tabcolsep}{4pt}\small
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.9cm} >{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}p{2.4cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
-        \textbf{Source System} & \textbf{Source Entity.\-Field} & \textbf{Target Entity.\-Field} & \textbf{Transform/\-Rule} & \textbf{Validation} & \textbf{Notes} \\
+        \textbf{Source System} & \textbf{Source Entity.Field} & \textbf{Target Entity.Field} & \textbf{Transform/Rule} & \textbf{Validation} & \textbf{Notes} \\
         \midrule
-        AIDA-PCE & \path{prf_movimentos.codigo} & \path{stock_movements.article_code} & Normalize code (upper) & Must exist in catalog & Placeholder \\
-        AIDA-PCE & \path{prf_movimentos.data} & \path{stock_movements.event_ts} & TZ-aware convert & Not null & Placeholder \\
-        AIDA-PCE & \path{prf_movimentos.utilizador} & \path{audit.actor} & Map to role/user id & Exists in users & Placeholder \\
+        AIDA-PCE & \texttt{\seqsplit{prf\_movimentos.codigo}} & \texttt{\seqsplit{stock\_movements.article\_code}} & Normalize code (upper) & Must exist in catalog & Placeholder \\
+        AIDA-PCE & \texttt{\seqsplit{prf\_movimentos.data}} & \texttt{\seqsplit{stock\_movements.event\_ts}} & TZ-aware convert & Not null & Placeholder \\
+        AIDA-PCE & \texttt{\seqsplit{prf\_movimentos.utilizador}} & \texttt{\seqsplit{audit.actor}} & Map to role/user id & Exists in users & Placeholder \\
         \bottomrule
     \end{tabularx}}
 \end{table}

@@ -1195,6 +1195,7 @@
         "elogios",
         "Elsevier",
         "elucidativo",
+        "emar",
         "embasada",
         "embasar",
         "embora",
@@ -2608,6 +2609,7 @@
         "partido",
         "partilha",
         "partilhado",
+        "Partilhados",
         "partir",
         "partname",
         "Parvin",
@@ -3214,12 +3216,14 @@
         "Sarmento",
         "satisfaz",
         "SAÚDE",
+        "Saúdes",
         "savecnt",
         "Schepel",
         "schnipper",
         "Schnipper",
         "Schreiber",
         "Schwebel",
+        "sclinico",
         "SCMVV",
         "scriptsize",
         "Searcy",
@@ -3813,6 +3817,13 @@
     ],
     
     // LaTeX Workshop Configuration
+    "latex-workshop.latex.search.rootFiles.include": ["dissertation.tex"],
+
+    "latex-workshop.latex.build.forceRecipeUsage" : false,
+    "latex-workshop.latex.build.rootfileInStatus" : true,
+
+    "latex-workshop.latex.rootFile.indicator" : "\\documentclass[]{}",
+    
     "latex-workshop.latex.recipe.default": "first",
     "latex-workshop.latex.recipes": [
         {
@@ -3903,10 +3914,12 @@
         "*.synctex.gz"
     ],
     "latex-workshop.latex.clean.method": "glob",
+
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.view.pdf.internal.synctex.enabled": true,
     "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl+alt+click",
     "latex-workshop.view.pdf.zoom": "page-width",
+
     "latex-workshop.message.error.show": false,
     "latex-workshop.message.warning.show": false
 }

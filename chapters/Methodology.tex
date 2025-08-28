@@ -22,7 +22,7 @@ To address these questions, the work follows a series of structured phases align
 
 An adapted \textit{agile methodology} is adopted, combining user-centered design and iterative prototyping to enable continuous engagement with clinicians \cite{fowler2018}. Implementation progresses in focused modules: (i) core infrastructure (security, \gls{jwt}-based authentication, data access), (ii) clinical modules (user/treatment registration, pharmaceutical validation), and (iii) integration with legacy components, namely the \gls{aida}-PCE (Oracle) where applicable. When decision support (\gls{cdss}) features are introduced, they are scoped and validated iteratively with domain stakeholders.
 
-Integration activities emphasize careful mapping of data schemas and safe interoperability with existing systems. The approach privileges incremental integration with legacy assets over big-bang replacement, in line with the overall modernization strategy and the as-is constraints documented in Sections~\ref{sec:context_scmvv} and~\ref{sec:current_process_org}.
+Integration activities emphasize careful mapping of data schemas and safe interoperability with existing systems. The approach privileges incremental integration with legacy assets over big\-bang replacement, in line with the overall modernization strategy and the as\-is constraints documented in Sections~\ref{sec:context_scmvv} and~\ref{sec:current_process_org}.
 
 Quality assurance activities include functional, integration and performance testing, as well as formative usability assessments with representative users. Performance targets and acceptance criteria are aligned with Chapter~\ref{chap:ExpectedResults} and are verified in controlled test environments prior to any pilot.
 
@@ -75,7 +75,6 @@ Prior to any data collection or pilot, appropriate ethical approval is obtained 
 \subsection{Security, Privacy and Compliance Considerations}
 Security and privacy safeguards accompany all stages of the project. Controls include role-based access, authentication and authorization, encrypted communications, immutable audit trails for medication-related actions, and least-privilege principles. Compliance follows applicable legal and institutional requirements (e.g., GDPR), and alignment with national guidance (e.g., SNS/SPMS) is pursued where relevant, as summarized in Section~\ref{sec:national_context_portugal}.
 
-\begingroup\emergencystretch=1em
 \subsection{Data Management and Storage Plan (to be completed)}
 This subsection will document data handling practices during evaluation and development:
 \begin{itemize}
@@ -87,7 +86,5 @@ This subsection will document data handling practices during evaluation and deve
 
 \subsection{Limitations of the Study}
 The findings must be interpreted in light of methodological and technical limitations. The single-site case study design may limit generalizability to other hospital contexts. A time-bounded evaluation period may not capture long-term effects on organizational culture or patient outcomes. A pre-post comparison without a parallel control group cannot exclude confounding influences. Finally, reliance on legacy data sources (e.g., Oracle-based \gls{aida}) and the evolving adoption of interoperability standards may impose constraints and suggest directions for future work.
-
-\endgroup
 
 

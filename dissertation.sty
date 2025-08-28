@@ -8,7 +8,6 @@
 \usepackage{titling}
 \usepackage[hidelinks]{hyperref}
 \usepackage[numbers,sort&compress]{natbib}
-\usepackage{array}
 \usepackage{afterpage}
 \usepackage{datetime}
 \usepackage{csquotes}
@@ -27,10 +26,6 @@
 \usepackage[many]{tcolorbox} 
 \usepackage{tabularx}
 \usepackage{booktabs}
-% Helper column types for better line breaking in tables
-% Y: ragged-right X column; P{<w>}: ragged-right p column
-\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
-\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage{leading}
 \usepackage[capitalise]{cleveref} % Create better looking section cross-reference links
 \usepackage[acronym]{glossaries}
@@ -39,8 +34,14 @@
 \usepackage{wrapfig}
 
 % Micro-typography and better line breaking
+% Engine-aware microtype setup (XeTeX: no expansion)
+\usepackage{iftex}
 \usepackage[final]{microtype}
-\microtypesetup{protrusion=true,expansion=true}
+\ifXeTeX
+  \microtypesetup{protrusion=true, expansion=false}
+\else
+  \microtypesetup{protrusion=true, expansion=true}
+\fi
 \usepackage{seqsplit}
 
 % Suppress noisy tracklang dialect warnings from datatool
