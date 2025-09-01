@@ -1,0 +1,34 @@
+{
+  "queries": [
+    {
+      "nome": "Lista de Actos Disponíveis",
+      "descricao": "Query de sistema",
+      "performance": "BOM"
+    },
+    {
+      "nome": "Artigos de um Acto (Exemplo)",
+      "descricao": "Query de sistema",
+      "performance": "BOM"
+    },
+    {
+      "nome": "Episódios com Actos Registados",
+      "descricao": "Query de sistema",
+      "performance": "BOM"
+    },
+    {
+      "nome": "Medicamentos PRF",
+      "descricao": "Query de sistema",
+      "performance": "BOM"
+    },
+    {
+      "nome": "Verificar campos CSU_DEFACTOSENTGASTOS",
+      "descricao": "Query de sistema",
+      "performance": "BOM"
+    },
+    {
+      "nome": "Actos mais utilizados (Performance Test)",
+      "descricao": "Query pesada - pode demorar",
+      "performance": "BOM"
+    }
+  ]
+}

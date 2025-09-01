@@ -1,0 +1,55 @@
+{
+  "dataHora": "2025-07-16T11:00:17.923Z",
+  "owner": "PCE",
+  "table": "DENTISTA_DENTES",
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_200806\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "COD",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DESIGNACAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 256,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    }
+  ],
+  "totalRegistros": 53,
+  "exemplos": [
+    {
+      "ID": 1,
+      "COD": null,
+      "DESIGNACAO": "Todos/Nenhum"
+    },
+    {
+      "ID": 2,
+      "COD": 11,
+      "DESIGNACAO": "Incisivo central direito superior"
+    },
+    {
+      "ID": 3,
+      "COD": 12,
+      "DESIGNACAO": "Incisivo lateral direito superior"
+    }
+  ]
+}

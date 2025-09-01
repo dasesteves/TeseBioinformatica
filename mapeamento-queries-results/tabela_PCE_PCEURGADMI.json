@@ -1,0 +1,265 @@
+{
+  "owner": "PCE",
+  "table": "PCEURGADMI",
+  "colunas": [
+    {
+      "nome": "URG_EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "NUM_SEQUENCIAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "NUM_MECANOGRAFICO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "COD_LOCAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "DTA_ADMISSAO",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "HORA_ADMISSAO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "COD_CAUSA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "COD_PROVENIENCIA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "COD_UNIDADE_PROV",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 7,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "COD_SUBSISTEMA_RESP",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 6,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "NUM_BENEFICIARIO",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "OBSERV",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "NUM_AVISO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "COD_PRIORIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 4,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "DTA_ALTA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "HORA_ALTA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    },
+    {
+      "nome": "COD_MEDICO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 17
+    },
+    {
+      "nome": "COD_DESTINO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 18
+    },
+    {
+      "nome": "COD_UNIDADE_ESPEC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 19
+    },
+    {
+      "nome": "COD_ESPEC_INTER",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 20
+    },
+    {
+      "nome": "COD_HOSP_DEST",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 7,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 21
+    },
+    {
+      "nome": "DTA_ATENDIMENTO",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 22
+    },
+    {
+      "nome": "HORA_ATENDIMENTO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 23
+    },
+    {
+      "nome": "DTA_TRIAGEM",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 24
+    }
+  ],
+  "constraints": {
+    "SYS_C0010005": {
+      "tipo": "P",
+      "colunas": [
+        "URG_EPISODIO"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "SYS_C0010005": {
+      "unico": true,
+      "colunas": [
+        "URG_EPISODIO"
+      ]
+    }
+  },
+  "totalRegistros": 253796
+}

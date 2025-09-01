@@ -1,0 +1,81 @@
+{
+  "dataHora": "2025-07-16T11:00:17.670Z",
+  "owner": "PCE",
+  "table": "DENTISTA_ATOS",
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_184670\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "COD",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DESIGNACAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 256,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "COPAGAMENTO_BENEFICIARIO",
+      "tipo": "FLOAT",
+      "tamanho": 22,
+      "precisao": 126,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "ENCARGO_ADSE",
+      "tipo": "FLOAT",
+      "tamanho": 22,
+      "precisao": 126,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    }
+  ],
+  "totalRegistros": 18,
+  "exemplos": [
+    {
+      "ID": 98,
+      "COD": 61851,
+      "DESIGNACAO": "CONSULTA ODONTO-ESTOMATOLOGICA",
+      "COPAGAMENTO_BENEFICIARIO": 5.25,
+      "ENCARGO_ADSE": 15.75
+    },
+    {
+      "ID": 99,
+      "COD": 61852,
+      "DESIGNACAO": "RESTAURAÇÃO",
+      "COPAGAMENTO_BENEFICIARIO": 6.56,
+      "ENCARGO_ADSE": 19.69
+    },
+    {
+      "ID": 100,
+      "COD": 61853,
+      "DESIGNACAO": "ENDODONTIA 1ª SESSÃO",
+      "COPAGAMENTO_BENEFICIARIO": 5.25,
+      "ENCARGO_ADSE": 15.75
+    }
+  ]
+}

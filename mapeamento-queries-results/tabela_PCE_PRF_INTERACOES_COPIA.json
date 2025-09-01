@@ -1,0 +1,49 @@
+{
+  "owner": "PCE",
+  "table": "PRF_INTERACOES_COPIA",
+  "colunas": [
+    {
+      "nome": "ID_PRESC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 20,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "ID_INTER",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DATA_ID",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 370
+}

@@ -1,0 +1,188 @@
+{
+  "timestamp": "2025-07-16T10:57:58.604Z",
+  "tabelasEncontradas": [
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_FORMA_FARMACEUTICA",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_PRINCIPIO_ACTIVO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_LABORATORIO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_TITULAR_AIM",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_APRESENTACAO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_COMPOSICAO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_INDICACAO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_CONTRA_INDICACAO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_POSOLOGIA",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_INTERACOES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_PRECAUCOES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "MEDH_ADICIONAIS",
+      "nome": "MEDH_GRUPOS_TERAPEUTICOS",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "PRF_ADICIONAIS",
+      "nome": "PRF_HORARIOS_ADMINISTRACAO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "PRF_ADICIONAIS",
+      "nome": "PRF_DILUICOES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "PRF_ADICIONAIS",
+      "nome": "PRF_COMPATIBILIDADES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "PRF_ADICIONAIS",
+      "nome": "PRF_ESTABILIDADES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "PRF_ADICIONAIS",
+      "nome": "PRF_ALERTAS_MEDICACAO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "PRF_ADICIONAIS",
+      "nome": "PRF_STOCK_SERVICOS",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "PRF_ADICIONAIS",
+      "nome": "PRF_REQUISICOES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "AUXILIARES_IMPORTANTES",
+      "nome": "ESPECIALIDADES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "AUXILIARES_IMPORTANTES",
+      "nome": "ARMAZENS",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "AUXILIARES_IMPORTANTES",
+      "nome": "LOTES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "AUXILIARES_IMPORTANTES",
+      "nome": "GRUPOS_FARMACOLOGICOS",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "AUXILIARES_IMPORTANTES",
+      "nome": "TIPOS_MOVIMENTO",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "AUXILIARES_IMPORTANTES",
+      "nome": "FORNECEDORES",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    },
+    {
+      "grupo": "AUXILIARES_IMPORTANTES",
+      "nome": "ALERGIAS_MEDICAMENTOS",
+      "existe": true,
+      "colunas": [],
+      "totalRegistros": 0
+    }
+  ],
+  "tabelasNaoEncontradas": []
+}

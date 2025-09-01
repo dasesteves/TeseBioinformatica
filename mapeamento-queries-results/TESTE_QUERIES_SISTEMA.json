@@ -1,0 +1,247 @@
+{
+  "sucesso": [
+    {
+      "nome": "Listar Actos Disponíveis (GET /api/tratamentos)",
+      "categoria": "Tratamentos",
+      "tempoExecucao": 24,
+      "performanceStatus": "BOM",
+      "totalLinhas": 101,
+      "dentroDoEsperado": false,
+      "colunas": [
+        "ID",
+        "NAME",
+        "CSU_DEFACTOSID"
+      ],
+      "sugestoes": [
+        "Query pode ter mais resultados - considerar paginação"
+      ]
+    },
+    {
+      "nome": "Buscar Artigos de um Acto (GET /api/tratamentos/artigos)",
+      "categoria": "Tratamentos",
+      "tempoExecucao": 6,
+      "performanceStatus": "BOM",
+      "totalLinhas": 0,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "CODIGO",
+        "DESCRICAO",
+        "QTD_PADRAO",
+        "AFETA_STOCK"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Inserir Acto (POST /api/tratamentos)",
+      "categoria": "Tratamentos",
+      "tempoExecucao": 7,
+      "performanceStatus": "BOM",
+      "totalLinhas": 1,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "NEXT_ID"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Movimentos de Medicação Hospitalar",
+      "categoria": "Farmácia",
+      "tempoExecucao": 270,
+      "performanceStatus": "BOM",
+      "totalLinhas": 100,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "NOME_UTENTE",
+        "EPISODIO",
+        "MODULO",
+        "PROCESSO",
+        "IDADE",
+        "ID",
+        "CODIGO_ARTIGO",
+        "DESCRICAO_ARTIGO",
+        "ESTADO",
+        "USER_VAL",
+        "DOSE",
+        "COD_VIA",
+        "COD_FREQUENCIA"
+      ],
+      "sugestoes": [
+        "Query pode ter mais resultados - considerar paginação"
+      ]
+    },
+    {
+      "nome": "Validar Prescrição",
+      "categoria": "Farmácia",
+      "tempoExecucao": 16,
+      "performanceStatus": "BOM",
+      "totalLinhas": 1,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "TOTAL"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Medicamentos com Stock Crítico",
+      "categoria": "Stock",
+      "tempoExecucao": 48,
+      "performanceStatus": "BOM",
+      "totalLinhas": 100,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "CODIGO",
+        "DESC_C",
+        "STOCK_ATUAL",
+        "AFETA_STOCK",
+        "MED_ALTO_RISCO",
+        "NA_LISTA_ZERO"
+      ],
+      "sugestoes": [
+        "Query pode ter mais resultados - considerar paginação"
+      ]
+    },
+    {
+      "nome": "Lista Zero - Medicamentos",
+      "categoria": "Stock",
+      "tempoExecucao": 49,
+      "performanceStatus": "BOM",
+      "totalLinhas": 50,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "CODIGO",
+        "DESC_C"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Validar Utilizador",
+      "categoria": "Auth",
+      "tempoExecucao": 1,
+      "performanceStatus": "BOM",
+      "totalLinhas": 0,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "IDUTILIZADOR",
+        "UTILIZADOR",
+        "PASSWORD_HASH",
+        "PASSWORD"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Procurar Utente por Processo",
+      "categoria": "Utentes",
+      "tempoExecucao": 51,
+      "performanceStatus": "BOM",
+      "totalLinhas": 0,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "NUM_SEQUENCIAL",
+        "NUM_PROCESSO",
+        "NOME",
+        "DTA_NASCIMENTO",
+        "SEXO",
+        "MOR_MORADA",
+        "LOC_MORADA",
+        "TELEFONE",
+        "COD_POSTAL",
+        "EPISODIO",
+        "DTA_EPISODIO",
+        "COD_ESPECIALIDADE",
+        "DES_ESPECIALIDADE",
+        "MODULO"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Episódios Recentes",
+      "categoria": "Episódios",
+      "tempoExecucao": 188,
+      "performanceStatus": "BOM",
+      "totalLinhas": 100,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "EPISODIO",
+        "NUM_SEQUENCIAL",
+        "DTA_EPISODIO",
+        "DES_ESPECIALIDADE",
+        "MODULO",
+        "COD_ESPECIALIDADE",
+        "HORA_EPISODIO",
+        "NUM_ORDEM"
+      ],
+      "sugestoes": [
+        "Query pode ter mais resultados - considerar paginação"
+      ]
+    },
+    {
+      "nome": "Actos com Artigos Agrupados",
+      "categoria": "Joins",
+      "tempoExecucao": 64,
+      "performanceStatus": "BOM",
+      "totalLinhas": 11,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "CDU_CSU_ID",
+        "EPISODIO",
+        "ACTO_DESCRICAO",
+        "TOTAL_ARTIGOS",
+        "TOTAL_QUANTIDADE"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Prescrições com Info Completa",
+      "categoria": "Joins",
+      "tempoExecucao": 18,
+      "performanceStatus": "BOM",
+      "totalLinhas": 5,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "ID_PRESC",
+        "EPISODIO",
+        "NOME_UTENTE",
+        "MEDICAMENTO",
+        "VIA_ADMIN",
+        "FREQUENCIA",
+        "MEDICO"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Contagem Total de Actos",
+      "categoria": "Performance",
+      "tempoExecucao": 11,
+      "performanceStatus": "BOM",
+      "totalLinhas": 1,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "TOTAL"
+      ],
+      "sugestoes": []
+    },
+    {
+      "nome": "Estatísticas de Exportação",
+      "categoria": "Performance",
+      "tempoExecucao": 12,
+      "performanceStatus": "BOM",
+      "totalLinhas": 3,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "CDU_CSU_EXPORTADO",
+        "TOTAL",
+        "DATA_MAIS_ANTIGA",
+        "DATA_MAIS_RECENTE"
+      ],
+      "sugestoes": []
+    }
+  ],
+  "erro": [],
+  "timeout": [],
+  "timestamp": "2025-07-02T13:51:02.351Z",
+  "configuracao": {
+    "QUERY_TIMEOUT": 30,
+    "MAX_ROWS": 100,
+    "FETCH_SIZE": 50
+  }
+}

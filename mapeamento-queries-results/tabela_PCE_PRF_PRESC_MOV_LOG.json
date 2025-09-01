@@ -1,0 +1,95 @@
+{
+  "owner": "PCE",
+  "table": "PRF_PRESC_MOV_LOG",
+  "colunas": [
+    {
+      "nome": "ID_PRESC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "DTA_REG",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "USR_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "USR_VAL",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    }
+  ],
+  "constraints": null,
+  "indices": {
+    "PRF_PRESC_MOV_LOGIDX01": {
+      "unico": false,
+      "colunas": [
+        "EPISODIO",
+        "MODULO"
+      ]
+    },
+    "PRF_PRESC_MOV_LOGIDX02": {
+      "unico": false,
+      "colunas": [
+        "EPISODIO",
+        "MODULO",
+        "ESTADO"
+      ]
+    }
+  },
+  "totalRegistros": 6993208
+}

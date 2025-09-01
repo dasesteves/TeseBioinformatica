@@ -1,0 +1,69 @@
+{
+  "owner": "PCE",
+  "table": "PCE_AREA_MENUS",
+  "colunas": [
+    {
+      "nome": "COD_AREA",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "COD_MENU",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DES_MENU",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "PROFISSAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 500,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "CHAMADA",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "COR",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 15
+}

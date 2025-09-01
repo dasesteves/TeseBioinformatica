@@ -1,0 +1,39 @@
+{
+  "dataHora": "2025-07-16T11:00:14.198Z",
+  "owner": "PCE",
+  "table": "AIDA_CAMAS",
+  "colunas": [
+    {
+      "nome": "COD_ESP",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "CAMA",
+      "tipo": "VARCHAR2",
+      "tamanho": 4,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    }
+  ],
+  "totalRegistros": 0,
+  "exemplos": []
+}

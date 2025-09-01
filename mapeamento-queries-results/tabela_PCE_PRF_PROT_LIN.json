@@ -1,0 +1,179 @@
+{
+  "owner": "PCE",
+  "table": "PRF_PROT_LIN",
+  "colunas": [
+    {
+      "nome": "COD_PROT",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "COD_MED",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "COD_V",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "COD_F",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "OBSERV",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "DOSE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 2,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "UNID_DOSE",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "DURACAO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "UNID_DURA",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "INICIA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "UNID_INICIA",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "PR_ORDEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 3,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "SOS",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "TURNO_T",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "TIPO_ADM",
+      "tipo": "VARCHAR2",
+      "tamanho": 2,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    },
+    {
+      "nome": "INI_SEG",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 17
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 172
+}

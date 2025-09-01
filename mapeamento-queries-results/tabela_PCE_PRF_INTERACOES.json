@@ -1,0 +1,77 @@
+{
+  "owner": "PCE",
+  "table": "PRF_INTERACOES",
+  "colunas": [
+    {
+      "nome": "ID_PRESC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 20,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "ID_INTER",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DATA_ID",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": "1\n",
+      "posicao": 4
+    },
+    {
+      "nome": "ID_PRESC_D",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 20,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    }
+  ],
+  "constraints": {
+    "SYS_C00142377": {
+      "tipo": "P",
+      "colunas": [
+        "ID_PRESC",
+        "ID_INTER"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "SYS_C00142377": {
+      "unico": true,
+      "colunas": [
+        "ID_PRESC",
+        "ID_INTER"
+      ]
+    }
+  },
+  "totalRegistros": 34
+}

@@ -1,0 +1,86 @@
+{
+  "owner": "PCE",
+  "table": "TDU_CSU_FACTURACAOGASTOSSONHO",
+  "colunas": [
+    {
+      "nome": "CDU_IDLINHAACTO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_654581\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "CDU_EPISODIO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "CDU_CODPRIGASTO",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "CDU_QUANTIDADE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 3,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "CDU_MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "ID_ACTO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    }
+  ],
+  "constraints": {
+    "SYS_C00269423": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_IDLINHAACTO"
+      ],
+      "condicao": "\"CDU_IDLINHAACTO\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "TDU_CSU_FACTURACAOGASTOSSONHO_TDU_CSU_FACTURACAOACTOSSONHO_CDU_IDLINHAACTO_fk": {
+      "tipo": "R",
+      "colunas": [
+        "ID_ACTO"
+      ],
+      "condicao": null,
+      "tabelaRef": "PCE.TDU_CSU_FACTURACAOACTOSSONHO"
+    }
+  },
+  "indices": null,
+  "totalRegistros": 0
+}

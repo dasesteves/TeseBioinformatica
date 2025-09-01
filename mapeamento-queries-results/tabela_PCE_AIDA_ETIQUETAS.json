@@ -1,0 +1,133 @@
+{
+  "dataHora": "2025-07-16T11:00:16.005Z",
+  "owner": "PCE",
+  "table": "AIDA_ETIQUETAS",
+  "colunas": [
+    {
+      "nome": "CHAVE",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "COD_BARRAS",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "NOME",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "NPROCESSO",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "IDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "DTA_NASC",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "OBSERV",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    }
+  ],
+  "totalRegistros": 53,
+  "exemplos": [
+    {
+      "CHAVE": "28-09-2016 09:42",
+      "COD_BARRAS": "*URG15043772*",
+      "NOME": "GONCALVES, MARIA AURORA S",
+      "NPROCESSO": "20002511",
+      "EPISODIO": "15043772",
+      "MODULO": "URG",
+      "IDADE": null,
+      "DTA_NASC": "21-04-1931 (85)",
+      "OBSERV": "SNS:0"
+    },
+    {
+      "CHAVE": "29-09-2016 17:12",
+      "COD_BARRAS": "*URG15043853*",
+      "NOME": "SILVA, ROSA DIAS R",
+      "NPROCESSO": "2003677",
+      "EPISODIO": "15043853",
+      "MODULO": "URG",
+      "IDADE": null,
+      "DTA_NASC": "23-03-1952 (64)",
+      "OBSERV": "SNS:0"
+    },
+    {
+      "CHAVE": "29-09-2016 17:13",
+      "COD_BARRAS": "*URG15043864*",
+      "NOME": "REI, EMILIA",
+      "NPROCESSO": "0",
+      "EPISODIO": "15043864",
+      "MODULO": "URG",
+      "IDADE": null,
+      "DTA_NASC": "10-08-1950 (66)",
+      "OBSERV": "SNS:0"
+    }
+  ]
+}

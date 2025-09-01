@@ -1,0 +1,91 @@
+{
+  "dataVerificacao": "2025-07-16T11:04:44.799Z",
+  "estatisticas": {
+    "totalArquivosTabelas": 123,
+    "tabelasPCE": 123,
+    "tabelasGESTAO": 0,
+    "tabelasOutras": 0,
+    "totalRegistros": 22043715,
+    "totalColunas": 1039,
+    "tabelasComDados": 79,
+    "tabelasVazias": 44
+  },
+  "tabelasRelevantes": [
+    {
+      "nome": "PRF_PRESC_MOV_LOG",
+      "registros": 6993208,
+      "colunas": 7
+    },
+    {
+      "nome": "PRF_PRESC_MOV_ENF",
+      "registros": 5034916,
+      "colunas": 14
+    },
+    {
+      "nome": "PRF_PRESC_ENF_CONTROL",
+      "registros": 4746804,
+      "colunas": 3
+    },
+    {
+      "nome": "PRF_PRESC_MOV_FDET",
+      "registros": 2003690,
+      "colunas": 30
+    },
+    {
+      "nome": "PCEEPISODIOS",
+      "registros": 1190848,
+      "colunas": 11
+    },
+    {
+      "nome": "PCEURGADMI",
+      "registros": 253796,
+      "colunas": 24
+    },
+    {
+      "nome": "PRF_PRESC_MOV_F",
+      "registros": 210234,
+      "colunas": 16
+    },
+    {
+      "nome": "PRF_PRESC_MOV_F_BACKUP",
+      "registros": 204564,
+      "colunas": 16
+    },
+    {
+      "nome": "PCEDOENTES",
+      "registros": 198494,
+      "colunas": 18
+    },
+    {
+      "nome": "CSU_EPENTIDADEACTOGASTOS",
+      "registros": 151732,
+      "colunas": 6
+    },
+    {
+      "nome": "PRF_PRESC_FREQ",
+      "registros": 118796,
+      "colunas": 5
+    },
+    {
+      "nome": "IMPORTA_INTERACOES",
+      "registros": 97513,
+      "colunas": 8
+    },
+    {
+      "nome": "PRF_MED_INFO",
+      "registros": 89881,
+      "colunas": 3
+    },
+    {
+      "nome": "PRF_PRESC_MOV",
+      "registros": 80607,
+      "colunas": 33
+    },
+    {
+      "nome": "PRF_PRESC_MOV_FDET_APAGADOS",
+      "registros": 78920,
+      "colunas": 30
+    }
+  ],
+  "status": "MAPEAMENTO_COMPLETO"
+}

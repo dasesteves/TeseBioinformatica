@@ -1,0 +1,185 @@
+{
+  "dataHora": "2025-07-16T11:00:23.885Z",
+  "owner": "PCE",
+  "table": "NPCE_PARA_MOV_VAL",
+  "colunas": [
+    {
+      "nome": "NUM_SEQUENCIAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "COD_ESP",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "ORDEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 20,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "USER_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "ID_PARAM",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "DTA_REG",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "CHECK_INF",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "DETALHE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "PARAM_VAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 20,
+      "escala": 5,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "INF_DET",
+      "tipo": "VARCHAR2",
+      "tamanho": 2000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    }
+  ],
+  "totalRegistros": 1491,
+  "exemplos": [
+    {
+      "NUM_SEQUENCIAL": 3247,
+      "EPISODIO": 18001823,
+      "MODULO": "INT",
+      "COD_ESP": 30008,
+      "ORDEM": null,
+      "USER_ID": "0766",
+      "ID_PARAM": "ALERTA",
+      "DTA_REG": "2018-07-31T10:51:41.000Z",
+      "ESTADO": 2,
+      "CHECK_INF": 1,
+      "DETALHE": null,
+      "PARAM_VAL": null,
+      "INF_DET": "A prescrição de QUETIapina 100 mg Comp foi suspensa."
+    },
+    {
+      "NUM_SEQUENCIAL": 253979,
+      "EPISODIO": 18001877,
+      "MODULO": "INT",
+      "COD_ESP": 30008,
+      "ORDEM": null,
+      "USER_ID": "0551",
+      "ID_PARAM": "ALERTA",
+      "DTA_REG": "2018-09-14T23:21:13.000Z",
+      "ESTADO": 2,
+      "CHECK_INF": 1,
+      "DETALHE": null,
+      "PARAM_VAL": null,
+      "INF_DET": "A prescrição de Fluconazol 50 mg Cáps foi suspensa."
+    },
+    {
+      "NUM_SEQUENCIAL": 42242,
+      "EPISODIO": 18002045,
+      "MODULO": "INT",
+      "COD_ESP": 30008,
+      "ORDEM": null,
+      "USER_ID": "0866",
+      "ID_PARAM": "ALERTA",
+      "DTA_REG": "2018-10-03T10:17:21.000Z",
+      "ESTADO": 2,
+      "CHECK_INF": 1,
+      "DETALHE": null,
+      "PARAM_VAL": null,
+      "INF_DET": "A prescrição de Omeprazol 20 mg Cáps GR foi suspensa."
+    }
+  ]
+}

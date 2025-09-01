@@ -1,0 +1,109 @@
+{
+  "colunas": [
+    {
+      "nome": "CDU_CSU_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 36,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_CODIGO",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_DESCRICAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 255,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_FLAGMEDICACAO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": "0"
+    },
+    {
+      "nome": "CDU_CSU_UTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_VALOR",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CODIGOSNS",
+      "tipo": "NVARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_VALORSNS",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": "0"
+    },
+    {
+      "nome": "CDU_DESCRISNS",
+      "tipo": "NVARCHAR2",
+      "tamanho": 510,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CODIGO935803",
+      "tipo": "NVARCHAR2",
+      "tamanho": 100,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_VALOR935803",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_DESCRI935803",
+      "tipo": "NVARCHAR2",
+      "tamanho": 120,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CODIGO_IASFA",
+      "tipo": "NVARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_DESCRI_IASFA",
+      "tipo": "NVARCHAR2",
+      "tamanho": 100,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_VALOR_IASFA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": "0\n"
+    }
+  ]
+}

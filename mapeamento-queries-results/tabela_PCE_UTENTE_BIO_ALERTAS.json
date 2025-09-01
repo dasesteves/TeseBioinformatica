@@ -1,0 +1,277 @@
+{
+  "owner": "PCE",
+  "table": "UTENTE_BIO_ALERTAS",
+  "colunas": [
+    {
+      "nome": "ID_ALERTA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_865068\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "NUM_SEQUENCIAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "NOME",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "SEXO",
+      "tipo": "CHAR",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "DATA_NASCIMENTO",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "ALTURA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "PESO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "IS_BREASTFEEDING",
+      "tipo": "CHAR",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "IS_PREGNANT",
+      "tipo": "CHAR",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "IS_ATHLETE",
+      "tipo": "CHAR",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "IS_DRIVING",
+      "tipo": "CHAR",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "IS_DOPING",
+      "tipo": "CHAR",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "TAXA_CREATININA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "CREATININA_JSON",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "PATOLOGIAS_ICD",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "ALERGIAS_JSON",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    },
+    {
+      "nome": "ALERTAS_FISIO_JSON",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 17
+    },
+    {
+      "nome": "CONTRAINDICACOES_JSON",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 18
+    },
+    {
+      "nome": "PRECAUCOES_JSON",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 19
+    },
+    {
+      "nome": "ALERGIAS_ALERTA_JSON",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 20
+    },
+    {
+      "nome": "DATA_ALERTA",
+      "tipo": "TIMESTAMP(6)",
+      "tamanho": 11,
+      "precisao": null,
+      "escala": 6,
+      "nullable": false,
+      "default": "CURRENT_TIMESTAMP ",
+      "posicao": 21
+    },
+    {
+      "nome": "JSON_RAW",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 22
+    }
+  ],
+  "constraints": {
+    "SYS_C00375676": {
+      "tipo": "C",
+      "colunas": [
+        "NUM_SEQUENCIAL"
+      ],
+      "condicao": "\"NUM_SEQUENCIAL\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00375677": {
+      "tipo": "C",
+      "colunas": [
+        "DATA_ALERTA"
+      ],
+      "condicao": "\"DATA_ALERTA\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00375675": {
+      "tipo": "C",
+      "colunas": [
+        "ID_ALERTA"
+      ],
+      "condicao": "\"ID_ALERTA\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00375678": {
+      "tipo": "P",
+      "colunas": [
+        "ID_ALERTA"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    },
+    "FK_UBA_UTENTE": {
+      "tipo": "R",
+      "colunas": [
+        "NUM_SEQUENCIAL"
+      ],
+      "condicao": null,
+      "tabelaRef": "PCE.PCEDOENTES"
+    }
+  },
+  "indices": {
+    "SYS_C00375678": {
+      "unico": true,
+      "colunas": [
+        "ID_ALERTA"
+      ]
+    }
+  },
+  "totalRegistros": 0
+}

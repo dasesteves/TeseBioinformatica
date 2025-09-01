@@ -1,0 +1,81 @@
+{
+  "colunas": [
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "NUM_SEQUENCIAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DTA_EPISODIO",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "HORA_EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "HDI_EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "COD_SALA",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DTA_ANULA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "COD_ESPECIALIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DES_ESPECIALIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "NUM_ORDEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": "0 "
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "dataHora": "2025-07-16T11:00:18.225Z",
+  "owner": "PCE",
+  "table": "DENTISTA_VERIFICACAO",
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_226167\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "DATA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "ATO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "DENTE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "NR_ORDEM",
+      "tipo": "VARCHAR2",
+      "tamanho": 8,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 7
+    }
+  ],
+  "totalRegistros": 8,
+  "exemplos": [
+    {
+      "ID": 121,
+      "EPISODIO": 15143881,
+      "MODULO": "CON",
+      "DATA": "2020-12-16T17:01:15.000Z",
+      "ATO": 1852,
+      "DENTE": 11,
+      "NR_ORDEM": "3632"
+    },
+    {
+      "ID": 81,
+      "EPISODIO": 18242898,
+      "MODULO": "CON",
+      "DATA": "2021-03-06T16:20:54.000Z",
+      "ATO": 1852,
+      "DENTE": 11,
+      "NR_ORDEM": "3632"
+    },
+    {
+      "ID": 141,
+      "EPISODIO": 18188766,
+      "MODULO": "CON",
+      "DATA": "2021-03-06T19:39:14.000Z",
+      "ATO": 1852,
+      "DENTE": 12,
+      "NR_ORDEM": "123"
+    }
+  ]
+}

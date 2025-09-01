@@ -1,0 +1,81 @@
+{
+  "dataHora": "2025-07-16T11:00:16.206Z",
+  "owner": "PCE",
+  "table": "AIDA_SALAS",
+  "colunas": [
+    {
+      "nome": "COD_SALA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 4,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "COD_EDIFICIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "COD_PISO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "COD_TIPO_SALA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "DES_SALA",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    }
+  ],
+  "totalRegistros": 99,
+  "exemplos": [
+    {
+      "COD_SALA": 619,
+      "COD_EDIFICIO": 3,
+      "COD_PISO": 6,
+      "COD_TIPO_SALA": 3,
+      "DES_SALA": "QUARTO 19"
+    },
+    {
+      "COD_SALA": 620,
+      "COD_EDIFICIO": 3,
+      "COD_PISO": 6,
+      "COD_TIPO_SALA": 3,
+      "DES_SALA": "QUARTO 20"
+    },
+    {
+      "COD_SALA": 22,
+      "COD_EDIFICIO": 1,
+      "COD_PISO": 2,
+      "COD_TIPO_SALA": 3,
+      "DES_SALA": "QUARTO 7"
+    }
+  ]
+}

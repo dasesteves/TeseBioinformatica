@@ -1,0 +1,94 @@
+{
+  "dataHora": "2025-07-16T11:00:21.735Z",
+  "owner": "PCE",
+  "table": "LOGS_MAN",
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_255813\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "DATA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "NIF",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "NUM_SEQ",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 6
+    }
+  ],
+  "totalRegistros": 10,
+  "exemplos": [
+    {
+      "ID": 281,
+      "DATA": "2021-03-14T16:05:25.000Z",
+      "NIF": 150908016,
+      "EPISODIO": 18189530,
+      "MODULO": "CON",
+      "NUM_SEQ": 26348
+    },
+    {
+      "ID": 504,
+      "DATA": "2023-09-19T10:33:26.000Z",
+      "NIF": 263509397,
+      "EPISODIO": 18347753,
+      "MODULO": "CON",
+      "NUM_SEQ": 202750
+    },
+    {
+      "ID": 521,
+      "DATA": "2025-06-30T14:04:19.000Z",
+      "NIF": 107165350,
+      "EPISODIO": 18081642,
+      "MODULO": "URG",
+      "NUM_SEQ": 182298
+    }
+  ]
+}

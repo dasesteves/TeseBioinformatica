@@ -1,0 +1,109 @@
+{
+  "owner": "PCE",
+  "table": "PRF_PROTOCOLOS",
+  "colunas": [
+    {
+      "nome": "COD_PROT",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DES_PROT",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DES_COMP",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "DOCS_LISTA",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "OBSERV",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "DTA_REG",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "IDSERV",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "LISTA_SUSP",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "DIAS_BASE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 21
+}

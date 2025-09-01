@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-07-02T13:48:47.302Z",
+  "totalTabelas": 63,
+  "tabelasJaMapeadas": 100,
+  "tabelasNovas": [],
+  "gruposCompletos": {
+    "ARTIGOCODBARRAS": [
+      "ARTIGOCODBARRAS"
+    ],
+    "CSU": [
+      "CSU_DEFACTOS",
+      "CSU_DEFACTOSENTGASTOS",
+      "CSU_DEFACTOSENTIDADES",
+      "CSU_DEFACTOSENTIDADES_COPIA",
+      "CSU_EPENTIDADEACTOGASTOS",
+      "CSU_EPENTIDADEACTOS",
+      "CSU_EPENTIDADEACTOS_BACKUP"
+    ],
+    "INTERACOES": [
+      "INTERACOES_EPISODIOS",
+      "INTERACOES_EPISODIOS_2"
+    ],
+    "MEDH": [
+      "MEDH_ATC",
+      "MEDH_ATC_V2",
+      "MEDH_CARACTERIZACAO",
+      "MEDH_CARACTERIZACAO_V2",
+      "MEDH_CARACTERIZACAO_V3",
+      "MEDH_GFT",
+      "MEDH_GFT_V2",
+      "MEDH_INTERACOES_V2",
+      "MEDH_MESTRE",
+      "MEDH_MESTRE_V2",
+      "MEDH_VERSAO"
+    ],
+    "PCEDOENTES": [
+      "PCEDOENTES"
+    ],
+    "PCEEPISODIOS": [
+      "PCEEPISODIOS"
+    ],
+    "PRF": [
+      "PRF_AGENDA_FARM",
+      "PRF_CHNM",
+      "PRF_EPISODIOS",
+      "PRF_ERROS",
+      "PRF_FREQS",
+      "PRF_ICD9_PROT",
+      "PRF_INTERACOES",
+      "PRF_INTERACOES_COPIA",
+      "PRF_INTERACOES_V2",
+      "PRF_INTER_JUSTIFICA",
+      "PRF_MEDICAMENTOS",
+      "PRF_MED_INFO",
+      "PRF_MED_ZERO",
+      "PRF_PRESC_ENF_CONTROL",
+      "PRF_PRESC_FREQ",
+      "PRF_PRESC_MOV",
+      "PRF_PRESC_MOV_ENF",
+      "PRF_PRESC_MOV_ENF_MA",
+      "PRF_PRESC_MOV_ENF_MA2",
+      "PRF_PRESC_MOV_ENF2",
+      "PRF_PRESC_MOV_F",
+      "PRF_PRESC_MOV_F_BACKUP",
+      "PRF_PRESC_MOV_FDET",
+      "PRF_PRESC_MOV_FDET_APAGADOS",
+      "PRF_PRESC_MOV_FDET_COPIA",
+      "PRF_PRESC_MOV_FDET2",
+      "PRF_PRESC_MOV_F2",
+      "PRF_PRESC_MOV_GROUPED",
+      "PRF_PRESC_MOV_GROUPED_V2",
+      "PRF_PRESC_MOV_LOG",
+      "PRF_PRESC_NOTAS",
+      "PRF_PRINCIPIO_ATIVO",
+      "PRF_PROT_LIN",
+      "PRF_PROTOCOLOS",
+      "PRF_UNID_DOSE",
+      "PRF_VIAS",
+      "PRF_VIAS_FREQS"
+    ],
+    "TDU": [
+      "TDU_CSU_FACTURACAOACTOSSONHO",
+      "TDU_CSU_FACTURACAOGASTOSSONHO"
+    ],
+    "UTENTE": [
+      "UTENTE_BIO_ALERTAS"
+    ]
+  }
+}

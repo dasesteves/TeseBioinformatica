@@ -1,0 +1,137 @@
+{
+  "owner": "PCE",
+  "table": "PCEEPISODIOS",
+  "colunas": [
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "NUM_SEQUENCIAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "DTA_EPISODIO",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "HORA_EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "HDI_EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "COD_SALA",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "DTA_ANULA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "COD_ESPECIALIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "DES_ESPECIALIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "NUM_ORDEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 6,
+      "escala": 0,
+      "nullable": true,
+      "default": "0 ",
+      "posicao": 11
+    }
+  ],
+  "constraints": {
+    "SYS_C0010003": {
+      "tipo": "P",
+      "colunas": [
+        "MODULO",
+        "EPISODIO"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "SYS_C0010003": {
+      "unico": true,
+      "colunas": [
+        "MODULO",
+        "EPISODIO"
+      ]
+    }
+  },
+  "totalRegistros": 1190848
+}

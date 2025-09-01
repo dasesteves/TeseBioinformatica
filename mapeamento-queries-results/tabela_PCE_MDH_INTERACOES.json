@@ -1,0 +1,109 @@
+{
+  "dataHora": "2025-07-16T11:00:22.030Z",
+  "owner": "PCE",
+  "table": "MDH_INTERACOES",
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "INTER_ID_1",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "FAINTER_ID_1",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "INTER_ID_2",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "FAINTER_ID_2",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "DESC_MEDICO",
+      "tipo": "VARCHAR2",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "DESC_FARMACEUTICO",
+      "tipo": "VARCHAR2",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "DESC_ENFERMEIRO",
+      "tipo": "VARCHAR2",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "DESC_FULL",
+      "tipo": "VARCHAR2",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "DELETE_FLAG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    }
+  ],
+  "totalRegistros": 59158,
+  "exemplos": []
+}

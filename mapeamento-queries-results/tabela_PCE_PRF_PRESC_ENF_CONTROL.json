@@ -1,0 +1,39 @@
+{
+  "owner": "PCE",
+  "table": "PRF_PRESC_ENF_CONTROL",
+  "colunas": [
+    {
+      "nome": "ID_PRESC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DTA_LANCA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 4746804
+}

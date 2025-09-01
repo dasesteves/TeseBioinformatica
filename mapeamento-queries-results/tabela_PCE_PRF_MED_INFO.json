@@ -1,0 +1,46 @@
+{
+  "owner": "PCE",
+  "table": "PRF_MED_INFO",
+  "colunas": [
+    {
+      "nome": "NUM_REG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 15,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "ID_MED",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 15,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DES_ID_MED",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    }
+  ],
+  "constraints": null,
+  "indices": {
+    "PRF_MED_INFOIDX01": {
+      "unico": false,
+      "colunas": [
+        "NUM_REG"
+      ]
+    }
+  },
+  "totalRegistros": 89881
+}

@@ -1,0 +1,137 @@
+{
+  "colunas": [
+    {
+      "nome": "CDU_CSU_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_654576\".nextval"
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_ACTOID",
+      "tipo": "VARCHAR2",
+      "tamanho": 36,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_DATA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_EXPORTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": "0"
+    },
+    {
+      "nome": "CDU_CSU_OBSERVACOES",
+      "tipo": "VARCHAR2",
+      "tamanho": 2000,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_TIPODOCSTK",
+      "tipo": "NVARCHAR2",
+      "tamanho": 10,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_NUMDOCSTK",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_FILIALSTK",
+      "tipo": "NVARCHAR2",
+      "tamanho": 6,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_SERIESTK",
+      "tipo": "NVARCHAR2",
+      "tamanho": 10,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_EPISODIOCIRURGIAID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_UTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CDU_CSU_GERADOAUTOM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": "0"
+    },
+    {
+      "nome": "CDU_CSU_ORIGEM",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "SSONHO",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "ERRO",
+      "tipo": "VARCHAR2",
+      "tamanho": 900,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CHAVE_PRIMAVERA",
+      "tipo": "VARCHAR2",
+      "tamanho": 70,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "EXPORTADO_SONHO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": "0"
+    }
+  ]
+}

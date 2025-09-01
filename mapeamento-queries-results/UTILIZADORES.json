@@ -1,0 +1,116 @@
+{
+  "colunas": [
+    {
+      "nome": "IDUTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "UTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "PASSWORD",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "PASSPUB",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "IDINT",
+      "tipo": "VARCHAR2",
+      "tamanho": 6,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "TIPO",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "AREA",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "IDSERVICO",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "PROFISSAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DATAINI",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "ESPECIALIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 500,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "IDSERVRES",
+      "tipo": "VARCHAR2",
+      "tamanho": 500,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "FOTO",
+      "tipo": "BLOB",
+      "tamanho": 4000,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CATEGORIA",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "PASSWORD_HASH",
+      "tipo": "VARCHAR2",
+      "tamanho": 72,
+      "nullable": true,
+      "default": null
+    }
+  ]
+}

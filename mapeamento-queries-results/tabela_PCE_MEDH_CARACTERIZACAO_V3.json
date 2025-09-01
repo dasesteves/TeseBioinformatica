@@ -1,0 +1,299 @@
+{
+  "owner": "PCE",
+  "table": "MEDH_CARACTERIZACAO_V3",
+  "colunas": [
+    {
+      "nome": "FA_COD",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "CHNM_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "NOME_EXT",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "NOME_CIENT",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "NOME_ABRV",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "DCI_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "FORMA_APRESENTACAO_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "FORMA_FARM_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "DOSAGEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 12,
+      "escala": 3,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "UNID_DOSAGEM_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "CAPACIDADE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 12,
+      "escala": 3,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "UNID_CAPACID_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_1",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_2",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_3",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_4",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_5",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 17
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_6",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 18
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_7",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 19
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_8",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 20
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_9",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 21
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_10",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 22
+    },
+    {
+      "nome": "CODIGO_ATC_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 23
+    },
+    {
+      "nome": "GFT_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 24
+    },
+    {
+      "nome": "DDD",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 12,
+      "escala": 3,
+      "nullable": true,
+      "default": null,
+      "posicao": 25
+    },
+    {
+      "nome": "DOSE_MAX",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 12,
+      "escala": 3,
+      "nullable": true,
+      "default": null,
+      "posicao": 26
+    },
+    {
+      "nome": "LASA_FLAG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 27
+    },
+    {
+      "nome": "MAR_FLAG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 28
+    },
+    {
+      "nome": "DELETE_FLAG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 29
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 10688
+}

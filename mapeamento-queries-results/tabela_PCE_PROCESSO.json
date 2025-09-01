@@ -1,0 +1,229 @@
+{
+  "dataHora": "2025-07-16T11:01:12.854Z",
+  "owner": "PCE",
+  "table": "PROCESSO",
+  "colunas": [
+    {
+      "nome": "NUMPROCESSO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DOCIDDOENTE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 12,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "NOMEDOENTE",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "DATANASCIMENTO",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "SEXO",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "TRANSP",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "DADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "ORGAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "MORADA",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "COD_POSTAL",
+      "tipo": "VARCHAR2",
+      "tamanho": 8,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "DES_POSTAL",
+      "tipo": "VARCHAR2",
+      "tamanho": 30,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "COD_SUBSISTEMA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 6,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "SUBSISTEMA",
+      "tipo": "VARCHAR2",
+      "tamanho": 90,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "NUM_BENEF",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "PAI",
+      "tipo": "VARCHAR2",
+      "tamanho": 60,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "MAE",
+      "tipo": "VARCHAR2",
+      "tamanho": 60,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    },
+    {
+      "nome": "MEDICOF",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 17
+    },
+    {
+      "nome": "CONTACTO",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 18
+    },
+    {
+      "nome": "ALTURA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 19
+    },
+    {
+      "nome": "PESO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 7,
+      "escala": 2,
+      "nullable": true,
+      "default": null,
+      "posicao": 20
+    },
+    {
+      "nome": "PCEF",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 4,
+      "escala": 1,
+      "nullable": true,
+      "default": null,
+      "posicao": 21
+    },
+    {
+      "nome": "CCI",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 22
+    }
+  ],
+  "totalRegistros": 0,
+  "exemplos": []
+}

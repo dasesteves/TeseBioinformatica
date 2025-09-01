@@ -1,0 +1,360 @@
+{
+  "dataHora": "2025-07-16T11:01:12.585Z",
+  "owner": "PCE",
+  "table": "PRESC_INTERACTIONS_TEST",
+  "colunas": [
+    {
+      "nome": "ID_PRESC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "NUM_SEQUENCIAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "CODIGO",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "DOSE",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "DTA_INI",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "DTA_FIM",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "DESC_C",
+      "tipo": "VARCHAR2",
+      "tamanho": 255,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "COD_PROTOCOLO",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "SERVICOID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "MEDICACAOID",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "INTERACTION_FLAG",
+      "tipo": "CHAR",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "INTERACTIONS_SUMMARY",
+      "tipo": "CLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "DATA_REGISTO",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": "SYSDATE\r\n",
+      "posicao": 14
+    }
+  ],
+  "totalRegistros": 98,
+  "exemplos": [
+    {
+      "ID_PRESC": null,
+      "NUM_SEQUENCIAL": 13000544,
+      "CODIGO": null,
+      "DOSE": null,
+      "DTA_INI": null,
+      "DTA_FIM": null,
+      "DESC_C": null,
+      "COD_PROTOCOLO": null,
+      "ESTADO": null,
+      "SERVICOID": null,
+      "MEDICACAOID": null,
+      "INTERACTION_FLAG": "Y",
+      "INTERACTIONS_SUMMARY": {
+        "_events": {
+          "close": "[Dados muito profundos - truncados]",
+          "error": "[Dados muito profundos - truncados]",
+          "prefinish": "[Dados muito profundos - truncados]",
+          "finish": "[Dados muito profundos - truncados]",
+          "drain": "[Dados muito profundos - truncados]",
+          "data": "[Dados muito profundos - truncados]",
+          "end": "[Dados muito profundos - truncados]",
+          "readable": "[Dados muito profundos - truncados]"
+        },
+        "_readableState": {
+          "highWaterMark": "[Dados muito profundos - truncados]",
+          "buffer": "[Dados muito profundos - truncados]",
+          "bufferIndex": "[Dados muito profundos - truncados]",
+          "length": "[Dados muito profundos - truncados]",
+          "pipes": "[Dados muito profundos - truncados]",
+          "awaitDrainWriters": "[Dados muito profundos - truncados]"
+        },
+        "_writableState": {
+          "highWaterMark": "[Dados muito profundos - truncados]",
+          "length": "[Dados muito profundos - truncados]",
+          "corked": "[Dados muito profundos - truncados]",
+          "onwrite": "[Dados muito profundos - truncados]",
+          "writelen": "[Dados muito profundos - truncados]",
+          "bufferedIndex": "[Dados muito profundos - truncados]",
+          "pendingcb": "[Dados muito profundos - truncados]"
+        },
+        "allowHalfOpen": true,
+        "offset": 1,
+        "_isActive": false,
+        "_eventsCount": 1,
+        "_impl": {
+          "dirtyLength": "[Dados muito profundos - truncados]",
+          "conn": "[Dados muito profundos - truncados]",
+          "_locator": "[Dados muito profundos - truncados]",
+          "_isTempLob": "[Dados muito profundos - truncados]",
+          "dbType": "[Dados muito profundos - truncados]",
+          "_length": "[Dados muito profundos - truncados]",
+          "_chunkSize": "[Dados muito profundos - truncados]",
+          "_pieceSize": "[Dados muito profundos - truncados]"
+        },
+        "_chunkSize": 8060,
+        "_pieceSize": 8060,
+        "_length": 1689,
+        "_type": {
+          "num": "[Dados muito profundos - truncados]",
+          "name": "[Dados muito profundos - truncados]",
+          "columnTypeName": "[Dados muito profundos - truncados]",
+          "_bufferSizeFactor": "[Dados muito profundos - truncados]",
+          "_oraTypeNum": "[Dados muito profundos - truncados]",
+          "_csfrm": "[Dados muito profundos - truncados]"
+        },
+        "_autoCloseLob": true
+      },
+      "DATA_REGISTO": "2025-06-16T16:04:18.000Z"
+    },
+    {
+      "ID_PRESC": null,
+      "NUM_SEQUENCIAL": 14001863,
+      "CODIGO": null,
+      "DOSE": null,
+      "DTA_INI": null,
+      "DTA_FIM": null,
+      "DESC_C": null,
+      "COD_PROTOCOLO": null,
+      "ESTADO": null,
+      "SERVICOID": null,
+      "MEDICACAOID": null,
+      "INTERACTION_FLAG": "Y",
+      "INTERACTIONS_SUMMARY": {
+        "_events": {
+          "close": "[Dados muito profundos - truncados]",
+          "error": "[Dados muito profundos - truncados]",
+          "prefinish": "[Dados muito profundos - truncados]",
+          "finish": "[Dados muito profundos - truncados]",
+          "drain": "[Dados muito profundos - truncados]",
+          "data": "[Dados muito profundos - truncados]",
+          "end": "[Dados muito profundos - truncados]",
+          "readable": "[Dados muito profundos - truncados]"
+        },
+        "_readableState": {
+          "highWaterMark": "[Dados muito profundos - truncados]",
+          "buffer": "[Dados muito profundos - truncados]",
+          "bufferIndex": "[Dados muito profundos - truncados]",
+          "length": "[Dados muito profundos - truncados]",
+          "pipes": "[Dados muito profundos - truncados]",
+          "awaitDrainWriters": "[Dados muito profundos - truncados]"
+        },
+        "_writableState": {
+          "highWaterMark": "[Dados muito profundos - truncados]",
+          "length": "[Dados muito profundos - truncados]",
+          "corked": "[Dados muito profundos - truncados]",
+          "onwrite": "[Dados muito profundos - truncados]",
+          "writelen": "[Dados muito profundos - truncados]",
+          "bufferedIndex": "[Dados muito profundos - truncados]",
+          "pendingcb": "[Dados muito profundos - truncados]"
+        },
+        "allowHalfOpen": true,
+        "offset": 1,
+        "_isActive": false,
+        "_eventsCount": 1,
+        "_impl": {
+          "dirtyLength": "[Dados muito profundos - truncados]",
+          "conn": "[Dados muito profundos - truncados]",
+          "_locator": "[Dados muito profundos - truncados]",
+          "_isTempLob": "[Dados muito profundos - truncados]",
+          "dbType": "[Dados muito profundos - truncados]",
+          "_length": "[Dados muito profundos - truncados]",
+          "_chunkSize": "[Dados muito profundos - truncados]",
+          "_pieceSize": "[Dados muito profundos - truncados]"
+        },
+        "_chunkSize": 8060,
+        "_pieceSize": 8060,
+        "_length": 2911,
+        "_type": {
+          "num": "[Dados muito profundos - truncados]",
+          "name": "[Dados muito profundos - truncados]",
+          "columnTypeName": "[Dados muito profundos - truncados]",
+          "_bufferSizeFactor": "[Dados muito profundos - truncados]",
+          "_oraTypeNum": "[Dados muito profundos - truncados]",
+          "_csfrm": "[Dados muito profundos - truncados]"
+        },
+        "_autoCloseLob": true
+      },
+      "DATA_REGISTO": "2025-06-16T16:14:57.000Z"
+    },
+    {
+      "ID_PRESC": null,
+      "NUM_SEQUENCIAL": 15001835,
+      "CODIGO": null,
+      "DOSE": null,
+      "DTA_INI": null,
+      "DTA_FIM": null,
+      "DESC_C": null,
+      "COD_PROTOCOLO": null,
+      "ESTADO": null,
+      "SERVICOID": null,
+      "MEDICACAOID": null,
+      "INTERACTION_FLAG": "Y",
+      "INTERACTIONS_SUMMARY": {
+        "_events": {
+          "close": "[Dados muito profundos - truncados]",
+          "error": "[Dados muito profundos - truncados]",
+          "prefinish": "[Dados muito profundos - truncados]",
+          "finish": "[Dados muito profundos - truncados]",
+          "drain": "[Dados muito profundos - truncados]",
+          "data": "[Dados muito profundos - truncados]",
+          "end": "[Dados muito profundos - truncados]",
+          "readable": "[Dados muito profundos - truncados]"
+        },
+        "_readableState": {
+          "highWaterMark": "[Dados muito profundos - truncados]",
+          "buffer": "[Dados muito profundos - truncados]",
+          "bufferIndex": "[Dados muito profundos - truncados]",
+          "length": "[Dados muito profundos - truncados]",
+          "pipes": "[Dados muito profundos - truncados]",
+          "awaitDrainWriters": "[Dados muito profundos - truncados]"
+        },
+        "_writableState": {
+          "highWaterMark": "[Dados muito profundos - truncados]",
+          "length": "[Dados muito profundos - truncados]",
+          "corked": "[Dados muito profundos - truncados]",
+          "onwrite": "[Dados muito profundos - truncados]",
+          "writelen": "[Dados muito profundos - truncados]",
+          "bufferedIndex": "[Dados muito profundos - truncados]",
+          "pendingcb": "[Dados muito profundos - truncados]"
+        },
+        "allowHalfOpen": true,
+        "offset": 1,
+        "_isActive": false,
+        "_eventsCount": 1,
+        "_impl": {
+          "dirtyLength": "[Dados muito profundos - truncados]",
+          "conn": "[Dados muito profundos - truncados]",
+          "_locator": "[Dados muito profundos - truncados]",
+          "_isTempLob": "[Dados muito profundos - truncados]",
+          "dbType": "[Dados muito profundos - truncados]",
+          "_length": "[Dados muito profundos - truncados]",
+          "_chunkSize": "[Dados muito profundos - truncados]",
+          "_pieceSize": "[Dados muito profundos - truncados]"
+        },
+        "_chunkSize": 8060,
+        "_pieceSize": 8060,
+        "_length": 3903,
+        "_type": {
+          "num": "[Dados muito profundos - truncados]",
+          "name": "[Dados muito profundos - truncados]",
+          "columnTypeName": "[Dados muito profundos - truncados]",
+          "_bufferSizeFactor": "[Dados muito profundos - truncados]",
+          "_oraTypeNum": "[Dados muito profundos - truncados]",
+          "_csfrm": "[Dados muito profundos - truncados]"
+        },
+        "_autoCloseLob": true
+      },
+      "DATA_REGISTO": "2025-06-16T16:16:59.000Z"
+    }
+  ]
+}

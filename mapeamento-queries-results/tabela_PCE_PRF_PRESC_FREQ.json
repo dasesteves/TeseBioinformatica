@@ -1,0 +1,67 @@
+{
+  "owner": "PCE",
+  "table": "PRF_PRESC_FREQ",
+  "colunas": [
+    {
+      "nome": "ID_PRESC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "ORDEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "HORA_T",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "HORA_N",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "HORA_A",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    }
+  ],
+  "constraints": null,
+  "indices": {
+    "PRF_PRESC_INDEX": {
+      "unico": false,
+      "colunas": [
+        "ID_PRESC",
+        "HORA_T"
+      ]
+    }
+  },
+  "totalRegistros": 118796
+}

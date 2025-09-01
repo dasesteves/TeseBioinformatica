@@ -1,0 +1,29 @@
+{
+  "dataHora": "2025-07-16T11:00:23.327Z",
+  "owner": "PCE",
+  "table": "MENUPCE",
+  "colunas": [
+    {
+      "nome": "NUMPROCESSO",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "PCE_NUM_SEQ",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 20,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    }
+  ],
+  "totalRegistros": 0,
+  "exemplos": []
+}

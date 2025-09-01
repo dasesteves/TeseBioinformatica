@@ -1,0 +1,89 @@
+{
+  "owner": "PCE",
+  "table": "PRF_FREQS",
+  "colunas": [
+    {
+      "nome": "COD_F",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DESC_F",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "COD_SAPE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "TABELA_SAPE",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "VALOR_SAPE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "XDIA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "CDU_CODIGO",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "CDU_CODIGO_SOS",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 17
+}

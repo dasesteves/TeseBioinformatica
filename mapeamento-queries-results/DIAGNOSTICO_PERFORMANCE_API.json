@@ -1,0 +1,153 @@
+{
+  "timestamp": "2025-08-19T09:58:05.631Z",
+  "objetivo": "Diagnosticar degradação de performance após múltiplas consultas",
+  "medicamentos_testados": [
+    {
+      "codigo": "FA20000024",
+      "tipo": "FA2_SEM_MOVIMENTOS",
+      "descricao": "Álcool - sem movimentos"
+    },
+    {
+      "codigo": "FA10104168",
+      "tipo": "FA1_SEM_MOVIMENTOS",
+      "descricao": "Colagenase - sem movimentos"
+    },
+    {
+      "codigo": "FA10059004",
+      "tipo": "FA1_POUCOS_MOVIMENTOS",
+      "descricao": "Pantoprazol 40mg - poucos movimentos"
+    },
+    {
+      "codigo": "FA10047564",
+      "tipo": "FA1_MUITOS_MOVIMENTOS",
+      "descricao": "Pantoprazol 20mg - muitos movimentos"
+    },
+    {
+      "codigo": "FA10002829",
+      "tipo": "FA1_EXTREMO",
+      "descricao": "Paracetamol - movimentos extremos"
+    }
+  ],
+  "resultados_detalhados": [
+    {
+      "sequencia": 1,
+      "codigo": "FA20000024",
+      "tipo": "FA2_SEM_MOVIMENTOS",
+      "tempos": {
+        "info": 8,
+        "movimentos": 1864,
+        "total": 1872
+      },
+      "problemas": [],
+      "memoria_oracle": {
+        "pga_used": 2462489,
+        "pga_alloc": 6002337,
+        "pga_max": 6002337
+      },
+      "conexoes_ativas": 1
+    },
+    {
+      "sequencia": 2,
+      "codigo": "FA10104168",
+      "tipo": "FA1_SEM_MOVIMENTOS",
+      "tempos": {
+        "info": 2,
+        "movimentos": 5060,
+        "total": 5062
+      },
+      "problemas": [
+        "MOVIMENTOS_LENTA",
+        "DEGRADACAO_170%"
+      ],
+      "memoria_oracle": {
+        "pga_used": 2392897,
+        "pga_alloc": 3446433,
+        "pga_max": 6002337
+      },
+      "conexoes_ativas": 1
+    },
+    {
+      "sequencia": 3,
+      "codigo": "FA10059004",
+      "tipo": "FA1_POUCOS_MOVIMENTOS",
+      "tempos": {
+        "info": 3,
+        "movimentos": 2310,
+        "total": 2313
+      },
+      "problemas": [],
+      "memoria_oracle": {
+        "pga_used": 2392897,
+        "pga_alloc": 3446433,
+        "pga_max": 6788769
+      },
+      "conexoes_ativas": 1
+    },
+    {
+      "sequencia": 4,
+      "codigo": "FA10047564",
+      "tipo": "FA1_MUITOS_MOVIMENTOS",
+      "tempos": {
+        "info": 2,
+        "movimentos": 3445,
+        "total": 3447
+      },
+      "problemas": [],
+      "memoria_oracle": {
+        "pga_used": 2392897,
+        "pga_alloc": 3446433,
+        "pga_max": 6788769
+      },
+      "conexoes_ativas": 1
+    },
+    {
+      "sequencia": 5,
+      "codigo": "FA10002829",
+      "tipo": "FA1_EXTREMO",
+      "tempos": {
+        "info": 2,
+        "movimentos": 1888,
+        "total": 1890
+      },
+      "problemas": [],
+      "memoria_oracle": {
+        "pga_used": 2392897,
+        "pga_alloc": 3970721,
+        "pga_max": 6788769
+      },
+      "conexoes_ativas": 1
+    }
+  ],
+  "estatisticas": {
+    "tempo_medio_info": 3,
+    "tempo_medio_movimentos": 2913,
+    "degradacao_maxima": "170.4%",
+    "problemas_criticos": 4
+  },
+  "recomendacoes_implementacao": [
+    {
+      "prioridade": "ALTA",
+      "area": "Backend Query Optimization",
+      "acao": "Adicionar LIMIT 1000 na query de movimentos para evitar datasets enormes",
+      "implementacao": "Modificar sqlMovimentos em verificarStock/route.ts"
+    },
+    {
+      "prioridade": "ALTA",
+      "area": "Frontend AbortController",
+      "acao": "Implementar cancelamento automático de requests lentos (>10s)",
+      "implementacao": "Já implementado no useStockChecker"
+    },
+    {
+      "prioridade": "MÉDIA",
+      "area": "Caching Strategy",
+      "acao": "Cache agressivo para medicamentos sem movimentos recentes",
+      "implementacao": "TTL maior para FA2* e medicamentos estáticos"
+    },
+    {
+      "prioridade": "BAIXA",
+      "area": "Database Indexing",
+      "acao": "Verificar índices em PRF_PRESC_MOV_FDET",
+      "implementacao": "Análise DBA necessária"
+    }
+  ]
+}

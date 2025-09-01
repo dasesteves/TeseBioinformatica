@@ -1,0 +1,198 @@
+{
+  "sucesso": [
+    {
+      "nome": "Lista de Actos Disponíveis",
+      "tempoExecucao": 18,
+      "performanceStatus": "BOM",
+      "totalLinhas": 100,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "ID",
+        "NAME",
+        "CSU_DEFACTOSID"
+      ],
+      "amostra": [
+        {
+          "ID": "E53B5F23-4DD2-4A28-98E8-FA68491C3651",
+          "NAME": "Acto Geral Bloco",
+          "CSU_DEFACTOSID": "E53B5F23-4DD2-4A28-98E8-FA68491C3651"
+        },
+        {
+          "ID": "56B5CA84-FD40-4BA7-9BF3-C4E181644FE1",
+          "NAME": "Algaliação com Sonda Silicone",
+          "CSU_DEFACTOSID": "56B5CA84-FD40-4BA7-9BF3-C4E181644FE1"
+        },
+        {
+          "ID": "F310D844-BAE3-4D31-81E1-E2293EE903DA",
+          "NAME": "Antibioterapia",
+          "CSU_DEFACTOSID": "F310D844-BAE3-4D31-81E1-E2293EE903DA"
+        }
+      ]
+    },
+    {
+      "nome": "Artigos de um Acto (Exemplo)",
+      "tempoExecucao": 19,
+      "performanceStatus": "BOM",
+      "totalLinhas": 100,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "CDU_CSU_ARTIGO",
+        "DESCRICAO",
+        "CDU_CSU_QTDSUGERIDA",
+        "CDU_CSU_SUGERESEMPRE",
+        "AFETA_STOCK"
+      ],
+      "amostra": [
+        {
+          "CDU_CSU_ARTIGO": "ECO0202094",
+          "DESCRICAO": "Resguardos 60x60",
+          "CDU_CSU_QTDSUGERIDA": 1,
+          "CDU_CSU_SUGERESEMPRE": 1,
+          "AFETA_STOCK": 1
+        },
+        {
+          "CDU_CSU_ARTIGO": "ECO0202094",
+          "DESCRICAO": "Resguardos 60x60",
+          "CDU_CSU_QTDSUGERIDA": 1,
+          "CDU_CSU_SUGERESEMPRE": 1,
+          "AFETA_STOCK": 1
+        },
+        {
+          "CDU_CSU_ARTIGO": "ECO0202094",
+          "DESCRICAO": "Resguardos 60x60",
+          "CDU_CSU_QTDSUGERIDA": 1,
+          "CDU_CSU_SUGERESEMPRE": 1,
+          "AFETA_STOCK": 1
+        }
+      ]
+    },
+    {
+      "nome": "Episódios com Actos Registados",
+      "tempoExecucao": 279,
+      "performanceStatus": "BOM",
+      "totalLinhas": 100,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "EPISODIO",
+        "NUM_SEQUENCIAL",
+        "DES_ESPECIALIDADE",
+        "TOTAL_ACTOS"
+      ],
+      "amostra": [
+        {
+          "EPISODIO": 18208765,
+          "NUM_SEQUENCIAL": 269719,
+          "DES_ESPECIALIDADE": "URGENCIA GERAL",
+          "TOTAL_ACTOS": 19
+        },
+        {
+          "EPISODIO": 18208765,
+          "NUM_SEQUENCIAL": 206578,
+          "DES_ESPECIALIDADE": "PNEUMOLOGIA",
+          "TOTAL_ACTOS": 19
+        },
+        {
+          "EPISODIO": 18208760,
+          "NUM_SEQUENCIAL": 140046,
+          "DES_ESPECIALIDADE": "PNEUMOLOGIA",
+          "TOTAL_ACTOS": 12
+        }
+      ]
+    },
+    {
+      "nome": "Medicamentos PRF",
+      "tempoExecucao": 25,
+      "performanceStatus": "BOM",
+      "totalLinhas": 100,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "CODIGO",
+        "DESCRICAO",
+        "E_MEDC",
+        "AFETA_STOCK"
+      ],
+      "amostra": [
+        {
+          "CODIGO": "FA10058062",
+          "DESCRICAO": "Acarbose 100 mg Comp",
+          "E_MEDC": "1",
+          "AFETA_STOCK": 1
+        },
+        {
+          "CODIGO": "FA10058258",
+          "DESCRICAO": "Acetilsalicilato de lisina 1800 mg Pó sol inj Fr I",
+          "E_MEDC": "1",
+          "AFETA_STOCK": 1
+        },
+        {
+          "CODIGO": "FA10006247",
+          "DESCRICAO": "Ácido acetilsalicílico 100 mg Comp",
+          "E_MEDC": "1",
+          "AFETA_STOCK": 1
+        }
+      ]
+    },
+    {
+      "nome": "Verificar campos CSU_DEFACTOSENTGASTOS",
+      "tempoExecucao": 106,
+      "performanceStatus": "BOM",
+      "totalLinhas": 8,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "COLUMN_NAME",
+        "DATA_TYPE",
+        "NULLABLE"
+      ],
+      "amostra": [
+        {
+          "COLUMN_NAME": "CDU_CSU_ID",
+          "DATA_TYPE": "VARCHAR2",
+          "NULLABLE": "N"
+        },
+        {
+          "COLUMN_NAME": "CDU_CSU_ARTIGO",
+          "DATA_TYPE": "VARCHAR2",
+          "NULLABLE": "N"
+        },
+        {
+          "COLUMN_NAME": "DESCRICAO",
+          "DATA_TYPE": "VARCHAR2",
+          "NULLABLE": "Y"
+        }
+      ]
+    },
+    {
+      "nome": "Actos mais utilizados (Performance Test)",
+      "tempoExecucao": 26,
+      "performanceStatus": "BOM",
+      "totalLinhas": 10,
+      "dentroDoEsperado": true,
+      "colunas": [
+        "CDU_CSU_DESCRICAO",
+        "TOTAL_USOS"
+      ],
+      "amostra": [
+        {
+          "CDU_CSU_DESCRICAO": "Medicação",
+          "TOTAL_USOS": 11440
+        },
+        {
+          "CDU_CSU_DESCRICAO": "Cateterismo Venoso Periférico",
+          "TOTAL_USOS": 6365
+        },
+        {
+          "CDU_CSU_DESCRICAO": "Injetável IV em Perfusão",
+          "TOTAL_USOS": 5086
+        }
+      ]
+    }
+  ],
+  "erro": [],
+  "timeout": [],
+  "timestamp": "2025-07-02T13:26:38.258Z",
+  "configuracao": {
+    "QUERY_TIMEOUT": 30,
+    "MAX_ROWS": 100,
+    "FETCH_SIZE": 50
+  }
+}

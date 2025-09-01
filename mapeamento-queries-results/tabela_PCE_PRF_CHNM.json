@@ -1,0 +1,115 @@
+{
+  "owner": "PCE",
+  "table": "PRF_CHNM",
+  "colunas": [
+    {
+      "nome": "ID_INTERNO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 12,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "NUM_REG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "CHUM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "CODIGO_INT",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "DE_CHNM",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "DE_NOME",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "ST_CHNM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "UT_CHNM",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "DT_CHNM",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    }
+  ],
+  "constraints": {
+    "SYS_C0010008": {
+      "tipo": "P",
+      "colunas": [
+        "ID_INTERNO"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "SYS_C0010008": {
+      "unico": true,
+      "colunas": [
+        "ID_INTERNO"
+      ]
+    }
+  },
+  "totalRegistros": 43568
+}

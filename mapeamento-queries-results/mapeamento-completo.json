@@ -1,0 +1,886 @@
+{
+  "PCE.CSU_DEFACTOS": {
+    "colunas": [
+      {
+        "nome": "CDU_CSU_ID",
+        "tipo": "VARCHAR2",
+        "tamanho": 36,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_CODIGO",
+        "tipo": "VARCHAR2",
+        "tamanho": 10,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_DESCRICAO",
+        "tipo": "VARCHAR2",
+        "tamanho": 255,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_FLAGMEDICACAO",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "0"
+      },
+      {
+        "nome": "CDU_CSU_UTILIZADOR",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_VALOR",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CODIGOSNS",
+        "tipo": "NVARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_VALORSNS",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "0"
+      },
+      {
+        "nome": "CDU_DESCRISNS",
+        "tipo": "NVARCHAR2",
+        "tamanho": 510,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CODIGO935803",
+        "tipo": "NVARCHAR2",
+        "tamanho": 100,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_VALOR935803",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_DESCRI935803",
+        "tipo": "NVARCHAR2",
+        "tamanho": 120,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CODIGO_IASFA",
+        "tipo": "NVARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_DESCRI_IASFA",
+        "tipo": "NVARCHAR2",
+        "tamanho": 100,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_VALOR_IASFA",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "0\n"
+      }
+    ]
+  },
+  "PCE.CSU_DEFACTOSENTGASTOS": {
+    "colunas": [
+      {
+        "nome": "CDU_CSU_ID",
+        "tipo": "VARCHAR2",
+        "tamanho": 36,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_ARTIGO",
+        "tipo": "VARCHAR2",
+        "tamanho": 48,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "DESCRICAO",
+        "tipo": "VARCHAR2",
+        "tamanho": 100,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_DEFACTOENTIDADEID",
+        "tipo": "VARCHAR2",
+        "tamanho": 48,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_QTDSUGERIDA",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_SUGERESEMPRE",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": false,
+        "default": "0       "
+      },
+      {
+        "nome": "CDU_CSU_UTILIZADOR",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "AFETA_STOCK",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "1 "
+      }
+    ]
+  },
+  "CSU_EPENTIDADEACTOS": {
+    "colunas": [
+      {
+        "nome": "CDU_CSU_ID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": false,
+        "default": "\"PCE\".\"ISEQ$$_654576\".nextval"
+      },
+      {
+        "nome": "EPISODIO",
+        "tipo": "VARCHAR2",
+        "tamanho": 15,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_ACTOID",
+        "tipo": "VARCHAR2",
+        "tamanho": 36,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_DATA",
+        "tipo": "DATE",
+        "tamanho": 7,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_EXPORTADO",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "0"
+      },
+      {
+        "nome": "CDU_CSU_OBSERVACOES",
+        "tipo": "VARCHAR2",
+        "tamanho": 2000,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_TIPODOCSTK",
+        "tipo": "NVARCHAR2",
+        "tamanho": 10,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_NUMDOCSTK",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_FILIALSTK",
+        "tipo": "NVARCHAR2",
+        "tamanho": 6,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_SERIESTK",
+        "tipo": "NVARCHAR2",
+        "tamanho": 10,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_EPISODIOCIRURGIAID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_UTILIZADOR",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_GERADOAUTOM",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "0"
+      },
+      {
+        "nome": "CDU_CSU_ORIGEM",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "MODULO",
+        "tipo": "VARCHAR2",
+        "tamanho": 15,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "SSONHO",
+        "tipo": "VARCHAR2",
+        "tamanho": 5,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "ERRO",
+        "tipo": "VARCHAR2",
+        "tamanho": 900,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CHAVE_PRIMAVERA",
+        "tipo": "VARCHAR2",
+        "tamanho": 70,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "EXPORTADO_SONHO",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "0"
+      }
+    ]
+  },
+  "CSU_EPENTIDADEACTOGASTOS": {
+    "colunas": [
+      {
+        "nome": "CDU_CSU_ID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": false,
+        "default": "\"PCE\".\"ISEQ$$_654573\".nextval"
+      },
+      {
+        "nome": "CDU_CSU_EPISODIOENTIDADEACTOID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_ARTIGO",
+        "tipo": "NVARCHAR2",
+        "tamanho": 96,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CDU_CSU_QUANTIDADE",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": false,
+        "default": "0 "
+      },
+      {
+        "nome": "CDU_CSU_VALOR",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": false,
+        "default": "0 "
+      },
+      {
+        "nome": "CDU_CSU_UTILIZADOR",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      }
+    ]
+  },
+  "CSU_TRATAMENTOS": {
+    "erro": "Tabela não encontrada ou sem acesso"
+  },
+  "PCE.PCEEPISODIOS": {
+    "colunas": [
+      {
+        "nome": "MODULO",
+        "tipo": "VARCHAR2",
+        "tamanho": 3,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "EPISODIO",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "NUM_SEQUENCIAL",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DTA_EPISODIO",
+        "tipo": "DATE",
+        "tamanho": 7,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "HORA_EPISODIO",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "HDI_EPISODIO",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "COD_SALA",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DTA_ANULA",
+        "tipo": "DATE",
+        "tamanho": 7,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "COD_ESPECIALIDADE",
+        "tipo": "VARCHAR2",
+        "tamanho": 10,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DES_ESPECIALIDADE",
+        "tipo": "VARCHAR2",
+        "tamanho": 200,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "NUM_ORDEM",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "0 "
+      }
+    ]
+  },
+  "PCE.PCEUTENTES": {
+    "erro": "Tabela não encontrada ou sem acesso"
+  },
+  "ARTIGOS": {
+    "erro": "Tabela não encontrada ou sem acesso"
+  },
+  "PRF_MEDICAMENTOS": {
+    "colunas": [
+      {
+        "nome": "CODIGO",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "DESC_C",
+        "tipo": "VARCHAR2",
+        "tamanho": 200,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "COD_P",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "COD_D",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "COD_F",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "COD_V",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "PSICO_F",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "E_MEDC",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "STOCK_ATUAL",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "FORMHOSP",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "1 "
+      },
+      {
+        "nome": "MED_ALTO_RISCO",
+        "tipo": "VARCHAR2",
+        "tamanho": 10,
+        "nullable": true,
+        "default": "'False'"
+      },
+      {
+        "nome": "AFETA_STOCK",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": "1 "
+      }
+    ]
+  },
+  "MEDH_CARACTERIZACAO_V2": {
+    "colunas": [
+      {
+        "nome": "FA_COD",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "CHNM_ID",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "NOME_EXT",
+        "tipo": "VARCHAR2",
+        "tamanho": 200,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "NOME_CIENT",
+        "tipo": "VARCHAR2",
+        "tamanho": 200,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "NOME_ABRV",
+        "tipo": "VARCHAR2",
+        "tamanho": 100,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DCI_ID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "FORMA_APRESENTACAO_ID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "FORMA_FARM_ID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DOSAGEM",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "UNID_DOSAGEM_ID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CAPACIDADE",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "UNID_CAPACID_ID",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_1",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_2",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_3",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_4",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_5",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_6",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_7",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_8",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_9",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "VIA_ADMINISTRACAO_ID_10",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CODIGO_ATC_ID",
+        "tipo": "VARCHAR2",
+        "tamanho": 10,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "GFT_ID",
+        "tipo": "VARCHAR2",
+        "tamanho": 10,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DDD",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DOSE_MAX",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "LASA_FLAG",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "MAR_FLAG",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DELETE_FLAG",
+        "tipo": "NUMBER",
+        "tamanho": 22,
+        "nullable": true,
+        "default": null
+      }
+    ]
+  },
+  "MEDH_GFT": {
+    "colunas": [
+      {
+        "nome": "GRAU",
+        "tipo": "VARCHAR2",
+        "tamanho": 10,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DESCRICAO",
+        "tipo": "VARCHAR2",
+        "tamanho": 200,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DESCRITIVO",
+        "tipo": "VARCHAR2",
+        "tamanho": 10,
+        "nullable": true,
+        "default": null
+      }
+    ]
+  },
+  "UTILIZADORES": {
+    "colunas": [
+      {
+        "nome": "IDUTILIZADOR",
+        "tipo": "VARCHAR2",
+        "tamanho": 10,
+        "nullable": false,
+        "default": null
+      },
+      {
+        "nome": "UTILIZADOR",
+        "tipo": "VARCHAR2",
+        "tamanho": 200,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "PASSWORD",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "PASSPUB",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "IDINT",
+        "tipo": "VARCHAR2",
+        "tamanho": 6,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "TIPO",
+        "tipo": "VARCHAR2",
+        "tamanho": 1,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "AREA",
+        "tipo": "VARCHAR2",
+        "tamanho": 20,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "IDSERVICO",
+        "tipo": "VARCHAR2",
+        "tamanho": 1000,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "PROFISSAO",
+        "tipo": "VARCHAR2",
+        "tamanho": 50,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "DATAINI",
+        "tipo": "DATE",
+        "tamanho": 7,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "ESTADO",
+        "tipo": "VARCHAR2",
+        "tamanho": 1,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "ESPECIALIDADE",
+        "tipo": "VARCHAR2",
+        "tamanho": 500,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "IDSERVRES",
+        "tipo": "VARCHAR2",
+        "tamanho": 500,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "FOTO",
+        "tipo": "BLOB",
+        "tamanho": 4000,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "CATEGORIA",
+        "tipo": "VARCHAR2",
+        "tamanho": 100,
+        "nullable": true,
+        "default": null
+      },
+      {
+        "nome": "PASSWORD_HASH",
+        "tipo": "VARCHAR2",
+        "tamanho": 72,
+        "nullable": true,
+        "default": null
+      }
+    ]
+  },
+  "FARDISPENSAS": {
+    "erro": "Tabela não encontrada ou sem acesso"
+  },
+  "FARDISPENSASMOV": {
+    "erro": "Tabela não encontrada ou sem acesso"
+  }
+}

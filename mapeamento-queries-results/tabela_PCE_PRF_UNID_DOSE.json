@@ -1,0 +1,39 @@
+{
+  "owner": "PCE",
+  "table": "PRF_UNID_DOSE",
+  "colunas": [
+    {
+      "nome": "ID_UNID",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DES_UNID",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DOSE_COD_MEDH",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 115
+}

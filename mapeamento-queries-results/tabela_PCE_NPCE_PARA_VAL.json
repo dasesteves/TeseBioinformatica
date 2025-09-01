@@ -1,0 +1,146 @@
+{
+  "dataHora": "2025-07-16T11:00:25.177Z",
+  "owner": "PCE",
+  "table": "NPCE_PARA_VAL",
+  "colunas": [
+    {
+      "nome": "ID_CONTEXT",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "ID_PARAM",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "ID_GRUPO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 3,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "COD_ESP",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "COD_ESP_EX",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "UNIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "C_ORDEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 3,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "AGRUPA",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "GRUPO_PRO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    }
+  ],
+  "totalRegistros": 4,
+  "exemplos": [
+    {
+      "ID_CONTEXT": "INT_ALERTAS",
+      "ID_PARAM": "INTERAC",
+      "ID_GRUPO": 0,
+      "COD_ESP": 0,
+      "COD_ESP_EX": null,
+      "UNIDADE": "-",
+      "MODULO": "INT",
+      "C_ORDEM": null,
+      "AGRUPA": null,
+      "GRUPO_PRO": null
+    },
+    {
+      "ID_CONTEXT": "INT_ALERTAS",
+      "ID_PARAM": "EXTRAF",
+      "ID_GRUPO": 0,
+      "COD_ESP": 0,
+      "COD_ESP_EX": null,
+      "UNIDADE": "-",
+      "MODULO": "INT",
+      "C_ORDEM": null,
+      "AGRUPA": null,
+      "GRUPO_PRO": null
+    },
+    {
+      "ID_CONTEXT": "INT_ALERTAS",
+      "ID_PARAM": "ALERTA",
+      "ID_GRUPO": 0,
+      "COD_ESP": 0,
+      "COD_ESP_EX": null,
+      "UNIDADE": "-",
+      "MODULO": "INT",
+      "C_ORDEM": null,
+      "AGRUPA": null,
+      "GRUPO_PRO": null
+    }
+  ]
+}

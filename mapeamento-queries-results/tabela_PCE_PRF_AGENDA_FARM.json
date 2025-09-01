@@ -1,0 +1,55 @@
+{
+  "owner": "PCE",
+  "table": "PRF_AGENDA_FARM",
+  "colunas": [
+    {
+      "nome": "DATA_C",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "ATIVO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DDIA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": "0",
+      "posicao": 3
+    }
+  ],
+  "constraints": {
+    "SYS_C0010007": {
+      "tipo": "P",
+      "colunas": [
+        "DATA_C"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "SYS_C0010007": {
+      "unico": true,
+      "colunas": [
+        "DATA_C"
+      ]
+    }
+  },
+  "totalRegistros": 5479
+}

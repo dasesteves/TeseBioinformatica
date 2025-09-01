@@ -1,0 +1,53 @@
+{
+  "owner": "PCE",
+  "table": "PRF_MED_ZERO",
+  "colunas": [
+    {
+      "nome": "CODIGO",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DESC_C",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    }
+  ],
+  "constraints": {
+    "SYS_C0010009": {
+      "tipo": "C",
+      "colunas": [
+        "CODIGO"
+      ],
+      "condicao": "\"CODIGO\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "PRF_MED_ZERO_PK": {
+      "tipo": "P",
+      "colunas": [
+        "CODIGO"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "PRF_MED_ZERO_PK": {
+      "unico": true,
+      "colunas": [
+        "CODIGO"
+      ]
+    }
+  },
+  "totalRegistros": 775
+}

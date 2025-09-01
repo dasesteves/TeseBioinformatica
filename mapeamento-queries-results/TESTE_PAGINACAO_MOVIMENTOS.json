@@ -1,0 +1,336 @@
+{
+  "timestamp": "2025-08-21T14:29:21.122Z",
+  "db": "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.105.16)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=ORCL)))",
+  "resultados": [
+    {
+      "filtros": {
+        "vista": "ativas"
+      },
+      "pagina": 1,
+      "itensPorPagina": 10,
+      "totalDistinct": 89,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 12,
+      "tempos_ms": {
+        "contagem": 64,
+        "chaves": 63,
+        "detalhes": 17,
+        "total": 145
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Adolfo Eduardo Costa Lobo",
+          "EPISODIO": 18018705,
+          "ID_PRESC": 211116,
+          "ESTADO": 2
+        },
+        {
+          "NOME_UTENTE": "Adolfo Eduardo Costa Lobo",
+          "EPISODIO": 18018705,
+          "ID_PRESC": 218069,
+          "ESTADO": 2
+        },
+        {
+          "NOME_UTENTE": "Adolfo Eduardo Costa Lobo",
+          "EPISODIO": 18018705,
+          "ID_PRESC": 216130,
+          "ESTADO": 2
+        }
+      ]
+    },
+    {
+      "filtros": {
+        "vista": "ativas"
+      },
+      "pagina": 2,
+      "itensPorPagina": 10,
+      "totalDistinct": 89,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 24,
+      "tempos_ms": {
+        "contagem": 42,
+        "chaves": 50,
+        "detalhes": 4,
+        "total": 96
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Adolfo Eduardo Costa Lobo",
+          "EPISODIO": 18018705,
+          "ID_PRESC": 211116,
+          "ESTADO": 2
+        },
+        {
+          "NOME_UTENTE": "Adolfo Eduardo Costa Lobo",
+          "EPISODIO": 18018705,
+          "ID_PRESC": 218069,
+          "ESTADO": 2
+        },
+        {
+          "NOME_UTENTE": "Adolfo Eduardo Costa Lobo",
+          "EPISODIO": 18018705,
+          "ID_PRESC": 216130,
+          "ESTADO": 2
+        }
+      ]
+    },
+    {
+      "filtros": {
+        "vista": "ativas"
+      },
+      "pagina": 3,
+      "itensPorPagina": 10,
+      "totalDistinct": 89,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 18,
+      "tempos_ms": {
+        "contagem": 38,
+        "chaves": 50,
+        "detalhes": 5,
+        "total": 93
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Ana Gloria Santos Pereira",
+          "EPISODIO": 18017389,
+          "ID_PRESC": 183088,
+          "ESTADO": 2
+        },
+        {
+          "NOME_UTENTE": "Ana Gloria Santos Pereira",
+          "EPISODIO": 18017389,
+          "ID_PRESC": 194384,
+          "ESTADO": 2
+        },
+        {
+          "NOME_UTENTE": "Ana Gloria Santos Pereira",
+          "EPISODIO": 18017389,
+          "ID_PRESC": 196289,
+          "ESTADO": 2
+        }
+      ]
+    },
+    {
+      "filtros": {
+        "vista": "alta"
+      },
+      "pagina": 1,
+      "itensPorPagina": 10,
+      "totalDistinct": 127,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 12,
+      "tempos_ms": {
+        "contagem": 87,
+        "chaves": 35,
+        "detalhes": 11,
+        "total": 133
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Adriana Maria Barbosa Lima",
+          "EPISODIO": 18005552,
+          "ID_PRESC": 59227,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Alberto Fernando Cardoso Oliveira",
+          "EPISODIO": 18011609,
+          "ID_PRESC": 110328,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Alberto Fernando Cardoso Oliveira",
+          "EPISODIO": 18011609,
+          "ID_PRESC": 110329,
+          "ESTADO": 8
+        }
+      ]
+    },
+    {
+      "filtros": {
+        "vista": "alta"
+      },
+      "pagina": 2,
+      "itensPorPagina": 10,
+      "totalDistinct": 127,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 12,
+      "tempos_ms": {
+        "contagem": 26,
+        "chaves": 30,
+        "detalhes": 3,
+        "total": 59
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Anabela Martins Goncalves Pereira Castro Rocha",
+          "EPISODIO": 18005011,
+          "ID_PRESC": 52586,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Anabela Martins Goncalves Pereira Castro Rocha",
+          "EPISODIO": 18005011,
+          "ID_PRESC": 52587,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Ana Maria Quelha Bolhosa Sousa",
+          "EPISODIO": 18005548,
+          "ID_PRESC": 59226,
+          "ESTADO": 8
+        }
+      ]
+    },
+    {
+      "filtros": {
+        "vista": "alta"
+      },
+      "pagina": 3,
+      "itensPorPagina": 10,
+      "totalDistinct": 127,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 10,
+      "tempos_ms": {
+        "contagem": 27,
+        "chaves": 29,
+        "detalhes": 3,
+        "total": 59
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Antonio Freitas Barbosa",
+          "EPISODIO": 18004989,
+          "ID_PRESC": 52466,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Antonio Freitas Barbosa",
+          "EPISODIO": 18004989,
+          "ID_PRESC": 52467,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Antonio Joaquim Rodrigues Sousa",
+          "EPISODIO": 18018446,
+          "ID_PRESC": 178498,
+          "ESTADO": 8
+        }
+      ]
+    },
+    {
+      "filtros": {
+        "vista": "outros"
+      },
+      "pagina": 1,
+      "itensPorPagina": 10,
+      "totalDistinct": 3641,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 24,
+      "tempos_ms": {
+        "contagem": 379,
+        "chaves": 302,
+        "detalhes": 11,
+        "total": 692
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141428,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141433,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141434,
+          "ESTADO": 9
+        }
+      ]
+    },
+    {
+      "filtros": {
+        "vista": "outros"
+      },
+      "pagina": 2,
+      "itensPorPagina": 10,
+      "totalDistinct": 3641,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 23,
+      "tempos_ms": {
+        "contagem": 146,
+        "chaves": 308,
+        "detalhes": 3,
+        "total": 457
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141428,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141433,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141434,
+          "ESTADO": 9
+        }
+      ]
+    },
+    {
+      "filtros": {
+        "vista": "outros"
+      },
+      "pagina": 3,
+      "itensPorPagina": 10,
+      "totalDistinct": 3641,
+      "episodiosPagina": 10,
+      "contagemRegistosDetalhe": 32,
+      "tempos_ms": {
+        "contagem": 148,
+        "chaves": 166,
+        "detalhes": 3,
+        "total": 317
+      },
+      "amostra": [
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141428,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141433,
+          "ESTADO": 8
+        },
+        {
+          "NOME_UTENTE": "Abel Antonio Fernandes Silva",
+          "EPISODIO": 18014751,
+          "ID_PRESC": 141434,
+          "ESTADO": 9
+        }
+      ]
+    }
+  ],
+  "medias_ms": {
+    "contagem": 106,
+    "chaves": 115,
+    "detalhes": 7,
+    "total": 228
+  }
+}

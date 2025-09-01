@@ -1,0 +1,59 @@
+{
+  "owner": "PCE",
+  "table": "MEDH_MESTRE_V2",
+  "colunas": [
+    {
+      "nome": "TYPE",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "ID_MEDH",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 6,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DESC_MEDH",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "ABREV_MEDH",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "DELETE_FLAG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 3944
+}

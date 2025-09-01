@@ -1,0 +1,39 @@
+{
+  "owner": "PCE",
+  "table": "PRF_VIAS_FREQS",
+  "colunas": [
+    {
+      "nome": "ID_VIA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "COD_F",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "HORA_INI",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 5
+}

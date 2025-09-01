@@ -1,0 +1,120 @@
+{
+  "dataHora": "2025-07-16T11:00:21.449Z",
+  "owner": "PCE",
+  "table": "LOGS_COMPLETO",
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_218277\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "NUM_CARTAO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DATA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "NIF",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "NUM_SEQ",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 8
+    }
+  ],
+  "totalRegistros": 71,
+  "exemplos": [
+    {
+      "ID": 121,
+      "NUM_CARTAO": null,
+      "DATA": "2021-03-03T15:40:09.000Z",
+      "NIF": 216880068,
+      "EPISODIO": 18188213,
+      "MODULO": "CON",
+      "NUM_SEQ": 26234,
+      "ESTADO": "R"
+    },
+    {
+      "ID": 123,
+      "NUM_CARTAO": null,
+      "DATA": "2021-03-03T15:42:18.000Z",
+      "NIF": 216880068,
+      "EPISODIO": 18188213,
+      "MODULO": "CON",
+      "NUM_SEQ": 26234,
+      "ESTADO": "R"
+    },
+    {
+      "ID": 109,
+      "NUM_CARTAO": null,
+      "DATA": "2021-02-27T12:51:26.000Z",
+      "NIF": 162446772,
+      "EPISODIO": 18172862,
+      "MODULO": "CON",
+      "NUM_SEQ": 158414,
+      "ESTADO": "I"
+    }
+  ]
+}

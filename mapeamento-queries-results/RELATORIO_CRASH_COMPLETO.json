@@ -1,0 +1,395 @@
+{
+  "timestamp": "2025-08-19T13:59:15.732Z",
+  "problemas_identificados": [
+    "QUERIES_LENTAS_RECORRENTES",
+    "TABELA_FDET_MUITO_GRANDE",
+    "MEDICAMENTO_MUITOS_MOVIMENTOS_FA10047564"
+  ],
+  "hipoteses_crash": [
+    "Tabela PRF_PRESC_MOV_FDET com >2M registos causa queries lentas",
+    "Cache do middleware tokenCache crescendo descontroladamente",
+    "AbortController não cancelando requests corretamente",
+    "Pool de conexões Oracle esgotado (>50 conexões PCE ativas)",
+    "Vazamento de memória em React hooks (useEffect sem cleanup)",
+    "Next.js cache interno acumulando dados de API routes",
+    "Queries PRF_PRESC_MOV_FDET sem LIMIT causando OOM",
+    "Event listeners não removidos em componentes desmontados",
+    "Promises não resolvidas acumulando na memória",
+    "Oracle PGA memory >100MB por sessão",
+    "Tablespace cheio causando falhas silenciosas",
+    "Locks prolongados bloqueando novas conexões",
+    "Webpack HMR em desenvolvimento causando vazamentos",
+    "Cache LRU do autocomplete crescendo indefinidamente",
+    "Estados React não sendo limpos entre modais",
+    "Conexões Oracle não sendo fechadas corretamente"
+  ],
+  "recomendacoes": [
+    "Reduzir TTL do tokenCache de 12h para 30min",
+    "Adicionar logs de debug em todos os componentes críticos",
+    "Implementar monitorização de memória em tempo real",
+    "Adicionar timeout agressivo em todas as queries (5-10s)",
+    "Implementar limpeza forçada de cache no modal",
+    "Verificar pool de conexões Oracle (max connections)",
+    "Adicionar AbortController em todos os fetch()",
+    "Implementar useEffect cleanup em todos os hooks",
+    "Adicionar logs de conexões Oracle (open/close)",
+    "Implementar circuit breaker para queries problemáticas",
+    "Adicionar monitorização de memória Node.js",
+    "Implementar restart automático em caso de OOM",
+    "Adicionar logs de performance em middleware",
+    "Implementar cache LRU com limite máximo de entradas",
+    "Adicionar timeout global para todas as APIs farmácia"
+  ],
+  "estatisticas_bd": {
+    "prf_presc_mov_fdet": {
+      "TOTAL_REGISTOS": 2034656,
+      "HOJE": 1911,
+      "ULTIMOS_7_DIAS": 4748,
+      "ULTIMOS_30_DIAS": 19698,
+      "LOTES_NULL": 1582060,
+      "MEDICAMENTOS_UNICOS": 1302,
+      "DATA_MAIS_ANTIGA": "2018-06-18T23:03:12.000Z",
+      "DATA_MAIS_RECENTE": "2025-08-19T13:49:23.000Z"
+    },
+    "crescimento_mensal": [
+      {
+        "MES": "2025-08",
+        "REGISTOS_MES": 11317,
+        "MEDICAMENTOS_MES": 282
+      },
+      {
+        "MES": "2025-07",
+        "REGISTOS_MES": 21540,
+        "MEDICAMENTOS_MES": 305
+      },
+      {
+        "MES": "2025-06",
+        "REGISTOS_MES": 17215,
+        "MEDICAMENTOS_MES": 298
+      },
+      {
+        "MES": "2025-05",
+        "REGISTOS_MES": 20284,
+        "MEDICAMENTOS_MES": 282
+      },
+      {
+        "MES": "2025-04",
+        "REGISTOS_MES": 18971,
+        "MEDICAMENTOS_MES": 291
+      },
+      {
+        "MES": "2025-03",
+        "REGISTOS_MES": 20932,
+        "MEDICAMENTOS_MES": 289
+      },
+      {
+        "MES": "2025-02",
+        "REGISTOS_MES": 7583,
+        "MEDICAMENTOS_MES": 252
+      }
+    ],
+    "medicamentos_problematicos": [
+      {
+        "CODIGO": "FA10047564",
+        "TOTAL_MOVIMENTOS": 7082,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "PANTOprazol 20 mg Comp GR"
+      },
+      {
+        "CODIGO": "FA10027580",
+        "TOTAL_MOVIMENTOS": 4332,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Bisacodilo 5 mg Comp"
+      },
+      {
+        "CODIGO": "FA10025906",
+        "TOTAL_MOVIMENTOS": 3747,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "ATORvastatina 10 mg Comp"
+      },
+      {
+        "CODIGO": "FA10015285",
+        "TOTAL_MOVIMENTOS": 3362,
+        "LOTES_DIFERENTES": 7,
+        "DESCRICAO": "Furosemida 40 mg Comp"
+      },
+      {
+        "CODIGO": "FA10005729",
+        "TOTAL_MOVIMENTOS": 2821,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Brometo de ipratrópio 20 µg/dose Sol pressu inal R"
+      },
+      {
+        "CODIGO": "FA10037118",
+        "TOTAL_MOVIMENTOS": 2335,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Budesonida 200 µg/dose Susp pressu inal Recip pres"
+      },
+      {
+        "CODIGO": "FA10025781",
+        "TOTAL_MOVIMENTOS": 2272,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Sertralina 50 mg Comp"
+      },
+      {
+        "CODIGO": "FA10011707",
+        "TOTAL_MOVIMENTOS": 2116,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "QUETIapina 25 mg Comp"
+      },
+      {
+        "CODIGO": "FA10107164",
+        "TOTAL_MOVIMENTOS": 1847,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Sulfato ferroso 329.7 mg Comp LP"
+      },
+      {
+        "CODIGO": "FA10025240",
+        "TOTAL_MOVIMENTOS": 1769,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Tansulosina 0.4 mg Cáps LP"
+      },
+      {
+        "CODIGO": "FA10043377",
+        "TOTAL_MOVIMENTOS": 1759,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Lactulose 667 mg/ml Xar Fr 200 ml xar."
+      },
+      {
+        "CODIGO": "FA10043669",
+        "TOTAL_MOVIMENTOS": 1750,
+        "LOTES_DIFERENTES": 9,
+        "DESCRICAO": "Ácido fólico 5 mg Comp"
+      },
+      {
+        "CODIGO": "FA10047308",
+        "TOTAL_MOVIMENTOS": 1730,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Salbutamol 100 µg/dose Susp pressu inal Recip pres"
+      },
+      {
+        "CODIGO": "FA10001766",
+        "TOTAL_MOVIMENTOS": 1592,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Insulina humana 100 U.I./ml Acção curta Sol inj Ca"
+      },
+      {
+        "CODIGO": "FA10006247",
+        "TOTAL_MOVIMENTOS": 1570,
+        "LOTES_DIFERENTES": 0,
+        "DESCRICAO": "Ácido acetilsalicílico 100 mg Comp"
+      }
+    ],
+    "indices_criticos": [
+      {
+        "TABLE_NAME": "CSU_EPENTIDADEACTOGASTOS",
+        "INDEX_NAME": "SYS_C00269416",
+        "UNIQUENESS": "UNIQUE",
+        "STATUS": "VALID",
+        "COLUNAS": "CDU_CSU_ID"
+      },
+      {
+        "TABLE_NAME": "PRF_MEDICAMENTOS",
+        "INDEX_NAME": "PRF_MEDICAMENTOSIDX01",
+        "UNIQUENESS": "NONUNIQUE",
+        "STATUS": "VALID",
+        "COLUNAS": "CODIGO, COD_P"
+      },
+      {
+        "TABLE_NAME": "PRF_PRESC_MOV_FDET",
+        "INDEX_NAME": "PRF_PRESC_MOV_FDET_CDU_CSU_PRESCRICAOID_index",
+        "UNIQUENESS": "NONUNIQUE",
+        "STATUS": "VALID",
+        "COLUNAS": "CDU_CSU_PRESCRICAOID"
+      },
+      {
+        "TABLE_NAME": "PRF_PRESC_MOV_FDET",
+        "INDEX_NAME": "PRF_PRESC_MOV_FDET_pk",
+        "UNIQUENESS": "UNIQUE",
+        "STATUS": "VALID",
+        "COLUNAS": "CDU_CSU_ID"
+      },
+      {
+        "TABLE_NAME": "PRF_PRESC_MOV_FDET",
+        "INDEX_NAME": "PRF_PRESC_MOV_FDET_01",
+        "UNIQUENESS": "NONUNIQUE",
+        "STATUS": "VALID",
+        "COLUNAS": "CDU_CSU_ENVIADOMEDICID, SYS_NC00030$"
+      },
+      {
+        "TABLE_NAME": "PRF_PRESC_MOV_FDET",
+        "INDEX_NAME": "PRF_PRESC_MOV_FDET_02",
+        "UNIQUENESS": "NONUNIQUE",
+        "STATUS": "VALID",
+        "COLUNAS": "CDU_CSU_PRESCMEDICID, SYS_NC00030$"
+      }
+    ],
+    "tablespaces": [
+      {
+        "TABLESPACE_NAME": "PCE",
+        "SIZE_GB": 3.96,
+        "MAX_SIZE_GB": 32,
+        "DATAFILES": 1
+      }
+    ],
+    "padroes_uso_horario": [
+      {
+        "HORA": "00",
+        "TOTAL_MOVIMENTOS": 921,
+        "MEDICAMENTOS_DIFERENTES": 230
+      },
+      {
+        "HORA": "09",
+        "TOTAL_MOVIMENTOS": 3,
+        "MEDICAMENTOS_DIFERENTES": 3
+      },
+      {
+        "HORA": "11",
+        "TOTAL_MOVIMENTOS": 3,
+        "MEDICAMENTOS_DIFERENTES": 3
+      },
+      {
+        "HORA": "14",
+        "TOTAL_MOVIMENTOS": 20,
+        "MEDICAMENTOS_DIFERENTES": 18
+      }
+    ],
+    "configuracao_oracle": [
+      {
+        "NAME": "processes",
+        "VALUE": "320"
+      },
+      {
+        "NAME": "sessions",
+        "VALUE": "504"
+      },
+      {
+        "NAME": "sga_target",
+        "VALUE": "5167382528"
+      },
+      {
+        "NAME": "open_cursors",
+        "VALUE": "300"
+      },
+      {
+        "NAME": "pga_aggregate_target",
+        "VALUE": "1718616064"
+      }
+    ]
+  },
+  "conexoes_ativas": {
+    "TOTAL_SESSIONS": 104,
+    "ACTIVE_SESSIONS": 42,
+    "PCE_SESSIONS": 38,
+    "INACTIVE_SESSIONS": 62,
+    "WAITING_LOCKS": 0
+  },
+  "memoria_oracle": {
+    "session uga memory": 1479992,
+    "session pga memory": 3372472,
+    "session pga memory max": 3962296
+  },
+  "locks_detectados": [],
+  "queries_lentas": [
+    {
+      "SQL_ID": "53wkprnmtb0a3",
+      "SQL_TEXT": "     SELECT        NVL(f.cdu_csu_enviadomedicid, f.cdu_csu_prescmedicid) AS Artigo,       MAX(m.desc_c) AS Descricao,       'FARMACIA' AS Armazem,       SUM(f.cdu_csu_enviadoquantidade) AS Stock_Actual,       TO_CHAR(MAX(SYSDATE), 'YYYY-MM-DD HH24:MI:SS') AS Data,       'SAIDA' AS TipoMovimento     FROM prf_presc_mov_fdet f     LEFT JOIN prf_medicamentos m        ON m.codigo = NVL(f.cdu_csu_enviadomedicid, f.cdu_csu_prescmedicid)     WHERE f.dtmedd = 'MH'       AND (NVL(f.cdu_csu_enviadomedicid, f.cdu_csu_prescmedicid) IN (:g0c0,:g0c1,:g0c2,:g0c3,:g0c4,:g0c5,:g0c6,:g0c7,:g0c8,:g0c9,:g0c10,:g0c11,:g0c12,:g0c13,:g0c14,:g0c15,:g0c16,:g0c17,:g0c18,:g0c19,:g0c20,:g0c21,:g0c22,:g0c23,:g0c24,:g0c25,:g0c26,:g0c27,:g0c28,:g0c29,:g0c30,:g0c31,:g0c32,:g0c33,:g0c34,:g0c35,:g0c36,:g0c37,:g0c38,:g0c39,:g0c40,:g0c41,:g0c42,:g0c43,:g0c44,:g0c45,:g0c46,:g0c47,:g0c48,:g0c49,:g0c50,:g0c51,:g0c52,:g0c53,:g0c54,:g0c55,:g0c56,:g0c57,:g0c58,:g0c59,:g0c60,:g0c61,:g0c62,:g0c63,:g0c64,:g0c65,:g0c66,:g0c67,:g0c6",
+      "EXECUTIONS": 31,
+      "ELAPSED_SECONDS": 8717.351926,
+      "CPU_SECONDS": 6523.46875,
+      "DISK_READS": 1341751,
+      "BUFFER_GETS": 1579351,
+      "ROWS_PROCESSED": 0
+    },
+    {
+      "SQL_ID": "7gc8j6uw787dq",
+      "SQL_TEXT": "select * from pceurgadmi where dta_alta is null",
+      "EXECUTIONS": 58595,
+      "ELAPSED_SECONDS": 3110.575189,
+      "CPU_SECONDS": 2898.078125,
+      "DISK_READS": 291722,
+      "BUFFER_GETS": 259435934,
+      "ROWS_PROCESSED": 11336915
+    },
+    {
+      "SQL_ID": "0vth1gm3tux59",
+      "SQL_TEXT": "select * from (select * from pceepisodios  where cod_especialidade is null and modulo in ('BLO','CON','URG','HDI','INT','RAD','LAB') and dta_episodio is not null and dta_anula is null order by dta_episodio desc) where rownum < 500",
+      "EXECUTIONS": 20592,
+      "ELAPSED_SECONDS": 2971.218006,
+      "CPU_SECONDS": 2940.4375,
+      "DISK_READS": 3664,
+      "BUFFER_GETS": 213480454,
+      "ROWS_PROCESSED": 3775
+    },
+    {
+      "SQL_ID": "39vgr9a3s3k1j",
+      "SQL_TEXT": "select * from pceepisodios where dta_episodio is null and modulo in ('BLO','CON','URG','HDI','INT','RAD','LAB')  and dta_anula is null",
+      "EXECUTIONS": 14985,
+      "ELAPSED_SECONDS": 1477.552651,
+      "CPU_SECONDS": 1271.90625,
+      "DISK_READS": 314278,
+      "BUFFER_GETS": 155394469,
+      "ROWS_PROCESSED": 0
+    },
+    {
+      "SQL_ID": "5ff1r3hhptfcn",
+      "SQL_TEXT": "delete from PRF_PRESC_MOV_FDET  where verifica=1",
+      "EXECUTIONS": 70,
+      "ELAPSED_SECONDS": 505.522739,
+      "CPU_SECONDS": 197.953125,
+      "DISK_READS": 5986189,
+      "BUFFER_GETS": 9580661,
+      "ROWS_PROCESSED": 783
+    },
+    {
+      "SQL_ID": "cjczjszpudjpy",
+      "SQL_TEXT": "select a1.episodio,a1.modulo,a1.episodio||a1.modulo,round((sysdate-a1.dta_ini),0),round((sysdate-nvl(a1.dta_fim,sysdate))),a3.num_processo,initcap(a3.nome),a1.servicoid,a1.user_alt,a1.num_sequencial,a1.uni_dose,nvl(a1.tem_obs,0),nvl(a1.sos,0),a1.id_presc,a1.codigo,a1.desc_c,a1.cod_f,a1.cod_v,a1.dose*100, a2.cod_p,to_char(sysdate,'yyyy-mm-dd'),initcap(a4.utilizador),a2.cod_d,a2.cod_f,to_char(sysdate,'hh24:mi'), (case when (to_char(nvl(a1.dta_fim,sysdate+1),'yyyymmdd')<to_char(sysdate+1,'yyyymmdd')) then to_date(to_char(nvl(a1.dta_fim,sysdate),'yyyymmdd'),'yyyymmdd') else to_date(to_char(sysdate+1,'yyyymmdd'),'yyyymmdd')  end) - (case when (to_char(a1.dta_ini,'yyyymmdd')>to_char(sysdate,'yyyymmdd')) then to_date(to_char(a1.dta_ini,'yyyymmdd'),'yyyymmdd') else to_date(to_char(sysdate,'yyyymmdd'),'yyyymmdd')  end) diferenca, a2.psico_f,nvl(a1.dtmed,'MH') dtmed from prf_presc_mov a1,pcedoentes a3,prf_medicamentos a2,utilizadores a4 where (a1.sos=0 or a1.enviasos=1) and nvl(a1.dtmed,'MH') no",
+      "EXECUTIONS": 282,
+      "ELAPSED_SECONDS": 479.41713,
+      "CPU_SECONDS": 188.96875,
+      "DISK_READS": 25068250,
+      "BUFFER_GETS": 39115322,
+      "ROWS_PROCESSED": 4499
+    },
+    {
+      "SQL_ID": "crtak11dy4auv",
+      "SQL_TEXT": "insert into PRF_PRESC_MOV_FDET_APAGADOS select * from PRF_PRESC_MOV_FDET  where verifica=1",
+      "EXECUTIONS": 70,
+      "ELAPSED_SECONDS": 332.736005,
+      "CPU_SECONDS": 157.71875,
+      "DISK_READS": 6732235,
+      "BUFFER_GETS": 9570833,
+      "ROWS_PROCESSED": 783
+    },
+    {
+      "SQL_ID": "59c80mhhjyxdn",
+      "SQL_TEXT": "       SELECT          NVL(numlote, 'Lote N/D') AS LOTE,         SUM(cdu_csu_enviadoquantidade) AS QUANTIDADE,         TO_CHAR(MAX(dta_lanca), 'YYYY-MM-DD HH24:MI:SS') AS DATA_ULT_MOV,         COUNT(*) AS NUM_MOVIMENTOS       FROM (         SELECT * FROM prf_presc_mov_fdet         WHERE nvl(cdu_csu_enviadomedicid, cdu_csu_prescmedicid) = :codigoArtigo           AND dtmedd = 'MH'           AND TRUNC(dta_lanca) >= TRUNC(SYSDATE) - :periodo           AND ROWNUM <= 1000       )       GROUP BY          NVL(numlote, 'Lote N/D')       ORDER BY          SUM(cdu_csu_enviadoquantidade) DESC     ",
+      "EXECUTIONS": 22,
+      "ELAPSED_SECONDS": 295.406943,
+      "CPU_SECONDS": 19.671875,
+      "DISK_READS": 2703902,
+      "BUFFER_GETS": 2977143,
+      "ROWS_PROCESSED": 90
+    },
+    {
+      "SQL_ID": "c2q1nfggs75yr",
+      "SQL_TEXT": "       SELECT          numlote AS LOTE,         SUM(cdu_csu_enviadoquantidade) AS QUANTIDADE,         TO_CHAR(MAX(dta_lanca), 'YYYY-MM-DD HH24:MI:SS') AS DATA_ULT_MOV       FROM          prf_presc_mov_fdet       WHERE          nvl(cdu_csu_enviadomedicid, cdu_csu_prescmedicid) = :codigoArtigo         AND dtmedd = 'MH'         AND TRUNC(dta_lanca) >= TRUNC(SYSDATE) - :periodo       GROUP BY          numlote       ORDER BY          numlote     ",
+      "EXECUTIONS": 12,
+      "ELAPSED_SECONDS": 288.992672,
+      "CPU_SECONDS": 10.71875,
+      "DISK_READS": 1577413,
+      "BUFFER_GETS": 1576948,
+      "ROWS_PROCESSED": 37
+    },
+    {
+      "SQL_ID": "8mdkbnsvpvd81",
+      "SQL_TEXT": "select EPISODIO,                       doentes.NUM_SEQUENCIAL              as NUM_SEQUENCIAL,                       DTA_EPISODIO,                       HORA_EPISODIO,                       DES_ESPECIALIDADE,                       COD_ESPECIALIDADE,                       NUM_PROCESSO,                       NOME,                       (SELECT COUNT(*)                        FROM CSU_EPENTIDADEACTOS C                        WHERE C.EPISODIO = episodios.EPISODIO                          and c.MODULO = episodios.MODULO) AS CSU_EPENTIDADEACTOS_COUNT,                       CASE                           WHEN EXISTS (SELECT 1                                        FROM pceurgadmi                                        WHERE URG_EPISODIO = episodios.EPISODIO                                          AND DTA_ALTA IS NOT NULL) THEN 1                           ELSE 0                           END                             AS ALTA                from PCEEPISODIOS episodios                         ",
+      "EXECUTIONS": 207,
+      "ELAPSED_SECONDS": 285.477679,
+      "CPU_SECONDS": 268.796875,
+      "DISK_READS": 45599,
+      "BUFFER_GETS": 21904801,
+      "ROWS_PROCESSED": 14378
+    }
+  ]
+}

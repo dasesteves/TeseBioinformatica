@@ -1,0 +1,207 @@
+{
+  "colunas": [
+    {
+      "nome": "FA_COD",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": false,
+      "default": null
+    },
+    {
+      "nome": "CHNM_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "NOME_EXT",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "NOME_CIENT",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "NOME_ABRV",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DCI_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "FORMA_APRESENTACAO_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "FORMA_FARM_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DOSAGEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "UNID_DOSAGEM_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CAPACIDADE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "UNID_CAPACID_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_1",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_2",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_3",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_4",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_5",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_6",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_7",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_8",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_9",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "VIA_ADMINISTRACAO_ID_10",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "CODIGO_ATC_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "GFT_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DDD",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DOSE_MAX",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "LASA_FLAG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "MAR_FLAG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DELETE_FLAG",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "nullable": true,
+      "default": null
+    }
+  ]
+}

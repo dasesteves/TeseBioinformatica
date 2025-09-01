@@ -1,0 +1,109 @@
+{
+  "owner": "PCE",
+  "table": "TDU_CSU_FACTURACAOACTOSSONHO",
+  "colunas": [
+    {
+      "nome": "CDU_IDLINHAACTO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_654579\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "CDU_EPISODIO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "CDU_CODPRIACTO",
+      "tipo": "VARCHAR2",
+      "tamanho": 36,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "CDU_MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "CDU_IDEPENTIDADEACTOS",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "SSONHO",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    }
+  ],
+  "constraints": {
+    "SYS_C00269422": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_IDLINHAACTO"
+      ],
+      "condicao": "\"CDU_IDLINHAACTO\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00273177": {
+      "tipo": "P",
+      "colunas": [
+        "CDU_IDLINHAACTO"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    },
+    "TDU_CSU_FACTURACAOACTOSSONHO_SERVICO_SSONHO_fk": {
+      "tipo": "R",
+      "colunas": [
+        "SSONHO"
+      ],
+      "condicao": null,
+      "tabelaRef": "PCE.SERVICO"
+    },
+    "TDU_CSU_FACTURACAOACTOSSONHO_CSU_EPENTIDADEACTOS_CDU_CSU_ID_fk": {
+      "tipo": "R",
+      "colunas": [
+        "CDU_IDEPENTIDADEACTOS"
+      ],
+      "condicao": null,
+      "tabelaRef": "PCE.CSU_EPENTIDADEACTOS"
+    }
+  },
+  "indices": {
+    "SYS_C00273177": {
+      "unico": true,
+      "colunas": [
+        "CDU_IDLINHAACTO"
+      ]
+    }
+  },
+  "totalRegistros": 0
+}

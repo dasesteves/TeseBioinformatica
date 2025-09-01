@@ -1,0 +1,29 @@
+{
+  "owner": "PCE",
+  "table": "MEDH_VERSAO",
+  "colunas": [
+    {
+      "nome": "VERSAO_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "VERSAO_DESC",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 1
+}

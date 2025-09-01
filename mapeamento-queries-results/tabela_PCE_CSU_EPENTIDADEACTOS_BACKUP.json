@@ -1,0 +1,232 @@
+{
+  "owner": "PCE",
+  "table": "CSU_EPENTIDADEACTOS_BACKUP",
+  "colunas": [
+    {
+      "nome": "CDU_CSU_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "CDU_CSU_ACTOID",
+      "tipo": "VARCHAR2",
+      "tamanho": 36,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "CDU_CSU_DATA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "CDU_CSU_EXPORTADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "CDU_CSU_OBSERVACOES",
+      "tipo": "VARCHAR2",
+      "tamanho": 2000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "CDU_CSU_TIPODOCSTK",
+      "tipo": "NVARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "CDU_CSU_NUMDOCSTK",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 12,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "CDU_CSU_FILIALSTK",
+      "tipo": "NVARCHAR2",
+      "tamanho": 6,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "CDU_CSU_SERIESTK",
+      "tipo": "NVARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "CDU_CSU_EPISODIOCIRURGIAID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 12,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "CDU_CSU_UTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "CDU_CSU_GERADOAUTOM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "CDU_CSU_ORIGEM",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 15,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "SSONHO",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    },
+    {
+      "nome": "ERRO",
+      "tipo": "VARCHAR2",
+      "tamanho": 900,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 17
+    },
+    {
+      "nome": "CHAVE_PRIMAVERA",
+      "tipo": "VARCHAR2",
+      "tamanho": 70,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 18
+    },
+    {
+      "nome": "EXPORTADO_SONHO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 19
+    }
+  ],
+  "constraints": {
+    "SYS_C00360437": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_CSU_ID"
+      ],
+      "condicao": "\"CDU_CSU_ID\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00360440": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_CSU_DATA"
+      ],
+      "condicao": "\"CDU_CSU_DATA\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00360439": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_CSU_ACTOID"
+      ],
+      "condicao": "\"CDU_CSU_ACTOID\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00360438": {
+      "tipo": "C",
+      "colunas": [
+        "EPISODIO"
+      ],
+      "condicao": "\"EPISODIO\" IS NOT NULL",
+      "tabelaRef": null
+    }
+  },
+  "indices": null,
+  "totalRegistros": 34180
+}

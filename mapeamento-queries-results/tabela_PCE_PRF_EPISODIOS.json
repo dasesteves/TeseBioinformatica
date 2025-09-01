@@ -1,0 +1,65 @@
+{
+  "owner": "PCE",
+  "table": "PRF_EPISODIOS",
+  "colunas": [
+    {
+      "nome": "INT_EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "CIRURGIA",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "NUM_ORDEM",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 5,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "BLO_EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 8,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    }
+  ],
+  "constraints": {
+    "SYS_C00284856": {
+      "tipo": "P",
+      "colunas": [
+        "INT_EPISODIO"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "SYS_C00284856": {
+      "unico": true,
+      "colunas": [
+        "INT_EPISODIO"
+      ]
+    }
+  },
+  "totalRegistros": 198
+}

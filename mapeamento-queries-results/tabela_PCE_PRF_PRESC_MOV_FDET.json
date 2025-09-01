@@ -1,0 +1,353 @@
+{
+  "owner": "PCE",
+  "table": "PRF_PRESC_MOV_FDET",
+  "colunas": [
+    {
+      "nome": "ID_PRESC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DTA_PRESC",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "CDU_CSU_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "CDU_CSU_PRESCRICAOID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "CDU_CSU_PRICIPIOACTIVOID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "CDU_CSU_PRESCMEDICID",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "CDU_CSU_ENVIADOMEDICID",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "CDU_CSU_PRESCMEDICVIAID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "CDU_CSU_ENVIADOMEDICVIAID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "CDU_CSU_PRESCMEDICDOSEID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "CDU_CSU_ENVIADOMEDICDOSEID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "CDU_CSU_PRESCMEDICFORMAID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "CDU_CSU_ENVIADOMEDICFORMAID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "CDU_CSU_PRESCMEDICFREQID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "CDU_CSU_ENVIADOMEDICFREQID",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "CDU_CSU_PRESCQUANTIDADE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 2,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    },
+    {
+      "nome": "CDU_CSU_ENVIADOQUANTIDADE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 2,
+      "nullable": true,
+      "default": null,
+      "posicao": 17
+    },
+    {
+      "nome": "CDU_CSU_PRESCOBSERVACOES",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 18
+    },
+    {
+      "nome": "CDU_CSU_ENVIADOOBSERVACOES",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 19
+    },
+    {
+      "nome": "CDU_CSU_ENVIADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 20
+    },
+    {
+      "nome": "CDU_CSU_DATAHORAENVIO",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 21
+    },
+    {
+      "nome": "CDU_CSU_CONFIRMADO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 22
+    },
+    {
+      "nome": "CDU_CSU_RECEBIDAQUANTIDADE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 2,
+      "nullable": true,
+      "default": null,
+      "posicao": 23
+    },
+    {
+      "nome": "CDU_CSU_CONSUMIDAQUANTIDADE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 2,
+      "nullable": true,
+      "default": null,
+      "posicao": 24
+    },
+    {
+      "nome": "CDU_CSU_UTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 25
+    },
+    {
+      "nome": "DTA_MOV",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 26
+    },
+    {
+      "nome": "DTA_LANCA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 27
+    },
+    {
+      "nome": "VERIFICA",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": "0",
+      "posicao": 28
+    },
+    {
+      "nome": "DTMEDD",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 29
+    },
+    {
+      "nome": "NUMLOTE",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 30
+    }
+  ],
+  "constraints": {
+    "PRF_PRESC_MOV_FDET_pk": {
+      "tipo": "P",
+      "colunas": [
+        "CDU_CSU_ID"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    },
+    "PRF_PRESC_MOV_FDET_PRF_MEDICAMENTOS_CODIGO_fk": {
+      "tipo": "R",
+      "colunas": [
+        "CDU_CSU_PRESCMEDICID"
+      ],
+      "condicao": null,
+      "tabelaRef": "PCE.PRF_MEDICAMENTOS"
+    }
+  },
+  "indices": {
+    "PRF_PRESC_MOV_FDET_CDU_CSU_PRESCRICAOID_index": {
+      "unico": false,
+      "colunas": [
+        "CDU_CSU_PRESCRICAOID"
+      ]
+    },
+    "PRF_PRESC_MOV_FDET_pk": {
+      "unico": true,
+      "colunas": [
+        "CDU_CSU_ID"
+      ]
+    },
+    "PRF_PRESC_MOV_FDET_01": {
+      "unico": false,
+      "colunas": [
+        "CDU_CSU_ENVIADOMEDICID",
+        "SYS_NC00030$"
+      ]
+    },
+    "PRF_PRESC_MOV_FDET_02": {
+      "unico": false,
+      "colunas": [
+        "CDU_CSU_PRESCMEDICID",
+        "SYS_NC00030$"
+      ]
+    }
+  },
+  "totalRegistros": 2003690
+}

@@ -1,0 +1,57 @@
+{
+  "owner": "PCE",
+  "table": "PRF_PRESC_NOTAS",
+  "colunas": [
+    {
+      "nome": "ID_PRESC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "USER_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DTA_REG",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "TEXTO",
+      "tipo": "VARCHAR2",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    }
+  ],
+  "constraints": null,
+  "indices": {
+    "PRF_PRESC_NOTAS_01": {
+      "unico": false,
+      "colunas": [
+        "USER_ID",
+        "ID_PRESC"
+      ]
+    }
+  },
+  "totalRegistros": 10814
+}

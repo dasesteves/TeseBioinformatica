@@ -1,0 +1,139 @@
+{
+  "versao": "1.0.0",
+  "dataAtualizacao": "2025-07-02",
+  "resumo": {
+    "totalTabelas": 74,
+    "tabelasPrincipais": {
+      "actos": ["CSU_DEFACTOS", "CSU_DEFACTOSENTGASTOS", "CSU_EPENTIDADEACTOS", "CSU_EPENTIDADEACTOGASTOS"],
+      "medicamentos": ["PRF_MEDICAMENTOS", "MEDH_CARACTERIZACAO_V2", "PRF_PRINCIPIO_ATIVO"],
+      "episodios": ["PCEEPISODIOS", "PCEDOENTES", "PCEINTERNADOS"],
+      "utilizadores": ["UTILIZADORES"]
+    }
+  },
+  "ficheiros": {
+    "documentacao": {
+      "completa": "DOCUMENTACAO_BD_COMPLETA.md",
+      "fluxoTratamentos": "MAPEAMENTO-BD-REGISTO-TRATAMENTOS.md",
+      "referenciaRapida": "REFERENCIA_RAPIDA_PCE.md",
+      "readme": "README.md"
+    },
+    "scripts": {
+      "mapearTabelas": "map-all-related-tables.js",
+      "testarQueries": "test-critical-queries.js",
+      "mapearCSU": "map-csu-tables.js"
+    },
+    "dados": {
+      "estruturaCompleta": "MAPEAMENTO_COMPLETO_BD.json",
+      "exemplos": [
+        "exemplo-CSU_DEFACTOS.json",
+        "exemplo-PCE_CSU_EPENTIDADEACTOS.json",
+        "exemplo-PCE_CSU_EPENTIDADEACTOGASTOS.json"
+      ]
+    }
+  },
+  "tabelasChave": {
+    "CSU_DEFACTOS": {
+      "descricao": "Catálogo de actos médicos",
+      "totalRegistros": 214,
+      "camposChave": ["CDU_CSU_ID", "CDU_CSU_CODIGO", "CDU_CSU_DESCRICAO"],
+      "ficheiro": "tabela_PCE_CSU_DEFACTOS.json"
+    },
+    "CSU_EPENTIDADEACTOS": {
+      "descricao": "Actos registados para episódios",
+      "totalRegistros": 39089,
+      "camposChave": ["CDU_CSU_ID", "EPISODIO", "CDU_CSU_ACTOID", "CDU_CSU_DATA"],
+      "ficheiro": "tabela_PCE_CSU_EPENTIDADEACTOS.json",
+      "relacionamentos": {
+        "CSU_DEFACTOS": "CDU_CSU_ACTOID",
+        "PCEEPISODIOS": "EPISODIO"
+      }
+    },
+    "CSU_EPENTIDADEACTOGASTOS": {
+      "descricao": "Artigos consumidos nos actos",
+      "totalRegistros": 151732,
+      "camposChave": ["CDU_CSU_ID", "CDU_CSU_EPISODIOENTIDADEACTOID", "CDU_CSU_ARTIGO"],
+      "ficheiro": "tabela_PCE_CSU_EPENTIDADEACTOGASTOS.json",
+      "relacionamentos": {
+        "CSU_EPENTIDADEACTOS": "CDU_CSU_EPISODIOENTIDADEACTOID"
+      }
+    },
+    "PRF_MEDICAMENTOS": {
+      "descricao": "Catálogo de medicamentos",
+      "totalRegistros": 12310,
+      "camposChave": ["CODIGO", "DESC_C"],
+      "ficheiro": "tabela_PCE_PRF_MEDICAMENTOS.json"
+    },
+    "PCEEPISODIOS": {
+      "descricao": "Todos os episódios do sistema",
+      "totalRegistros": 1190848,
+      "camposChave": ["EPISODIO", "NUM_SEQUENCIAL", "MODULO"],
+      "ficheiro": "tabela_PCE_PCEEPISODIOS.json"
+    }
+  },
+  "queriesEssenciais": {
+    "listarActos": {
+      "descricao": "Obter lista de actos disponíveis",
+      "performance": "BOM",
+      "ficheiro": "REFERENCIA_RAPIDA_PCE.md#1-listar-actos-disponíveis"
+    },
+    "buscarArtigos": {
+      "descricao": "Buscar artigos predefinidos de um acto",
+      "performance": "BOM",
+      "ficheiro": "REFERENCIA_RAPIDA_PCE.md#2-buscar-artigos-de-um-acto"
+    },
+    "registarActo": {
+      "descricao": "Registar novo acto para episódio",
+      "performance": "BOM",
+      "ficheiro": "REFERENCIA_RAPIDA_PCE.md#3-registar-novo-acto"
+    }
+  },
+  "configuracoes": {
+    "conexaoOracle": {
+      "user": "PCE",
+      "host": "10.21.105.16",
+      "port": 1521,
+      "sid": "ORCL"
+    },
+    "limites": {
+      "queryTimeout": 30,
+      "maxRows": 100,
+      "fetchSize": 50
+    }
+  },
+  "estadosExportacao": {
+    "0": "Pendente",
+    "2": "Exportado",
+    "9": "Erro"
+  },
+  "modulos": {
+    "URG": "Urgência",
+    "INT": "Internamento",
+    "CON": "Consulta",
+    "HD": "Hospital Dia",
+    "BLO": "Bloco Operatório"
+  },
+  "fluxoTratamento": {
+    "passos": [
+      {
+        "ordem": 1,
+        "acao": "Selecionar acto",
+        "tabela": "CSU_DEFACTOS"
+      },
+      {
+        "ordem": 2,
+        "acao": "Buscar artigos predefinidos",
+        "tabela": "CSU_DEFACTOSENTGASTOS"
+      },
+      {
+        "ordem": 3,
+        "acao": "Registar acto",
+        "tabela": "CSU_EPENTIDADEACTOS"
+      },
+      {
+        "ordem": 4,
+        "acao": "Registar artigos consumidos",
+        "tabela": "CSU_EPENTIDADEACTOGASTOS"
+      }
+    ]
+  }
+} 

@@ -1,0 +1,193 @@
+{
+  "owner": "PCE",
+  "table": "UTILIZADORES",
+  "colunas": [
+    {
+      "nome": "IDUTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "UTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "PASSWORD",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "PASSPUB",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "IDINT",
+      "tipo": "VARCHAR2",
+      "tamanho": 6,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "TIPO",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "AREA",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "IDSERVICO",
+      "tipo": "VARCHAR2",
+      "tamanho": 1000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "PROFISSAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 50,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "DATAINI",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "ESTADO",
+      "tipo": "VARCHAR2",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "ESPECIALIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 500,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "IDSERVRES",
+      "tipo": "VARCHAR2",
+      "tamanho": 500,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "FOTO",
+      "tipo": "BLOB",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "CATEGORIA",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "PASSWORD_HASH",
+      "tipo": "VARCHAR2",
+      "tamanho": 72,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    }
+  ],
+  "constraints": {
+    "SYS_C0010015": {
+      "tipo": "C",
+      "colunas": [
+        "IDUTILIZADOR"
+      ],
+      "condicao": "\"IDUTILIZADOR\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "UTILIZADORES_PK": {
+      "tipo": "P",
+      "colunas": [
+        "IDUTILIZADOR"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "UTILIZADORES_PK": {
+      "unico": true,
+      "colunas": [
+        "IDUTILIZADOR"
+      ]
+    }
+  },
+  "totalRegistros": 331
+}

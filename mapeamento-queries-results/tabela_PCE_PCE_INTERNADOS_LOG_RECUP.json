@@ -1,0 +1,57 @@
+{
+  "owner": "PCE",
+  "table": "PCE_INTERNADOS_LOG_RECUP",
+  "colunas": [
+    {
+      "nome": "COD_ESPECIALIDADE_REF",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "PREV",
+      "tipo": "CHAR",
+      "tamanho": 1,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DATALOG",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    }
+  ],
+  "constraints": {
+    "SYS_C0010006": {
+      "tipo": "P",
+      "colunas": [
+        "COD_ESPECIALIDADE_REF",
+        "PREV"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "SYS_C0010006": {
+      "unico": true,
+      "colunas": [
+        "COD_ESPECIALIDADE_REF",
+        "PREV"
+      ]
+    }
+  },
+  "totalRegistros": 11
+}

@@ -1,0 +1,87 @@
+{
+  "ciclo": 160,
+  "saude": {
+    "timestamp": "2025-08-19T15:53:34.760Z",
+    "conexoes": {
+      "TOTAL_SESSIONS": 108,
+      "ACTIVE_SESSIONS": 43,
+      "PCE_SESSIONS": 39
+    },
+    "memoria": {
+      "pga_mb": 3,
+      "pga_max_mb": 8
+    },
+    "queries_ativas": {
+      "QUERIES_ATIVAS": 1,
+      "QUERIES_FDET": 1,
+      "QUERIES_STOCK": 1
+    },
+    "queries_lentas": {
+      "QUERIES_LENTAS": 141
+    },
+    "problemas": [
+      "QUERIES_LENTAS_FREQUENTES"
+    ],
+    "alertas": [
+      "🟡 141 queries lentas na última hora"
+    ]
+  },
+  "queries_assassinas": [
+    {
+      "SQL_ID": "53wkprnmtb0a3",
+      "SQL_TEXT": "     SELECT        NVL(f.cdu_csu_enviadomedicid, f.cdu_csu_prescmedicid) AS Artigo,       MAX(m.desc_c) AS Descricao,       'FARMACIA' AS Armazem,       SUM(f.cdu_csu_enviadoquantidade) AS Stock_Actual,       TO_CHAR(MAX(SYSDATE), 'YYYY-MM-DD HH24:MI:SS') AS Data,       'SAIDA' AS TipoMovimento     FROM prf_presc_mov_fdet f     LEFT JOIN prf_medicamentos m        ON m.codigo = NVL(f.cdu_csu_enviadomedicid, f.cdu_csu_prescmedicid)     WHERE f.dtmedd = 'MH'       AND (NVL(f.cdu_csu_enviadomedicid, f.cdu_csu_prescmedicid) IN (:g0c0,:g0c1,:g0c2,:g0c3,:g0c4,:g0c5,:g0c6,:g0c7,:g0c8,:g0c9,:g0c10,:g0c11,:g0c12,:g0c13,:g0c14,:g0c15,:g0c16,:g0c17,:g0c18,:g0c19,:g0c20,:g0c21,:g0c22,:g0c23,:g0c24,:g0c25,:g0c26,:g0c27,:g0c28,:g0c29,:g0c30,:g0c31,:g0c32,:g0c33,:g0c34,:g0c35,:g0c36,:g0c37,:g0c38,:g0c39,:g0c40,:g0c41,:g0c42,:g0c43,:g0c44,:g0c45,:g0c46,:g0c47,:g0c48,:g0c49,:g0c50,:g0c51,:g0c52,:g0c53,:g0c54,:g0c55,:g0c56,:g0c57,:g0c58,:g0c59,:g0c60,:g0c61,:g0c62,:g0c63,:g0c64,:g0c65,:g0c66,:g0c67,:g0c6",
+      "EXECUTIONS": 31,
+      "ELAPSED_SECONDS": 8717.351926,
+      "CPU_SECONDS": 6523.46875,
+      "LAST_ACTIVE_TIME": "2025-08-19T13:43:58.000Z"
+    },
+    {
+      "SQL_ID": "59c80mhhjyxdn",
+      "SQL_TEXT": "       SELECT          NVL(numlote, 'Lote N/D') AS LOTE,         SUM(cdu_csu_enviadoquantidade) AS QUANTIDADE,         TO_CHAR(MAX(dta_lanca), 'YYYY-MM-DD HH24:MI:SS') AS DATA_ULT_MOV,         COUNT(*) AS NUM_MOVIMENTOS       FROM (         SELECT * FROM prf_presc_mov_fdet         WHERE nvl(cdu_csu_enviadomedicid, cdu_csu_prescmedicid) = :codigoArtigo           AND dtmedd = 'MH'           AND TRUNC(dta_lanca) >= TRUNC(SYSDATE) - :periodo           AND ROWNUM <= 1000       )       GROUP BY          NVL(numlote, 'Lote N/D')       ORDER BY          SUM(cdu_csu_enviadoquantidade) DESC     ",
+      "EXECUTIONS": 22,
+      "ELAPSED_SECONDS": 295.406943,
+      "CPU_SECONDS": 19.671875,
+      "LAST_ACTIVE_TIME": "2025-08-19T13:32:53.000Z"
+    },
+    {
+      "SQL_ID": "c2q1nfggs75yr",
+      "SQL_TEXT": "       SELECT          numlote AS LOTE,         SUM(cdu_csu_enviadoquantidade) AS QUANTIDADE,         TO_CHAR(MAX(dta_lanca), 'YYYY-MM-DD HH24:MI:SS') AS DATA_ULT_MOV       FROM          prf_presc_mov_fdet       WHERE          nvl(cdu_csu_enviadomedicid, cdu_csu_prescmedicid) = :codigoArtigo         AND dtmedd = 'MH'         AND TRUNC(dta_lanca) >= TRUNC(SYSDATE) - :periodo       GROUP BY          numlote       ORDER BY          numlote     ",
+      "EXECUTIONS": 12,
+      "ELAPSED_SECONDS": 288.992672,
+      "CPU_SECONDS": 10.71875,
+      "LAST_ACTIVE_TIME": "2025-08-19T09:33:37.000Z"
+    },
+    {
+      "SQL_ID": "0hd4yyxvnwvdb",
+      "SQL_TEXT": "       SELECT          sql_id,         sql_text,         executions,         elapsed_time/1000000 as elapsed_seconds,         cpu_time/1000000 as cpu_seconds,         last_active_time       FROM v$sql       WHERE parsing_user_id = (SELECT user_id FROM all_users WHERE username = 'PCE')         AND (           sql_text LIKE '%NVL(f.cdu_csu_enviadomedicid, f.cdu_csu_prescmedicid) AS Artigo%'           OR sql_text LIKE '%prf_presc_mov_fdet%'         )         AND elapsed_time > 10000000  -- >10 segundos       ORDER BY elapsed_time DESC     ",
+      "EXECUTIONS": 178,
+      "ELAPSED_SECONDS": 112.069155,
+      "CPU_SECONDS": 110.078125,
+      "LAST_ACTIVE_TIME": "2025-08-19T15:53:34.000Z"
+    },
+    {
+      "SQL_ID": "48ncvvyu57nug",
+      "SQL_TEXT": "     SELECT numlote, SUM(cdu_csu_enviadoquantidade) as quantidade,            TO_CHAR(MAX(dta_lanca), 'YYYY-MM-DD HH24:MI:SS') as data_ult_mov     FROM prf_presc_mov_fdet     WHERE nvl(cdu_csu_enviadomedicid, cdu_csu_prescmedicid) = :codigo       AND dtmedd = 'MH'       AND TRUNC(dta_lanca) >= TRUNC(SYSDATE) - 180     GROUP BY numlote     ORDER BY numlote",
+      "EXECUTIONS": 26,
+      "ELAPSED_SECONDS": 52.014648,
+      "CPU_SECONDS": 31.328125,
+      "LAST_ACTIVE_TIME": "2025-08-19T10:04:51.000Z"
+    },
+    {
+      "SQL_ID": "1cvhc27dhz3h9",
+      "SQL_TEXT": "         SELECT COUNT(*) as count FROM prf_presc_mov_fdet         WHERE nvl(cdu_csu_enviadomedicid, cdu_csu_prescmedicid) = :codigo           AND dtmedd = 'MH'           AND TRUNC(dta_lanca) >= TRUNC(SYSDATE) - 7           AND ROWNUM <= 1       ",
+      "EXECUTIONS": 9,
+      "ELAPSED_SECONDS": 43.761636,
+      "CPU_SECONDS": 16.984375,
+      "LAST_ACTIVE_TIME": "2025-08-19T13:32:52.000Z"
+    },
+    {
+      "SQL_ID": "du67cr21tmzn5",
+      "SQL_TEXT": "SELECT COUNT(*) as TOTAL_MOVIMENTOS,                   COUNT(DISTINCT numlote) as LOTES_UNICOS,                   SUM(cdu_csu_enviadoquantidade) as QUANTIDADE_TOTAL,                   MIN(dta_lanca) as PRIMEIRO_MOV,                   MAX(dta_lanca) as ULTIMO_MOV            FROM prf_presc_mov_fdet            WHERE nvl(cdu_csu_enviadomedicid, cdu_csu_prescmedicid) = :codigo              AND dtmedd = 'MH'              AND TRUNC(dta_lanca) >= TRUNC(SYSDATE) - 180",
+      "EXECUTIONS": 20,
+      "ELAPSED_SECONDS": 36.981435,
+      "CPU_SECONDS": 23.375,
+      "LAST_ACTIVE_TIME": "2025-08-19T09:57:18.000Z"
+    }
+  ]
+}

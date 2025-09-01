@@ -1,0 +1,25 @@
+{
+  "colunas": [
+    {
+      "nome": "GRAU",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DESCRICAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "nullable": true,
+      "default": null
+    },
+    {
+      "nome": "DESCRITIVO",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "nullable": true,
+      "default": null
+    }
+  ]
+}

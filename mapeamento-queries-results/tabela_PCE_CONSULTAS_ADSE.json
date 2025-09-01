@@ -1,0 +1,81 @@
+{
+  "dataHora": "2025-07-16T11:00:16.394Z",
+  "owner": "PCE",
+  "table": "CONSULTAS_ADSE",
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_210077\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "COD",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DESIGNACAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 254,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "ENCARGO_ADSE",
+      "tipo": "FLOAT",
+      "tamanho": 22,
+      "precisao": 126,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "COPAGAMENTO_BENEFICIARIO",
+      "tipo": "FLOAT",
+      "tamanho": 22,
+      "precisao": 126,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 5
+    }
+  ],
+  "totalRegistros": 42,
+  "exemplos": [
+    {
+      "ID": 1,
+      "COD": 50,
+      "DESIGNACAO": "CONSULTA -CARDIOLOGIA  (inclui o código 4966 da tabela de medicina)",
+      "ENCARGO_ADSE": 16,
+      "COPAGAMENTO_BENEFICIARIO": 9
+    },
+    {
+      "ID": 2,
+      "COD": 2408,
+      "DESIGNACAO": "AMP -ATENDIMENTO MÉDICO PERMANENTE E SERVIÇO DE OBSERVAÇÃO (DAS 0 ÀS 24 HORAS) ",
+      "ENCARGO_ADSE": 30,
+      "COPAGAMENTO_BENEFICIARIO": 25
+    },
+    {
+      "ID": 3,
+      "COD": 2,
+      "DESIGNACAO": "CONSULTA -ANESTESIOLOGIA",
+      "ENCARGO_ADSE": 14.47,
+      "COPAGAMENTO_BENEFICIARIO": 3.99
+    }
+  ]
+}

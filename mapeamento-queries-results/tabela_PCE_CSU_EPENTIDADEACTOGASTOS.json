@@ -1,0 +1,133 @@
+{
+  "owner": "PCE",
+  "table": "CSU_EPENTIDADEACTOGASTOS",
+  "colunas": [
+    {
+      "nome": "CDU_CSU_ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_654573\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "CDU_CSU_EPISODIOENTIDADEACTOID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "CDU_CSU_ARTIGO",
+      "tipo": "NVARCHAR2",
+      "tamanho": 96,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "CDU_CSU_QUANTIDADE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 18,
+      "escala": 5,
+      "nullable": false,
+      "default": "0 ",
+      "posicao": 4
+    },
+    {
+      "nome": "CDU_CSU_VALOR",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 18,
+      "escala": 2,
+      "nullable": false,
+      "default": "0 ",
+      "posicao": 5
+    },
+    {
+      "nome": "CDU_CSU_UTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    }
+  ],
+  "constraints": {
+    "SYS_C00269413": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_CSU_ARTIGO"
+      ],
+      "condicao": "\"CDU_CSU_ARTIGO\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00269415": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_CSU_VALOR"
+      ],
+      "condicao": "\"CDU_CSU_VALOR\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00269411": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_CSU_ID"
+      ],
+      "condicao": "\"CDU_CSU_ID\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00269412": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_CSU_EPISODIOENTIDADEACTOID"
+      ],
+      "condicao": "\"CDU_CSU_EPISODIOENTIDADEACTOID\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00269414": {
+      "tipo": "C",
+      "colunas": [
+        "CDU_CSU_QUANTIDADE"
+      ],
+      "condicao": "\"CDU_CSU_QUANTIDADE\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C00269416": {
+      "tipo": "P",
+      "colunas": [
+        "CDU_CSU_ID"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    },
+    "CSU_EPENTIDADEACTOGASTOS_CSU_EPENTIDADEACTOS_CDU_CSU_ID_fk": {
+      "tipo": "R",
+      "colunas": [
+        "CDU_CSU_EPISODIOENTIDADEACTOID"
+      ],
+      "condicao": null,
+      "tabelaRef": "PCE.CSU_EPENTIDADEACTOS"
+    }
+  },
+  "indices": {
+    "SYS_C00269416": {
+      "unico": true,
+      "colunas": [
+        "CDU_CSU_ID"
+      ]
+    }
+  },
+  "totalRegistros": 151732
+}

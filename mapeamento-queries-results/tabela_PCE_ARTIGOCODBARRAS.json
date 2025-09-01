@@ -1,0 +1,104 @@
+{
+  "owner": "PCE",
+  "table": "ARTIGOCODBARRAS",
+  "colunas": [
+    {
+      "nome": "CODBARRAS",
+      "tipo": "VARCHAR2",
+      "tamanho": 48,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "ARTIGO",
+      "tipo": "VARCHAR2",
+      "tamanho": 48,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "FORNECEDOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 12,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "VERSAOULTACT",
+      "tipo": "VARCHAR2",
+      "tamanho": 16,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "IDARTIGODIM",
+      "tipo": "CHAR",
+      "tamanho": 36,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "UNIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "CDU_DESCRICAO",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    }
+  ],
+  "constraints": {
+    "SYS_C009999": {
+      "tipo": "C",
+      "colunas": [
+        "ARTIGO"
+      ],
+      "condicao": "\"ARTIGO\" IS NOT NULL",
+      "tabelaRef": null
+    },
+    "SYS_C009998": {
+      "tipo": "C",
+      "colunas": [
+        "CODBARRAS"
+      ],
+      "condicao": "\"CODBARRAS\" IS NOT NULL",
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "ARTIGOCODBARRASIDX01": {
+      "unico": false,
+      "colunas": [
+        "CODBARRAS",
+        "ARTIGO"
+      ]
+    }
+  },
+  "totalRegistros": 32806
+}

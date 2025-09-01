@@ -1,0 +1,441 @@
+{
+  "timestamp": "2025-08-19T10:04:51.180Z",
+  "estatisticas": {
+    "total_testados": 13,
+    "existem_prf": 10,
+    "existem_medh": 6,
+    "existem_csu": 4,
+    "com_movimentos": 6,
+    "com_problemas": 9,
+    "tempo_medio": 2015
+  },
+  "resultados_detalhados": [
+    {
+      "codigo": "FA10002829",
+      "sequencia": 1,
+      "tempos": {
+        "prf_info": 5,
+        "medh": 2,
+        "movimentos_fdet": 2466,
+        "csu": 26
+      },
+      "problemas": [],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA10002829",
+          "DESC_C": "Paracetamol 10 mg/ml Sol inj Fr 100 ml IV",
+          "STOCK_ATUAL": 9755,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 1,
+          "E_MEDC": "1"
+        },
+        "medh": {
+          "FA_COD": "FA10002829",
+          "NOME_EXT": "paracetamol 10 mg/mL Sol inj Fr 100 mL IV",
+          "DCI_ID": 91,
+          "CODIGO_ATC_ID": "N02BE01",
+          "GFT_ID": "2.10"
+        },
+        "movimentos_fdet": 17,
+        "csu_count": 2684
+      },
+      "memoria": {
+        "pga_used": 2717112,
+        "pga_max": 5535160
+      }
+    },
+    {
+      "codigo": "FA10059004",
+      "sequencia": 2,
+      "tempos": {
+        "prf_info": 3,
+        "medh": 2,
+        "movimentos_fdet": 2108,
+        "csu": 21
+      },
+      "problemas": [],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA10059004",
+          "DESC_C": "PANTOprazol 40 mg Pó sol inj Fr IV",
+          "STOCK_ATUAL": 2676,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 1,
+          "E_MEDC": "1"
+        },
+        "medh": {
+          "FA_COD": "FA10059004",
+          "NOME_EXT": "PANTOprazol 40 mg Pó sol inj Fr IV",
+          "DCI_ID": 839,
+          "CODIGO_ATC_ID": "A02BC02",
+          "GFT_ID": "6.2.2.3"
+        },
+        "movimentos_fdet": 1,
+        "csu_count": 1253
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5535160
+      }
+    },
+    {
+      "codigo": "FA10047564",
+      "sequencia": 3,
+      "tempos": {
+        "prf_info": 3,
+        "medh": 2,
+        "movimentos_fdet": 2153,
+        "csu": 19
+      },
+      "problemas": [
+        "MOVIMENTOS_SEM_CSU"
+      ],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA10047564",
+          "DESC_C": "PANTOprazol 20 mg Comp GR",
+          "STOCK_ATUAL": 4803,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 1,
+          "E_MEDC": "1"
+        },
+        "medh": {
+          "FA_COD": "FA10047564",
+          "NOME_EXT": "PANTOprazol 20 mg Comp GR",
+          "DCI_ID": 839,
+          "CODIGO_ATC_ID": "A02BC02",
+          "GFT_ID": "6.2.2.3"
+        },
+        "movimentos_fdet": 1,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5535160
+      }
+    },
+    {
+      "codigo": "FA10005405",
+      "sequencia": 4,
+      "tempos": {
+        "prf_info": 2,
+        "medh": 1,
+        "movimentos_fdet": 1696,
+        "csu": 18
+      },
+      "problemas": [],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA10005405",
+          "DESC_C": "Cloreto de sódio 9 mg/ml Sol inj Fr 100 ml IV",
+          "STOCK_ATUAL": 52893.99,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 1,
+          "E_MEDC": "1"
+        },
+        "medh": {
+          "FA_COD": "FA10005405",
+          "NOME_EXT": "cloreto de sódio 9 mg/mL Sol inj Fr 100 mL IV",
+          "DCI_ID": 361,
+          "CODIGO_ATC_ID": "B05XA03",
+          "GFT_ID": "12.2.5"
+        },
+        "movimentos_fdet": 1,
+        "csu_count": 3874
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA10104168",
+      "sequencia": 5,
+      "tempos": {
+        "prf_info": 2,
+        "medh": 1,
+        "movimentos_fdet": 1917,
+        "csu": 21
+      },
+      "problemas": [],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA10104168",
+          "DESC_C": "colagenase de clostridium histolyticum 0.9 mg Pó sol inj Fr Intralesional",
+          "STOCK_ATUAL": 0,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 0,
+          "E_MEDC": "0"
+        },
+        "medh": {
+          "FA_COD": "FA10104168",
+          "NOME_EXT": "colagenase de clostridium histolyticum 0.9 mg Pó sol inj Fr Intralesional",
+          "DCI_ID": 2623,
+          "CODIGO_ATC_ID": "M09AB02",
+          "GFT_ID": "9.5"
+        },
+        "movimentos_fdet": 0,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA10040790",
+      "sequencia": 6,
+      "tempos": {
+        "prf_info": 2,
+        "medh": 2,
+        "movimentos_fdet": 1947,
+        "csu": 21
+      },
+      "problemas": [
+        "MOVIMENTOS_SEM_CSU"
+      ],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA10040790",
+          "DESC_C": "Macrogol 10000 mg Pó sol oral Saq",
+          "STOCK_ATUAL": 265,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 0,
+          "E_MEDC": "1"
+        },
+        "medh": {
+          "FA_COD": "FA10040790",
+          "NOME_EXT": "macrogol 10 000 mg Pó sol oral Saq",
+          "DCI_ID": 2125,
+          "CODIGO_ATC_ID": "A06AD15",
+          "GFT_ID": "6.3.2.1.4"
+        },
+        "movimentos_fdet": 1,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA20000024",
+      "sequencia": 7,
+      "tempos": {
+        "prf_info": 2,
+        "medh": 2,
+        "movimentos_fdet": 2132,
+        "csu": 18
+      },
+      "problemas": [
+        "NAO_EXISTE_MEDH"
+      ],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA20000024",
+          "DESC_C": "Alcool isopropílico 99,9% 1000 ml",
+          "STOCK_ATUAL": 500,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 0,
+          "E_MEDC": "1"
+        },
+        "movimentos_fdet": 0,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA20000036",
+      "sequencia": 8,
+      "tempos": {
+        "prf_info": 3,
+        "medh": 3,
+        "movimentos_fdet": 1934,
+        "csu": 19
+      },
+      "problemas": [
+        "NAO_EXISTE_MEDH"
+      ],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA20000036",
+          "DESC_C": "Álcool etílico 70% 250 ml",
+          "STOCK_ATUAL": 4907,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 1,
+          "E_MEDC": "1"
+        },
+        "movimentos_fdet": 0,
+        "csu_count": 3738
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA20000001",
+      "sequencia": 9,
+      "tempos": {
+        "prf_info": 2,
+        "medh": 1,
+        "movimentos_fdet": 1919,
+        "csu": 18
+      },
+      "problemas": [
+        "NAO_EXISTE_MEDH",
+        "MOVIMENTOS_SEM_CSU"
+      ],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA20000001",
+          "DESC_C": "Hialuronato de sódio 0,15% 0.35 ml",
+          "STOCK_ATUAL": 90,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 1,
+          "E_MEDC": "1"
+        },
+        "movimentos_fdet": 1,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA20000050",
+      "sequencia": 10,
+      "tempos": {
+        "prf_info": 1,
+        "medh": 1,
+        "movimentos_fdet": 1982,
+        "csu": 18
+      },
+      "problemas": [
+        "NAO_EXISTE_MEDH"
+      ],
+      "dados": {
+        "prf": {
+          "CODIGO": "FA20000050",
+          "DESC_C": "Ácido cítrico 1kg",
+          "STOCK_ATUAL": 0,
+          "AFETA_STOCK": 1,
+          "FORMHOSP": 0,
+          "E_MEDC": "1"
+        },
+        "movimentos_fdet": 0,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA10001001",
+      "sequencia": 11,
+      "tempos": {
+        "prf_info": 2,
+        "medh": 2,
+        "movimentos_fdet": 1926,
+        "csu": 23
+      },
+      "problemas": [
+        "NAO_EXISTE_PRF",
+        "NAO_EXISTE_MEDH"
+      ],
+      "dados": {
+        "movimentos_fdet": 0,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA10999999",
+      "sequencia": 12,
+      "tempos": {
+        "prf_info": 2,
+        "medh": 2,
+        "movimentos_fdet": 1867,
+        "csu": 18
+      },
+      "problemas": [
+        "NAO_EXISTE_PRF",
+        "NAO_EXISTE_MEDH"
+      ],
+      "dados": {
+        "movimentos_fdet": 0,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    },
+    {
+      "codigo": "FA11000000",
+      "sequencia": 13,
+      "tempos": {
+        "prf_info": 1,
+        "medh": 1,
+        "movimentos_fdet": 1834,
+        "csu": 20
+      },
+      "problemas": [
+        "NAO_EXISTE_PRF",
+        "NAO_EXISTE_MEDH"
+      ],
+      "dados": {
+        "movimentos_fdet": 0,
+        "csu_count": 0
+      },
+      "memoria": {
+        "pga_used": 2586040,
+        "pga_max": 5666232
+      }
+    }
+  ],
+  "medicamentos_testados": [
+    "FA10002829",
+    "FA10059004",
+    "FA10047564",
+    "FA10005405",
+    "FA10104168",
+    "FA10040790",
+    "FA20000024",
+    "FA20000036",
+    "FA20000001",
+    "FA20000050",
+    "FA10001001",
+    "FA10999999",
+    "FA11000000"
+  ],
+  "problemas_identificados": [
+    [
+      "MOVIMENTOS_SEM_CSU",
+      3
+    ],
+    [
+      "NAO_EXISTE_MEDH",
+      7
+    ],
+    [
+      "NAO_EXISTE_PRF",
+      3
+    ]
+  ],
+  "recomendacoes": [
+    "Implementar timeout nas queries FDET para medicamentos com muitos movimentos",
+    "Adicionar cache específico para medicamentos FA2* (artigos locais)",
+    "Verificar e corrigir valores NULL em STOCK_ATUAL",
+    "Otimizar query de movimentos com LIMIT quando necessário",
+    "Implementar retry logic para queries que falham"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "owner": "PCE",
+  "table": "PRF_PRESC_MOV_GROUPED",
+  "colunas": [
+    {
+      "nome": "NUM_SEQUENCIAL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "MED_CODES_LIST",
+      "tipo": "VARCHAR2",
+      "tamanho": 4000,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 3569
+}

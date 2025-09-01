@@ -1,0 +1,65 @@
+{
+  "owner": "PCE",
+  "table": "CSU_DEFACTOSENTIDADES",
+  "colunas": [
+    {
+      "nome": "CDU_CSU_ID",
+      "tipo": "VARCHAR2",
+      "tamanho": 36,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "CDU_CSU_ENTIDADEID",
+      "tipo": "VARCHAR2",
+      "tamanho": 36,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "CDU_CSU_DEFACTOID",
+      "tipo": "VARCHAR2",
+      "tamanho": 36,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "CDU_CSU_UTILIZADOR",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    }
+  ],
+  "constraints": {
+    "SYS_C00265632": {
+      "tipo": "P",
+      "colunas": [
+        "CDU_CSU_ID"
+      ],
+      "condicao": null,
+      "tabelaRef": null
+    }
+  },
+  "indices": {
+    "SYS_C00265632": {
+      "unico": true,
+      "colunas": [
+        "CDU_CSU_ID"
+      ]
+    }
+  },
+  "totalRegistros": 258
+}

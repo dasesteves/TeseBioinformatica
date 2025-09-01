@@ -1,0 +1,29 @@
+{
+  "owner": "PCE",
+  "table": "PCE_AREAS",
+  "colunas": [
+    {
+      "nome": "COD_AREA",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DES_AREA",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    }
+  ],
+  "constraints": null,
+  "indices": null,
+  "totalRegistros": 2
+}

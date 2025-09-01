@@ -1,0 +1,9 @@
+{
+  "api": {
+    "version": "v1",
+    "title": "REST API PPS - CEGID PUBLIC SERVICES"
+  },
+  "totalControladores": 0,
+  "endpointsRelevantes": 0,
+  "endpoints": []
+}

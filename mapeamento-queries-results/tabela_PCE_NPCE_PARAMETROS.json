@@ -1,0 +1,250 @@
+{
+  "dataHora": "2025-07-16T11:00:23.593Z",
+  "owner": "PCE",
+  "table": "NPCE_PARAMETROS",
+  "colunas": [
+    {
+      "nome": "ID_PARAM",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 1
+    },
+    {
+      "nome": "DES_PARAM",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "ID_CLASSE",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "SEXO",
+      "tipo": "VARCHAR2",
+      "tamanho": 4,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "G_IDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 5,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "LIM_INF",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 3,
+      "nullable": true,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "LIM_SUP",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 10,
+      "escala": 3,
+      "nullable": true,
+      "default": null,
+      "posicao": 7
+    },
+    {
+      "nome": "T_RESUL",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 8
+    },
+    {
+      "nome": "UNIDADE",
+      "tipo": "VARCHAR2",
+      "tamanho": 10,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 9
+    },
+    {
+      "nome": "TXT_OBS",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 10
+    },
+    {
+      "nome": "INF_DETALHE",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 11
+    },
+    {
+      "nome": "TP_DOC",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 12
+    },
+    {
+      "nome": "ELEM_FORMULA",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 13
+    },
+    {
+      "nome": "FORMULA",
+      "tipo": "VARCHAR2",
+      "tamanho": 200,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 14
+    },
+    {
+      "nome": "N_CASAD",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 1,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 15
+    },
+    {
+      "nome": "ID_ENF",
+      "tipo": "VARCHAR2",
+      "tamanho": 100,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 16
+    },
+    {
+      "nome": "GRAFICO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": 2,
+      "escala": 0,
+      "nullable": true,
+      "default": null,
+      "posicao": 17
+    },
+    {
+      "nome": "COD_ESCALA",
+      "tipo": "VARCHAR2",
+      "tamanho": 20,
+      "precisao": null,
+      "escala": null,
+      "nullable": true,
+      "default": null,
+      "posicao": 18
+    }
+  ],
+  "totalRegistros": 4,
+  "exemplos": [
+    {
+      "ID_PARAM": "ALERGIA",
+      "DES_PARAM": "Alergia",
+      "ID_CLASSE": "0",
+      "SEXO": "12",
+      "G_IDADE": "0",
+      "LIM_INF": 0,
+      "LIM_SUP": 200,
+      "T_RESUL": 0,
+      "UNIDADE": "-",
+      "TXT_OBS": null,
+      "INF_DETALHE": null,
+      "TP_DOC": 1,
+      "ELEM_FORMULA": null,
+      "FORMULA": null,
+      "N_CASAD": null,
+      "ID_ENF": null,
+      "GRAFICO": null,
+      "COD_ESCALA": null
+    },
+    {
+      "ID_PARAM": "ALERTA",
+      "DES_PARAM": "Alerta",
+      "ID_CLASSE": "0",
+      "SEXO": "12",
+      "G_IDADE": "0",
+      "LIM_INF": 0,
+      "LIM_SUP": 200,
+      "T_RESUL": 0,
+      "UNIDADE": "-",
+      "TXT_OBS": null,
+      "INF_DETALHE": null,
+      "TP_DOC": 0,
+      "ELEM_FORMULA": null,
+      "FORMULA": null,
+      "N_CASAD": null,
+      "ID_ENF": null,
+      "GRAFICO": null,
+      "COD_ESCALA": null
+    },
+    {
+      "ID_PARAM": "INTERAC",
+      "DES_PARAM": "Interação grave",
+      "ID_CLASSE": "0",
+      "SEXO": "12",
+      "G_IDADE": "0",
+      "LIM_INF": 0,
+      "LIM_SUP": 200,
+      "T_RESUL": 0,
+      "UNIDADE": "-",
+      "TXT_OBS": null,
+      "INF_DETALHE": null,
+      "TP_DOC": 0,
+      "ELEM_FORMULA": null,
+      "FORMULA": null,
+      "N_CASAD": null,
+      "ID_ENF": null,
+      "GRAFICO": null,
+      "COD_ESCALA": null
+    }
+  ]
+}

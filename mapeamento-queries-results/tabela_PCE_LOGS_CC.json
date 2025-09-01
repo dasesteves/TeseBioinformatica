@@ -1,0 +1,107 @@
+{
+  "dataHora": "2025-07-16T11:00:20.156Z",
+  "owner": "PCE",
+  "table": "LOGS_CC",
+  "colunas": [
+    {
+      "nome": "ID",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": 0,
+      "nullable": false,
+      "default": "\"PCE\".\"ISEQ$$_211928\".nextval",
+      "posicao": 1
+    },
+    {
+      "nome": "NUM_CARTAO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 2
+    },
+    {
+      "nome": "DATA",
+      "tipo": "DATE",
+      "tamanho": 7,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 3
+    },
+    {
+      "nome": "NIF",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 4
+    },
+    {
+      "nome": "EPISODIO",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 5
+    },
+    {
+      "nome": "MODULO",
+      "tipo": "VARCHAR2",
+      "tamanho": 3,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 6
+    },
+    {
+      "nome": "NUM_SEQ",
+      "tipo": "NUMBER",
+      "tamanho": 22,
+      "precisao": null,
+      "escala": null,
+      "nullable": false,
+      "default": null,
+      "posicao": 7
+    }
+  ],
+  "totalRegistros": 3,
+  "exemplos": [
+    {
+      "ID": 301,
+      "NUM_CARTAO": 15129675,
+      "DATA": "2021-03-13T21:19:21.000Z",
+      "NIF": 168625571,
+      "EPISODIO": 18190291,
+      "MODULO": "CON",
+      "NUM_SEQ": 176726
+    },
+    {
+      "ID": 181,
+      "NUM_CARTAO": 123356,
+      "DATA": "2021-02-17T15:33:05.000Z",
+      "NIF": 282781498,
+      "EPISODIO": 18185686,
+      "MODULO": "CON",
+      "NUM_SEQ": 209232
+    },
+    {
+      "ID": 169,
+      "NUM_CARTAO": 123456,
+      "DATA": "2020-11-25T22:03:24.000Z",
+      "NIF": 162446772,
+      "EPISODIO": 18172862,
+      "MODULO": "CON",
+      "NUM_SEQ": 158414
+    }
+  ]
+}
