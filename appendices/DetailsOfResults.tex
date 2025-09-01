@@ -4,30 +4,88 @@
 This appendix consolidates evidence and materials referenced throughout the dissertation that would otherwise disrupt the flow if included inline. It also provides a practical roadmap for inserting new evidence as it becomes available, aligned with the improvement analysis (docs/ and tmp\_ai\_reports/).
 
 \section{Roadmap for Evidence Insertion}
+\begingroup\sloppy
 The following items specify where to place each type of evidence when ready. Each item cites the target chapter/section and recommended figure/table label.
 \begin{itemize}
-    \item As-is architecture diagram (SCMVV): Introduction (Section~\ref{sec:as_is_architecture}); Figure label \texttt{\seqsplit{fig:as\_is\_architecture\_scmvv}}.
-    \item Current medication process swimlane: Introduction (Section~\ref{sec:current_process_org}); Figure label \texttt{\seqsplit{fig:as\_is\_swimlane\_scmvv}}.
+    \item As-is architecture diagram (SCMVV): Introduction (Section~\ref{sec:as_is_architecture}); Figure label \texttt{\seqsplit{fig:as\_is\_architecture\_scmvv}}. Include: core legacy systems (AIDA-PCE, ADSE, SONHO, SCLINICO, CEGID/PRIMAVERA, ... where applicable, national interfaces such as \gls{pem}); data stores (Oracle schemas, other DBs/fileshares); integration mechanisms (APIs, manual/CSV exchanges); identity/auth context (LDAP/SSO if present); known failure points and manual handoffs. Caption must state consolidated source (docs/tmp\_ai\_reports) and anonymization note.
+    \item Current medication process swimlane: Introduction (Section~\ref{sec:current_process_org}); Figure label \texttt{\seqsplit{fig:as\_is\_swimlane\_scmvv}}. Lanes: Physician (prescription), Pharmacy (validation/stock), Nursing (administration/recording), Systems/Records (AIDA-PCE, other systems, paper). Mark handoffs, feedback loops, transcription points, and timing anchors (order entry, validation, dispensing, administration). Caption must state consolidated source (docs/tmp\_ai\_reports) and anonymization note.
     \item Baseline artefacts (legacy screens, anonymized extracts): Results (Baseline sections), with table/figure labels \texttt{\seqsplit{fig:baseline\_*}} or \texttt{\seqsplit{tab:baseline\_*}}.
     \item Qualitative before/after comparison table: Results (Table~\ref{tab:before_after_qualitative}); update cells with evidence.
     \item Performance snapshots (API latencies, reliability): Results (Indicative Performance), figures \texttt{\seqsplit{fig:perf\_*}}.
     \item User acceptance artifacts (SUS summary, interview quotes): Results (Stakeholder Feedback), tables/figures \texttt{\seqsplit{tab:sus\_*}}, \texttt{\seqsplit{fig:feedback\_*}}.
     \item ROI/Cost elements (if applicable): Expected Results (Financial Impact), Figure~\ref{fig:roi-analysis} notes.
 \end{itemize}
+\endgroup
 
 \section{Evidence Checklist (docs/ and tmp\_ai\_reports/)}
 To ensure coverage without overclaiming, collect the following (no counts here):
 \begin{itemize}
-    \item Representative legacy process artifacts: prescription, validation, administration records; stock movement entries (fields only).
+    \item Representative legacy process artifacts: prescription, validation, administration records; stock movement entries (fields only). For fields, include article identifiers, movement type, timestamps, lot/expiry, and user role where applicable.
     \item Screenshots/mockups: legacy AIDA-PCE views relevant to the cycle; new unified screens for the same steps.
-    \item Workflow timing anchors: available timestamps at order entry, validation, dispensing, administration.
+    \item Workflow timing anchors: available timestamps at order entry, validation, dispensing, administration; note systems where each anchor is available.
     \item Handoff indicators: examples of pharmacist-prescriber clarifications; typical turnaround points.
     \item Data coherence samples across systems: patient IDs, active medication lists, stock positions, highlighting discrepancies.
     \item Usability notes linked to specific screens: navigation friction, duplicate entry, missing alerts.
 \end{itemize}
 
+\section{Baseline Artefacts: Image Naming and Placement Map}
+To streamline insertion, follow this naming/mapping for anonymized baseline artefacts (legacy extracts/screens):
+\begingroup\emergencystretch=1.5em
+\begin{itemize}
+    \item Stock movements extract (legacy fields): \texttt{\seqsplit{images/generated/baseline\_prf\_movements\_extract\_v1.png}} → Results Table/\ref{tab:baseline_prf_movements_fields} caption reference.
+    \item Prescription fields snapshot (legacy): \texttt{\seqsplit{images/generated/baseline\_prescription\_fields\_v1.png}} → Results Table/\ref{tab:baseline_prescription_fields} caption reference.
+    \item Validation queue snapshot (legacy): \texttt{\seqsplit{images/generated/baseline\_validation\_queue\_v1.png}} → Results Baseline section (new figure label: \texttt{fig:baseline\_validation\_queue}).
+    \item Administration record snapshot (legacy/eMAR): \texttt{\seqsplit{images/generated/baseline\_administration\_record\_v1.png}} → Results Baseline section (new figure label: \texttt{fig:baseline\_administration\_record}).
+    \item Prescription leaflet before validation (legacy): \texttt{\seqsplit{images/generated/baseline\_prescription\_leaflet\_v1.png}} → Results Table/\ref{tab:baseline_prescription_leaflet_fields} caption reference.
+    \item Pre-validation patient list (legacy): \texttt{\seqsplit{images/generated/baseline\_patient\_list\_pre\_validation\_v1.png}} → Results Table/\ref{tab:baseline_patient_list_pre_validation_fields} caption reference.
+    \item Pre-prescription patient list (legacy): \texttt{\seqsplit{images/generated/baseline\_patient\_list\_pre\_prescription\_v1.png}} → Results Table/\ref{tab:baseline_patient_list_pre_prescription_fields} caption reference.
+\end{itemize}
+\endgroup
+
+Captions must cite consolidated source (docs/tmp\_ai\_reports) and state “anonymized”.
+
+\section{Screenshot/Mockup Capture Specification}
+This section details what to capture for side-by-side comparisons (legacy vs. new) and how to name/place files. Use mockups only when real screenshots are not available, always with anonymization and disclosure in captions.
+\subsection*{General Requirements}
+\begingroup\emergencystretch=1.5em
+\begin{itemize}
+    \item Anonymize all PHI: patient identifiers, dates, staff names, bed numbers. Blur/redact before exporting.
+    \item Filename convention: \texttt{\seqsplit{images/generated/step\_NAME\_(legacy|new)\_v1.png}} (e.g., \texttt{\seqsplit{step\_prescription\_legacy\_v1.png}}).
+    \item Insert in Chapter~\ref{chap:Results}, Section ``System Demonstration'', under ``Per-step evidence placeholders''.
+    \item Captions: include source (docs/tmp\_ai\_reports or institutional docs), and note \textquotedblleft anonymized\textquotedblright{} or \textquotedblleft mockup\textquotedblright{}.
+\end{itemize}
+\endgroup
+
+\subsection*{Steps and Screens to Capture}
+\begin{itemize}
+    \item Prescription (AIDA-PCE vs. unified UI): fields visible (drug, dose, route, frequency), interaction checks (if any), user context.
+    \item Pharmaceutical validation (legacy handoff/records vs. validation queue in new system): queue/list, decision actions, audit markers.
+    \item Administration (paper/eMAR variability vs. standardized eMAR flow): task list, administration confirmation, barcode step (if applicable).
+    \item Stock movements (AIDA-PCE/PRF vs. new PRF module): movement entry form (article code, lot/expiry, qty, timestamp, user role), stock view.
+    \item Cross-system touches (optional): SONHO billing linkage, CEGID/PRIMAVERA inventory decrement, SClínico clinical record update (illustrate the need for multi-system recording).
+\end{itemize}
+
+\subsection*{Minimum Shots per Step}
+\begin{itemize}
+    \item Legacy: one representative screen per step plus a detail zoom (if needed for fields).
+    \item New: one equivalent screen per step plus a detail zoom of improvements (checks, audit trail, single sign-on context).
+\end{itemize}
+
+\subsection*{Placement Map (labels)}
+\begin{itemize}
+    \item Prescription: Figures \texttt{fig:prescription\_legacy}, \texttt{fig:prescription\_new}.
+    \item Validation: Figures \texttt{fig:validation\_legacy}, \texttt{fig:validation\_new}.
+    \item Administration: Figures \texttt{fig:administration\_legacy}, \texttt{fig:administration\_new}.
+    \item Stock: Figures \texttt{fig:stock\_legacy}, \texttt{fig:stock\_new}.
+\end{itemize}
+
+\subsection*{Mockup Guidance}
+When screenshots are not possible, mirror only fields/flows already described in docs/ and tmp\_ai\_reports. Avoid inventing new features. Use neutral sample text and include a “mockup” note in captions.
+
 \section{Notes on Anonymization and Compliance}
+\begingroup\sloppy
 All artifacts inserted must be anonymized and comply with GDPR and institutional policies. Where real screenshots cannot be shown, use faithful mockups and describe the original fields/flows.
+\endgroup
 
 \section{Outstanding Improvements (from docs/ and tmp\_ai\_reports/)}
 This section centralizes planned improvements identified in the analysis. Each item notes the target chapter/section and what will be inserted (no content invented here; placeholders remain until evidence is available).

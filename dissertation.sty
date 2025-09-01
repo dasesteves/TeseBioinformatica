@@ -148,6 +148,33 @@ BoldItalicFont=NewsGotTBold.ttf
     urlcolor = blueUM
 }
 
+%-- Image placeholder macro (uses tcolorbox) to avoid compile errors when image is missing
+\newcommand{\imgorplaceholder}[2][]{%
+  \IfFileExists{#2}{% when file exists
+    \includegraphics[#1]{#2}%
+  }{% else: show placeholder box
+    \tcbox[colback=white,colframe=blueUM,boxsep=1mm,arc=1mm,width=\linewidth]{%
+      \begin{minipage}{0.85\linewidth}\centering
+      \vspace{6mm}
+      \textit{Mockup placeholder}\\
+      \vspace{6mm}
+      \end{minipage}%
+    }%
+  }%
+}
+
+%-- UI mockup panels and image fallback
+\newtcolorbox{uipanel}[2][]{enhanced, colback=white, colframe=blueUM,
+  attach boxed title to top center={yshift=-2mm},
+  boxed title style={colback=blueUM, coltext=white},
+  title={#2}, fonttitle=\bfseries, breakable, sharp corners, #1}
+
+\newcommand{\uimockup}[2]{\begin{uipanel}{#1}#2\end{uipanel}}
+
+\newcommand{\mockuporimage}[3][]{%
+  \IfFileExists{#2}{\includegraphics[#1]{#2}}{#3}%
+}
+
 %-- Title format
 \titleformat{\part}[display]
   {\relax}

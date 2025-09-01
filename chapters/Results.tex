@@ -8,6 +8,9 @@ This chapter presents practical outcomes to date, focusing on demonstrable artef
 \subsection{Prototype Screens and Flows}
 Figures in this section illustrate representative screens and end-to-end flows across the unified system (prescribing, pharmaceutical validation, stock updates, and nursing administration). When live screenshots are unavailable in the compilation context, high-fidelity mockups are provided to maintain clarity of the implemented design and interactions.
 
+\paragraph{Role-based legacy context}
+In the current legacy setup (AIDA-PCE), functionality is exposed by professional role: medical login for prescription, pharmacist login for validation, and nurse login for administration. The unified artefact aims to streamline these steps while respecting role-based permissions and auditability.
+
 \paragraph{Per-step evidence placeholders}
 For each step, insert side-by-side legacy vs. new artifacts when available (or mockups with disclosure):
 \begin{itemize}
@@ -17,9 +20,81 @@ For each step, insert side-by-side legacy vs. new artifacts when available (or m
 \end{itemize}
 Captions must include source (docs/tmp\_ai\_reports) and anonymization note.
 
+% -- Side-by-side: Prescription (legacy vs new)
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\textwidth]{images/generated/monitoring_dashboard.png}
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/step_prescription_legacy_v1.png}
+        \caption{Prescription (legacy: AIDA-PCE). Source: docs/tmp\_ai\_reports; anonymized/mockup.}
+        \label{fig:prescription_legacy}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.47\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/step_prescription_new_v1.png}
+        \caption{Prescription (new unified UI). Source: docs/tmp\_ai\_reports; mockup.}
+        \label{fig:prescription_new}
+    \end{subfigure}
+    \caption{Side-by-side prescription flow: legacy vs. unified interface.}
+\end{figure}
+
+% -- Side-by-side: Validation (legacy vs new)
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/step_validation_legacy_v1.png}
+        \caption{Validation (legacy: AIDA-PCE). Source: docs/tmp\_ai\_reports; anonymized/mockup.}
+        \label{fig:validation_legacy}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/step_validation_new_v1.png}
+        \caption{Validation (new unified UI). Source: docs/tmp\_ai\_reports; mockup.}
+        \label{fig:validation_new}
+    \end{subfigure}
+    \caption{Side-by-side pharmaceutical validation: legacy vs. unified interface.}
+\end{figure}
+
+% -- Side-by-side: Administration (legacy vs new)
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/step_administration_legacy_v1.png}
+        \caption{Administration (legacy: AIDA-PCE e/ou eMAR atual). Source: docs/tmp\_ai\_reports; anonymized/mockup.}
+        \label{fig:administration_legacy}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/step_administration_new_v1.png}
+        \caption{Administration (new eMAR flow). Source: docs/tmp\_ai\_reports; mockup.}
+        \label{fig:administration_new}
+    \end{subfigure}
+    \caption{Side-by-side nursing administration: legacy vs. unified eMAR.}
+\end{figure}
+
+% -- Side-by-side: Stock movements (legacy vs new)
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/step_stock_legacy_v1.png}
+        \caption{Stock movements (legacy: AIDA-PCE/PRF). Source: docs/tmp\_ai\_reports; anonymized/mockup.}
+        \label{fig:stock_legacy}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/step_stock_new_v1.png}
+        \caption{Stock movements (new PRF module). Source: docs/tmp\_ai\_reports; mockup.}
+        \label{fig:stock_new}
+    \end{subfigure}
+    \caption{Side-by-side stock management: legacy vs. unified module.}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{images/generated/monitoring_dashboard.png}
     \caption{Operational dashboard used during development to validate flows and observe system-level health and KPIs.}
     \label{fig:monitoring_dashboard}
 \end{figure}
@@ -44,6 +119,124 @@ This subsection summarizes baseline observations derived from analyses of existi
 Where appropriate, future figures and tables will illustrate representative baseline flows and artifacts (e.g., example legacy screens, anonymized extracts, and process snapshots) to support before/after reasoning.
 Additional placement and labeling guidance is provided in Appendix~\ref{app:details_results}.
 \endgroup
+
+\subsection{Baseline Field Examples (anonymized structure)}
+This subsection lists representative field structures from legacy artefacts to ground before/after comparisons. No record-level data is shown; examples indicate field names, types and purpose only.
+
+\begin{table}[H]
+    \centering
+    \caption{Baseline fields: Controlled-substance stock movements (legacy AIDA-PCE/PRF).}
+    \label{tab:baseline_prf_movements_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.9cm} >{\raggedright\arraybackslash}p{2.9cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        article\_code & \texttt{\seqsplit{prf\_movimentos}} & NUMBER(\ldots) & No & Internal article identifier (maps to catalog) \\
+        movement\_type & \texttt{\seqsplit{prf\_movimentos}} & VARCHAR2(\ldots) & No & In/Out/Adjust; controlled movement category \\
+        lot\_number & \texttt{\seqsplit{prf\_movimentos}} & VARCHAR2(\ldots) & Yes & Batch/lot reference \\
+        expiry\_date & prf\_movimentos & DATE & Yes & Expiration date \\
+        quantity & prf\_movimentos & NUMBER(\ldots) & No & Signed delta \\
+        event\_timestamp & \texttt{\seqsplit{prf\_movimentos}} & DATE & No & Event time (local timezone) \\
+        actor\_role & \texttt{\seqsplit{prf\_movimentos}} & VARCHAR2(\ldots) & Yes & Role executing action (pharmacist, nurse, etc.) \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Baseline fields: Validation queue/list (legacy AIDA-PCE).}
+    \label{tab:baseline_validation_queue_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        request\_id & \texttt{\seqsplit{validacao\_fila}} & NUMBER(\ldots) & No & Identifier of prescription request awaiting validation \\
+        patient\_code & \texttt{\seqsplit{validacao\_fila}} & VARCHAR2(\ldots) & Yes & Patient reference (anonymized in screenshots) \\
+        drug\_code & \texttt{\seqsplit{validacao\_fila}} & VARCHAR2(\ldots) & No & Requested medication \\
+        status & validacao\_fila & VARCHAR2(\ldots) & No & Pending/clarification/approved/rejected \\
+        created\_ts & \texttt{\seqsplit{validacao\_fila}} & DATE & No & Time enqueued \\
+        pharmacist\_assigned & \texttt{\seqsplit{validacao\_fila}} & VARCHAR2(\ldots) & Yes & Assigned validator (role/user id) \\
+        priority & \texttt{\seqsplit{validacao\_fila}} & VARCHAR2(\ldots) & Yes & Priority/urgency marker \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Baseline fields: Prescription leaflet/report before validation (legacy AIDA-PCE).}
+    \label{tab:baseline_prescription_leaflet_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        patient\_code & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & No & Patient ref (anonymized); name redacted in images \\
+        ward\_unit & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & Yes & Service/ward \\
+        drug\_name & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & No & Medication name \\
+        dose & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & No & Dose string \\
+        route & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & Yes & Route of administration \\
+        frequency & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & Yes & Frequency pattern \\
+        notes & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & Yes & Prescriber notes (if present; redact in screenshots) \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Baseline fields: Pre-validation patient list (legacy AIDA-PCE).}
+    \label{tab:baseline_patient_list_pre_validation_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        patient\_code & \texttt{\seqsplit{lista\_pre\_validacao}} & VARCHAR2(\ldots) & No & Patient reference (anonymized in screenshots) \\
+        ward\_unit & \texttt{\seqsplit{lista\_pre\_validacao}} & VARCHAR2(\ldots) & Yes & Service/ward \\
+        pending\_items & \texttt{\seqsplit{lista\_pre\_validacao}} & NUMBER(\ldots) & Yes & Count of pending prescriptions for validation \\
+        last\_update & \texttt{\seqsplit{lista\_pre\_validacao}} & DATE & Yes & Last refresh timestamp \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Baseline fields: Pre-prescription patient list (legacy AIDA-PCE).}
+    \label{tab:baseline_patient_list_pre_prescription_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        patient\_code & \texttt{\seqsplit{lista\_pre\_prescricao}} & VARCHAR2(\ldots) & No & Patient reference (anonymized) \\
+        attending\_physician & \texttt{\seqsplit{lista\_pre\_prescricao}} & VARCHAR2(\ldots) & Yes & Assigned physician (role/user id) \\
+        last\_prescription\_date & \texttt{\seqsplit{lista\_pre\_prescricao}} & DATE & Yes & Last prescription anchor \\
+        service & \texttt{\seqsplit{lista\_pre\_prescricao}} & VARCHAR2(\ldots) & Yes & Service/ward \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Baseline fields: Prescription (legacy AIDA-PCE).}
+    \label{tab:baseline_prescription_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        drug\_code & \texttt{\seqsplit{prescricao}} & VARCHAR2(\ldots) & No & Medication identifier \\
+        dose & \texttt{\seqsplit{prescricao}} & VARCHAR2(\ldots) & No & Dose string (normalized later) \\
+        route & \texttt{\seqsplit{prescricao}} & VARCHAR2(\ldots) & Yes & Route of administration \\
+        frequency & \texttt{\seqsplit{prescricao}} & VARCHAR2(\ldots) & Yes & Frequency pattern \\
+        start\_date & \texttt{\seqsplit{prescricao}} & DATE & Yes & Intended start \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\paragraph{Anonymization note}
+Any screenshots or extracts inserted later must be fully anonymized and limited to structural illustration of fields; no patient identifiers, dates of birth, or free-text clinical notes are to be shown.
 
 \paragraph{Limitations of Baseline (to be noted)}
 Baseline artifacts may reflect heterogeneous practices across services, undocumented workarounds, and partial records. These constraints are explicitly documented to prevent overgeneralization and to guide careful interpretation of pre/post differences.
