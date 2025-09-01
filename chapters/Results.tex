@@ -128,37 +128,38 @@ This subsection lists representative field structures from legacy artefacts to g
     \caption{Baseline fields: Controlled-substance stock movements (legacy AIDA-PCE/PRF).}
     \label{tab:baseline_prf_movements_fields}
     {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.9cm} >{\raggedright\arraybackslash}p{2.9cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.4cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
-        article\_code & \texttt{\seqsplit{prf\_movimentos}} & NUMBER(\ldots) & No & Internal article identifier (maps to catalog) \\
-        movement\_type & \texttt{\seqsplit{prf\_movimentos}} & VARCHAR2(\ldots) & No & In/Out/Adjust; controlled movement category \\
-        lot\_number & \texttt{\seqsplit{prf\_movimentos}} & VARCHAR2(\ldots) & Yes & Batch/lot reference \\
-        expiry\_date & prf\_movimentos & DATE & Yes & Expiration date \\
-        quantity & prf\_movimentos & NUMBER(\ldots) & No & Signed delta \\
-        event\_timestamp & \texttt{\seqsplit{prf\_movimentos}} & DATE & No & Event time (local timezone) \\
-        actor\_role & \texttt{\seqsplit{prf\_movimentos}} & VARCHAR2(\ldots) & Yes & Role executing action (pharmacist, nurse, etc.) \\
+        NVL(CDU\_CSU\_ENVIADOMEDICID, CDU\_CSU\_PRESCMEDICID) & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & VARCHAR2(\ldots) & Yes & Medication identifier (resolved) \\
+        NUMLOTE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & VARCHAR2(1000) & Yes & Batch/lot reference \\
+        CDU\_CSU\_ENVIADOQUANTIDADE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & NUMBER(\ldots) & Yes & Quantity delta (signed) \\
+        DTA\_LANCA & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & DATE & Yes & Event timestamp \\
+        DTMEDD & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & VARCHAR2(10) & Yes & Context flag (e.g., 'MH') \\
+        CDU\_CSU\_UTILIZADOR & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & VARCHAR2(50) & Yes & Actor identifier/role at action time \\
+        VERIFICA & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & NUMBER(1) & Yes & Verification marker \\
         \bottomrule
     \end{tabularx}}
 \end{table}
 
 \begin{table}[H]
     \centering
-    \caption{Baseline fields: Validation queue/list (legacy AIDA-PCE).}
+    \caption{Baseline fields: Pre-validation list (derived from legacy AIDA-PCE).}
     \label{tab:baseline_validation_queue_fields}
     {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
-        request\_id & \texttt{\seqsplit{validacao\_fila}} & NUMBER(\ldots) & No & Identifier of prescription request awaiting validation \\
-        patient\_code & \texttt{\seqsplit{validacao\_fila}} & VARCHAR2(\ldots) & Yes & Patient reference (anonymized in screenshots) \\
-        drug\_code & \texttt{\seqsplit{validacao\_fila}} & VARCHAR2(\ldots) & No & Requested medication \\
-        status & validacao\_fila & VARCHAR2(\ldots) & No & Pending/clarification/approved/rejected \\
-        created\_ts & \texttt{\seqsplit{validacao\_fila}} & DATE & No & Time enqueued \\
-        pharmacist\_assigned & \texttt{\seqsplit{validacao\_fila}} & VARCHAR2(\ldots) & Yes & Assigned validator (role/user id) \\
-        priority & \texttt{\seqsplit{validacao\_fila}} & VARCHAR2(\ldots) & Yes & Priority/urgency marker \\
+        ID\_PRESC & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Prescription identifier \\
+        EPISODIO & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Episode reference (link to patient episode) \\
+        CODIGO & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(20) & Yes & Medication code \\
+        DESC\_C & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(200) & Yes & Medication description \\
+        DTA\_INI & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & DATE & Yes & Order entry timestamp \\
+        USER\_VAL & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(20) & Yes & Assigned validator (user/role) \\
+        DTA\_VAL & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & DATE & Yes & Validation timestamp (null if pending) \\
+        SERVICOID & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Service/ward reference \\
         \bottomrule
     \end{tabularx}}
 \end{table}
@@ -168,17 +169,17 @@ This subsection lists representative field structures from legacy artefacts to g
     \caption{Baseline fields: Prescription leaflet/report before validation (legacy AIDA-PCE).}
     \label{tab:baseline_prescription_leaflet_fields}
     {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
-        patient\_code & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & No & Patient ref (anonymized); name redacted in images \\
-        ward\_unit & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & Yes & Service/ward \\
-        drug\_name & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & No & Medication name \\
-        dose & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & No & Dose string \\
-        route & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & Yes & Route of administration \\
-        frequency & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & Yes & Frequency pattern \\
-        notes & \texttt{\seqsplit{presc\_folheto}} & VARCHAR2(\ldots) & Yes & Prescriber notes (if present; redact in screenshots) \\
+        CODIGO & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(20) & Yes & Medication code (join \texttt{PRF\_MEDICAMENTOS} for \texttt{DESC\_C}) \\
+        DOSE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Prescribed dose (unit in \texttt{UNI\_DOSE}) \\
+        COD\_V & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Route code (dictionary \texttt{PRF\_VIAS}) \\
+        UNI\_DOSE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(20) & Yes & Dose unit \\
+        DTA\_INI & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & DATE & Yes & Intended start \\
+        DTA\_FIM & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & DATE & Yes & Intended end (if present) \\
+        OBSERVE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(2000) & Yes & Prescriber notes (redact in screenshots) \\
         \bottomrule
     \end{tabularx}}
 \end{table}
@@ -188,14 +189,14 @@ This subsection lists representative field structures from legacy artefacts to g
     \caption{Baseline fields: Pre-validation patient list (legacy AIDA-PCE).}
     \label{tab:baseline_patient_list_pre_validation_fields}
     {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
-        patient\_code & \texttt{\seqsplit{lista\_pre\_validacao}} & VARCHAR2(\ldots) & No & Patient reference (anonymized in screenshots) \\
-        ward\_unit & \texttt{\seqsplit{lista\_pre\_validacao}} & VARCHAR2(\ldots) & Yes & Service/ward \\
-        pending\_items & \texttt{\seqsplit{lista\_pre\_validacao}} & NUMBER(\ldots) & Yes & Count of pending prescriptions for validation \\
-        last\_update & \texttt{\seqsplit{lista\_pre\_validacao}} & DATE & Yes & Last refresh timestamp \\
+        EPISODIO & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Episode reference (join to patient context) \\
+        SERVICOID & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Service/ward \\
+        PENDING\_COUNT (derived) & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Count of \texttt{ID\_PRESC} with \texttt{DTA\_VAL} IS NULL \\
+        LAST\_REFRESH (UI) & UI & DATE & Yes & Last refresh timestamp \\
         \bottomrule
     \end{tabularx}}
 \end{table}
@@ -205,14 +206,14 @@ This subsection lists representative field structures from legacy artefacts to g
     \caption{Baseline fields: Pre-prescription patient list (legacy AIDA-PCE).}
     \label{tab:baseline_patient_list_pre_prescription_fields}
     {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
-        patient\_code & \texttt{\seqsplit{lista\_pre\_prescricao}} & VARCHAR2(\ldots) & No & Patient reference (anonymized) \\
-        attending\_physician & \texttt{\seqsplit{lista\_pre\_prescricao}} & VARCHAR2(\ldots) & Yes & Assigned physician (role/user id) \\
-        last\_prescription\_date & \texttt{\seqsplit{lista\_pre\_prescricao}} & DATE & Yes & Last prescription anchor \\
-        service & \texttt{\seqsplit{lista\_pre\_prescricao}} & VARCHAR2(\ldots) & Yes & Service/ward \\
+        EPISODIO & \texttt{\seqsplit{PCE.PCEEPISODIOS / PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Episode reference (patient context) \\
+        SERVICOID & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Service/ward \\
+        LAST\_PRESC\_DATE (derived) & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & DATE & Yes & Last \texttt{DTA\_INI}/\texttt{DTA\_FIM} anchor \\
+        PHYSICIAN (UI) & UI & VARCHAR2(\ldots) & Yes & Attending physician (UI context; anonymized) \\
         \bottomrule
     \end{tabularx}}
 \end{table}
@@ -222,15 +223,51 @@ This subsection lists representative field structures from legacy artefacts to g
     \caption{Baseline fields: Prescription (legacy AIDA-PCE).}
     \label{tab:baseline_prescription_fields}
     {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
-    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
-        drug\_code & \texttt{\seqsplit{prescricao}} & VARCHAR2(\ldots) & No & Medication identifier \\
-        dose & \texttt{\seqsplit{prescricao}} & VARCHAR2(\ldots) & No & Dose string (normalized later) \\
-        route & \texttt{\seqsplit{prescricao}} & VARCHAR2(\ldots) & Yes & Route of administration \\
-        frequency & \texttt{\seqsplit{prescricao}} & VARCHAR2(\ldots) & Yes & Frequency pattern \\
-        start\_date & \texttt{\seqsplit{prescricao}} & DATE & Yes & Intended start \\
+        CODIGO & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(20) & Yes & Medication identifier (join to \texttt{PRF\_MEDICAMENTOS}) \\
+        DOSE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Dose value \\
+        COD\_V & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & NUMBER(\ldots) & Yes & Route code (dictionary \texttt{PRF\_VIAS}) \\
+        UNI\_DOSE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(20) & Yes & Dose unit \\
+        DTA\_INI & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & DATE & Yes & Intended start \\
+        DTA\_FIM & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & DATE & Yes & Intended end (if present) \\
+        OBSERVE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV}} & VARCHAR2(2000) & Yes & Notes \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Baseline fields: Frequency schedule (legacy AIDA-PCE).}
+    \label{tab:baseline_prescription_frequency_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        ID\_PRESC & \texttt{\seqsplit{PCE.PRF\_PRESC\_FREQ}} & NUMBER(\ldots) & Yes & Link to prescription (\texttt{PRF\_PRESC\_MOV}) \\
+        ORDEM & \texttt{\seqsplit{PCE.PRF\_PRESC\_FREQ}} & NUMBER(\ldots) & Yes & Order within day \\
+        HORA\_T & \texttt{\seqsplit{PCE.PRF\_PRESC\_FREQ}} & VARCHAR2(5) & Yes & Time slot (morning) \\
+        HORA\_N & \texttt{\seqsplit{PCE.PRF\_PRESC\_FREQ}} & VARCHAR2(5) & Yes & Time slot (night) \\
+        HORA\_A & \texttt{\seqsplit{PCE.PRF\_PRESC\_FREQ}} & VARCHAR2(5) & Yes & Time slot (afternoon) \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Baseline fields: Route dictionary (legacy AIDA-PCE).}
+    \label{tab:baseline_route_dictionary_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        ID\_VIA & \texttt{\seqsplit{PCE.PRF\_VIAS}} & NUMBER(\ldots) & Yes & Route identifier \\
+        DE\_DIA & \texttt{\seqsplit{PCE.PRF\_VIAS}} & VARCHAR2(100) & Yes & Route description \\
+        ST\_VIA & \texttt{\seqsplit{PCE.PRF\_VIAS}} & NUMBER(\ldots) & Yes & Status \\
         \bottomrule
     \end{tabularx}}
 \end{table}

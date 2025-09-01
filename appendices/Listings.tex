@@ -1,2 +1,72 @@
 \chapter{Listings}
-	Should this be the case.
+\label{app:listings}
+
+This appendix collects SQL listings used to obtain structure-only baselines and to validate mappings. All queries avoid returning identifiable data and are intended for schema inspection or aggregated results only.
+
+\section{Structure snapshots (schema only)}
+\subsection*{PRF\_PRESC\_MOV\_FDET columns}
+\begin{lstlisting}[language=SQL]
+SELECT column_name, data_type, data_length, nullable
+FROM all_tab_columns
+WHERE owner = 'PCE' AND table_name = 'PRF_PRESC_MOV_FDET'
+ORDER BY column_id;
+\end{lstlisting}
+
+\subsection*{PRF\_PRESC\_MOV columns}
+\begin{lstlisting}[language=SQL]
+SELECT column_name, data_type, data_length, nullable
+FROM all_tab_columns
+WHERE owner = 'PCE' AND table_name = 'PRF_PRESC_MOV'
+ORDER BY column_id;
+\end{lstlisting}
+
+\subsection*{PRF\_MEDICAMENTOS columns}
+\begin{lstlisting}[language=SQL]
+SELECT column_name, data_type, data_length, nullable
+FROM all_tab_columns
+WHERE owner = 'PCE' AND table_name = 'PRF_MEDICAMENTOS'
+ORDER BY column_id;
+\end{lstlisting}
+
+\subsection*{PRF\_PRESC\_FREQ columns}
+\begin{lstlisting}[language=SQL]
+SELECT column_name, data_type, data_length, nullable
+FROM all_tab_columns
+WHERE owner = 'PCE' AND table_name = 'PRF_PRESC_FREQ'
+ORDER BY column_id;
+\end{lstlisting}
+
+\subsection*{PRF\_VIAS columns}
+\begin{lstlisting}[language=SQL]
+SELECT column_name, data_type, data_length, nullable
+FROM all_tab_columns
+WHERE owner = 'PCE' AND table_name = 'PRF_VIAS'
+ORDER BY column_id;
+\end{lstlisting}
+
+\section{Aggregated, anonymized checks}
+\subsection*{Movements per lot (bounded period)}
+\begin{lstlisting}[language=SQL]
+SELECT numlote,
+       SUM(cdu_csu_enviadoquantidade) AS quantidade,
+       TO_CHAR(MAX(dta_lanca), 'YYYY-MM-DD HH24:MI:SS') AS data_ult_mov
+FROM   PCE.PRF_PRESC_MOV_FDET
+WHERE  NVL(cdu_csu_enviadomedicid, cdu_csu_prescmedicid) = :codigo
+  AND  dtmedd = 'MH'
+  AND  TRUNC(dta_lanca) >= TRUNC(SYSDATE) - :periodo
+GROUP BY numlote
+ORDER BY numlote;
+\end{lstlisting}
+
+\subsection*{Pending validations by ward (no PHI)}
+\begin{lstlisting}[language=SQL]
+SELECT servicoid,
+       COUNT(*) AS pending_prescriptions
+FROM   PCE.PRF_PRESC_MOV
+WHERE  dta_val IS NULL
+GROUP BY servicoid
+ORDER BY pending_prescriptions DESC;
+\end{lstlisting}
+
+\section{Notes}
+All listings are for verification and baseline anchoring only; they must be executed in secured environments and results sanitized for inclusion.
