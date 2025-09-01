@@ -59,6 +59,49 @@ ORDER BY numlote;
 \end{lstlisting}
 
 \subsection*{Pending validations by ward (no PHI)}
+\subsection*{Lifecycle anchors (order → validation → dispensing → administration)}
+\begin{lstlisting}[language=SQL]
+-- Join lifecycle anchors by prescription id (aggregated counts only)
+SELECT COUNT(*) AS total_presc,
+       COUNT(CASE WHEN m.dta_val IS NOT NULL THEN 1 END) AS validadas,
+       COUNT(CASE WHEN f.dta_lanca IS NOT NULL THEN 1 END) AS com_dispensa,
+       COUNT(CASE WHEN e.datahora IS NOT NULL THEN 1 END) AS com_administracao
+FROM   PCE.PRF_PRESC_MOV m
+LEFT   JOIN PCE.PRF_PRESC_MOV_FDET f ON f.id_presc = m.id_presc
+LEFT   JOIN PCE.PRF_PRESC_MOV_ENF  e ON e.id_presc = m.id_presc;
+\end{lstlisting}
+
+\subsection*{Episode timing anchors (structure-only)}
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*) AS episodios
+FROM   PCE.PCEEPISODIOS epi
+LEFT   JOIN PCE.PCEADMISSOES adm ON adm.int_episodio = epi.episodio
+WHERE  epi.dta_episodio IS NOT NULL OR adm.dta_internamento IS NOT NULL;
+\end{lstlisting}
+\subsection*{Audit log structure (no PHI)}
+\begin{lstlisting}[language=SQL]
+-- LOGS_COMPLETO / LOGS_CC / LOGS_MAN: columns only
+SELECT owner, table_name, column_name, data_type, data_length, nullable
+FROM   all_tab_columns
+WHERE  owner = 'PCE'
+AND    table_name IN ('LOGS_COMPLETO','LOGS_CC','LOGS_MAN')
+ORDER  BY table_name, column_id;
+\end{lstlisting}
+
+\subsection*{Audit events per module (aggregated)}
+\begin{lstlisting}[language=SQL]
+SELECT modulo, COUNT(*) AS eventos
+FROM   PCE.LOGS_COMPLETO
+GROUP  BY modulo
+ORDER  BY eventos DESC;
+\end{lstlisting}
+
+\subsection*{Users with active status (structure-only projection)}
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*) AS total_ativos
+FROM   PCE.UTILIZADORES
+WHERE  estado = 'A';
+\end{lstlisting}
 \begin{lstlisting}[language=SQL]
 SELECT servicoid,
        COUNT(*) AS pending_prescriptions

@@ -105,6 +105,73 @@ Where measured, we report indicative performance from controlled test environmen
 \paragraph{Security and Compliance Posture}
 Evidence includes configuration snapshots and process notes demonstrating authentication, authorization, encryption, and audit mechanisms in the artefact, as well as anonymization procedures followed when handling any legacy-derived data artifacts.
 
+\subsection*{Security and Compliance: Legacy Audit Signals (structure-only)}
+This subsection documents representative audit-related field structures present in legacy schemas, to ground what can be traced and compared. No record-level data is shown; only field names/types.
+
+\begin{table}[H]
+    \centering
+    \caption{Audit trail fields: \texttt{PCE.LOGS\_COMPLETO} (legacy)}
+    \label{tab:audit_logs_completo_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        ID & \texttt{PCE.LOGS\_COMPLETO} & NUMBER & No & Surrogate identifier \\
+        DATA & \texttt{PCE.LOGS\_COMPLETO} & DATE & No & Event timestamp \\
+        MODULO & \texttt{PCE.LOGS\_COMPLETO} & VARCHAR2(3) & No & Module code (e.g., CON, URG) \\
+        EPISODIO & \texttt{PCE.LOGS\_COMPLETO} & NUMBER & No & Episode reference \\
+        NUM\_SEQ & \texttt{PCE.LOGS\_COMPLETO} & NUMBER & No & Sequence within module/episode \\
+        ESTADO & \texttt{PCE.LOGS\_COMPLETO} & VARCHAR2(1) & No & State/flag (context-specific) \\
+        NIF & \texttt{PCE.LOGS\_COMPLETO} & NUMBER & No & Patient tax ID (PHI: never shown; used only to illustrate field name) \\
+        NUM\_CARTAO & \texttt{PCE.LOGS\_COMPLETO} & NUMBER & Yes & Card number (PHI: never shown) \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Audit trail fields: \texttt{PCE.LOGS\_CC} e \texttt{PCE.LOGS\_MAN} (legacy)}
+    \label{tab:audit_logs_cc_man_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        ID & \texttt{PCE.LOGS\_CC / PCE.LOGS\_MAN} & NUMBER & No & Surrogate identifier \\
+        DATA & \texttt{PCE.LOGS\_CC / PCE.LOGS\_MAN} & DATE & No & Event timestamp \\
+        MODULO & \texttt{PCE.LOGS\_CC / PCE.LOGS\_MAN} & VARCHAR2(3) & No & Module code \\
+        EPISODIO & \texttt{PCE.LOGS\_CC / PCE.LOGS\_MAN} & NUMBER & No & Episode reference \\
+        NUM\_SEQ & \texttt{PCE.LOGS\_CC / PCE.LOGS\_MAN} & NUMBER & No & Sequence within module/episode \\
+        NIF & \texttt{PCE.LOGS\_CC / PCE.LOGS\_MAN} & NUMBER & No & Patient tax ID (PHI: never shown) \\
+        NUM\_CARTAO & \texttt{PCE.LOGS\_CC} & NUMBER & No & Card number (PHI: never shown) \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{User directory fields: \texttt{PCE.UTILIZADORES} (legacy)}
+    \label{tab:users_directory_fields}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
+        \midrule
+        IDUTILIZADOR & \texttt{PCE.UTILIZADORES} & VARCHAR2(10) & No & User identifier \\
+        UTILIZADOR & \texttt{PCE.UTILIZADORES} & VARCHAR2(200) & Yes & Display name (PHI) \\
+        PASSWORD\_HASH & \texttt{PCE.UTILIZADORES} & VARCHAR2(72) & Yes & Password hash (never shown) \\
+        AREA / IDSERVICO & \texttt{PCE.UTILIZADORES} & VARCHAR2(\ldots) & Yes & Area/services \\
+        PROFISSAO / CATEGORIA & \texttt{PCE.UTILIZADORES} & VARCHAR2(\ldots) & Yes & Role/category \\
+        ESTADO & \texttt{PCE.UTILIZADORES} & VARCHAR2(1) & Yes & Status \\
+        DATAINI & \texttt{PCE.UTILIZADORES} & DATE & Yes & Start date \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\paragraph{Compliance note}
+Legacy audit fields demonstrate the availability of episode-scoped timestamps and module/action references. In the unified artefact, authentication is centralized and audit logs are designed to record actor, action, scope and timestamp consistently, with encryption-at-rest and in-transit safeguards and role-based access controls. Screenshots or configuration snippets will be inserted once available (see Appendix~\ref{app:details_results}).
+
 \section{Baseline Data and Comparative Perspective}
 To contextualize improvements, the project leverages baseline information extracted from legacy systems and analyses (e.g., analyses of movements of controlled substances). This enables before/after comparisons, even when the current stage relies on simulated or limited-scope trials.
 
@@ -289,6 +356,45 @@ Guided by available documentation (docs/) and AI-generated analyses (tmp\_ai\_re
     \item Usability/UX signals: qualitative notes from stakeholders on pain points (navigation, duplicate entry, missing alerts) mapped to specific screens/steps.
 \end{itemize}
 
+\section{Workflow Timing Anchors (structure-only)}
+This section enumerates representative timestamps available in legacy artifacts to support cycle-time analyses (order → validation → dispensing → administration) and episode timing context. Only field names/types are listed.
+
+\begin{table}[H]
+    \centering
+    \caption{Timing anchors: Prescription lifecycle (legacy)}
+    \label{tab:timing_prescription_lifecycle}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.6cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Anchor} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Notes} \\
+        \midrule
+        DTA\_INI (order entry) & \texttt{PCE.PRF\_PRESC\_MOV} & DATE & Yes & Intended start timestamp \\
+        DTA\_VAL (validation decision) & \texttt{PCE.PRF\_PRESC\_MOV} & DATE & Yes & Validation time (null if pending) \\
+        DTA\_LANCA (dispensing event) & \texttt{PCE.PRF\_PRESC\_MOV\_FDET} & DATE & Yes & Stock movement timestamp \\
+        DATAHORA (administration record) & \texttt{PCE.PRF\_PRESC\_MOV\_ENF} & DATE & Yes & Nursing admin time \\
+        DTA\_REG (log registration) & \texttt{PCE.PRF\_PRESC\_MOV\_LOG} & DATE & Yes & Lifecycle log entry \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Episode context anchors (legacy)}
+    \label{tab:timing_episode_context}
+    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.6cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Anchor} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Notes} \\
+        \midrule
+        DTA\_EPISODIO (start) & \texttt{PCE.PCEEPISODIOS} & DATE & Yes & Episode start date \\
+        HORA\_EPISODIO (start time) & \texttt{PCE.PCEEPISODIOS} & NUMBER & Yes & Episode start time component \\
+        DTA\_INTERNAMENTO (admission) & \texttt{PCE.PCEADMISSOES} & DATE & Yes & Admission date \\
+        HORA\_INTERNAMENTO (admission time) & \texttt{PCE.PCEADMISSOES} & NUMBER & Yes & Admission time component \\
+        DTA\_ANULA (cancel/close markers) & \texttt{PCE.PCEEPISODIOS / PCE.PCEADMISSOES} & DATE & Yes & Cancellation/close indicator where present \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+
 \section{Stakeholder Feedback Highlights}
 Qualitative feedback from interviews and demonstrations is summarized to capture perceived usability and workflow changes, supporting subsequent discussion and future evaluation phases. A qualitative “before vs. after” comparison table is planned to synthesize changes per step (prescription, validation, dispensing, administration), focusing on handoffs, decision support availability, and record-keeping.
 
@@ -307,5 +413,16 @@ Qualitative feedback from interviews and demonstrations is summarized to capture
         \bottomrule
     \end{tabularx}
 \end{table}
+
+
+\subsection*{Qualitative Quotes (anonymized placeholders)}
+\begingroup\emergencystretch=1em
+\small
+\begin{itemize}
+    \item [Q1] (Role: Pharmacist) “Theme: clarity na fila de validação.” [to be confirmed]
+    \item [Q2] (Role: Nurse) “Theme: registo de administração mais direto.” [to be confirmed]
+    \item [Q3] (Role: Physician) “Theme: verificação de interações no mesmo ecrã.” [to be confirmed]
+\end{itemize}
+\endgroup
 
 

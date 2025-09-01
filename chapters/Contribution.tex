@@ -95,6 +95,27 @@ This subsection captures the modelling structure to be filled when inputs are av
     \item Data sources: institutional documentation (docs/), legacy extracts and analyses (tmp\_ai\_reports/), literature references for unit costs.
 \end{itemize}
 
+\paragraph{ROI Inputs Template (compact)}
+\begingroup\small
+\begin{table}[H]
+    \centering
+    \caption{Template: ROI inputs (to be populated with evidence).}
+    \label{tab:roi_inputs_template}
+    {\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.15}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{5.2cm} >{\raggedright\arraybackslash}X@{}}
+        \toprule
+        \textbf{Category} & \textbf{Item} & \textbf{Source/Notes} \\
+        \midrule
+        Cost & Infrastructure + maintenance & Contracts/estimates (docs/) \\
+        Cost & Development + onboarding & Internal logs/plans (docs/) \\
+        Benefit & Avoided ADE unit cost & Literature + hospital data \\
+        Benefit & Time-savings (per role) & Time-motion anchors (Results) \\
+        Benefit & Reduced duplicate entry & Baseline vs. target mapping \\
+        \bottomrule
+    \end{tabularx}}
+\end{table}
+\endgroup
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.95\textwidth]{images/generated/roi_analysis.png}
