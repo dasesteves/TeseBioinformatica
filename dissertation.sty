@@ -17,12 +17,24 @@
 \usepackage{stmaryrd}
 \usepackage{mathtools}
 \usepackage{listings}
+% Listings: enable line breaking and compact monospace
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  breakatwhitespace=true,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  tabsize=2
+}
 \usepackage{titlesec}
 \usepackage{multirow}
 \usepackage{epigraph}
 % \usepackage{datetime} % duplicado removido (mantida a primeira importação)
 \usepackage{caption}
-\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{font=small, justification=raggedright,singlelinecheck=false}
+% Smaller captions for subfigures
+\captionsetup[subfigure]{font=small}
 \usepackage[many]{tcolorbox} 
 \usepackage{tabularx}
 \usepackage{booktabs}

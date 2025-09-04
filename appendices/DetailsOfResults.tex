@@ -18,6 +18,7 @@ The following items specify where to place each type of evidence when ready. Eac
 \endgroup
 
 \section{Evidence Checklist (docs/ and tmp\_ai\_reports/)}
+\begingroup\sloppy
 To ensure coverage without overclaiming, collect the following (no counts here):
 \begin{itemize}
     \item Representative legacy process artifacts: prescription, validation, administration records; stock movement entries (fields only). For fields, include article identifiers, movement type, timestamps, lot/expiry, and user role where applicable.
@@ -27,20 +28,47 @@ To ensure coverage without overclaiming, collect the following (no counts here):
     \item Data coherence samples across systems: patient IDs, active medication lists, stock positions, highlighting discrepancies.
     \item Usability notes linked to specific screens: navigation friction, duplicate entry, missing alerts.
 \end{itemize}
+\endgroup
 
 \section{Baseline Artefacts: Image Naming and Placement Map}
 To streamline insertion, follow this naming/mapping for anonymized baseline artefacts (legacy extracts/screens):
-\begingroup\emergencystretch=1.5em
+\begingroup\emergencystretch=1.5em\small
 \begin{itemize}
     \item Stock movements extract (legacy fields): \texttt{\seqsplit{images/generated/baseline\_prf\_movements\_extract\_v1.png}} → Results Table/\ref{tab:baseline_prf_movements_fields} caption reference.
     \item Prescription fields snapshot (legacy): \texttt{\seqsplit{images/generated/baseline\_prescription\_fields\_v1.png}} → Results Table/\ref{tab:baseline_prescription_fields} caption reference.
-    \item Validation queue snapshot (legacy): \texttt{\seqsplit{images/generated/baseline\_validation\_queue\_v1.png}} → Results Baseline section (new figure label: \texttt{fig:baseline\_validation\_queue}).
-    \item Administration record snapshot (legacy/eMAR): \texttt{\seqsplit{images/generated/baseline\_administration\_record\_v1.png}} → Results Baseline section (new figure label: \texttt{fig:baseline\_administration\_record}).
+    \item Validation queue snapshot (legacy): \texttt{\seqsplit{images/generated/baseline\_validation\_queue\_v1.png}} → Results Baseline section (figure label: \texttt{fig:baseline\_validation\_queue\_v1}).
+    \item Administration record snapshot (legacy/eMAR): prefer current collected files \texttt{\seqsplit{images/generated/enf\_administracao\_utente.png}} ou \texttt{\seqsplit{images/generated/enf\_administracao\_pdf.png}} → Results (Collected Evidence by Clinical Profile; Figures \texttt{fig:enf\_administracao\_utente}, \texttt{fig:enf\_administracao\_pdf}).
     \item Prescription leaflet before validation (legacy): \texttt{\seqsplit{images/generated/baseline\_prescription\_leaflet\_v1.png}} → Results Table/\ref{tab:baseline_prescription_leaflet_fields} caption reference.
     \item Pre-validation patient list (legacy): \texttt{\seqsplit{images/generated/baseline\_patient\_list\_pre\_validation\_v1.png}} → Results Table/\ref{tab:baseline_patient_list_pre_validation_fields} caption reference.
     \item Pre-prescription patient list (legacy): \texttt{\seqsplit{images/generated/baseline\_patient\_list\_pre\_prescription\_v1.png}} → Results Table/\ref{tab:baseline_patient_list_pre_prescription_fields} caption reference.
     \item Frequency schedule (legacy): \texttt{\seqsplit{images/generated/baseline\_presc\_freq\_v1.png}} → Results Table/\ref{tab:baseline_prescription_frequency_fields}.
     \item Route dictionary (legacy): \texttt{\seqsplit{images/generated/baseline\_route\_dictionary\_v1.png}} → Results Table/\ref{tab:baseline_route_dictionary_fields}.
+    \item Medical profile — prescription (legacy screens):
+      \texttt{\seqsplit{images/generated/med\_prescricao\_menu.png}},
+      \texttt{\seqsplit{images/generated/med\_prescricao\_lista\_doentes.png}},
+      \texttt{\seqsplit{images/generated/med\_prescricao\_utente.png}},
+      \texttt{\seqsplit{images/generated/med\_prescricao\_pdf.png}}
+      → Results (Collected Evidence by Clinical Profile; Figures \texttt{fig:med\_prescricao\_menu}, \texttt{fig:med\_prescricao\_lista\_doentes}, \texttt{fig:med\_prescricao\_utente}, \texttt{fig:med\_prescricao\_pdf}).
+    \item Nursing profile — administration (legacy screens):
+      \texttt{\seqsplit{images/generated/enf\_administracao\_lista\_doentes.png}},
+      \texttt{\seqsplit{images/generated/enf\_administracao\_utente.png}},
+      \texttt{\seqsplit{images/generated/enf\_administracao\_pdf.png}}
+      → Results (Collected Evidence by Clinical Profile; Figures \texttt{fig:enf\_administra\c{c}\~ao\_lista\_doentes}, \texttt{fig:enf\_administracao\_utente}, \texttt{fig:enf\_administracao\_pdf}).
+    \item Pharmacy — validation/support (legacy):
+      \texttt{\seqsplit{images/generated/baseline\_validation\_queue\_v1.png}},
+      \texttt{\seqsplit{images/generated/baseline\_lista\_zero\_v1.png}},
+      \texttt{\seqsplit{images/generated/baseline\_antibiotics\_rules\_v1.png}},
+      \texttt{\seqsplit{images/generated/baseline\_integration\_failures\_v1.png}}
+      → Results (Collected Evidence by Clinical Profile; Figures \texttt{fig:baseline\_validation\_queue\_v1}, \texttt{fig:baseline\_lista\_zero\_v1}, \texttt{fig:baseline\_antibiotics\_rules\_v1}, \texttt{fig:baseline\_integration\_failures\_v1}).
+    \item Pharmacy — MED-H (legacy):
+      \texttt{\seqsplit{images/generated/baseline\_medh\_search\_empty\_v1.png}},
+      \texttt{\seqsplit{images/generated/baseline\_medh\_search\_dropdown\_v1.png}},
+      \texttt{\seqsplit{images/generated/baseline\_medh\_drug\_detail\_v1.png}}
+      → Results (Collected Evidence by Clinical Profile; Figures \texttt{fig:baseline\_medh\_search\_empty\_v1}, \texttt{fig:baseline\_medh\_search\_dropdown\_v1}, \texttt{fig:baseline\_medh\_drug\_detail\_v1}).
+    \item Laboratory — schemes (legacy, partial functionality):
+      \texttt{\seqsplit{images/generated/lab\_esquemas\_lista\_doentes.png}},
+      \texttt{\seqsplit{images/generated/lab\_esquemas\_upload.png}}
+      → Results (Collected Evidence by Clinical Profile; Figures \texttt{fig:lab\_esquemas\_lista\_doentes}, \texttt{fig:lab\_esquemas\_upload}).
 \end{itemize}
 \endgroup
 

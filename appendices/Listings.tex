@@ -45,6 +45,7 @@ ORDER BY column_id;
 \end{lstlisting}
 
 \section{Aggregated, anonymized checks}
+\begingroup\small
 \subsection*{Movements per lot (bounded period)}
 \begin{lstlisting}[language=SQL]
 SELECT numlote,
@@ -59,7 +60,7 @@ ORDER BY numlote;
 \end{lstlisting}
 
 \subsection*{Pending validations by ward (no PHI)}
-\subsection*{Lifecycle anchors (order → validation → dispensing → administration)}
+\subsection*{Lifecycle anchors (order $\rightarrow$ validation $\rightarrow$ dispensing $\rightarrow$ administration)}
 \begin{lstlisting}[language=SQL]
 -- Join lifecycle anchors by prescription id (aggregated counts only)
 SELECT COUNT(*) AS total_presc,
@@ -111,5 +112,6 @@ GROUP BY servicoid
 ORDER BY pending_prescriptions DESC;
 \end{lstlisting}
 
+\endgroup
 \section{Notes}
 All listings are for verification and baseline anchoring only; they must be executed in secured environments and results sanitized for inclusion.

@@ -23,13 +23,13 @@ Captions must include source (docs/tmp\_ai\_reports) and anonymization note.
 % -- Side-by-side: Prescription (legacy vs new)
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.47\textwidth}
+    \begin{subfigure}[t]{0.44\textwidth}
         \centering
-        \imgorplaceholder[width=\linewidth]{images/generated/step_prescription_legacy_v1.png}
-        \caption{Prescription (legacy: AIDA-PCE). Source: docs/tmp\_ai\_reports; anonymized/mockup.}
+        \imgorplaceholder[width=\linewidth]{images/generated/med_prescricao_utente.png}
+        \caption{Prescription (legacy: AIDA-PCE). Source: docs/tmp\_ai\_reports; anonymized.}
         \label{fig:prescription_legacy}
     \end{subfigure}
-    \begin{subfigure}[t]{0.47\textwidth}
+    \begin{subfigure}[t]{0.44\textwidth}
         \centering
         \imgorplaceholder[width=\linewidth]{images/generated/step_prescription_new_v1.png}
         \caption{Prescription (new unified UI). Source: docs/tmp\_ai\_reports; mockup.}
@@ -41,13 +41,13 @@ Captions must include source (docs/tmp\_ai\_reports) and anonymization note.
 % -- Side-by-side: Validation (legacy vs new)
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.40\textwidth}
+    \begin{subfigure}[t]{0.37\textwidth}
         \centering
-        \imgorplaceholder[width=\linewidth]{images/generated/step_validation_legacy_v1.png}
-        \caption{Validation (legacy: AIDA-PCE). Source: docs/tmp\_ai\_reports; anonymized/mockup.}
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_validation_queue_v1.png}
+        \caption{Validation (legacy: AIDA-PCE). Source: docs/tmp\_ai\_reports; anonymized.}
         \label{fig:validation_legacy}
     \end{subfigure}
-    \begin{subfigure}[t]{0.40\textwidth}
+    \begin{subfigure}[t]{0.37\textwidth}
         \centering
         \imgorplaceholder[width=\linewidth]{images/generated/step_validation_new_v1.png}
         \caption{Validation (new unified UI). Source: docs/tmp\_ai\_reports; mockup.}
@@ -59,13 +59,13 @@ Captions must include source (docs/tmp\_ai\_reports) and anonymization note.
 % -- Side-by-side: Administration (legacy vs new)
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.40\textwidth}
+    \begin{subfigure}[t]{0.37\textwidth}
         \centering
-        \imgorplaceholder[width=\linewidth]{images/generated/step_administration_legacy_v1.png}
-        \caption{Administration (legacy: AIDA-PCE e/ou eMAR atual). Source: docs/tmp\_ai\_reports; anonymized/mockup.}
+        \imgorplaceholder[width=\linewidth]{images/generated/enf_administracao_utente.png}
+        \caption{Administration (legacy: AIDA-PCE e/ou eMAR atual). Source: docs/tmp\_ai\_reports; anonymized.}
         \label{fig:administration_legacy}
     \end{subfigure}
-    \begin{subfigure}[t]{0.40\textwidth}
+    \begin{subfigure}[t]{0.37\textwidth}
         \centering
         \imgorplaceholder[width=\linewidth]{images/generated/step_administration_new_v1.png}
         \caption{Administration (new eMAR flow). Source: docs/tmp\_ai\_reports; mockup.}
@@ -77,13 +77,13 @@ Captions must include source (docs/tmp\_ai\_reports) and anonymization note.
 % -- Side-by-side: Stock movements (legacy vs new)
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[t]{0.40\textwidth}
+    \begin{subfigure}[t]{0.38\textwidth}
         \centering
-        \imgorplaceholder[width=\linewidth]{images/generated/step_stock_legacy_v1.png}
-        \caption{Stock movements (legacy: AIDA-PCE/PRF). Source: docs/tmp\_ai\_reports; anonymized/mockup.}
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_lista_zero_v1.png}
+        \caption{Stock movements (legacy: AIDA-PCE/PRF). Source: docs/tmp\_ai\_reports; anonymized.}
         \label{fig:stock_legacy}
     \end{subfigure}
-    \begin{subfigure}[t]{0.40\textwidth}
+    \begin{subfigure}[t]{0.38\textwidth}
         \centering
         \imgorplaceholder[width=\linewidth]{images/generated/step_stock_new_v1.png}
         \caption{Stock movements (new PRF module). Source: docs/tmp\_ai\_reports; mockup.}
@@ -99,6 +99,135 @@ Captions must include source (docs/tmp\_ai\_reports) and anonymization note.
     \label{fig:monitoring_dashboard}
 \end{figure}
 
+\subsection{Collected Evidence by Clinical Profile}
+The following figures insert the currently collected, anonymized screenshots per clinical profile, following the naming and placement guidance. Captions include consolidated sources and anonymization notes. When files are missing at compile time, placeholders will be shown.
+
+\paragraph{Médico — Prescrição}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/med_prescricao_menu.png}
+        \caption{Menu principal (perfil médico). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:med_prescricao_menu}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/med_prescricao_lista_doentes.png}
+        \caption{Lista de doentes para prescrição. Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:med_prescricao_lista_doentes}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/med_prescricao_utente.png}
+        \caption{Ecrã de prescrição ativa do utente. Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:med_prescricao_utente}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/med_prescricao_pdf.png}
+        \caption{Exportação PDF da prescrição (antes da validação). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:med_prescricao_pdf}
+    \end{subfigure}
+    \caption{Evidências recolhidas (perfil médico — prescrição).}
+\end{figure}
+
+\paragraph{Enfermeiro — Administração}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/enf_administracao_lista_doentes.png}
+        \caption{Lista de doentes para administração. Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:enf_administração_lista_doentes}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/enf_administracao_utente.png}
+        \caption{Ecrã de administração (validar/suspender/alta). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:enf_administracao_utente}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/enf_administracao_pdf.png}
+        \caption{Exportação PDF da administração. Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:enf_administracao_pdf}
+    \end{subfigure}
+    \caption{Evidências recolhidas (perfil enfermeiro — administração).}
+\end{figure}
+
+\paragraph{Farmácia — Validação e Suporte (I)}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_validation_queue_v1.png}
+        \caption{Fila de pré-validação (legado). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:baseline_validation_queue_v1}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_lista_zero_v1.png}
+        \caption{Lista zero (controlo stock/dispensa). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:baseline_lista_zero_v1}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_antibiotics_rules_v1.png}
+        \caption{Regras de antibióticos (módulo específico). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:baseline_antibiotics_rules_v1}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_integration_failures_v1.png}
+        \caption{Falhas de integração (evidência). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:baseline_integration_failures_v1}
+    \end{subfigure}
+    \caption{Evidências recolhidas (farmácia — validação e suporte, parte I).}
+\end{figure}
+
+\paragraph{Farmácia — Pesquisa e detalhe de medicamento (MED-H)}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_medh_search_empty_v1.png}
+        \caption{Pesquisa MED-H sem resultados. Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:baseline_medh_search_empty_v1}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_medh_search_dropdown_v1.png}
+        \caption{Pesquisa MED-H (dropdown). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:baseline_medh_search_dropdown_v1}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/baseline_medh_drug_detail_v1.png}
+        \caption{Detalhe de medicamento (MED-H). Source: docs/tmp\_ai\_reports; anonymized.}
+        \label{fig:baseline_medh_drug_detail_v1}
+    \end{subfigure}
+    \caption{Evidências recolhidas (farmácia — pesquisa/detalhe MED-H).}
+\end{figure}
+
+\paragraph{Laboratório — Esquemas}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/lab_esquemas_lista_doentes.png}
+        \caption{Lista de doentes (módulo esquemas). Source: docs/tmp\_ai\_reports; anonymized (funcionalidade parcial no legado).}
+        \label{fig:lab_esquemas_lista_doentes}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \imgorplaceholder[width=\linewidth]{images/generated/lab_esquemas_upload.png}
+        \caption{Upload de documento associado a esquema. Source: docs/tmp\_ai\_reports; anonymized (funcionalidade parcial no legado).}
+        \label{fig:lab_esquemas_upload}
+    \end{subfigure}
+    \caption{Evidências recolhidas (laboratório — esquemas).}
+\end{figure}
+
 \section{Indicative Performance and Quality}
 Where measured, we report indicative performance from controlled test environments (e.g., API response latencies for read operations) and evidence of automated testing coverage for critical functions. These results serve as preliminary anchors and are complemented by pilot-derived metrics when available.
 
@@ -112,7 +241,7 @@ This subsection documents representative audit-related field structures present 
     \centering
     \caption{Audit trail fields: \texttt{PCE.LOGS\_COMPLETO} (legacy)}
     \label{tab:audit_logs_completo_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
@@ -133,7 +262,7 @@ This subsection documents representative audit-related field structures present 
     \centering
     \caption{Audit trail fields: \texttt{PCE.LOGS\_CC} e \texttt{PCE.LOGS\_MAN} (legacy)}
     \label{tab:audit_logs_cc_man_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
@@ -153,14 +282,14 @@ This subsection documents representative audit-related field structures present 
     \centering
     \caption{User directory fields: \texttt{PCE.UTILIZADORES} (legacy)}
     \label{tab:users_directory_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
         IDUTILIZADOR & \texttt{PCE.UTILIZADORES} & VARCHAR2(10) & No & User identifier \\
-        UTILIZADOR & \texttt{PCE.UTILIZADORES} & VARCHAR2(200) & Yes & Display name (PHI) \\
-        PASSWORD\_HASH & \texttt{PCE.UTILIZADORES} & VARCHAR2(72) & Yes & Password hash (never shown) \\
+        UTILIZADOR & \texttt{\seqsplit{PCE.UTILIZADORES}} & \seqsplit{VARCHAR2(200)} & Yes & Display name (PHI) \\
+        PASSWORD\_HASH & \texttt{\seqsplit{PCE.UTILIZADORES}} & \seqsplit{VARCHAR2(72)} & Yes & Password hash (never shown) \\
         AREA / IDSERVICO & \texttt{PCE.UTILIZADORES} & VARCHAR2(\ldots) & Yes & Area/services \\
         PROFISSAO / CATEGORIA & \texttt{PCE.UTILIZADORES} & VARCHAR2(\ldots) & Yes & Role/category \\
         ESTADO & \texttt{PCE.UTILIZADORES} & VARCHAR2(1) & Yes & Status \\
@@ -194,17 +323,17 @@ This subsection lists representative field structures from legacy artefacts to g
     \centering
     \caption{Baseline fields: Controlled-substance stock movements (legacy AIDA-PCE/PRF).}
     \label{tab:baseline_prf_movements_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.4cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
         \midrule
-        NVL(CDU\_CSU\_ENVIADOMEDICID, CDU\_CSU\_PRESCMEDICID) & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & VARCHAR2(\ldots) & Yes & Medication identifier (resolved) \\
-        NUMLOTE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & VARCHAR2(1000) & Yes & Batch/lot reference \\
-        CDU\_CSU\_ENVIADOQUANTIDADE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & NUMBER(\ldots) & Yes & Quantity delta (signed) \\
+        \seqsplit{NVL(CDU\_CSU\_ENVIADOMEDICID,CDU\_CSU\_PRESCMEDICID)} & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & \seqsplit{VARCHAR2(\ldots)} & Yes & Medication identifier (resolved) \\
+        NUMLOTE & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & \seqsplit{VARCHAR2(1000)} & Yes & Batch/lot reference \\
+        \seqsplit{CDU\_CSU\_ENVIADOQUANTIDADE} & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & NUMBER(\ldots) & Yes & Quantity delta (signed) \\
         DTA\_LANCA & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & DATE & Yes & Event timestamp \\
-        DTMEDD & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & VARCHAR2(10) & Yes & Context flag (e.g., 'MH') \\
-        CDU\_CSU\_UTILIZADOR & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & VARCHAR2(50) & Yes & Actor identifier/role at action time \\
+        DTMEDD & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & \seqsplit{VARCHAR2(10)} & Yes & Context flag (e.g., 'MH') \\
+        \seqsplit{CDU\_CSU\_UTILIZADOR} & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & \seqsplit{VARCHAR2(50)} & Yes & Actor identifier/role at action time \\
         VERIFICA & \texttt{\seqsplit{PCE.PRF\_PRESC\_MOV\_FDET}} & NUMBER(1) & Yes & Verification marker \\
         \bottomrule
     \end{tabularx}}
@@ -214,7 +343,7 @@ This subsection lists representative field structures from legacy artefacts to g
     \centering
     \caption{Baseline fields: Pre-validation list (derived from legacy AIDA-PCE).}
     \label{tab:baseline_validation_queue_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.2cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
@@ -235,7 +364,7 @@ This subsection lists representative field structures from legacy artefacts to g
     \centering
     \caption{Baseline fields: Prescription leaflet/report before validation (legacy AIDA-PCE).}
     \label{tab:baseline_prescription_leaflet_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
@@ -255,7 +384,7 @@ This subsection lists representative field structures from legacy artefacts to g
     \centering
     \caption{Baseline fields: Pre-validation patient list (legacy AIDA-PCE).}
     \label{tab:baseline_patient_list_pre_validation_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
@@ -272,7 +401,7 @@ This subsection lists representative field structures from legacy artefacts to g
     \centering
     \caption{Baseline fields: Pre-prescription patient list (legacy AIDA-PCE).}
     \label{tab:baseline_patient_list_pre_prescription_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
@@ -289,7 +418,7 @@ This subsection lists representative field structures from legacy artefacts to g
     \centering
     \caption{Baseline fields: Prescription (legacy AIDA-PCE).}
     \label{tab:baseline_prescription_fields}
-    {\setlength{\tabcolsep}{4pt}\small\renewcommand{\arraystretch}{1.2}
+    {\setlength{\tabcolsep}{3pt}\scriptsize\renewcommand{\arraystretch}{1.15}
     \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.8cm} >{\raggedright\arraybackslash}p{2.3cm} >{\centering\arraybackslash}p{1.7cm} >{\raggedright\arraybackslash}X@{}}
         \toprule
         \textbf{Field} & \textbf{Entity/Table} & \textbf{Data Type} & \textbf{Nullable} & \textbf{Description / Notes} \\
