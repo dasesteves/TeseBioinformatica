@@ -1,0 +1,19 @@
+/* Extrato de “movimentos” a partir do detalhe de prescrição (sem PHI) */
+SELECT
+  p.ID_PRESC,
+  CASE 
+    WHEN NVL(p.CDU_CSU_RECEBIDAQUANTIDADE,0)    > 0 THEN 'ENTRADA'     -- receção/entrada em stock
+    WHEN NVL(p.CDU_CSU_CONSUMIDAQUANTIDADE,0)   > 0 THEN 'SAIDA'       -- consumo/saída
+    WHEN NVL(p.CDU_CSU_ENVIADOQUANTIDADE,0)     > 0 THEN 'DISPENSA'    -- dispensa/envio
+    ELSE 'OUTRO'
+  END                                   AS TIPO,
+  p.NUMLOTE                              AS LOTE,
+  NVL(p.CDU_CSU_RECEBIDAQUANTIDADE,0)    AS QTD_ENTRADA,
+  NVL(p.CDU_CSU_CONSUMIDAQUANTIDADE,0)   AS QTD_SAIDA,
+  NVL(p.CDU_CSU_ENVIADOQUANTIDADE,0)     AS QTD_DISPENSA,
+  CAST(p.DTA_LANCA AS DATE)              AS DATA_LANCA,
+  CAST(p.DTA_MOV   AS DATE)              AS DATA_MOV
+FROM PCE.PRF_PRESC_MOV_FDET p
+WHERE (p.DTA_LANCA IS NOT NULL AND p.DTA_LANCA >= ADD_MONTHS(TRUNC(SYSDATE), -12))
+   OR (p.DTA_MOV   IS NOT NULL AND p.DTA_MOV   >= ADD_MONTHS(TRUNC(SYSDATE), -12))
+FETCH FIRST 100 ROWS ONLY;
